@@ -1,0 +1,61 @@
+
+web elements
+================
+Id || Name || LinkText || Partial Link Text|| Class Name ||Tag Name || CSS Selector || XPath
+
+Basic format of xpath 
+XPATH=//tagname[@Attribute="Value"]
+
+-- use single slash (/)
+
+Absolute XPATH vs Relative XPATH
+=================================
+-- use double slash (//)
+
+XPATH function - "starts-with"
+=================================
+XPATH=//tagname[starts-with[@Attribute,'Value']
+
+XPATH function - "contains"
+=================================
+XPATH=//tagname[contains[@Attribute,'Value]
+
+XPATH function - "text()" method
+=================================
+XPATH=//tagname[@text()='ActualText']
+
+How to use AND & OR in Selenium XPATH
+=====================================
+XPATH=//tagname[@attribute='value' or @attribute='value']
+XPATH=//tagname[@attribute='value' and @attribute='value']
+
+XPATH Axes method (Parent, Child, Self)
+========================================
+XPATH=//tagname[@Attribute="Value"]//parent::tagname
+XPATH=//tagname[@Attribute="Value"]//child::tagname
+XPATH=//tagname[@Attribute="Value"]//self::tagname
+
+XPATH Axes method (descendant , descendant-or-self)
+===================================================
+** It select all of the descendants (children, grandchildren etc.) of context (current) node
+XPATH=//tagname[@Attribute="Value"]//descendant::tagname
+XPATH=//tagname[@Attribute="Value"]//descendant-or-self::tagname
+
+XPATH Axes method ( ancestor, ancestor-or-self)
+================================================
+** It select all of the ancestor (parent, grandparent etc.) of context (current) node
+XPATH=//tagname[@Attribute="Value"]//ancestor::tagname
+XPATH=//tagname[@Attribute="Value"]//ancestor-or-self::tagname
+
+XPATH Axes method ( following, following-sibling)
+========================================================
+** It select all the nodes that appear after the context (current) node
+XPATH=//tagname[@Attribute="Value"]//following::tagname
+XPATH=//tagname[@Attribute="Value"]//following-sibling::tagname
+
+
+XPATH Axes method ( preceding, preceding-sibling)
+==================================================
+** It select all the nodes that appear before the context (current) node
+XPATH=//tagname[@Attribute="Value"]//preceding::tagname
+XPATH=//tagname[@Attribute="Value"]//preceding-sibling::tagname

@@ -1,0 +1,8 @@
+beautifulsoup4
+requests
+pandas
+webdriver_manager
+mysql-connector-python
+selenium
+pillow
+pytesseract
