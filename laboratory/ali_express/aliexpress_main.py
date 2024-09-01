@@ -107,7 +107,7 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
         data = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//div[@id="root"]'))
         )
-    except AttributeError:
+    except AttributeError as e :
         logging.error("Timeout waiting for page to load: %s", e)
         driver.quit()
         sys.exit(1)
@@ -268,11 +268,12 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
 
 
 def main():
-
+    url_input = input('Write or Paste your URL : ')
     driver = initialize_webdriver()
     # URL = "https://www.aliexpress.us/item/3256807098852847.html?spm=a2g0o.home.pcJustForYou.1.650c76db8SxNPQ&gps-id=pcJustForYou&scm=1007.13562.333647.0&scm_id=1007.13562.333647.0&scm-url=1007.13562.333647.0&pvid=3aebee93-4730-4820-88e3-faac6f53517c&_t=gps-id%3ApcJustForYou%2Cscm-url%3A1007.13562.333647.0%2Cpvid%3A3aebee93-4730-4820-88e3-faac6f53517c%2Ctpp_buckets%3A668%232846%238107%231934&isseo=y&pdp_npi=4%40dis%21EUR%213.82%210.91%21%21%214.18%211.00%21%402101eeda17246692310713965e5be4%2112000040070023678%21rec%21IE%21%21ABX&utparam-url=scene%3ApcJustForYou%7Cquery_from%3A&gatewayAdapt=4itemAdapt"
-    URL = "https://www.aliexpress.us/item/1005006341854760.html?spm=a2g0o.home.pcJustForYou.18.650c76db8SxNPQ&gps-id=pcJustForYou&scm=1007.32079.367808.0&scm_id=1007.32079.367808.0&scm-url=1007.32079.367808.0&pvid=956873b9-3d98-470a-b8eb-c8ef170bde0e&_t=gps-id%3ApcJustForYou%2Cscm-url%3A1007.32079.367808.0%2Cpvid%3A956873b9-3d98-470a-b8eb-c8ef170bde0e%2Ctpp_buckets%3A668%232846%238107%231934&isseo=y&pdp_npi=4%40dis%21EUR%2118.41%2118.23%21%21%2120.12%2119.92%21%402101eeda17246692310713965e5be4%2112000036823943557%21rec%21IE%21%21ABX&utparam-url=scene%3ApcJustForYou%7Cquery_from%3A&search_p4p_id=202408260347111025193960828235087328_2&_gl=1*1twioub*_gcl_au*NTk2OTIyODk1LjE3MjQ2NjkyMDY.*_ga*MTQyMDI5Mjg4NS4xNzI0NjY5MjA2*_ga_VED1YSGNC7*MTcyNDY2OTIwNi4xLjEuMTcyNDY2OTI5MC4zNi4&gatewayAdapt=4itemAdapt"
+    # URL = "https://www.aliexpress.us/item/1005006341854760.html?spm=a2g0o.home.pcJustForYou.18.650c76db8SxNPQ&gps-id=pcJustForYou&scm=1007.32079.367808.0&scm_id=1007.32079.367808.0&scm-url=1007.32079.367808.0&pvid=956873b9-3d98-470a-b8eb-c8ef170bde0e&_t=gps-id%3ApcJustForYou%2Cscm-url%3A1007.32079.367808.0%2Cpvid%3A956873b9-3d98-470a-b8eb-c8ef170bde0e%2Ctpp_buckets%3A668%232846%238107%231934&isseo=y&pdp_npi=4%40dis%21EUR%2118.41%2118.23%21%21%2120.12%2119.92%21%402101eeda17246692310713965e5be4%2112000036823943557%21rec%21IE%21%21ABX&utparam-url=scene%3ApcJustForYou%7Cquery_from%3A&search_p4p_id=202408260347111025193960828235087328_2&_gl=1*1twioub*_gcl_au*NTk2OTIyODk1LjE3MjQ2NjkyMDY.*_ga*MTQyMDI5Mjg4NS4xNzI0NjY5MjA2*_ga_VED1YSGNC7*MTcyNDY2OTIwNi4xLjEuMTcyNDY2OTI5MC4zNi4&gatewayAdapt=4itemAdapt"
     # URL = "https://www.aliexpress.us/item/1005007518115265.html?spm=a2g0o.home.pcJustForYou.13.650c76db8SxNPQ&gps-id=pcJustForYou&scm=1007.13562.333647.0&scm_id=1007.13562.333647.0&scm-url=1007.13562.333647.0&pvid=3aebee93-4730-4820-88e3-faac6f53517c&_t=gps-id%3ApcJustForYou%2Cscm-url%3A1007.13562.333647.0%2Cpvid%3A3aebee93-4730-4820-88e3-faac6f53517c%2Ctpp_buckets%3A668%232846%238107%231934&isseo=y&pdp_npi=4%40dis%21EUR%2113.94%210.91%21%21%21108.39%217.08%21%402101eeda17246692310713965e5be4%2112000041101428097%21rec%21IE%21%21ABX&utparam-url=scene%3ApcJustForYou%7Cquery_from%3A&_gl=1*1twioub*_gcl_au*NTk2OTIyODk1LjE3MjQ2NjkyMDY.*_ga*MTQyMDI5Mjg4NS4xNzI0NjY5MjA2*_ga_VED1YSGNC7*MTcyNDY2OTIwNi4xLjEuMTcyNDY2OTI5MC4zNi4wLjA.&gatewayAdapt=4itemAdapt"
+    URL = url_input
     HEADER = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.5'
