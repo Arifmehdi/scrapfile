@@ -1,0 +1,5 @@
+install pyinstaller
+--> pip install pyinstaller
+
+go to file & make dist folder and exe file 
+--> pyinstaller --onefile <filename>.py
