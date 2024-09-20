@@ -1,3 +1,4 @@
+****************************************************** START Install Package ****************************************************************
 01. check python 
 --> python --version
 
@@ -14,6 +15,11 @@
 05. if need purge 
 --> pip cache purge
 
+****************************************************** END Install Package ****************************************************************
+
+
+
+****************************************************** START Individual Package ****************************************************************
 06. install selenium
 --> pip install selenium
 
@@ -31,3 +37,15 @@
 
 11 install pytesseract
 --> pip install selenium pillow pytesseract
+
+****************************************************** END Individual Package ****************************************************************
+
+****************************************************** START Windows exe file ****************************************************************
+01. Install PyInstaller: Make sure you have PyInstaller installed. You can install it via pip:
+
+--> pip install pyinstaller
+
+02. Create the Executable: Open a terminal or command prompt in the directory where your script is located and run the following command:
+
+--> pyinstaller --onefile --windowed your_script.py
+******************************************************  END Windows exe file  ****************************************************************
