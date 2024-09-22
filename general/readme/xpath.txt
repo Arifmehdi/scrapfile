@@ -14,11 +14,12 @@ Absolute XPATH vs Relative XPATH
 
 XPATH function - "starts-with"
 =================================
-XPATH=//tagname[starts-with[@Attribute,'Value']
+XPATH=//tagname[starts-with[@Attribute,'Value']]
+
 
 XPATH function - "contains"
 =================================
-XPATH=//tagname[contains[@Attribute,'Value]
+XPATH=//tagName[contains(@attribute,'value')] 
 
 XPATH function - "text()" method
 =================================
