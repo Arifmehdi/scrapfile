@@ -1,0 +1,2202 @@
+<thead style="display:none">
+ <tr role="row">
+  <th class="sorting_disabled" colspan="1" rowspan="1" style="width: 0px;">
+   Images
+  </th>
+  <th class="sorting_disabled" colspan="1" rowspan="1" style="width: 0px;">
+   Content
+  </th>
+ </tr>
+</thead>
+<tbody style="border:none;">
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/15628734/2023-maserati-levante-in-houston-tx/ZN661XUA3PX408088">
+    <img alt="2023 MASERATI LevanteGT" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZN661XUA3PX408088-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZN661XUA3PX408088-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/15628734/2023-maserati-levante-in-houston-tx/ZN661XUA3PX408088" rel="nofollow">
+    <h2>
+     2023 MASERATI Levante GT
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="94395" width="20px"/>
+     $94,395
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      3.0L Not Specified Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 16, Highway: 22
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZN661XUA3PX408088
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: PX408088
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/15628734/2023-maserati-levante-in-houston-tx/ZN661XUA3PX408088" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/levante/2023">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted15628734">
+        728 days
+       </span>
+       <script>
+        var date1 = new Date('2022-09-25');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted15628734").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       587
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/16039488/2023-maserati-levante-in-houston-tx/ZN661YUM6PX408084">
+    <img alt="2023 MASERATI LevanteModena" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZN661YUM6PX408084-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZN661YUM6PX408084-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/16039488/2023-maserati-levante-in-houston-tx/ZN661YUM6PX408084" rel="nofollow">
+    <h2>
+     2023 MASERATI Levante Modena
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="117385" width="20px"/>
+     $117,385
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      3.0L 6 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 16, Highway: 22
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZN661YUM6PX408084
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: PX408084
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/16039488/2023-maserati-levante-in-houston-tx/ZN661YUM6PX408084" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/levante/2023">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted16039488">
+        695 days
+       </span>
+       <script>
+        var date1 = new Date('2022-10-28');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted16039488").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       542
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/16830603/2023-maserati-levante-in-houston-tx/ZN661YUM3PX424646">
+    <img alt="2023 MASERATI LevanteModena" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZN661YUM3PX424646-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZN661YUM3PX424646-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/16830603/2023-maserati-levante-in-houston-tx/ZN661YUM3PX424646" rel="nofollow">
+    <h2>
+     2023 MASERATI Levante Modena
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="107416" width="20px"/>
+     $107,416
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      3.0L 6 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 16, Highway: 22
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZN661YUM3PX424646
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: PX424646
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/16830603/2023-maserati-levante-in-houston-tx/ZN661YUM3PX424646" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/levante/2023">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted16830603">
+        625 days
+       </span>
+       <script>
+        var date1 = new Date('2023-01-06');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted16830603").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       499
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/16845647/2023-maserati-grecale-in-houston-tx/ZN682AVA6P7422732">
+    <img alt="2023 MASERATI GrecaleGT" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZN682AVA6P7422732-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZN682AVA6P7422732-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/16845647/2023-maserati-grecale-in-houston-tx/ZN682AVA6P7422732" rel="nofollow">
+    <h2>
+     2023 MASERATI Grecale GT
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="68166" width="20px"/>
+     $68,166
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 22, Highway: 29
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZN682AVA6P7422732
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: P7422732
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/16845647/2023-maserati-grecale-in-houston-tx/ZN682AVA6P7422732" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/grecale/2023">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted16845647">
+        624 days
+       </span>
+       <script>
+        var date1 = new Date('2023-01-07');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted16845647").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       439
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/18558538/2024-maserati-granturismo---grancabrio-in-houston-tx/ZAMBMVDBXRX436716">
+    <img alt="2024 MASERATI GRANTURISMO / GRANCABRIOTrofeo" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZAMBMVDBXRX436716-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZAMBMVDBXRX436716-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/18558538/2024-maserati-granturismo---grancabrio-in-houston-tx/ZAMBMVDBXRX436716" rel="nofollow">
+    <h2>
+     2024 MASERATI GRANTURISMO / GRANCABRIO Trofeo
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="229615" width="20px"/>
+     $229,615
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      3.0L 6 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 18, Highway: 27
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZAMBMVDBXRX436716
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: RX436716
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/18558538/2024-maserati-granturismo---grancabrio-in-houston-tx/ZAMBMVDBXRX436716" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/granturismo---grancabrio/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted18558538">
+        476 days
+       </span>
+       <script>
+        var date1 = new Date('2023-06-04');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted18558538").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       7134
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19151355/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBNXR7677662">
+    <img alt="2024 ALFA ROMEO Giulia (952)Veloce" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZARFANBNXR7677662-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZARFANBNXR7677662-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19151355/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBNXR7677662" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO Giulia (952) Veloce
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="55300" width="20px"/>
+     $55,300
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 23, Highway: 31
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZARFANBNXR7677662
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7677662
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19151355/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBNXR7677662" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/giulia-%28952%29/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19151355">
+        448 days
+       </span>
+       <script>
+        var date1 = new Date('2023-07-02');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19151355").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       499
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19151357/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBN3R7677695">
+    <img alt="2024 ALFA ROMEO Giulia (952)Veloce" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZARFANBN3R7677695-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZARFANBN3R7677695-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19151357/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBN3R7677695" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO Giulia (952) Veloce
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="51565" width="20px"/>
+     $51,565
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 23, Highway: 31
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZARFANBN3R7677695
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7677695
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19151357/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBN3R7677695" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/giulia-%28952%29/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19151357">
+        448 days
+       </span>
+       <script>
+        var date1 = new Date('2023-07-02');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19151357").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       465
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19352196/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFAMBN0R7677762">
+    <img alt="2024 ALFA ROMEO Giulia (952)Ti" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZARFAMBN0R7677762-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZARFAMBN0R7677762-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19352196/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFAMBN0R7677762" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO Giulia (952) Ti
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="52950" width="20px"/>
+     $52,950
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  RWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 24, Highway: 33
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZARFAMBN0R7677762
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7677762
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19352196/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFAMBN0R7677762" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/giulia-%28952%29/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19352196">
+        437 days
+       </span>
+       <script>
+        var date1 = new Date('2023-07-13');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19352196").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       541
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19488989/2024-maserati-granturismo---grancabrio-in-houston-tx/ZAMBMVBB0RX436713">
+    <img alt="2024 MASERATI GRANTURISMO / GRANCABRIOModena" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZAMBMVBB0RX436713-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZAMBMVBB0RX436713-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19488989/2024-maserati-granturismo---grancabrio-in-houston-tx/ZAMBMVBB0RX436713" rel="nofollow">
+    <h2>
+     2024 MASERATI GRANTURISMO / GRANCABRIO Modena
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="203365" width="20px"/>
+     $203,365
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      3.0L 6 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 18, Highway: 27
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZAMBMVBB0RX436713
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: RX436713
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19488989/2024-maserati-granturismo---grancabrio-in-houston-tx/ZAMBMVBB0RX436713" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/granturismo---grancabrio/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19488989">
+        428 days
+       </span>
+       <script>
+        var date1 = new Date('2023-07-22');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19488989").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       6971
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19545787/2023-maserati-grecale-in-houston-tx/ZN682AVA0P7438747">
+    <img alt="2023 MASERATI GrecaleGT" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZN682AVA0P7438747-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZN682AVA0P7438747-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19545787/2023-maserati-grecale-in-houston-tx/ZN682AVA0P7438747" rel="nofollow">
+    <h2>
+     2023 MASERATI Grecale GT
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="70101" width="20px"/>
+     $70,101
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 22, Highway: 29
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZN682AVA0P7438747
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: P7438747
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19545787/2023-maserati-grecale-in-houston-tx/ZN682AVA0P7438747" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/grecale/2023">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19545787">
+        423 days
+       </span>
+       <script>
+        var date1 = new Date('2023-07-27');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19545787").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       374
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19908179/2024-alfa-romeo-stelvio-in-houston-tx/ZASPAKBN6R7D70932">
+    <img alt="2024 ALFA ROMEO STELVIOTi" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZASPAKBN6R7D70932-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZASPAKBN6R7D70932-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19908179/2024-alfa-romeo-stelvio-in-houston-tx/ZASPAKBN6R7D70932" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO STELVIO Ti
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="55855" width="20px"/>
+     $55,855
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 22, Highway: 28
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZASPAKBN6R7D70932
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7D70932
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19908179/2024-alfa-romeo-stelvio-in-houston-tx/ZASPAKBN6R7D70932" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/stelvio/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19908179">
+        402 days
+       </span>
+       <script>
+        var date1 = new Date('2023-08-17');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19908179").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       441
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19908183/2024-alfa-romeo-stelvio-in-houston-tx/ZASPAKBN7R7D71328">
+    <img alt="2024 ALFA ROMEO STELVIOVeloce" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZASPAKBN7R7D71328-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZASPAKBN7R7D71328-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19908183/2024-alfa-romeo-stelvio-in-houston-tx/ZASPAKBN7R7D71328" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO STELVIO Veloce
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="58380" width="20px"/>
+     $58,380
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 22, Highway: 28
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZASPAKBN7R7D71328
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7D71328
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19908183/2024-alfa-romeo-stelvio-in-houston-tx/ZASPAKBN7R7D71328" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/stelvio/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19908183">
+        402 days
+       </span>
+       <script>
+        var date1 = new Date('2023-08-17');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19908183").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       469
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19934910/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBN2R7677834">
+    <img alt="2024 ALFA ROMEO Giulia (952)Ti" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZARFANBN2R7677834-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZARFANBN2R7677834-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19934910/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBN2R7677834" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO Giulia (952) Ti
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="50275" width="20px"/>
+     $50,275
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 23, Highway: 31
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZARFANBN2R7677834
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7677834
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19934910/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFANBN2R7677834" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/giulia-%28952%29/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19934910">
+        400 days
+       </span>
+       <script>
+        var date1 = new Date('2023-08-19');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19934910").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       349
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row even" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19934913/2023-maserati-grecale-in-houston-tx/ZN682AVA5P7442616">
+    <img alt="2023 MASERATI GrecaleGT" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZN682AVA5P7442616-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZN682AVA5P7442616-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19934913/2023-maserati-grecale-in-houston-tx/ZN682AVA5P7442616" rel="nofollow">
+    <h2>
+     2023 MASERATI Grecale GT
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="78401" width="20px"/>
+     $78,401
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  AWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 22, Highway: 29
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZN682AVA5P7442616
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: P7442616
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19934913/2023-maserati-grecale-in-houston-tx/ZN682AVA5P7442616" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/maserati/grecale/2023">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19934913">
+        400 days
+       </span>
+       <script>
+        var date1 = new Date('2023-08-19');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19934913").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       378
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="inventory_row odd" role="row" style="border:none;">
+  <td class="valign-middle" data-label="Gallery" style="border:none;padding-left:0px;">
+   <a href="/vehicle/19934914/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFAMBN4R7677666">
+    <img alt="2024 ALFA ROMEO Giulia (952)Veloce" class="lazy" data-original="https://cdn.getauto.com/photos/0/240560/1c/ZARFAMBN4R7677666-1c.jpg" height="100%" src="https://cdn.getauto.com/photos/0/240560/1c/ZARFAMBN4R7677666-1c.jpg" style="display: inline;" width="100%"/>
+   </a>
+  </td>
+  <td class="valign-middle col-xs-11 col-sm-4" data-label="Vehicle" style="border:none;">
+   <a href="/vehicle/19934914/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFAMBN4R7677666" rel="nofollow">
+    <h2>
+     2024 ALFA ROMEO Giulia (952) Veloce
+    </h2>
+   </a>
+   <div class="row col-xs-12">
+    <span class="label label-success square">
+    </span>
+    <span class="label label-default square">
+     New
+    </span>
+   </div>
+   <div class="row col-xs-6">
+    <h4 style="padding-top:5px;padding-bottom:5px;">
+     <img alt="Vehicle price" class="price_field" src="/public/img/icn/label.png" value="52690" width="20px"/>
+     $52,690
+    </h4>
+   </div>
+   <div class="row col-xs-6">
+    <script>
+     var x = "New";
+  if (x == "New") {
+  } else {
+    document.write('<h4 style="padding-top:5px;padding-bottom:5px;"><img src="/public/img/icn/h-dashboard.png" width="20px" alt="Vehicle mileage"> 0 <small>Miles</small></h4>');
+  }
+    </script>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      <img alt="Vehicle engine icon" src="/public/img/icn/engine.png" width="20px"/>
+      2.0L 4 Cylinders
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle transmission icon" src="/public/img/icn/transmission.png" width="20px"/>
+      8-Speed Shiftable Automatic  RWD
+     </small>
+    </div>
+    <div>
+     <small>
+      <img alt="Vehicle mileage icon" src="/public/img/icn/organic.png" width="20px"/>
+      MPG: City 24, Highway: 33
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-6">
+    <div>
+     <small>
+      VIN: ZARFAMBN4R7677666
+     </small>
+    </div>
+    <div>
+     <small>
+      Stock: R7677666
+     </small>
+    </div>
+   </div>
+   <div class="row col-xs-12" style="padding-top:10px;padding-bottom:10px;">
+    <span class="glyphicon glyphicon-map-marker meta">
+    </span>
+    <a href="/dealers/id/33951" style="padding-left:0px;padding-right:0px;">
+     Helfman Maserati of Houston, Houston, TX
+    </a>
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <small>
+      (3.03 miles)
+     </small>
+    </div>
+   </div>
+   <div class="row">
+    <div align="center" class="col-xs-12" style="padding-top:10px;">
+     <a href="/vehicle/19934914/2024-alfa-romeo-giulia-%28952%29-in-houston-tx/ZARFAMBN4R7677666" rel="“nofollow”">
+      <p class="btn btn-primary btn-block">
+       Vehicle Details
+      </p>
+     </a>
+    </div>
+    <div class="col-xs-12" style="padding-top:10px;">
+     <a href="/research/vehicles/alfa-romeo/giulia-%28952%29/2024">
+      <p class="btn btn-default btn-block">
+       Vehicle Research
+      </p>
+     </a>
+    </div>
+   </div>
+   <div class="row" style="padding-top:10px;">
+    <div align="left" class="col-xs-4 meta">
+     <span>
+      <img alt="Number of days on driverbase" src="/public/img/icn/opening-times.png" width="15px"/>
+      <small>
+       <span id="dayslisted19934914">
+        400 days
+       </span>
+       <script>
+        var date1 = new Date('2023-08-19');
+                        var date2 = new Date('2024-09-22');
+
+                        
+                        var Difference_In_Time = date2.getTime() - date1.getTime();
+
+                        
+                        var diffDays = Difference_In_Time / (1000 * 3600 * 24);
+                        var dayText;
+                        if (diffDays == 1) {
+                          dayText = diffDays + " " + "day";
+                        } else if (diffDays > 1){
+                          dayText = diffDays + " " + "days";
+                        } else if (diffDays == 0){
+                          dayText = "New Listing";
+                        }
+                        document.getElementById("dayslisted19934914").innerHTML = dayText;
+       </script>
+      </small>
+     </span>
+    </div>
+    <div align="right" class="col-xs-8 meta">
+     <span>
+      <span class="glyphicon glyphicon-eye-open">
+      </span>
+      <small>
+       436
+      </small>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+</tbody>
