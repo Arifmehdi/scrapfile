@@ -204,12 +204,13 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
 
             # Wait for the detail page to load and scrape data (add your detailed page scraping logic here)
             try:
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='content']")))
+                WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@id='content']")))
                 # Add your scraping logic here for the detailed page
 
                 # Example: Scrape more data from the detailed page
                 detail_title = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//h1").text  
                 detail_price = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//h3").text  
+                # detail_monthly_pay = driver.find_element(By.XPATH, "//span[@id='pmt']").text  
 
                 detail_status_span = row.find_all('span')
                 detail_possible_statuses = ["New", "Preowned", "Certified Preowned"]
@@ -218,11 +219,16 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
                     detail_span_text = detail_span.text.strip()
                     if detail_span_text in detail_possible_statuses:
                         detail_status = detail_span_text
+
+                        parent_text = detail_span.find_parent('span').text.strip()
+                        detail_engine = parent_text.replace(detail_status, '').strip()
                         break
 
                 print(f"Detail Title: {detail_title}")
                 print(f"Detail Price: {detail_price}")
                 print(f"Detail Status: {detail_status}")
+                print(f"Detail Engine: {detail_engine}")
+                # print(f"Detail Monthly payment: {detail_monthly_pay}")
 
             except Exception as e:
                 print(f"Error fetching details from the page: {e}")
