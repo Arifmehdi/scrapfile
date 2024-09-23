@@ -63,8 +63,11 @@ def navigate_to_next_page(driver, page_number):
 
     # remote_image_url,local_directory,local_image_path
 def download_image(remote_url, directory_location, local_image_path):
-
-    # Replace whitespaces in single_title with underscores
+    time.sleep(3)
+    # Check if the file already exists
+    if os.path.exists(local_image_path):
+        print(f"Image already exists at {local_image_path}, skipping download.")
+        return  # Skip downloading the image if it exists
 
     # Create the directory if it doesn't exist
     if not os.path.exists(directory_location):
@@ -72,7 +75,6 @@ def download_image(remote_url, directory_location, local_image_path):
         
     response = requests.get(remote_url)
     if response.status_code == 200:
-        time.sleep(3)
         with open(local_image_path, 'wb') as file:
             file.write(response.content)
         print(f"Image downloaded successfully to {local_image_path}")
