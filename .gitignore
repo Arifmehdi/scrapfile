@@ -1,4 +1,5 @@
 /venv
 /laboratory/ali_express/build
 /laboratory/ali_express/dist
+/laboratory/driverbase/uploads
 *.spec
