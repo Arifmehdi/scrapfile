@@ -80,7 +80,7 @@ def navigate_to_next_page(driver, page_number):
 
 
 def extract_vehicle_info(URL, driver, all_data, header_data):
-
+    inventories_count = 0 
     try:
         data = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//table[@id="inventory_vehicles_table"]'))
@@ -118,8 +118,9 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
 
         rows = soup.find_all('tr', class_='inventory_row')
 
-        inventories_count = 0
         for row in rows:
+            inventories_count += 1 
+
             base_url = "https://driverbase.com"
             link = row.find('a', href=True)['href']
             cus_link = base_url + link
@@ -196,8 +197,8 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
             views_span = row.find('span', class_="glyphicon glyphicon-eye-open")
             views_text = views_span.find_next('small').text.strip() if views_span else "Views not found"
 
-            inventories_count += 1 
 
+        #    ************************************* detail page start here ******************************
             # Click the link to open the details page
             driver.execute_script("window.open(arguments[0], '_blank');", link)
             driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
@@ -210,25 +211,100 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
                 # Example: Scrape more data from the detailed page
                 detail_title = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//h1").text  
                 detail_price = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//h3").text  
-                # detail_monthly_pay = driver.find_element(By.XPATH, "//span[@id='pmt']").text  
+                detail_monthly_pay = driver.find_element(By.XPATH, "//span[@id='pmt']").text  
 
-                detail_status_span = row.find_all('span')
+                detail_status_span = driver.find_elements(By.XPATH, "//span")
                 detail_possible_statuses = ["New", "Preowned", "Certified Preowned"]
                 detail_status = "Not Found"
+                detail_engine = "Not Found"
                 for detail_span in detail_status_span:
                     detail_span_text = detail_span.text.strip()
                     if detail_span_text in detail_possible_statuses:
                         detail_status = detail_span_text
 
-                        parent_text = detail_span.find_parent('span').text.strip()
+                        parent_element = detail_span.find_element(By.XPATH, '..')
+                        parent_text = parent_element.text.strip()
                         detail_engine = parent_text.replace(detail_status, '').strip()
                         break
+                    
+                detail_dealer_link_tag = driver.find_element(By.XPATH, "//a[contains(@href, '/dealers/id/')]")
+
+                detail_dealer_href = base_url + detail_dealer_link_tag.get_attribute('href') if detail_dealer_link_tag else "Dealer link not found"
+                detail_dealer_text = detail_dealer_link_tag.text.strip() if detail_dealer_link_tag else "Dealer text not found"
+                detail_dealer_phone = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//div[3]//div//a[1]//button//span[2]").text  
+
+                # --- Scraping for "Number of days on driverbase" ---
+                detail_days_text = driver.find_element(By.XPATH, "//span[starts-with(@id,'dayslisted')]").text
+
+                # --- Scraping for "glyphicon-eye-open" views ---
+                detail_views_span = driver.find_element(By.XPATH, "//span[contains(@class, 'glyphicon-eye-open')]")
+                detail_views_text = detail_views_span.find_element(By.XPATH, "following-sibling::small").text.strip() if detail_views_span else "Views not found"
+
+                detail_rows = driver.find_elements(By.XPATH,'//table[@id="sort"]//tbody//tr')
+                vehicle_details = {}
+                for row in detail_rows:
+                    key_element = row.find_element(By.XPATH, './td[1]')  # First <td> is the key
+                    value_element = row.find_element(By.XPATH, './td[2]')  # Second <td> is the value
+                    # Extract the text from the elements
+                    key = key_element.text.strip().replace(":", "")  # Remove the colon from the key
+                    value = value_element.text.strip()
+                    # Add the key-value pair to the dictionary
+                    vehicle_details[key] = value
+                
+                try:
+                    detail_dealer_web_link = driver.find_element(By.XPATH, '//span[@class="col-xs-6 meta"]//a').get_attribute('href')
+                except Exception as e:
+                    print(f"Error fetching dealer web link: {e}")
+                
+                # --- Scraping for "glyphicon-map-marker" (dealer name) ---
+                try:
+                    # Locate the element by class name
+                    detail_dealer_name = driver.find_element(By.CLASS_NAME, 'glyphicon-map-marker')
+                    dealer_button = detail_dealer_name.find_element(By.XPATH, 'following-sibling::button')
+                    detail_dealer_name_text = dealer_button.text.strip()
+                except Exception as e:
+                    detail_dealer_name_text = "Dealer Name not found"
+                # --- Scraping for "glyphicon-map-marker" (dealer name) ---
+
+                try:
+                    # Locate the element by class name
+                    detail_dealer_comment = driver.find_element(By.XPATH, '//header//div//div[2]/div[5]/span').text.strip()
+                except Exception as e:
+                    detail_dealer_comment = "Dealer Comment not found"
+                
+                try:
+                    img_stack = driver.find_element(By.XPATH, '//img[@src="/public/img/icn/img-stack.png"]')
+                    img_stack_src = img_stack.get_attribute('src')
+                    print(f"Image stack src: {img_stack_src}")
+                    sibling_images = img_stack.find_elements(By.XPATH, '../../following-sibling::div//img')
+                    sibling_image_sources = [img.get_attribute('src') for img in sibling_images]
+                    image_sources_str = ",".join(sibling_image_sources)
+
+                    # Print all sibling image sources found
+                    for idx, img_src in enumerate(sibling_image_sources, 1):
+                        print(f"Sibling image {idx} src: {img_src}")
+
+                except Exception as e:
+                    print(f"Error fetching images: {e}")
+
+                # Print the extracted details
+                for key, value in vehicle_details.items():
+                    print(f"{key}: {value}")
 
                 print(f"Detail Title: {detail_title}")
                 print(f"Detail Price: {detail_price}")
                 print(f"Detail Status: {detail_status}")
                 print(f"Detail Engine: {detail_engine}")
-                # print(f"Detail Monthly payment: {detail_monthly_pay}")
+                print(f"Detail Monthly payment: {detail_monthly_pay}")
+                print(f"Detail Dealer href: {detail_dealer_href}")
+                print(f"Detail Dealer text: {detail_dealer_text}")
+                print(f"Detail Dealer Phone: {detail_dealer_phone}")
+                print(f"Detail Days Text: {detail_days_text}")
+                print(f"Detail Views Text: {detail_views_text}")
+                print(f"Detail Web Link: {detail_dealer_web_link}")
+                print(f"Detail dealer Name: {detail_dealer_name_text}")
+                print(f"Detail dealer Comment: {detail_dealer_comment}")
+                print(f"Detail Image Link: {image_sources_str}")
 
             except Exception as e:
                 print(f"Error fetching details from the page: {e}")
@@ -236,6 +312,7 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
             # Close the detail tab and switch back to the main window
             driver.close()
             driver.switch_to.window(driver.window_handles[0])
+        #    ************************************* detail page end here ******************************
 
             print(f"Link: {link}")
             print(f"Custom Link: {cus_link}")
