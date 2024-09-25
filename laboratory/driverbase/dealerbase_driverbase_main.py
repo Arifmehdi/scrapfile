@@ -434,7 +434,12 @@ def extract_dealer_info(URL, driver, all_data, header_data):
 
             # Extract dealer inventory link
             inventory_link_element = row.find('a', href=lambda href: 'inventory' in href)
-            inventory_link = inventory_link_element.get('href') if inventory_link_element else "N/A"
+            inventory_link = inventory_link_element.get('href')
+            if inventory_link_element:
+                base_url = 'https://driverbase.com/'
+                custom_url = base_url + inventory_link
+            else:
+                inventory_link = "N/A"
 
             # # Extract dealer website link
             all_links = row.find_all('a', href=True)
@@ -451,7 +456,7 @@ def extract_dealer_info(URL, driver, all_data, header_data):
             print(f"Address: {address}")
             print(f"Listing number: {listing_info}")
             print(f"Status details: {status_details_string}")
-            print(f"Dealer Inventory: {inventory_link}")
+            print(f"Dealer Inventory: {custom_url}")
             print(f"Dealer Website: {website_link}\n")
 
         time.sleep(3)
