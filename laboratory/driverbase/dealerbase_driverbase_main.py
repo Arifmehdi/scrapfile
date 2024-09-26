@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
@@ -145,14 +146,10 @@ def initialize_webdriver():
         logging.error(f"Error initializing WebDriver: {e}")
         sys.exit(1)
 
-def custom_url():
+def custom_url(zip_code,zip_radius):
     base_url = "https://driverbase.com/"
-    addition_url = "inventory/location/"
-    # location_url  = "houston-tx"
-    # location_url  = "sanantonio-tx"
-    # location_url  = "dallas-tx"
-    location_url  = "austin-tx"
-    targated_url  = base_url+addition_url+location_url
+    addition_url = f"dealers/map?search.Zip={zip_code}&search.DistanceFromZip={zip_radius}"
+    targated_url  = base_url+addition_url
 
     return targated_url
 
@@ -351,34 +348,63 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
     except Exception as e:
         print(f"Error fetching details from the page: {e}")
     
-    # Close the detail tab and switch back to the main window
-    driver.close()
-    driver.switch_to.window(driver.window_handles[0])
+    # # Close the detail tab and switch back to the main window
+    # driver.close()
+    # driver.switch_to.window(driver.window_handles[0])
+
+    window_handles = driver.window_handles
+
+        # Close the last (third) tab
+    driver.switch_to.window(window_handles[2])  # Switch to the last tab
+    driver.close()  # Close the last tab
+
+    # Switch to the second tab
+    driver.switch_to.window(window_handles[1])
     return detail_vehicle_info
         
 
 
-
 def extract_vehicle_info(URL, driver, all_data, header_data):
+
     inventories_count = 0 
+
+    driver.execute_script("window.open(arguments[0], '_blank');", URL)
+    driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+
     try:
         data = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//table[@id="inventory_vehicles_table"]'))
         )
     except AttributeError as e :
         logging.error("Timeout waiting for page to load: %s", e)
-        driver.quit()
-        sys.exit(1)
+
+        # Close the detail tab and switch back to the main window
 
     logging.info("Fetching webpage content with requests")
-    try:
-        address_obj = data.find_element(By.XPATH,"//form[@id='vlp_form']//div//h1").text
-        custom_address_obj = address_obj.replace('Cars for Sale Near ','')
-        custom_addrtess_split = custom_address_obj.split(',')
-        custom_city = custom_addrtess_split[0]
-        custom_state = custom_addrtess_split[1].replace(' ', '')
-        zip_obj = data.find_element(By.XPATH,"//form[@id='vlp_form']//input[@id='select_zip']").get_attribute('value')
 
+    # *********************************  Work till *******************************************
+    try:
+
+        dealer_detail_obj = data.find_element(By.XPATH,'//div[@id="content"]//header')
+        dealer_detail_full_name = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//h1').text
+        dealer_detail_google_map_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//span//a[1]').text
+        dealer_detail_telephone_no = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//span//a[2]').text
+        dealer_detail_listing_no = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[1]').text
+        dealer_detail_listing_status = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[2]').text
+        dealer_detail_listing_status = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[2]').text
+        dealer_detail_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//div//span[1]//a').get_attribute('href')
+        dealer_detail_website_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//div//span[2]//a').get_attribute('href')
+        dealer_detail_about_text = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[5]//h2').text
+        dealer_detail_about_details = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[5]//p').text
+        
+        # address_obj = data.find_element(By.XPATH,"//form[@id='vlp_form']//div//h1").text
+        # custom_address_obj = address_obj.replace('Cars for Sale Near ','')
+        # custom_addrtess_split = custom_address_obj.split(',')
+        # custom_city = custom_addrtess_split[0]
+        # custom_state = custom_addrtess_split[1].replace(' ', '')
+        # zip_obj = data.find_element(By.XPATH,"//form[@id='vlp_form']//input[@id='select_zip']").get_attribute('value')
+        
+        # return URL, data, address_obj, custom_city, custom_state, zip_obj
         # table_obj = data.find_elements(By.XPATH,'//tbody//tr')
 
         html_content = data.get_attribute('innerHTML')
@@ -511,21 +537,35 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
                 'single_details': join_details,
                 'VIN': vin,
                 'Stock': stock,
+
+
                 'MPG City': mpg_city,
                 'MPG Highway': mpg_highway,
                 'Engine': engine,
                 'Transmission': transmission,
                 'Image Path': image_src,
+
+
                 'local Image Path': local_image_path,
                 'Dealer Link': dealer_href,
                 'Dealer Name': dealer_text,
                 'Days on Driverbase': days_text,
                 'Views': views_text,
-                'address_obj': address_obj,
-                'zip_obj': zip_obj,
-                'custom_address_obj': custom_address_obj,
-                'custom_city': custom_city,
-                'custom_state': custom_state,
+                'dealer_detail_full_name': dealer_detail_full_name,
+                'dealer_detail_google_map_link': dealer_detail_google_map_link,
+                'dealer_detail_telephone_no': dealer_detail_telephone_no,
+                'dealer_detail_listing_no': dealer_detail_listing_no,
+                'dealer_detail_listing_status': dealer_detail_listing_status,
+                'dealer_detail_link': dealer_detail_link,
+                'dealer_detail_website_link': dealer_detail_website_link,
+                'dealer_detail_about_text': dealer_detail_about_text,
+                'dealer_detail_about_details': dealer_detail_about_details,
+
+                # 'address_obj': address_obj,
+                # 'zip_obj': zip_obj,
+                # 'custom_address_obj': custom_address_obj,
+                # 'custom_city': custom_city,
+                # 'custom_state': custom_state,
             }
 
             # Append the single vehicle's data to all_data
@@ -536,20 +576,151 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
             print(infor)
             print('*'*40)
 
-        # vehicle_data = (
-        #     'vehicle_name', 'status', 'price', 'vin', 'stock', 'mpg_city', 'mpg_highway', 'engine', 
-        #     'transmission', None, 'days_on_driverbase', 'views', 'image_url', 'custom_link', 
-        #     'detail_price', 'detail_status', 'detail_engine', 'local_image_path', 'downloaded_image_paths'
-        # )
-        # dealer_data = (
-        #     'dealer_href', 'dealer_text', 'detail_dealer_phone'
-        # )
-        # return vehicle_data, dealer_data
-        return single_all_data, detail_vehicle_data ,infor
+        # # vehicle_data = (
+        # #     'vehicle_name', 'status', 'price', 'vin', 'stock', 'mpg_city', 'mpg_highway', 'engine', 
+        # #     'transmission', None, 'days_on_driverbase', 'views', 'image_url', 'custom_link', 
+        # #     'detail_price', 'detail_status', 'detail_engine', 'local_image_path', 'downloaded_image_paths'
+        # # )
+        # # dealer_data = (
+        # #     'dealer_href', 'dealer_text', 'detail_dealer_phone'
+        # # )
+        # # return vehicle_data, dealer_data
+        # return single_all_data, detail_vehicle_data ,infor
+        return single_all_data
+
 
     except AttributeError:
         links = ''
 
+    driver.close()
+    driver.switch_to.window(driver.window_handles[1])
+
+def extract_dealer_info(URL, driver, all_data, header_data):
+    inventories_count = 0 
+    try:
+        data = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, '//div[@id="content"]'))
+        )
+    except AttributeError as e :
+        logging.error("Timeout waiting for page to load: %s", e)
+        driver.quit()
+        sys.exit(1)
+
+    logging.info("Fetching webpage content with requests")
+
+    try:
+        inventory_num = data.find_element(By.XPATH,"//h3[contains(text(),'Car Dealerships near')]").text
+        dealer_zip = data.find_element(By.XPATH, '//input[@id="select_zip"]')
+        dealer_zip_radious = data.find_element(By.XPATH, '//select[@id="select_radius"]')
+        # Step 1: Get the current value of the input field
+        current_zip_value = dealer_zip.get_attribute('value')
+        current_zip_radious_value = dealer_zip_radious.get_attribute('value')
+
+        print("Current inventory number :", inventory_num)
+        print("Current value of dealer_zip:", current_zip_value)
+        print("Current value of dealer_zip_radious:", current_zip_radious_value)
+
+        print("table data processing...")
+
+
+        dealer_table_tr = data.find_element(By.XPATH,'//table[@id="dealers_table"]')
+
+        html_content = dealer_table_tr.get_attribute('innerHTML')
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
+        file_path = 'upload/driverbase_dealer_html.txt'
+
+        # Check if the file path exists
+        if not os.path.exists(file_path):
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(soup.prettify())
+            logging.info(f"HTML content saved to {file_path}")
+        else:
+            logging.info(f"{file_path} already exists. No file created.")
+
+
+        dealer_rows = soup.find_all('tr', class_='dealer_row')
+        for row in dealer_rows:
+            # Extract dealer title
+            title = row.find('a').get_text(strip=True)
+
+            # Extract radius (look for the text that contains "miles away")
+            radius_element = row.find('span', class_='meta')
+            if radius_element:
+                radius_text = radius_element.get_text(strip=True)
+                radius_parts = radius_text.split()
+                # Ensure there's enough text to form the radius output
+                if 'miles' in radius_text:
+                    radius = radius_text.split("miles")[0].strip() + " miles away"
+                else:
+                    radius = "N/A"
+            else:
+                radius = "N/A"
+
+            # Extract phone number
+            phone_element = row.find('a', href=lambda href: href and href.startswith('tel:'))
+            phone = phone_element.get_text(strip=True) if phone_element else "N/A"
+
+            # Extract address
+            address_element = row.find('a', href=lambda href: 'maps' in href)
+            address = address_element.get_text(strip=True) if address_element else "N/A"
+            
+            # Retrieve the text of the second h3 (if needed)
+            second_h3 = row.find('h3').find_next('h3')
+            listing_info = second_h3.get_text(strip=True)
+
+            # Get the sibling span elements with the class 'meta'
+            status_details = [span.get_text(strip=True) for span in second_h3.find_next_siblings('span', class_='meta')]
+            status_details_string = ', '.join(status_details)
+
+            # Extract dealer inventory link
+            inventory_link_element = row.find('a', href=lambda href: 'inventory' in href)
+            inventory_link = inventory_link_element.get('href')
+            if inventory_link_element:
+                base_url = 'https://driverbase.com/'
+                custom_url = base_url + inventory_link
+            else:
+                inventory_link = "N/A"
+
+            all_data = []
+            dealer_info = extract_vehicle_info(custom_url,driver, all_data, header_data)
+            print(dealer_info)
+            sys.exit()
+
+            # # Extract dealer website link
+            all_links = row.find_all('a', href=True)
+            # Get the last <a> tag's href
+            if all_links:
+                website_link = all_links[-1].get('href')  # Get the href of the last link
+            else:
+                website_link = "N/A"
+
+            # Format and print the result
+            print(f"Title: {title}")
+            print(f"Radius: {radius}")
+            print(f"Phone: {phone}")
+            print(f"Address: {address}")
+            print(f"Listing number: {listing_info}")
+            print(f"Status details: {status_details_string}")
+            print(f"Dealer Inventory: {custom_url}")
+            print(f"Dealer Website: {website_link}\n")
+
+        time.sleep(3)
+
+    except AttributeError:
+        inventory_num = ''
+
+    # all_data = []
+    # data = extract_vehicle_info(URL,driver, all_data, HEADER)
+    number_of_pages = 3
+    for page in range(number_of_pages - 1):
+        if not navigate_to_next_page(driver, page):
+            break
+        extract_vehicle_info(custom_url,driver, all_data, header_data)
+
+
+    return all_data
 
 def main():
     # Set up logging (optional)
@@ -559,7 +730,7 @@ def main():
     conn, cursor, vehicle_csv_file, dealer_csv_file = setup_db_and_csv()
     # url_input = input('Write or Paste your URL : ')
     driver = initialize_webdriver()
-    targated_url = custom_url()
+    targated_url = custom_url(zip_code = 77007,zip_radius = 50)
 
     URL = targated_url
     HEADER = {
@@ -570,14 +741,8 @@ def main():
     driver.get(URL)
     logging.info("Waiting for the page to load")
 
-    all_data = []
-    data = extract_vehicle_info(URL,driver, all_data, HEADER)
-
-    number_of_pages = 3
-    for page in range(number_of_pages - 1):
-        if not navigate_to_next_page(driver, page):
-            break
-        extract_vehicle_info(URL, driver, all_data, HEADER)
+    dealer_data = []
+    dealer_info = extract_dealer_info(URL,driver, dealer_data, HEADER)
 
     driver.quit()
     # Clean up: Close the database connection
