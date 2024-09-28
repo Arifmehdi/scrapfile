@@ -367,9 +367,9 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
 def extract_vehicle_info(URL, driver, all_data, header_data):
 
     inventories_count = 0 
-
-    driver.execute_script("window.open(arguments[0], '_blank');", URL)
-    driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+    if URL:
+        driver.execute_script("window.open(arguments[0], '_blank');", URL)
+        driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
 
     try:
         data = WebDriverWait(driver, 10).until(
@@ -586,14 +586,20 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
         # # )
         # # return vehicle_data, dealer_data
         # return single_all_data, detail_vehicle_data ,infor
-        return single_all_data
-
+        number_of_pages = 3
+        for page in range(number_of_pages - 1):
+            if not navigate_to_next_page(driver, page):
+                break
+            extract_vehicle_info(custom_url==None,driver, all_data, header_data)
 
     except AttributeError:
         links = ''
 
+    return single_all_data
+
     driver.close()
     driver.switch_to.window(driver.window_handles[1])
+
 
 def extract_dealer_info(URL, driver, all_data, header_data):
     inventories_count = 0 
@@ -713,13 +719,6 @@ def extract_dealer_info(URL, driver, all_data, header_data):
 
     # all_data = []
     # data = extract_vehicle_info(URL,driver, all_data, HEADER)
-    number_of_pages = 3
-    for page in range(number_of_pages - 1):
-        if not navigate_to_next_page(driver, page):
-            break
-        extract_vehicle_info(custom_url,driver, all_data, header_data)
-
-
     return all_data
 
 def main():
