@@ -23,174 +23,74 @@ import re
 from mysql_connector import get_mysql_connection
 
 
-# def setup_db_and_csv():
-#     # Prepare SQLite3 connection and create tables if they don't exist
-#     conn = sqlite3.connect('driverbase.db')
-#     cursor = conn.cursor()
-
-#     # Create vehicles table
-#     cursor.execute('''
-#     CREATE TABLE IF NOT EXISTS vehicles (
-#         vehicle_name TEXT,
-#         status TEXT,
-#         price TEXT,
-#         vin TEXT,
-#         stock TEXT,
-#         mpg_city TEXT,
-#         mpg_highway TEXT,
-#         engine TEXT,
-#         transmission TEXT,
-#         dealer_id INTEGER,
-#         days_on_driverbase TEXT,
-#         views TEXT,
-#         image_url TEXT,
-#         custom_link TEXT,
-#         detail_price TEXT,
-#         detail_status TEXT,
-#         detail_engine TEXT,
-#         local_image_path TEXT,
-#         downloaded_image_paths TEXT,
-#         FOREIGN KEY (dealer_id) REFERENCES dealers(dealer_id)
-#     )
-#     ''')
-
-#     # Create dealers table
-#     cursor.execute('''
-#     CREATE TABLE IF NOT EXISTS dealers (
-#         dealer_id INTEGER PRIMARY KEY AUTOINCREMENT,
-#         dealer_href TEXT,
-#         dealer_text TEXT,
-#         detail_dealer_phone TEXT
-#     )
-#     ''')
-
-#     # Prepare CSV files only if they don't already exist
-#     vehicle_csv_file = 'vehicle_data.csv'
-#     dealer_csv_file = 'dealer_data.csv'
-
-#     vehicle_csv_headers = ['Vehicle', 'Status', 'Price', 'VIN', 'Stock', 'MPG City', 'MPG Highway', 'Engine', 
-#                            'Transmission', 'Dealer ID', 'Days on Driverbase', 'Views', 'Image URL', 'Custom Link', 
-#                            'Detail Price', 'Detail Status', 'Detail Engine', 'Single Local Image', 'Detail 5 Local Images']
-
-#     dealer_csv_headers = ['Dealer ID', 'Dealer Link', 'Dealer Text', 'Detail Dealer Phone']
-
-#     if not os.path.exists(vehicle_csv_file):
-#         with open(vehicle_csv_file, mode='w', newline='', encoding='utf-8') as file:
-#             writer = csv.writer(file)
-#             writer.writerow(vehicle_csv_headers)  # Write headers once
-#             logging.info(f"CSV file '{vehicle_csv_file}' created and headers written.")
-#     else:
-#         logging.info(f"CSV file '{vehicle_csv_file}' already exists. Skipping CSV creation.")
-
-#     if not os.path.exists(dealer_csv_file):
-#         with open(dealer_csv_file, mode='w', newline='', encoding='utf-8') as file:
-#             writer = csv.writer(file)
-#             writer.writerow(dealer_csv_headers)  # Write headers once
-#             logging.info(f"CSV file '{dealer_csv_file}' created and headers written.")
-#     else:
-#         logging.info(f"CSV file '{dealer_csv_file}' already exists. Skipping CSV creation.")
-
-#     return conn, cursor, vehicle_csv_file, dealer_csv_file
-
 def setup_db_and_csv():
-    # Connect to SQLite database (creates a new database if it doesn't exist)
-    conn = sqlite3.connect('driverbase_data.db')
+    # Prepare SQLite3 connection and create tables if they don't exist
+    conn = sqlite3.connect('driverbase.db')
     cursor = conn.cursor()
 
-    # Create tables for dealers, inventories, and inventory details
+    # Create vehicles table
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS dealers (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            dealer_id TEXT,
-            title TEXT,
-            radius TEXT,
-            phone TEXT,
-            address TEXT,
-            listing_info TEXT,
-            status_details TEXT,
-            custom_url TEXT,
-            website_link TEXT
-        )
+    CREATE TABLE IF NOT EXISTS vehicles (
+        vehicle_name TEXT,
+        status TEXT,
+        price TEXT,
+        vin TEXT,
+        stock TEXT,
+        mpg_city TEXT,
+        mpg_highway TEXT,
+        engine TEXT,
+        transmission TEXT,
+        dealer_id INTEGER,
+        days_on_driverbase TEXT,
+        views TEXT,
+        image_url TEXT,
+        custom_link TEXT,
+        detail_price TEXT,
+        detail_status TEXT,
+        detail_engine TEXT,
+        local_image_path TEXT,
+        downloaded_image_paths TEXT,
+        FOREIGN KEY (dealer_id) REFERENCES dealers(dealer_id)
+    )
     ''')
 
-    ### *** step 01             FOREIGN KEY(dealer_id) REFERENCES dealers(id),
+    # Create dealers table
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS vehicles (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            main_url TEXT,
-            base_url TEXT,
-            link TEXT,
-            cus_link TEXT,
-            vehicle_name TEXT,
-            status TEXT,
-            price TEXT,
-            miles TEXT,
-            join_details TEXT,
-            vin TEXT,
-            stock TEXT,
-            mpg_city TEXT,
-            mpg_highway TEXT,
-            engine TEXT,
-            transmission TEXT,
-            image_src TEXT,
-            local_image_path TEXT,
-            dealer_href TEXT,
-            dealer_text TEXT,
-            days_text TEXT,
-            views_text TEXT,
-            dealer_detail_full_name TEXT,
-            dealer_detail_google_map_link TEXT,
-            dealer_detail_telephone_no TEXT,
-            dealer_detail_listing_no TEXT,
-            dealer_detail_listing_status TEXT,
-            dealer_detail_link TEXT,
-            dealer_detail_website_link TEXT,
-            dealer_detail_about_text TEXT,
-            dealer_detail_about_details TEXT
-        )
+    CREATE TABLE IF NOT EXISTS dealers (
+        dealer_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        dealer_href TEXT,
+        dealer_text TEXT,
+        detail_dealer_phone TEXT
+    )
     ''')
 
-    # cursor.execute('''
-    #     CREATE TABLE IF NOT EXISTS inventory_details (
-    #         id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #         inventory_id INTEGER,
-    #         detail_key TEXT,
-    #         detail_value TEXT,
-    #         FOREIGN KEY(inventory_id) REFERENCES inventories(id)
-    #     )
-    # ''')
+    # Prepare CSV files only if they don't already exist
+    vehicle_csv_file = 'vehicle_data.csv'
+    dealer_csv_file = 'dealer_data.csv'
 
-    conn.commit()
+    vehicle_csv_headers = ['Vehicle', 'Status', 'Price', 'VIN', 'Stock', 'MPG City', 'MPG Highway', 'Engine', 
+                           'Transmission', 'Dealer ID', 'Days on Driverbase', 'Views', 'Image URL', 'Custom Link', 
+                           'Detail Price', 'Detail Status', 'Detail Engine', 'Single Local Image', 'Detail 5 Local Images']
 
-    # Create CSV files and writers for dealers, inventories, and inventory details
-    dealer_csv_file = open('dealers_info.csv', mode='a', newline='', encoding='utf-8')
-    inventory_csv_file = open('inventory_info.csv', mode='a', newline='', encoding='utf-8')
+    dealer_csv_headers = ['Dealer ID', 'Dealer Link', 'Dealer Text', 'Detail Dealer Phone']
 
-    ### *** step 02
-    # inventory_details_csv_file = open('inventory_details.csv', mode='a', newline='', encoding='utf-8')
+    if not os.path.exists(vehicle_csv_file):
+        with open(vehicle_csv_file, mode='w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow(vehicle_csv_headers)  # Write headers once
+            logging.info(f"CSV file '{vehicle_csv_file}' created and headers written.")
+    else:
+        logging.info(f"CSV file '{vehicle_csv_file}' already exists. Skipping CSV creation.")
 
-    dealer_csv_writer = csv.writer(dealer_csv_file)
-    inventory_csv_writer = csv.writer(inventory_csv_file)
+    if not os.path.exists(dealer_csv_file):
+        with open(dealer_csv_file, mode='w', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow(dealer_csv_headers)  # Write headers once
+            logging.info(f"CSV file '{dealer_csv_file}' created and headers written.")
+    else:
+        logging.info(f"CSV file '{dealer_csv_file}' already exists. Skipping CSV creation.")
 
-    ### *** step 03
-    # inventory_details_csv_writer = csv.writer(inventory_details_csv_file)
-
-    # Write headers if files are empty
-    if os.stat('dealers_info.csv').st_size == 0:
-        dealer_csv_writer.writerow(['Dealer ID', 'Title', 'Radius', 'Phone', 'Address', 'Listing Info', 'Status Details', 'Custom url', 'Website Link'])
-
-    if os.stat('inventory_info.csv').st_size == 0:
-        inventory_csv_writer.writerow(['Main URL', 'Base URL', 'Link', 'Custom Link', 'Vehicle Name', 'Status', 'Price', 'Miles', 'Join Details', 
-                                        'VIN', 'Stock', 'MPG CIty', 'MPG Highway', 'Engine', 'Transmission', 'Image src', 'Local Image Path', 'Dealer href',
-                                        'Dealer Text', 'Views Text', 'Dealer Detail full Name', 'Dealer Detail google map', 'Dealer Detail Telephone', 
-                                        'Dealer Detail Listing No', 'Dealer Detail  Listing Status', 'Dealer Detail Link', 'Dealer Detail Website Link', 
-                                        'Dealer Detail About Text', 'Dealer Detail About Details'])
-    ### *** step 04
-    # if os.stat('inventory_details.csv').st_size == 0:
-    #     inventory_details_csv_writer.writerow(['Inventory ID', 'Detail Key', 'Detail Value'])
-
-    return conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer
-
+    return conn, cursor, vehicle_csv_file, dealer_csv_file
 
 
 def store_data_in_csv_and_sqlite(vehicle_data, dealer_data, cursor, conn, vehicle_csv_file, dealer_csv_file):
@@ -271,8 +171,7 @@ def navigate_to_next_page(driver, page_number):
         return False
     return True
 
-
-# remote_image_url,local_directory,local_image_path
+    # remote_image_url,local_directory,local_image_path
 def download_image(remote_url, directory_location, local_image_path):
     time.sleep(3)
     # Check if the file already exists
@@ -465,7 +364,7 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
         
 
 
-def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
+def extract_vehicle_info(URL, driver, all_data, header_data):
 
     inventories_count = 0 
     if URL:
@@ -476,11 +375,8 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         data = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//table[@id="inventory_vehicles_table"]'))
         )
-    except Exception as e:
+    except AttributeError as e :
         logging.error("Timeout waiting for page to load: %s", e)
-        driver.close()
-        driver.switch_to.window(driver.window_handles[0])  # Switch back to the main window
-        return
 
         # Close the detail tab and switch back to the main window
 
@@ -494,6 +390,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         dealer_detail_google_map_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//span//a[1]').text
         dealer_detail_telephone_no = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//span//a[2]').text
         dealer_detail_listing_no = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[1]').text
+        dealer_detail_listing_status = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[2]').text
         dealer_detail_listing_status = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[2]').text
         dealer_detail_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//div//span[1]//a').get_attribute('href')
         dealer_detail_website_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//div//span[2]//a').get_attribute('href')
@@ -550,12 +447,11 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             details = [detail.text.strip() for detail in row.find_all('small')]
 
             miles_elements = row.find_all('h4')
-            miles = miles_elements[1].text.strip() if len(miles_elements) > 1 else None
-            # # Extract the second h4 text
-            # if len(miles_elements) > 1:
-            #     miles = miles_elements[1].text.strip()
-            # else:
-            #     miles = None
+            # Extract the second h4 text
+            if len(miles_elements) > 1:
+                miles = miles_elements[1].text.strip()
+            else:
+                miles = None
 
             details_data = row.find_all('small')
             vin = stock = mpg_city = mpg_highway = engine = transmission = "Not found"
@@ -672,44 +568,12 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                 # 'custom_state': custom_state,
             }
 
-                        # Insert into SQLite
-            cursor.execute('''
-                INSERT INTO vehicles (main_url, base_url, link, cus_link, vehicle_name, status, price, miles, join_details, 
-                                        vin, stock, mpg_city, mpg_highway, engine, transmission, image_src, local_image_path, dealer_href ,
-                                        dealer_text, days_text, views_text, dealer_detail_full_name, dealer_detail_google_map_link, 
-                                        dealer_detail_telephone_no, dealer_detail_listing_no, dealer_detail_listing_status, dealer_detail_link, 
-                                        dealer_detail_website_link, dealer_detail_about_text, dealer_detail_about_details
-                                    )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?)
-            ''', (URL, base_url, link, cus_link, vehicle_name, status, price, miles, join_details, 
-                    vin, stock, mpg_city, mpg_highway, engine, transmission, image_src, local_image_path, dealer_href, 
-                    dealer_text, days_text, views_text, dealer_detail_full_name, dealer_detail_google_map_link, 
-                    dealer_detail_telephone_no, dealer_detail_listing_no, dealer_detail_listing_status, dealer_detail_link, 
-                    dealer_detail_website_link, dealer_detail_about_text, dealer_detail_about_details
-                ))
-            conn.commit()
-
-            # dealer_id = cursor.lastrowid 
-
-            # Write to dealers CSV
-            csv_writers[1].writerow([URL, base_url, link, 
-                                    cus_link, vehicle_name, status,
-                                    price, miles, join_details, 
-                                    vin, stock, mpg_city, 
-                                    mpg_highway, engine, transmission, 
-                                    image_src, local_image_path, dealer_href, 
-                                    dealer_text, days_text, views_text, 
-                                    dealer_detail_full_name, dealer_detail_google_map_link, dealer_detail_telephone_no, 
-                                    dealer_detail_listing_no, dealer_detail_listing_status, dealer_detail_link, 
-                                    dealer_detail_website_link, dealer_detail_about_text, dealer_detail_about_details])
-
             # Append the single vehicle's data to all_data
             single_all_data.append(single_vehicle_data)
 
             detail_vehicle_data =[]
-            # infor = scrape_detail_page(driver, detail_vehicle_data, single_vehicle_data, link)
-            
-            # print(infor)
+            infor = scrape_detail_page(driver, detail_vehicle_data, single_vehicle_data, link)
+            print(infor)
             print('*'*40)
 
         # # vehicle_data = (
@@ -726,20 +590,19 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         for page in range(number_of_pages - 1):
             if not navigate_to_next_page(driver, page):
                 break
-            extract_vehicle_info(None,driver, conn, cursor, csv_writers, all_data, header_data)
+            extract_vehicle_info(custom_url==None,driver, all_data, header_data)
 
-    except Exception as e:
-        logging.error("Error occurred while extracting vehicle information: %s", e)
-
-    finally:
-        driver.close()
-        driver.switch_to.window(driver.window_handles[0])  # Switch back to the main window
-
-    return single_all_data  # Return the collected data
+    except AttributeError:
+        links = ''
 
 
-def extract_dealer_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
-    
+
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
+    return single_all_data
+
+
+def extract_dealer_info(URL, driver, all_data, header_data):
     inventories_count = 0 
     try:
         data = WebDriverWait(driver, 10).until(
@@ -822,15 +685,14 @@ def extract_dealer_info(URL, driver, conn, cursor, csv_writers, all_data, header
             inventory_link_element = row.find('a', href=lambda href: 'inventory' in href)
             inventory_link = inventory_link_element.get('href')
             if inventory_link_element:
-                base_url = 'https://driverbase.com'
+                base_url = 'https://driverbase.com/'
                 custom_url = base_url + inventory_link
             else:
                 inventory_link = "N/A"
 
             all_data = []
-            
-            dealer_info = extract_vehicle_info(custom_url,driver, conn, cursor, csv_writers, all_data, header_data)
-            # print(dealer_info) URL,driver, conn, cursor, csv_writers, all_data, header_data
+            dealer_info = extract_vehicle_info(custom_url,driver, all_data, header_data)
+            # print(dealer_info)
             # sys.exit()
 
             # # Extract dealer website link
@@ -841,7 +703,6 @@ def extract_dealer_info(URL, driver, conn, cursor, csv_writers, all_data, header
             else:
                 website_link = "N/A"
 
-
             # Format and print the result
             print(f"Title: {title}")
             print(f"Radius: {radius}")
@@ -851,48 +712,22 @@ def extract_dealer_info(URL, driver, conn, cursor, csv_writers, all_data, header
             print(f"Status details: {status_details_string}")
             print(f"Dealer Inventory: {custom_url}")
             print(f"Dealer Website: {website_link}\n")
-            
 
-
-            dealer_id = "D-24770071"
-            # Insert into SQLite
-            cursor.execute('''
-                INSERT INTO dealers (dealer_id,title, radius, phone, address, listing_info, status_details, custom_url, website_link)
-                VALUES (?,?, ?, ?, ?, ?, ?, ?, ?)
-            ''', (dealer_id, title, radius, phone, address, listing_info, status_details_string, custom_url, website_link))
-            conn.commit()
-
-            # dealer_id = cursor.lastrowid 
-
-            # Write to dealers CSV
-            csv_writers[0].writerow([dealer_id, title, radius, phone, address, listing_info, status_details_string, custom_url, website_link])
-
-            # Write to CSV
-            # csv_writer.writerow([title, radius, phone, address, listing_info, status_details_string, inventory_link, website_link])
-        data.quit()
         time.sleep(3)
 
     except AttributeError:
         inventory_num = ''
 
     # all_data = []
-    ### *** step 0000
     # data = extract_vehicle_info(URL,driver, all_data, HEADER)
-    # data = extract_vehicle_info(URL,driver, conn, cursor, csv_writers, all_data, header_data)
-
     return all_data
 
 def main():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
     
-
-    # Setup SQLite and CSV writers
-     ### *** step 00
-    # conn, cursor, dealer_csv_file, inventory_csv_file, inventory_details_csv_file, dealer_csv_writer, inventory_csv_writer, inventory_details_csv_writer = setup_db_and_csv()
-    conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer  = setup_db_and_csv()
-
-    # conn, cursor, dealer_csv_file, csv_writer = setup_db_and_csv()
+    # Setup database and CSV
+    conn, cursor, dealer_csv_file, csv_writer = setup_db_and_csv()
     # conn, cursor, vehicle_csv_file, dealer_csv_file = setup_db_and_csv()
     
     # url_input = input('Write or Paste your URL : ')
@@ -909,19 +744,9 @@ def main():
     logging.info("Waiting for the page to load")
 
     dealer_data = []
-    ### *** step 001
-    # extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer, inventory_details_csv_writer), dealer_data, HEADER)
-    extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer,), dealer_data, HEADER)
-    # dealer_info = extract_dealer_info(URL,driver,conn, cursor, csv_writer, dealer_data, HEADER)
+    dealer_info = extract_dealer_info(URL,driver, dealer_data, HEADER)
 
     driver.quit()
-    # Close all files and connections
-    dealer_csv_file.close()
-
-    ### *** step 002
-    inventory_csv_file.close()
-    # inventory_details_csv_file.close()
-
     # Clean up: Close the database connection
     conn.close()
 
