@@ -21,7 +21,7 @@ import logging
 import sys
 
 import re
-from mysql_connector import get_mysql_connection
+# from mysql_connector import get_mysql_connection
 
 
 # def setup_db_and_csv():
@@ -247,12 +247,13 @@ def initialize_webdriver():
         logging.error(f"Error initializing WebDriver: {e}")
         sys.exit(1)
 
-def custom_url(zip_code,zip_radius):
-    base_url = "https://driverbase.com/"
-    addition_url = f"dealers/map?search.Zip={zip_code}&search.DistanceFromZip={zip_radius}"
-    targated_url  = base_url+addition_url
+def custom_url():
+    
+    base_url = "https://www.cargurus.com/Cars/mobile/requestZipForDealersNearMe.action"
+    # addition_url = f"dealers/map?search.Zip={zip_code}&search.DistanceFromZip={zip_radius}"
+    # targated_url  = base_url+addition_url
 
-    return targated_url
+    return base_url
 
 
 def get_page_content_hash(driver):
@@ -479,9 +480,8 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
     driver.switch_to.window(window_handles[1])
     return detail_vehicle_info
         
-
-
-def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
+# def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
+def extract_vehicle_info(URL, driver, all_data, header_data):
 
     inventories_count = 0 
     if URL:
@@ -491,8 +491,38 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
     try:
         while True:  # Loop through pages
             data = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, '//table[@id="inventory_vehicles_table"]'))
+                EC.presence_of_element_located((By.XPATH, '//main[@id="main"]'))
             )
+            dealer_name = data.find_element(By.XPATH,'//div[@class="dealerDetailsHeader"]//h1').text
+            dealer_address = data.find_element(By.XPATH,'//div[@class="dealerDetailsInfo"]').text
+
+            inventory_obj = data.find_element(By.XPATH,'//div[@class="fzhq3E"]').text
+
+
+            html_content = inventory_obj.get_attribute('innerHTML')
+            soup = BeautifulSoup(html_content, 'html.parser')
+            
+            file_path = 'upload/driverbase_detail_html.txt'
+
+
+            if not os.path.exists(file_path):
+                os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+                with open(file_path, 'w', encoding='utf-8') as file:
+                    file.write(soup.prettify())
+
+                logging.info(f"HTML content saved to {file_path}")
+            else:
+                logging.info(f"{file_path} already exists. No file created.")
+
+            rows = soup.find_all('div', class_='pazLTN')
+            for row in rows:
+                print(row)
+
+            return dealer_name, dealer_address
+
+
+
         # except Exception as e:
         #     logging.error("Timeout waiting for page to load: %s", e)
         #     driver.close()
@@ -757,7 +787,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         driver.close()
         driver.switch_to.window(driver.window_handles[0])
 
-    return single_all_data
+    return dealer_name, dealer_address
 
 
 def extract_dealer_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
@@ -908,18 +938,10 @@ def main():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
     
+    # conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer  = setup_db_and_csv()
 
-    # Setup SQLite and CSV writers
-     ### *** step 00
-    # conn, cursor, dealer_csv_file, inventory_csv_file, inventory_details_csv_file, dealer_csv_writer, inventory_csv_writer, inventory_details_csv_writer = setup_db_and_csv()
-    conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer  = setup_db_and_csv()
-
-    # conn, cursor, dealer_csv_file, csv_writer = setup_db_and_csv()
-    # conn, cursor, vehicle_csv_file, dealer_csv_file = setup_db_and_csv()
-    
-    # url_input = input('Write or Paste your URL : ')
-    driver = initialize_webdriver()
-    targated_url = custom_url(zip_code = 77007,zip_radius = 50)
+    main = initialize_webdriver()
+    targated_url = custom_url()
 
     URL = targated_url
     HEADER = {
@@ -927,25 +949,117 @@ def main():
         'Accept-Language': 'en-US,en;q=0.5'
     }
     logging.info(URL)
-    driver.get(URL)
-    logging.info("Waiting for the page to load")
+    main.get(URL)
 
-    dealer_data = []
-    ### *** step 001
-    # extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer, inventory_details_csv_writer), dealer_data, HEADER)
-    extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer,), dealer_data, HEADER)
-    # dealer_info = extract_dealer_info(URL,driver,conn, cursor, csv_writer, dealer_data, HEADER)
+    driver = WebDriverWait(main, 10).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="addressTyped"]')))
 
-    driver.quit()
-    # Close all files and connections
-    dealer_csv_file.close()
+    input_element = driver.find_element(By.XPATH, '//input[@id="addressTyped"]')
+    input_element.clear()
+    input_element.send_keys("77007") 
 
-    ### *** step 002
-    inventory_csv_file.close()
+    select_element = driver.find_element(By.XPATH, '//select[@id="refine-search-distance"]')
+    select = Select(select_element)
+    # select.select_by_value("50")
+    select.select_by_value("10")
+
+
+    logging.info("Filled out the form fields")
+
+
+    submit_button = WebDriverWait(main, 10).until(
+        EC.element_to_be_clickable((By.XPATH, '//button[@type="submit"]'))
+    )
+    submit_button.click()
+
+    logging.info("Clicked the submit button")
+
+    single_driver = WebDriverWait(main, 10).until(EC.element_to_be_clickable((By.XPATH, '//section[@class="results"]')))
+    single_header = single_driver.find_element(By.XPATH,'//div[@class="headerSort"]//h1').text
+    single_dealer_num = single_driver.find_element(By.XPATH,'//span[@class="searchDescription"]').text
+
+    html_content = single_driver.get_attribute('innerHTML')
+    soup = BeautifulSoup(html_content, 'html.parser')
+    file_path = 'upload/cargurus_html.txt'
+
+    if not os.path.exists(file_path):
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(soup.prettify())
+
+        logging.info(f"HTML content saved to {file_path}")
+    else:
+        logging.info(f"{file_path} already exists. No file created.")
+
+    # dealer_datas  = single_driver.find_elements(By.XPATH,'//div[@class="blade"]')
+    dealerships = soup.find_all('div', class_='blade')
+    for dealer in dealerships:
+        name = dealer.find('strong').text.strip()
+        inventory_link = dealer.find('a', class_='viewInventory')['href']
+        address = dealer.find('div', class_='address').text.strip()
+
+        dealer_data = []
+        # extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer,), dealer_data, HEADER)
+        name, address = extract_vehicle_info(inventory_link, main, dealer_data, HEADER)
+        print(name)
+        print(address)
+
+
+        rating_element = dealer.find('div', class_='dealerRating')
+        if rating_element:
+            rating = rating_element.find('strong', class_='averageOverallRating').text.strip()
+        else:
+            rating = "N/A"
+
+
+        if rating_element:
+            reviews_count = rating_element.text.strip().replace(' ','').replace(' Shopper reviews','')
+
+            cleaned_reviews_count = reviews_count.strip()
+            match = re.search(r'\((\d+)\)', cleaned_reviews_count)
+            if match:
+                review_count_only = match.group(1)  # Get the first captured group (the number)
+
+        else:
+            review_count_only = "N/A"
+
+        
+        review_element = dealer.find('blockquote')
+        if review_element:
+            review_text = review_element.text.strip()
+        else:
+            review_text = "No reviews available"
+
+        img_wrapper = dealer.find('div', class_='imgWrapper')
+        if img_wrapper:
+            img_element = img_wrapper.find('img')
+            img_src = img_element['src'] if img_element else "No image"
+        else:
+            img_src = "No image"
+
+        # print(f"{name}\nView inventory: {inventory_link}\n{address}\nRating: {rating} ({reviews_count})\nReview: {review_text}\nImage: {img_src}\n")
+        print(f"Name :{name}\nView inventory: {inventory_link}\n Address :{address}\nReview: {review_text}\nRating: {rating}\nReview Count: {review_count_only}\nImage: {img_src}")
+        print('*'*40)
+    
+
+    # for data in dealer_datas:
+
+
+    information = {
+        'single_header' : single_header,
+        'single_dealer_num' : single_dealer_num,
+    }
+
+    print(information)
+    
+    time.sleep(10)
+    main.quit()
+
+    # dealer_csv_file.close()   blade
+    # inventory_csv_file.close()
     # inventory_details_csv_file.close()
 
     # Clean up: Close the database connection
-    conn.close()
+    # conn.close()
 
 if __name__ == "__main__":
     main()
