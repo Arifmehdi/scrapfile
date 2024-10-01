@@ -214,6 +214,28 @@ def setup_db_and_csv():
 
 
 
+# Function to check if a dealer exists in the SQLite database
+def get_existing_dealer_id(cursor, name, full_address, zip_code):
+    cursor.execute('''
+        SELECT dealer_id FROM dealers 
+        WHERE name = ? AND dealer_full_address = ? AND zip = ?
+    ''', (name, full_address, zip_code))
+    result = cursor.fetchone()
+    return result[0] if result else None
+
+# Function to generate a new dealer ID
+def get_new_dealer_id(cursor):
+    cursor.execute('''
+        SELECT dealer_id FROM dealers ORDER BY dealer_id DESC LIMIT 1
+    ''')
+    last_id = cursor.fetchone()
+    if last_id:
+        # Increment the numeric part of the last dealer ID
+        last_id_number = int(last_id[0].split('-')[1])
+        return f"D-{last_id_number + 1}"
+    else:
+        return "D-24770071"  # Start from this ID if no dealers exist
+
 def store_data_in_csv_and_sqlite(vehicle_data, dealer_data, cursor, conn, vehicle_csv_file, dealer_csv_file):
     # Unpack vehicle and dealer data
     (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
@@ -883,15 +905,46 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         name = dealer.find('strong').text.strip()
         inventory_link = dealer.find('a', class_='viewInventory')['href']
         inventory_link_cus = base_url+inventory_link
+        # address = dealer.find('div', class_='address').text.strip()
+        # address_parts = address.split('\n')         # First part is the actual address (e.g., '4119 Blanco Rd, San Antonio, TX 78212')
+        # actual_address = address_parts[0].strip()           # Split the actual address into its subcomponents
+        # address_details = actual_address.split(',')
+        # street_address = address_details[0].strip()          # Extract the street address, city, state, and zip code # '4119 Blanco Rd'
+        # city = address_details[1].strip()  # 'San Antonio'
+        # state_zip = address_details[2].strip().split()  # ['TX', '78212']
+        # state = state_zip[0]
+        # zip_code = state_zip[1]
+
         address = dealer.find('div', class_='address').text.strip()
-        address_parts = address.split('\n')         # First part is the actual address (e.g., '4119 Blanco Rd, San Antonio, TX 78212')
-        actual_address = address_parts[0].strip()           # Split the actual address into its subcomponents
+
+        # Split the address into parts based on newline and commas
+        address_parts = address.split('\n')
+
+        # Get the full address without the radius part
+        actual_address = address_parts[0].strip()
+
+        # Split the actual address by commas
         address_details = actual_address.split(',')
-        street_address = address_details[0].strip()          # Extract the street address, city, state, and zip code # '4119 Blanco Rd'
-        city = address_details[1].strip()  # 'San Antonio'
-        state_zip = address_details[2].strip().split()  # ['TX', '78212']
-        state = state_zip[0]
-        zip_code = state_zip[1]
+
+        # Extract the city, state, and zip from the last two parts
+        city = address_details[-2].strip()  # Always the second to last part
+        state_zip = address_details[-1].strip().split()  # The last part contains state and zip
+        state = state_zip[0]  # State (e.g., 'TX')
+        zip_code = state_zip[1]  # Zip code (e.g., '78237')
+        full_address = ', '.join(address_details[:-2]).strip()  # The address before city
+
+        # Check if dealer already exists
+        existing_dealer_id = get_existing_dealer_id(cursor, name, full_address, zip_code)
+        if existing_dealer_id:
+            dealer_id = existing_dealer_id  # Use existing dealer ID
+        else:
+            dealer_id = get_new_dealer_id(cursor)  # Generate a new unique dealer ID
+        # Combine everything before the city as the full address (including any suite numbers if present)
+
+
+        # Extract the radius, if it exists
+        radius = address_parts[1].strip() if len(address_parts) > 1 else None
+        radius = radius.replace("(", "").replace(")", "") if radius else None
 
         # If there is a distance, extract it
         radius = address_parts[1].strip() if len(address_parts) > 1 else None
@@ -945,7 +998,7 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
             'Address' : address_cus,
             'City' : city,
             'State' : state,
-            'Dealer Full Address' : address,
+            'Dealer Full Address' : full_address,
             'Zip' : zip_code,
             'About Dealer' : review_text,
             'Image' : img_src,
@@ -967,7 +1020,7 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
 
         # Write to dealers CSV
         # csv_writers[0].writerow([dealer_id, title, radius, phone, address, listing_info, status_details_string, custom_url, website_link])
-        dealer_csv_writer.writerow([dealer_id, name, phone, address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, radius, rating, review_count_only, inventory_link_cus ])
+        dealer_csv_writer.writerow([dealer_id, name, phone, full_address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, radius, rating, review_count_only, inventory_link_cus ])
 
     return single_all_data
     try:
