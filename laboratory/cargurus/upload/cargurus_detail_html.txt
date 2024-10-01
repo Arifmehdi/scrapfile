@@ -1,0 +1,3160 @@
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=384691450/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2015 Honda Accord Coupe EX-L V6 Coupe Front-Wheel Drive Continuously Variable Transmission" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="high" src="https://static.cargurus.com/images/forsale/2024/05/14/14/41/2015_honda_accord_coupe-pic-4582361734811600060-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2015 Honda Accord Coupe EX-L V6">
+         2015 Honda Accord Coupe EX-L V6
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         142,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         278 hp 3.5L V6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $10,995
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $232/mo
+         </span>
+         <button aria-controls="radix-5" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Leather Seats · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-384691450" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2015 Honda Accord Coupe EX-L V6
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2015
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Accord Coupe
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Coupe
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      2 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      278 hp 3.5L V6
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      142,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      004222
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1HGCT2B84FA004222
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=388288258/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2014 Nissan Maxima SV Sedan Front-Wheel Drive Continuously Variable Transmission" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/06/11/03/16/2014_nissan_maxima-pic-3046165869133719110-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2014 Nissan Maxima SV">
+         2014 Nissan Maxima SV
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         127,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         290 hp 3.5L V6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $7,995
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $169/mo
+         </span>
+         <button aria-controls="radix-6" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       LE Package · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-388288258" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2014 Nissan Maxima SV
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2014
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Nissan
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Maxima
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      290 hp 3.5L V6
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      127,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      4
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      914683
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1N4AA5AP1EC914683
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=383052302/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2013 Ford Fusion SE Sedan Front-Wheel Drive 6-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/04/11/00/44/2013_ford_fusion-pic-6028430093867427802-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2013 Ford Fusion SE">
+         2013 Ford Fusion SE
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         121,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         1.6L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $7,500
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $158/mo
+         </span>
+         <button aria-controls="radix-7" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Alloy Wheels
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-383052302" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2013 Ford Fusion SE
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2013
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Ford
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Fusion
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      1.6L I4
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      121,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      360671
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      3FA6P0HR8DR360671
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=395659210/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2019 Volkswagen Passat 2.0T SE R-Line FWD Sedan Front-Wheel Drive 6-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/09/10/00/55/2019_volkswagen_passat-pic-4434285388873920722-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2019 Volkswagen Passat 2.0T SE R-Line FWD">
+         2019 Volkswagen Passat 2.0T SE R-Line FWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         86,952 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         174 hp 2L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $13,395
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $275/mo
+         </span>
+         <button aria-controls="radix-8" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA OjhRM" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp OjhRM">
+          Great Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Sunroof/Moonroof · Navigation System · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-395659210" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2019 Volkswagen Passat 2.0T SE R-Line FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2019
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Volkswagen
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Passat
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      174 hp 2L I4
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      86,952
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      002771
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1VWMA7A36KC002771
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=390348966/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2016 Ford F-150 Lariat SuperCrew 4WD Pickup Truck Four-Wheel Drive 6-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/07/23/09/02/2016_ford_f-150-pic-7616740688108176602-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2016 Ford F-150 Lariat SuperCrew 4WD">
+         2016 Ford F-150 Lariat SuperCrew 4WD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         166,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         5L V8 Flex Fuel Vehicle
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $16,550
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $348/mo
+         </span>
+         <button aria-controls="radix-9" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA OjhRM" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp OjhRM">
+          Great Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Power Package · Navigation System · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-390348966" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2016 Ford F-150 Lariat SuperCrew 4WD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2016
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Ford
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      F-150
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Pickup Truck
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Four-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      5L V8 Flex Fuel Vehicle
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Flex Fuel Vehicle
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      166,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      E75842
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1FTFW1EF6GKE75842
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=396427211/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2011 Toyota Camry LE Sedan Front-Wheel Drive 6-Speed Automatic Overdrive" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/09/18/22/12/2011_toyota_camry-pic-3695688484321749256-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+        <span class="uSB4CD" data-eyebrow="NEW_ARRIVAL" data-testid="eyebrow-element">
+         New arrival
+        </span>
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2011 Toyota Camry LE">
+         2011 Toyota Camry LE
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         168,525 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         169 hp 2.5L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $6,995
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $148/mo
+         </span>
+         <button aria-controls="radix-10" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Steel Wheels · Bluetooth
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396427211" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2011 Toyota Camry LE
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2011
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Toyota
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Camry
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      169 hp 2.5L I4
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic Overdrive
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      168,525
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      3
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      123438
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      4T4BF3EK7BR123438
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="ranxnv M0betF">
+ <div class="M6t4m5 leaderboard_inline leaderboard_inline-container" id="bannerAdLEADERBOARD_INLINE_1-container">
+  <div aria-hidden="true" class="leaderboard_inline" id="bannerAdLEADERBOARD_INLINE_1_1">
+   <div id="google_ads_iframe_/19485787/CarGurus.com/Search_Results_Page/desktop/inline_1/728x90_0__container__" style="border: 0pt none;">
+   </div>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=381806996/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2016 Honda Odyssey EX-L FWD with RES Minivan Front-Wheel Drive 6-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/03/26/02/25/2016_honda_odyssey-pic-2712971685401188542-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2016 Honda Odyssey EX-L FWD with RES">
+         2016 Honda Odyssey EX-L FWD with RES
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         136,178 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         248 hp 3.5L V6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $12,995
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $274/mo
+         </span>
+         <button aria-controls="radix-11" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Leather Seats · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-381806996" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2016 Honda Odyssey EX-L FWD with RES
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2016
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Odyssey
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Minivan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      248 hp 3.5L V6
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      136,178
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      075245
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      5FNRL5H67GB075245
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=380822901/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2011 Kia Optima EX Sedan Front-Wheel Drive 6-Speed Automatic Overdrive" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/04/03/06/54/2011_kia_optima-pic-2473641089699874961-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2011 Kia Optima EX">
+         2011 Kia Optima EX
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         132,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         200 hp 2.4L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $7,295
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $154/mo
+         </span>
+         <button aria-controls="radix-12" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Leather Seats · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-380822901" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2011 Kia Optima EX
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2011
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Kia
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Optima
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      200 hp 2.4L I4
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic Overdrive
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      132,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      128947
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      KNAGN4A71B5128947
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=383719466/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2010 Volvo XC60 T6 AWD SUV / Crossover All-Wheel Drive 6-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/04/18/07/09/2010_volvo_xc60-pic-114434686249288457-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2010 Volvo XC60 T6 AWD">
+         2010 Volvo XC60 T6 AWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         141,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         281 hp 3L I6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $5,695
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $120/mo
+         </span>
+         <button aria-controls="radix-13" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA FB2qj" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp FB2qj">
+          Fair Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Alloy Wheels · Bluetooth
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-383719466" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2010 Volvo XC60 T6 AWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2010
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Volvo
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      XC60
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      SUV / Crossover
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      All-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      281 hp 3L I6
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      141,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      020138
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      YV4992DZ0A2020138
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=392760499/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt="White 2017 INFINITI QX60 FWD SUV / Crossover Front-Wheel Drive Continuously Variable Transmission" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static.cargurus.com/images/forsale/2024/09/05/07/00/2017_infiniti_qx60-pic-7945709142939646520-1024x768.jpeg?io=true&amp;width=640&amp;height=480&amp;fit=bounds&amp;format=jpg&amp;auto=webp"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2017 INFINITI QX60 FWD">
+         2017 INFINITI QX60 FWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         81,830 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         295 hp 3.5L V6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $14,450
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $304/mo
+         </span>
+         <button aria-controls="radix-14" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Leather Seats · Driver Assistance Package · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-392760499" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2017 INFINITI QX60 FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2017
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      INFINITI
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      QX60
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      SUV / Crossover
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      295 hp 3.5L V6
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      White
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      81,830
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      505298
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      5N1DL0MN4HC505298
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=385480451/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2012 Honda CR-V EX-L FWD SUV / Crossover Front-Wheel Drive 5-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2012 Honda CR-V EX-L FWD">
+         2012 Honda CR-V EX-L FWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         156,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         185 hp 2.4L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $9,750
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $205/mo
+         </span>
+         <button aria-controls="radix-15" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Sunroof/Moonroof · Alloy Wheels · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-385480451" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2012 Honda CR-V EX-L FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2012
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      CR-V
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      SUV / Crossover
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      185 hp 2.4L I4
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      5-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      156,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      008157
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      5J6RM3H70CL008157
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=391507256/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt="Black 2016 Honda Fit EX Hatchback Front-Wheel Drive Continuously Variable Transmission" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2016 Honda Fit EX">
+         2016 Honda Fit EX
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         176,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         130 hp 1.5L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $7,295
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $154/mo
+         </span>
+         <button aria-controls="radix-16" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Sunroof/Moonroof · Alloy Wheels · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-391507256" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2016 Honda Fit EX
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2016
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Fit
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Hatchback
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      130 hp 1.5L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      176,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      036338
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      JHMGK5H77GX036338
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="ranxnv M0betF">
+ <div class="M6t4m5 leaderboard_inline leaderboard_inline-container" id="bannerAdLEADERBOARD_INLINE_2-container">
+  <div aria-hidden="true" class="leaderboard_inline" id="bannerAdLEADERBOARD_INLINE_2_1">
+   <div id="google_ads_iframe_/19485787/CarGurus.com/Search_Results_Page/desktop/inline_2/728x90_0__container__" style="border: 0pt none; display: inline-block;">
+   </div>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=395659211/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2011 Lexus RX 350 FWD SUV / Crossover Front-Wheel Drive 6-Speed Automatic Overdrive" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2011 Lexus RX 350 FWD">
+         2011 Lexus RX 350 FWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         151,950 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         275 hp 3.5L V6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $10,995
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $232/mo
+         </span>
+         <button aria-controls="radix-17" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Sunroof/Moonroof · Navigation System · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-395659211" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2011 Lexus RX 350 FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2011
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Lexus
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      RX
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      SUV / Crossover
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      275 hp 3.5L V6
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic Overdrive
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      151,950
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      046932
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      2T2ZK1BA0BC046932
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=384101032/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt="Red 2014 Toyota Corolla S Plus Sedan Front-Wheel Drive Continuously Variable Transmission" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2014 Toyota Corolla S Plus">
+         2014 Toyota Corolla S Plus
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         96,952 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         132 hp 1.8L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $11,675
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $246/mo
+         </span>
+         <button aria-controls="radix-18" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA OjhRM" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp OjhRM">
+          Great Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Alloy Wheels · Bluetooth · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-384101032" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2014 Toyota Corolla S Plus
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2014
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Toyota
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Corolla
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      132 hp 1.8L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Red
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      96,952
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      142877
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      5YFBURHE9EP142877
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=390302320/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt=" 2014 Volkswagen Jetta SE Sedan Front-Wheel Drive 6-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2014 Volkswagen Jetta SE">
+         2014 Volkswagen Jetta SE
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         102,950 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         170 hp 1.8L I4
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $8,450
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $178/mo
+         </span>
+         <button aria-controls="radix-19" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Steel Wheels · Bluetooth · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-390302320" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2014 Volkswagen Jetta SE
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2014
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Volkswagen
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Jetta
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      170 hp 1.8L I4
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      6-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      102,950
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      327337
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      3VWD07AJ9EM327337
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=391499735/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt="White 2008 Honda Civic Hybrid FWD Sedan Front-Wheel Drive Continuously Variable Transmission" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2008 Honda Civic Hybrid FWD">
+         2008 Honda Civic Hybrid FWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         127,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         110 hp 1.3L I4 Hybrid
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $6,475
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $137/mo
+         </span>
+         <button aria-controls="radix-20" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA gmlYg" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp gmlYg">
+          Good Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Alloy Wheels
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-391499735" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2008 Honda Civic Hybrid FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2008
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Civic Hybrid
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      110 hp 1.3L I4 Hybrid
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      White
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Hybrid
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Gold
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      127,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      027153
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      JHMFA36248S027153
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- I7pNLe">
+   <a class="Z0_BC0 ZGMXbN kKD2eQ" data-testid="car-blade-link" href="#listing=383249493/NONE/DEFAULT">
+    <div class="k4JpbD">
+     <div class="">
+      <div class="aAbztQ MgMiiG" data-testid="srp-tile-image-standard">
+       <img alt="Gray 2018 INFINITI Q60 3.0t Luxe Coupe RWD Coupe Rear-Wheel Drive 7-Speed Automatic" class="Z62pa kg9uZo" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS wJnPuH" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF o8vUuy">
+     <div class="k4FSCT" data-cg-ft="srp-listing-blade" data-testid="seo-srp-tile-body-wrapper">
+      <div>
+       <div class="h4ql4O cECUeg" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="gN7yGT" data-cg-ft="srp-listing-blade-title" title="2018 INFINITI Q60 3.0t Luxe Coupe RWD">
+         2018 INFINITI Q60 3.0t Luxe Coupe RWD
+        </h4>
+       </div>
+      </div>
+      <div class="YlkCzK">
+       <div class="EeLi0s">
+        <p class="us1dS iK3Zj kIL3VY" data-testid="srp-tile-mileage">
+         52,852 mi
+        </p>
+        <p class="us1dS iK3Zj kIL3VY" data-testid="seo-srp-tile-engine-display-name">
+         300 hp 3L V6
+        </p>
+       </div>
+       <div class="Lxkk9T">
+        <h4 class="us1dS i5dPf ulx4Y8" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         $24,450
+        </h4>
+        <div class="VMHXDn">
+         <span class="R1T5Pw">
+          Est. $514/mo
+         </span>
+         <button aria-controls="radix-21" aria-expanded="false" aria-haspopup="dialog" aria-label="Estimated payment information" class="oZpTEy" data-state="closed" data-testid="srp-tile-payment" type="button">
+          <svg aria-hidden="true" class="svg-inline--fa fa-info-circle fa-w-16 fa-sm" data-icon="info-circle" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+           <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-36 344h12V232h-12c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h48c6.627 0 12 5.373 12 12v140h12c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12h-72c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12zm36-240c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32z" fill="currentColor">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
+      </div>
+      <div class="XiRK7a" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 fpgZW0">
+        <span aria-hidden="true" class="OBJGA FB2qj" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp FB2qj">
+          Fair Deal
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-options-list">
+       Sunroof/Moonroof · Alloy Wheels · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="q7Zi1K Qc4mOg" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD _8KIJA QXloi _9laKps" data-testid="button-phone-number">
+        (210) 796-7446
+       </button>
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Check availability
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      San Antonio, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-383249493" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2018 INFINITI Q60 3.0t Luxe Coupe RWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2018
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      INFINITI
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Q60
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Coupe
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      2 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Rear-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      300 hp 3L V6
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Gray
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      7-Speed Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      52,852
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      341262
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      JN1EV7EK2JM341262
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="PDDIrg">
+</div>
+<div class="PDDIrg">
+</div>
