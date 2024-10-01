@@ -130,42 +130,25 @@ def setup_db_and_csv():
         )
     ''')
 
-    # ### *** step 01             FOREIGN KEY(dealer_id) REFERENCES dealers(id),
-    # cursor.execute('''
-    #     CREATE TABLE IF NOT EXISTS vehicles (
-    #         id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #         main_url TEXT,
-    #         base_url TEXT,
-    #         link TEXT,
-    #         cus_link TEXT,
-    #         vehicle_name TEXT,
-    #         status TEXT,
-    #         price TEXT,
-    #         miles TEXT,
-    #         join_details TEXT,
-    #         vin TEXT,
-    #         stock TEXT,
-    #         mpg_city TEXT,
-    #         mpg_highway TEXT,
-    #         engine TEXT,
-    #         transmission TEXT,
-    #         image_src TEXT,
-    #         local_image_path TEXT,
-    #         dealer_href TEXT,
-    #         dealer_text TEXT,
-    #         days_text TEXT,
-    #         views_text TEXT,
-    #         dealer_detail_full_name TEXT,
-    #         dealer_detail_google_map_link TEXT,
-    #         dealer_detail_telephone_no TEXT,
-    #         dealer_detail_listing_no TEXT,
-    #         dealer_detail_listing_status TEXT,
-    #         dealer_detail_link TEXT,
-    #         dealer_detail_website_link TEXT,
-    #         dealer_detail_about_text TEXT,
-    #         dealer_detail_about_details TEXT
-    #     )
-    # ''')
+    # ### *** step 01             FOREIGN KEY(dealer_id) REFERENCES dealers(id), 
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS vehicles (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            vehicle_id TEXT,
+            dealer_name TEXT,
+            dealer_address TEXT,
+            status_text TEXT,
+            title TEXT,
+            mileage TEXT,
+            engine TEXT,
+            price TEXT,
+            payment TEXT,
+            deal_rating TEXT,
+            description TEXT,
+            phone TEXT,
+            location TEXT
+        )
+    ''')
 
     # cursor.execute('''
     #     CREATE TABLE IF NOT EXISTS inventory_details (
@@ -182,35 +165,34 @@ def setup_db_and_csv():
     # Create CSV files and writers for dealers, inventories, and inventory details
     dealer_csv_file = open('dealers_info.csv', mode='a', newline='', encoding='utf-8')
     # # new comment 01
-    # inventory_csv_file = open('inventory_info.csv', mode='a', newline='', encoding='utf-8')
+    inventory_csv_file = open('inventory_info.csv', mode='a', newline='', encoding='utf-8')
 
     ### *** step 02
     # inventory_details_csv_file = open('inventory_details.csv', mode='a', newline='', encoding='utf-8')
 
     dealer_csv_writer = csv.writer(dealer_csv_file)
     # # new comment 02
-    # inventory_csv_writer = csv.writer(inventory_csv_file)
+    inventory_csv_writer = csv.writer(inventory_csv_file)
 
     ### *** step 03
     # inventory_details_csv_writer = csv.writer(inventory_details_csv_file)
 
     # Write headers if files are empty
     if os.stat('dealers_info.csv').st_size == 0:
-        dealer_csv_writer.writerow(['Dealer ID', 'Dealer Name', 'Phone', 'Address', 'City', 'State', 'Custom Address' , 'Dealer Iframe Map', 'Zip Code','About Dealer', 'Dealer Image','Radius', 'Rating','Review Count', 'Invnetory Link'])
+        dealer_csv_writer.writerow(['Dealer ID', 'Dealer Name', 'Phone', 'Address', 'City', 'State', 'Custom Address' , 
+                                    'Dealer Iframe Map', 'Zip Code','About Dealer', 'Dealer Image','Radius', 'Rating','Review Count', 'Invnetory Link'])
 
     # # new comment 03
-    # if os.stat('inventory_info.csv').st_size == 0:
-    #     inventory_csv_writer.writerow(['Main URL', 'Base URL', 'Link', 'Custom Link', 'Vehicle Name', 'Status', 'Price', 'Miles', 'Join Details', 
-    #                                     'VIN', 'Stock', 'MPG CIty', 'MPG Highway', 'Engine', 'Transmission', 'Image src', 'Local Image Path', 'Dealer href',
-    #                                     'Dealer Text', 'Views Text', 'Dealer Detail full Name', 'Dealer Detail google map', 'Dealer Detail Telephone', 
-    #                                     'Dealer Detail Listing No', 'Dealer Detail  Listing Status', 'Dealer Detail Link', 'Dealer Detail Website Link', 
-    #                                     'Dealer Detail About Text', 'Dealer Detail About Details'])
+    if os.stat('inventory_info.csv').st_size == 0:
+        inventory_csv_writer.writerow(['Vehicle ID', 'Dealer Name', 'Dealer Address', 'Status', 'Title', 'Mileage', 'Engine', 'Price', 'Payment', 
+                                        'Rating', 'Dealer Description', 'Phone', 'Location'])
+
     ### *** step 04
     # if os.stat('inventory_details.csv').st_size == 0:
     #     inventory_details_csv_writer.writerow(['Inventory ID', 'Detail Key', 'Detail Value'])
 
-    return conn, cursor, dealer_csv_file, dealer_csv_writer
     return conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer
+    return conn, cursor, dealer_csv_file, dealer_csv_writer
 
 
 
@@ -325,16 +307,44 @@ def navigate_to_next_page(driver, page_number):
     return True
 
 
-# remote_image_url,local_directory,local_image_path
-def download_image(remote_url, directory_location, local_image_path):
-    time.sleep(3)
-    # Check if the file already exists
-    if os.path.exists(local_image_path):
-        print(f"Image already exists at {local_image_path}, skipping download.")
-        return  # Skip downloading the image if it exists
 
-    # Create the directory if it doesn't exist
-    if not os.path.exists(directory_location):
+def scroll_down_slowly(driver, scroll_pause_time=0.5, step=300):
+    """
+    Scrolls down the page slowly.
+
+    :param driver: Selenium WebDriver instance
+    :param scroll_pause_time: Time to pause between scrolls (seconds)
+    :param step: The amount of pixels to scroll down with each step
+    """
+    last_height = driver.execute_script("return document.body.scrollHeight")
+
+    while True:
+        # Scroll down by 'step' pixels
+        driver.execute_script(f"window.scrollBy(0, {step});")
+
+        # Wait for the page to load new content or for animation
+        time.sleep(scroll_pause_time)
+
+        # Check the current scroll height
+        new_height = driver.execute_script("return document.body.scrollHeight")
+
+        # If we've reached the bottom, break
+        if new_height == last_height:
+            break
+
+        last_height = new_height
+
+
+
+
+def download_image(remote_url, directory_location, local_image_path):                                   # remote_image_url,local_directory,local_image_path
+    time.sleep(3)
+
+    if os.path.exists(local_image_path):                                                                # Check if the file already exists
+        print(f"Image already exists at {local_image_path}, skipping download.")
+        return                                                                                          # Skip downloading the image if it exists
+
+    if not os.path.exists(directory_location):                                                           # Create the directory if it doesn't exist
         os.makedirs(directory_location)
         
     response = requests.get(remote_url)
@@ -516,12 +526,13 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
     driver.switch_to.window(window_handles[1])
     return detail_vehicle_info
         
-# def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
-def extract_vehicle_info(URL, driver, all_data, header_data):
-
+def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
+# def extract_vehicle_info(URL, driver, all_data, header_data):
     inventories_count = 0 
     if URL:
-        driver.execute_script("window.open(arguments[0], '_blank');", URL)
+        base_url = "https://www.cargurus.com"
+        target_url = base_url + URL
+        driver.execute_script("window.open(arguments[0], '_blank');", target_url)
         driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
 
     try:
@@ -533,20 +544,15 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
             dealer_address = data.find_element(By.XPATH,'//div[@class="dealerDetailsInfo"]').text
 
             inventory_obj = data.find_element(By.XPATH,'//div[@class="fzhq3E"]')
-
-
             html_content = inventory_obj.get_attribute('innerHTML')
             soup = BeautifulSoup(html_content, 'html.parser')
-            
             file_path = 'upload/cargurus_detail_html.txt'
 
 
             if not os.path.exists(file_path):
                 os.makedirs(os.path.dirname(file_path), exist_ok=True)
-
                 with open(file_path, 'w', encoding='utf-8') as file:
                     file.write(soup.prettify())
-
                 logging.info(f"HTML content saved to {file_path}")
             else:
                 logging.info(f"{file_path} already exists. No file created.")
@@ -584,11 +590,40 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
                     # Print the formatted output
                     print(result)
                     print("="*50)
+                    # Scroll down the page
+                    scroll_down_slowly(driver)
                     time.sleep(5)
                 except AttributeError:
                     # Skip the row if any field is missing
                     continue
 
+                vehicle_id = 'C-241000'
+                # Insert into SQLite
+                cursor.execute('''
+                    INSERT INTO vehicles (vehicle_id, dealer_name, dealer_address, status_text, title, mileage, engine, price, payment, 
+                                            deal_rating, description, phone, location
+                                        )
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?, ?)
+                ''', (vehicle_id, dealer_name, dealer_address, status_text, title, mileage, engine, price, payment, 
+                        deal_rating, description, phone, location
+                    ))
+                conn.commit()
+
+                # dealer_id = cursor.lastrowid 
+
+#                 # Write to dealers CSV
+                csv_writers[3].writerow([vehicle_id, dealer_name, dealer_address, status_text, title, mileage,
+                                        engine, price, payment, deal_rating, description, phone, location])
+
+#                 # Append the single vehicle's data to all_data
+#                 # single_all_data.append(single_vehicle_data)
+
+#                 detail_vehicle_data =[]
+#                 # infor = scrape_detail_page(driver, detail_vehicle_data, single_vehicle_data, link)
+                
+                # print(infor)
+                # print('*'*40)
+                
             # number_of_pages = 3
             # print(number_of_pages)
             # for page in range(number_of_pages - 1):
@@ -598,265 +633,6 @@ def extract_vehicle_info(URL, driver, all_data, header_data):
             #     extract_vehicle_info(None, driver, all_data, header_data)
 
             return dealer_name, dealer_address
-
-
-
-        # except Exception as e:
-        #     logging.error("Timeout waiting for page to load: %s", e)
-        #     driver.close()
-        #     driver.switch_to.window(driver.window_handles[0])  # Switch back to the main window
-        #     return
-
-        #     # Close the detail tab and switch back to the main window
-
-        # logging.info("Fetching webpage content with requests")
-
-        # # *********************************  Work till *******************************************
-        # try:
-            logging.info("Fetching webpage content with requests")
-
-            dealer_detail_obj = data.find_element(By.XPATH,'//div[@id="content"]//header')
-            dealer_detail_full_name = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//h1').text
-            dealer_detail_google_map_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//span//a[1]').text
-            dealer_detail_telephone_no = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[1]//span//a[2]').text
-            dealer_detail_listing_no = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[1]').text
-            dealer_detail_listing_status = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//h3[2]').text
-            dealer_detail_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//div//span[1]//a').get_attribute('href')
-            dealer_detail_website_link = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[1]//div[2]//div//span[2]//a').get_attribute('href')
-            dealer_detail_about_text = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[5]//h2').text
-            dealer_detail_about_details = dealer_detail_obj.find_element(By.XPATH,'//div[2]//div[5]//p').text
-            
-            # address_obj = data.find_element(By.XPATH,"//form[@id='vlp_form']//div//h1").text
-            # custom_address_obj = address_obj.replace('Cars for Sale Near ','')
-            # custom_addrtess_split = custom_address_obj.split(',')
-            # custom_city = custom_addrtess_split[0]
-            # custom_state = custom_addrtess_split[1].replace(' ', '')
-            # zip_obj = data.find_element(By.XPATH,"//form[@id='vlp_form']//input[@id='select_zip']").get_attribute('value')
-            
-            # return URL, data, address_obj, custom_city, custom_state, zip_obj
-            # table_obj = data.find_elements(By.XPATH,'//tbody//tr')
-
-            html_content = data.get_attribute('innerHTML')
-            soup = BeautifulSoup(html_content, 'html.parser')
-            
-            file_path = 'upload/driverbase_html.txt'
-
-
-            if not os.path.exists(file_path):
-                os.makedirs(os.path.dirname(file_path), exist_ok=True)
-
-                with open(file_path, 'w', encoding='utf-8') as file:
-                    file.write(soup.prettify())
-
-                logging.info(f"HTML content saved to {file_path}")
-            else:
-                logging.info(f"{file_path} already exists. No file created.")
-
-            rows = soup.find_all('tr', class_='inventory_row')
-
-            single_all_data = []
-            for row in rows:
-                inventories_count += 1 
-
-                base_url = "https://driverbase.com"
-                link = row.find('a', href=True)['href']
-                cus_link = base_url + link
-                vehicle_name = row.find('h2').text.strip()
-
-                status_span = row.find_all('span')
-                possible_statuses = ["New", "Preowned", "Certified Preowned"]
-                status = "Not Found"
-                for span in status_span:
-                    span_text = span.text.strip()
-                    if span_text in possible_statuses:
-                        status = span_text
-                        break
-
-                price = row.find('h4').text.strip()
-                details = [detail.text.strip() for detail in row.find_all('small')]
-
-                miles_elements = row.find_all('h4')
-                miles = miles_elements[1].text.strip() if len(miles_elements) > 1 else None
-                # # Extract the second h4 text
-                # if len(miles_elements) > 1:
-                #     miles = miles_elements[1].text.strip()
-                # else:
-                #     miles = None
-
-                details_data = row.find_all('small')
-                vin = stock = mpg_city = mpg_highway = engine = transmission = "Not found"
-                for detail in details_data:
-                    detail_text = detail.text.strip()
-                    
-                    # VIN
-                    if detail_text.startswith("VIN"):
-                        vin = detail_text.replace('VIN: ','')
-                    
-                    # Stock
-                    elif detail_text.startswith("Stock"):
-                        stock = detail_text.replace('Stock: ','')
-                    
-                    # MPG City/Highway
-                    elif "MPG" in detail_text:
-                        mpg_info = detail_text.split(',')
-                        if len(mpg_info) == 2:
-                            mpg_city = mpg_info[0].replace("MPG: City ", "")
-                            mpg_highway = mpg_info[1].replace(" Highway: ", "")
-
-                    # Engine
-                    elif "Cylinders" in detail_text:
-                        engine = detail_text
-
-                    # Transmission
-                    elif "Speed" in detail_text:
-                        transmission = detail_text
-
-                # If engine information was not found
-                if engine == "Not found":
-                    engine = "N/A"
-
-                # If transmission information was not found
-                if transmission == "Not found":
-                    transmission = "N/A"
-
-                single_title = vehicle_name
-
-                directory_location = 'uploads/single_image'
-                vin_info = vin
-                stock_info = stock
-
-                replace_title_whitespace = single_title.replace(' ', '_').replace('/', '_').replace('-', '_')
-                local_image_path = f"{directory_location}/{replace_title_whitespace + '_'+ vin_info + '_' +stock_info}.jpg"
-                # --- Wait for the image to load ---
-                try:
-                    # Explicitly wait for the image to have a `src` attribute
-                    image_tag = WebDriverWait(driver, 10).until(
-                        EC.presence_of_element_located((By.XPATH, "//img[@class='lazy']"))
-                    ) 
-                    image_src = image_tag.get_attribute('src') if image_tag else "Image not found"
-
-                    download_image(image_src, directory_location, local_image_path)
-                except:
-                    image_src = "Image not found"
-
-                # Extract dealer link and text dynamically
-                dealer_link_tag = row.find('a', href=lambda href: href and "/dealers/id/" in href)  # Find <a> tags with "/dealers/id/" in the href
-                
-                dealer_href = base_url + dealer_link_tag['href'] if dealer_link_tag else "Dealer link not found"
-                dealer_text = dealer_link_tag.text.strip() if dealer_link_tag else "Dealer text not found"
-
-                # --- Scraping for "Number of days on driverbase" ---
-                days_on_driverbase = row.find('img', alt="Number of days on driverbase")
-                days_text = days_on_driverbase.find_next('span').text.strip() if days_on_driverbase else "Days on driverbase not found"
-
-                # --- Scraping for "glyphicon-eye-open" views ---
-                views_span = row.find('span', class_="glyphicon glyphicon-eye-open")
-                views_text = views_span.find_next('small').text.strip() if views_span else "Views not found"
-
-                join_details = ', '.join(details)
-
-                single_vehicle_data = {
-                    'Main Url': URL,
-                    'Base Url': base_url,
-                    'link': link,
-                    'cus_link': cus_link,
-                    'single_title': vehicle_name,
-                    'Status': status,
-                    'Price': price,
-                    'Miles': miles,
-                    'single_details': join_details,
-                    'VIN': vin,
-                    'Stock': stock,
-
-
-                    'MPG City': mpg_city,
-                    'MPG Highway': mpg_highway,
-                    'Engine': engine,
-                    'Transmission': transmission,
-                    'Image Path': image_src,
-
-
-                    'local Image Path': local_image_path,
-                    'Dealer Link': dealer_href,
-                    'Dealer Name': dealer_text,
-                    'Days on Driverbase': days_text,
-                    'Views': views_text,
-                    'dealer_detail_full_name': dealer_detail_full_name,
-                    'dealer_detail_google_map_link': dealer_detail_google_map_link,
-                    'dealer_detail_telephone_no': dealer_detail_telephone_no,
-                    'dealer_detail_listing_no': dealer_detail_listing_no,
-                    'dealer_detail_listing_status': dealer_detail_listing_status,
-                    'dealer_detail_link': dealer_detail_link,
-                    'dealer_detail_website_link': dealer_detail_website_link,
-                    'dealer_detail_about_text': dealer_detail_about_text,
-                    'dealer_detail_about_details': dealer_detail_about_details,
-
-                    # 'address_obj': address_obj,
-                    # 'zip_obj': zip_obj,
-                    # 'custom_address_obj': custom_address_obj,
-                    # 'custom_city': custom_city,
-                    # 'custom_state': custom_state,
-                }
-
-                            # Insert into SQLite
-                cursor.execute('''
-                    INSERT INTO vehicles (main_url, base_url, link, cus_link, vehicle_name, status, price, miles, join_details, 
-                                            vin, stock, mpg_city, mpg_highway, engine, transmission, image_src, local_image_path, dealer_href ,
-                                            dealer_text, days_text, views_text, dealer_detail_full_name, dealer_detail_google_map_link, 
-                                            dealer_detail_telephone_no, dealer_detail_listing_no, dealer_detail_listing_status, dealer_detail_link, 
-                                            dealer_detail_website_link, dealer_detail_about_text, dealer_detail_about_details
-                                        )
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?)
-                ''', (URL, base_url, link, cus_link, vehicle_name, status, price, miles, join_details, 
-                        vin, stock, mpg_city, mpg_highway, engine, transmission, image_src, local_image_path, dealer_href, 
-                        dealer_text, days_text, views_text, dealer_detail_full_name, dealer_detail_google_map_link, 
-                        dealer_detail_telephone_no, dealer_detail_listing_no, dealer_detail_listing_status, dealer_detail_link, 
-                        dealer_detail_website_link, dealer_detail_about_text, dealer_detail_about_details
-                    ))
-                conn.commit()
-
-                # dealer_id = cursor.lastrowid 
-
-                # Write to dealers CSV
-                csv_writers[1].writerow([URL, base_url, link, 
-                                        cus_link, vehicle_name, status,
-                                        price, miles, join_details, 
-                                        vin, stock, mpg_city, 
-                                        mpg_highway, engine, transmission, 
-                                        image_src, local_image_path, dealer_href, 
-                                        dealer_text, days_text, views_text, 
-                                        dealer_detail_full_name, dealer_detail_google_map_link, dealer_detail_telephone_no, 
-                                        dealer_detail_listing_no, dealer_detail_listing_status, dealer_detail_link, 
-                                        dealer_detail_website_link, dealer_detail_about_text, dealer_detail_about_details])
-
-                # Append the single vehicle's data to all_data
-                single_all_data.append(single_vehicle_data)
-
-                detail_vehicle_data =[]
-                # infor = scrape_detail_page(driver, detail_vehicle_data, single_vehicle_data, link)
-                
-                # print(infor)
-                print('*'*40)
-
-            # # vehicle_data = (
-            # #     'vehicle_name', 'status', 'price', 'vin', 'stock', 'mpg_city', 'mpg_highway', 'engine', 
-            # #     'transmission', None, 'days_on_driverbase', 'views', 'image_url', 'custom_link', 
-            # #     'detail_price', 'detail_status', 'detail_engine', 'local_image_path', 'downloaded_image_paths'
-            # # )
-            # # dealer_data = (
-            # #     'dealer_href', 'dealer_text', 'detail_dealer_phone'
-            # # )
-            # # return vehicle_data, dealer_data
-            # return single_all_data, detail_vehicle_data ,infor
-            number_of_pages = 3
-            # Try to navigate to the next page
-            previous_url = driver.current_url
-            previous_content_hash = get_page_content_hash(driver)
-            new_url, new_content_hash = navigate_to_next_page(driver, previous_url, previous_content_hash)
-
-            if not new_url:
-                logging.info("Ending scraping as we have reached the last page.")
-                break  # Exit loop if on the last page
 
     except Exception as e:
         logging.error(f"Error occurred while extracting vehicle information: {e}")
@@ -905,29 +681,12 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         name = dealer.find('strong').text.strip()
         inventory_link = dealer.find('a', class_='viewInventory')['href']
         inventory_link_cus = base_url+inventory_link
-        # address = dealer.find('div', class_='address').text.strip()
-        # address_parts = address.split('\n')         # First part is the actual address (e.g., '4119 Blanco Rd, San Antonio, TX 78212')
-        # actual_address = address_parts[0].strip()           # Split the actual address into its subcomponents
-        # address_details = actual_address.split(',')
-        # street_address = address_details[0].strip()          # Extract the street address, city, state, and zip code # '4119 Blanco Rd'
-        # city = address_details[1].strip()  # 'San Antonio'
-        # state_zip = address_details[2].strip().split()  # ['TX', '78212']
-        # state = state_zip[0]
-        # zip_code = state_zip[1]
 
-        address = dealer.find('div', class_='address').text.strip()
-
-        # Split the address into parts based on newline and commas
+        address = dealer.find('div', class_='address').text.strip()          # Split the address into parts based on newline and commas
         address_parts = address.split('\n')
-
-        # Get the full address without the radius part
-        actual_address = address_parts[0].strip()
-
-        # Split the actual address by commas
-        address_details = actual_address.split(',')
-
-        # Extract the city, state, and zip from the last two parts
-        city = address_details[-2].strip()  # Always the second to last part
+        actual_address = address_parts[0].strip()               # Get the full address without the radius part
+        address_details = actual_address.split(',')             # Split the actual address by commas
+        city = address_details[-2].strip()                  # Extract the city, state, and zip from the last two parts # Always the second to last part
         state_zip = address_details[-1].strip().split()  # The last part contains state and zip
         state = state_zip[0]  # State (e.g., 'TX')
         zip_code = state_zip[1]  # Zip code (e.g., '78237')
@@ -951,8 +710,8 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         radius = radius.replace("(", "").replace(")", "") if radius else None
 
         dealer_data = []
-        # extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer,), dealer_data, HEADER)
-        # name, address = extract_vehicle_info(inventory_link, main, dealer_data, HEADER)
+        single_name, single_address = extract_vehicle_info(inventory_link, driver, conn, cursor, dealer_csv_writer, dealer_data, HEADER)
+
 
         rating_element = dealer.find('div', class_='dealerRating')
         if rating_element:
@@ -1009,8 +768,12 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         }
 
         single_all_data.append(information)
+        
+        # Scroll down the page
+        scroll_down_slowly(driver)
+        
         # time.sleep
-        dealer_id = "D-24770071"
+        # dealer_id = "D-24770071"
         # Insert into SQLite
         cursor.execute('''
             INSERT INTO dealers (dealer_id,name, phone, address, city, state, dealer_full_address, dealer_iframe_map, zip, about_me, img, radius, rating, review_count_only, inventory_link)
@@ -1020,7 +783,7 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
 
         # Write to dealers CSV
         # csv_writers[0].writerow([dealer_id, title, radius, phone, address, listing_info, status_details_string, custom_url, website_link])
-        dealer_csv_writer.writerow([dealer_id, name, phone, full_address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, radius, rating, review_count_only, inventory_link_cus ])
+        dealer_csv_writer[1].writerow([dealer_id, name, phone, full_address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, radius, rating, review_count_only, inventory_link_cus ])
 
     return single_all_data
     try:
@@ -1168,10 +931,10 @@ def main():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
     
-    # conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer  = setup_db_and_csv()
-    conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
+    conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer  = setup_db_and_csv()
+    # conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
 
-    main = initialize_webdriver()
+    main_driver = initialize_webdriver()
     targated_url = custom_url()
 
     URL = targated_url
@@ -1180,14 +943,15 @@ def main():
         'Accept-Language': 'en-US,en;q=0.5'
     }
     logging.info(URL)
-    main.get(URL)
+    main_driver.get(URL)
 
-    driver = WebDriverWait(main, 10).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="addressTyped"]')))
+    driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="addressTyped"]')))
 
     input_element = driver.find_element(By.XPATH, '//input[@id="addressTyped"]')
     input_element.clear()
     # input_element.send_keys("77007") 
-    input_element.send_keys("78205") 
+    # input_element.send_keys("78205") 
+    input_element.send_keys("78702") 
 
     select_element = driver.find_element(By.XPATH, '//select[@id="refine-search-distance"]')
     select = Select(select_element)
@@ -1198,29 +962,29 @@ def main():
     logging.info("Filled out the form fields")
 
 
-    submit_button = WebDriverWait(main, 10).until(
+    submit_button = WebDriverWait(main_driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//button[@type="submit"]'))
     )
     submit_button.click()
 
     logging.info("Clicked the submit button")
 
-    # single_driver = WebDriverWait(main, 10).until(EC.element_to_be_clickable((By.XPATH, '//section[@class="results"]')))
+    # single_driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//section[@class="results"]')))
     # URL, driver, conn, cursor, csv_writers, all_data, header_data
     single_all_data = []
-    extract_dealer_info(main, conn, cursor, dealer_csv_writer, single_all_data, HEADER)
+    extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer), single_all_data, HEADER)
 
         # Loop through pages
     number_of_pages = 3
     for page in range(1, number_of_pages):
-        if not navigate_to_next_page(main, page):
+        if not navigate_to_next_page(main_driver, page):
             break
-        extract_dealer_info(main, conn, cursor, dealer_csv_writer, single_all_data, HEADER)
+        extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer), single_all_data, HEADER)
 
     print(single_all_data)
     print('*'*40)
     time.sleep(10)
-    main.quit()
+    main_driver.quit()
 
     # dealer_csv_file.close()   blade
     # inventory_csv_file.close()
