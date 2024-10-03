@@ -476,6 +476,9 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data, link):
                 if section_data:
                     extracted_data.append(section_data)
 
+                detail_dealer_images_elements = driver.find_element(By.XPATH, "//section[@class='TRQLFd']")
+                # 
+
             # Display the extracted data
             for data in extracted_data:
                 print(f"Section: {data['heading']}")
