@@ -782,7 +782,6 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         conn.commit()
 
         # Write to dealers CSV
-        # csv_writers[0].writerow([dealer_id, title, radius, phone, address, listing_info, status_details_string, custom_url, website_link])
         dealer_csv_writer[1].writerow([dealer_id, name, phone, full_address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, radius, rating, review_count_only, inventory_link_cus ])
 
     return single_all_data
