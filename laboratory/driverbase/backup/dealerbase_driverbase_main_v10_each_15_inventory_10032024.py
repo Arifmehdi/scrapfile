@@ -811,7 +811,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             for page in range(number_of_pages):
                 logging.info(f"Scraping page {page + 1}")
                 # Scrape the current page
-                extract_vehicle_info(None, data, conn, cursor, csv_writers, all_data, header_data)
+                # extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)
                 # (Add your scraping logic here for the current page)
 
                 # Navigate to the next page

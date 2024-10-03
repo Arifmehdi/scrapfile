@@ -338,11 +338,6 @@ def scroll_down_slowly(driver, scroll_pause_time=0.5, step=300):
 
 
 
-def count_svg_stars(item):
-    svgs = item.find_all('svg', {'data-testid': 'star-full'})
-    return len(svgs)
-
-
 
 def download_image(remote_url, directory_location, local_image_path):                                   # remote_image_url,local_directory,local_image_path
     time.sleep(3)
@@ -364,375 +359,174 @@ def download_image(remote_url, directory_location, local_image_path):           
 
 
 
-def scrape_detail_page(driver, vehicle_data, single_vehicle_data, link):
-    # Open a new tab with the link
-    driver.execute_script("window.open(arguments[0], '_blank');", link)
-    time.sleep(2)  # Wait for the tab to open
-    
-    # Get the current window handles
-    windows = driver.window_handles
-    
-    try:
-        # Ensure there's a new window to switch to
-        if len(windows) > 1:
-            driver.switch_to.window(windows[-1])  # Switch to the new tab
-
-            # Wait for the detailed page to load
-            WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@id='cargurus-listing-search']")))
-
-            # Scraping logic (as before)
-            detail_title = driver.find_element(By.XPATH, "//h1[@data-cg-ft='vdp-listing-title']").text if driver.find_elements(By.XPATH, "//h1[@data-cg-ft='vdp-listing-title']") else 'No title'
-            detail_price = driver.find_element(By.XPATH, "//h2[@class='us1dS CrxtQ']").text if driver.find_elements(By.XPATH, "//h2[@class='us1dS CrxtQ']") else 'No price'
-            detail_address_city_state = driver.find_element(By.XPATH, "//p[@class='us1dS iK3Zj']").text if driver.find_elements(By.XPATH, "//p[@class='us1dS iK3Zj']") else 'No address'
-
-            detail_dealer_review = driver.find_element(By.XPATH, "//button[@class='JRPjD _8KIJA QXloi LCpwg7']").text if driver.find_elements(By.XPATH, "//button[@class='JRPjD _8KIJA QXloi LCpwg7']") else 'No review'
-            detail_dealer_telephone = driver.find_element(By.XPATH, "//span[@class='RTKKej']").text if driver.find_elements(By.XPATH, "//span[@class='RTKKej']") else 'No telephone'
-
-            # Scrape all images
-            detail_dealer_images_elements = driver.find_elements(By.XPATH, "//div[@class='RENFam']//button//img")
-            detail_dealer_images = [img.get_attribute('src') for img in detail_dealer_images_elements] if detail_dealer_images_elements else ['No Images']
-
-            detail_dealer_images_elements = driver.find_element(By.XPATH, "//div[@class='dKPlkE']")
-            html_content = detail_dealer_images_elements.get_attribute('innerHTML')
-            soup = BeautifulSoup(html_content, 'html.parser')
-            file_path = 'public/cargurus_vehicle_detail_html.txt'
 
 
-            if not os.path.exists(file_path):
-                os.makedirs(os.path.dirname(file_path), exist_ok=True)
-                with open(file_path, 'w', encoding='utf-8') as file:
-                    file.write(soup.prettify())
-                logging.info(f"HTML content saved to {file_path}")
-            else:
-                logging.info(f"{file_path} already exists. No file created.")
-
-
-                # Parse the HTML with BeautifulSoup
-            soup = BeautifulSoup(html_content, 'html.parser')
-
-            # Find all sections and h2 headings
-            sections = soup.find_all('section')
-
-            # Initialize storage for the extracted data
-            extracted_data = []
-
-            for section in sections:
-                section_data = {}
-                
-                # Get the h2 heading, or set as 'N/A' if missing
-                h2 = section.find('h2')
-                section_heading = h2.text.strip() if h2 else 'N/A'
-                section_data['heading'] = section_heading
-
-                # Special case for "Options" and "History"
-                if section_heading == 'Options' or section_heading.startswith('History'):
-                    ul = section.find('ul')
-                    if ul:
-                        options = [item.text.strip() for item in ul.find_all('p')]
-                        section_data['items'] = ', '.join(options) if options else 'N/A'
-                    else:
-                        section_data['items'] = 'N/A'
-                # Special case for "Pricing"
-                elif section_heading == 'Pricing':
-                    ul = section.find('ul')
-                    if ul:
-                        pricing_info = [item.text.strip() for item in ul.find_all('p')]
-                        section_data['items'] = ', '.join(pricing_info) if pricing_info else 'N/A'
-                    else:
-                        section_data['items'] = 'N/A'
-                # Special case for "Safety" (handling SVG stars)
-                elif section_heading == 'Safety':
-                    ul = section.find('ul')
-                    if ul:
-                        section_data['items'] = []
-                        list_items = ul.find_all('li')
-                        for item in list_items:
-                            key = item.find('span', class_='gUBXY5')
-                            rating = count_svg_stars(item)
-                            key_text = key.text.strip() if key else 'N/A'
-                            section_data['items'].append(f"{key_text}: {rating}")
-                else:
-                    # Handle other sections with typical key-value pairs
-                    ul = section.find('ul')
-                    if ul:
-                        section_data['items'] = []
-                        list_items = ul.find_all('li')
-                        
-                        for item in list_items:
-                            key_value = {}
-                            
-                            # Find the key, often in a <h5> or <span> (use 'N/A' if missing)
-                            key = item.find('h5') or item.find('span', class_='gUBXY5')
-                            key_text = key.text.strip() if key else 'N/A'
-                            
-                            # Find the value, often in a <p> or <span> (use 'N/A' if missing)
-                            value = item.find('p') or item.find('span', class_='eqBXWZ')
-                            value_text = value.text.strip() if value else 'N/A'
-                            
-                            # Append to the section data
-                            section_data['items'].append(f"{key_text}: {value_text}")
-                
-                # Append the section data to the main list if it contains data
-                if section_data:
-                    extracted_data.append(section_data)
-
-            # Display the extracted data
-            for data in extracted_data:
-                print(f"Section: {data['heading']}")
-                if 'items' in data:
-                    if isinstance(data['items'], list):
-                        for item in data['items']:
-                            print(f" - {item}")
-                    else:
-                        # For sections like Options, History, Pricing, display in one line
-                        print(f" - {data['items']}")
-                print()
-
-            # for section in sections:
-            #     section_data = {}
-                
-            #     # Get the h2 heading, or set as 'N/A' if missing
-            #     h2 = section.find('h2')
-            #     section_data['heading'] = h2.text.strip() if h2 else 'N/A'
-
-            #     # Get all list items (li) within the section
-            #     ul = section.find('ul')
-            #     if ul:
-            #         list_items = ul.find_all('li')
-            #         section_data['items'] = []
-                    
-            #         for item in list_items:
-            #             key_value = {}
-                        
-            #             # Find the key, often in a <h5> or <span> (use 'N/A' if missing)
-            #             key = item.find('h5') or item.find('span', class_='gUBXY5')
-            #             key_value['key'] = key.text.strip() if key else 'N/A'
-                        
-            #             # Find the value, often in a <p> or <span> (use 'N/A' if missing)
-            #             value = item.find('p') or item.find('span', class_='eqBXWZ')
-            #             key_value['value'] = value.text.strip() if value else 'N/A'
-                        
-            #             # Append to the section data
-            #             section_data['items'].append(key_value)
-                
-            #     # Append the section data to the main list if it contains data
-            #     if section_data:
-            #         extracted_data.append(section_data)
-
-            # # Display the extracted data
-            # for data in extracted_data:
-            #     print(f"Section: {data['heading']}")
-            #     if 'items' in data:
-            #         for item in data['items']:
-            #             print(f" - {item['key']}: {item['value']}")
-            #     print()
-
-            # Print the scraped data
-            print("Title:", detail_title)
-            print("Price:", detail_price)
-            print("Address:", detail_address_city_state)
-            print("Dealer Review:", detail_dealer_review)
-            print("Dealer Telephone:", detail_dealer_telephone)
-            print("Dealer Images:", detail_dealer_images)
-
-            time.sleep(5)  # Pause for a while if needed
-
-        else:
-            print("Failed to open new tab.")
-
-    except Exception as e:
-        print(f"An error occurred: {e}")
-    
-    finally:
-        # Close the new tab if it exists and switch back to the original window
-        if len(driver.window_handles) > 1:
-            driver.close()
-            driver.switch_to.window(driver.window_handles[1])  # Switch back to the first tab
-
-# def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
-#     """
-#     Scrapes detailed page for a single vehicle entry.
-#     """
+def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
+    """
+    Scrapes detailed page for a single vehicle entry.
+    """
         
-#     # main_url = single_vehicle_data['Main Url']
-#     # base_url = single_vehicle_data['Base Url']
+    main_url = single_vehicle_data['Main Url']
+    base_url = single_vehicle_data['Base Url']
 
-#      # Click the link to open the details page
-#     driver.execute_script("window.open(arguments[0], '_blank');", link)
-#     driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+     # Click the link to open the details page
+    driver.execute_script("window.open(arguments[0], '_blank');", link)
+    driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
 
 
-#     # return driver,main_url,base_url, replace_title_whitespace, vin_info, stock_info 
-#     # Wait for the detail page to load and scrape data (add your detailed page scraping logic here)
-#     try:
-#         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@id='detail_vehicle_data']")))
-#         # Add your scraping logic here for the detailed page
+    # return driver,main_url,base_url, replace_title_whitespace, vin_info, stock_info 
+    # Wait for the detail page to load and scrape data (add your detailed page scraping logic here)
+    try:
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@id='content']")))
+        # Add your scraping logic here for the detailed page
 
-#         # Example: Scrape more data from the detailed page
-#         detail_title = driver.find_element(By.XPATH, "//h1[@data-cg-ft='vdp-listing-title']").text  if detail_title else 'No title'
-#         detail_price = driver.find_element(By.XPATH, "//h2[@class='us1dS CrxtQ']").text  if detail_price else 'No price'
-#         detail_address_city_state = driver.find_element(By.XPATH, "//p[@class='us1dS iK3Zj']").text  if detail_address_city_state else 'No address'
-#         # detail_monthly_pay = driver.find_element(By.XPATH, "//span[@id='pmt']").text  
+        # Example: Scrape more data from the detailed page
+        detail_title = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//h1").text  
+        detail_price = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//h3").text  
+        detail_monthly_pay = driver.find_element(By.XPATH, "//span[@id='pmt']").text  
 
-#         detail_status_span = driver.find_elements(By.XPATH, "//span[@class='QOdmp OjhRM']").text if detail_status_span else 'No status'
-#         # detail_possible_statuses = ["New", "Preowned", "Certified Preowned"]
-#         # detail_status = "Not Found"
-#         # detail_engine = "Not Found"
-#         # for detail_span in detail_status_span:
-#         #     detail_span_text = detail_span.text.strip()
-#         #     if detail_span_text in detail_possible_statuses:
-#         #         detail_status = detail_span_text
+        detail_status_span = driver.find_elements(By.XPATH, "//span")
+        detail_possible_statuses = ["New", "Preowned", "Certified Preowned"]
+        detail_status = "Not Found"
+        detail_engine = "Not Found"
+        for detail_span in detail_status_span:
+            detail_span_text = detail_span.text.strip()
+            if detail_span_text in detail_possible_statuses:
+                detail_status = detail_span_text
 
-#         #         parent_element = detail_span.find_element(By.XPATH, '..')
-#         #         parent_text = parent_element.text.strip()
-#         #         detail_engine = parent_text.replace(detail_status, '').strip()
-#         #         break
+                parent_element = detail_span.find_element(By.XPATH, '..')
+                parent_text = parent_element.text.strip()
+                detail_engine = parent_text.replace(detail_status, '').strip()
+                break
             
 
-#         detail_dealer_review = driver.find_element(By.XPATH, "//button[@class='JRPjD _8KIJA QXloi LCpwg7']").text if detail_dealer_review else 'No review'
-#         detail_dealer_telephone = driver.find_element(By.XPATH, "//span[@class='RTKKej']").text if detail_dealer_telephone else 'No telephone'
-#         detail_dealer_images = driver.find_elements(By.XPATH, "//div[@class='RENFam']//button//img").get_attribute('src') if detail_dealer_images else 'No Images'
+        detail_dealer_link_tag = driver.find_element(By.XPATH, "//a[contains(@href, '/dealers/id/')]")
 
-#         print(detail_title)
-#         print(detail_price)
-#         print(detail_address_city_state)
-#         print(detail_status_span)
-#         print(detail_dealer_review)
-#         print(detail_dealer_telephone)
-#         print(detail_dealer_images)
-#         time.sleep(5)
-#         return
-#         sys.exit()
+        detail_dealer_href =  detail_dealer_link_tag.get_attribute('href') if detail_dealer_link_tag else "Dealer link not found"
+        detail_dealer_text = detail_dealer_link_tag.text.strip() if detail_dealer_link_tag else "Dealer text not found"
+        detail_dealer_phone = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//div[3]//div//a[1]//button//span[2]").text  
 
-#         detail_dealer_link_tag = driver.find_element(By.XPATH, "//a[contains(@href, '/dealers/id/')]")
+        # --- Scraping for "Number of days on driverbase" ---
+        detail_days_text = driver.find_element(By.XPATH, "//span[starts-with(@id,'dayslisted')]").text
 
-#         detail_dealer_href =  detail_dealer_link_tag.get_attribute('href') if detail_dealer_link_tag else "Dealer link not found"
-#         detail_dealer_text = detail_dealer_link_tag.text.strip() if detail_dealer_link_tag else "Dealer text not found"
-#         detail_dealer_phone = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//div[3]//div//a[1]//button//span[2]").text  
+        # --- Scraping for "glyphicon-eye-open" views ---
+        detail_views_span = driver.find_element(By.XPATH, "//span[contains(@class, 'glyphicon-eye-open')]")
+        detail_views_text = detail_views_span.find_element(By.XPATH, "following-sibling::small").text.strip() if detail_views_span else "Views not found"
 
-#         # --- Scraping for "Number of days on driverbase" ---
-#         detail_days_text = driver.find_element(By.XPATH, "//span[starts-with(@id,'dayslisted')]").text
+        detail_rows = driver.find_elements(By.XPATH,'//table[@id="sort"]//tbody//tr')
 
-#         # --- Scraping for "glyphicon-eye-open" views ---
-#         detail_views_span = driver.find_element(By.XPATH, "//span[contains(@class, 'glyphicon-eye-open')]")
-#         detail_views_text = detail_views_span.find_element(By.XPATH, "following-sibling::small").text.strip() if detail_views_span else "Views not found"
-
-#         detail_rows = driver.find_elements(By.XPATH,'//table[@id="sort"]//tbody//tr')
-
-#         vehicle_details = {}
-#         for row in detail_rows:
-#             key_element = row.find_element(By.XPATH, './td[1]')  # First <td> is the key
-#             value_element = row.find_element(By.XPATH, './td[2]')  # Second <td> is the value
-#             # Extract the text from the elements
-#             key = key_element.text.strip().replace(":", "")  # Remove the colon from the key
-#             value = value_element.text.strip()
-#             # Add the key-value pair to the dictionary
-#             vehicle_details[key] = value
+        vehicle_details = {}
+        for row in detail_rows:
+            key_element = row.find_element(By.XPATH, './td[1]')  # First <td> is the key
+            value_element = row.find_element(By.XPATH, './td[2]')  # Second <td> is the value
+            # Extract the text from the elements
+            key = key_element.text.strip().replace(":", "")  # Remove the colon from the key
+            value = value_element.text.strip()
+            # Add the key-value pair to the dictionary
+            vehicle_details[key] = value
         
         
-#         try:
-#             detail_dealer_web_link = driver.find_element(By.XPATH, '//span[@class="col-xs-6 meta"]//a').get_attribute('href')
-#         except Exception as e:
-#             print(f"Error fetching dealer web link: {e}")
+        try:
+            detail_dealer_web_link = driver.find_element(By.XPATH, '//span[@class="col-xs-6 meta"]//a').get_attribute('href')
+        except Exception as e:
+            print(f"Error fetching dealer web link: {e}")
         
-#         # --- Scraping for "glyphicon-map-marker" (dealer name) ---
-#         try:
-#             # Locate the element by class name
-#             detail_dealer_name = driver.find_element(By.CLASS_NAME, 'glyphicon-map-marker')
-#             dealer_button = detail_dealer_name.find_element(By.XPATH, 'following-sibling::button')
-#             detail_dealer_name_text = dealer_button.text.strip()
-#         except Exception as e:
-#             detail_dealer_name_text = "Dealer Name not found"
-#         # --- Scraping for "glyphicon-map-marker" (dealer name) ---
+        # --- Scraping for "glyphicon-map-marker" (dealer name) ---
+        try:
+            # Locate the element by class name
+            detail_dealer_name = driver.find_element(By.CLASS_NAME, 'glyphicon-map-marker')
+            dealer_button = detail_dealer_name.find_element(By.XPATH, 'following-sibling::button')
+            detail_dealer_name_text = dealer_button.text.strip()
+        except Exception as e:
+            detail_dealer_name_text = "Dealer Name not found"
+        # --- Scraping for "glyphicon-map-marker" (dealer name) ---
 
-#         try:
-#             # Locate the element by class name
-#             detail_dealer_comment = driver.find_element(By.XPATH, '//header//div//div[2]/div[5]/span').text.strip()
-#         except Exception as e:
-#             detail_dealer_comment = "Dealer Comment not found"
+        try:
+            # Locate the element by class name
+            detail_dealer_comment = driver.find_element(By.XPATH, '//header//div//div[2]/div[5]/span').text.strip()
+        except Exception as e:
+            detail_dealer_comment = "Dealer Comment not found"
         
-#         replace_title_whitespace = detail_title.replace(' ', '_').replace('/', '_').replace('-', '_')
-#         # vin_info = single_vehicle_data['VIN']
-#         # stock_info = single_vehicle_data['Stock']
-#         vin_info = vehicle_details['VIN #']
-#         stock_info = vehicle_details['Stock #']
-#         print(replace_title_whitespace)
-#         print(vin_info)
-#         print(stock_info)
-#         try:
-#             replace_title_whitespace = detail_title.replace(' ', '_').replace('/', '_').replace('-', '_')
-#             # vin_info = single_vehicle_data['VIN']
-#             # stock_info = single_vehicle_data['Stock']
-#             vin_info = vehicle_details['VIN #'].replace(' [check for recalls]','')
-#             stock_info = vehicle_details['Stock #']
+        replace_title_whitespace = detail_title.replace(' ', '_').replace('/', '_').replace('-', '_')
+        # vin_info = single_vehicle_data['VIN']
+        # stock_info = single_vehicle_data['Stock']
+        vin_info = vehicle_details['VIN #']
+        stock_info = vehicle_details['Stock #']
+        print(replace_title_whitespace)
+        print(vin_info)
+        print(stock_info)
+        try:
+            replace_title_whitespace = detail_title.replace(' ', '_').replace('/', '_').replace('-', '_')
+            # vin_info = single_vehicle_data['VIN']
+            # stock_info = single_vehicle_data['Stock']
+            vin_info = vehicle_details['VIN #'].replace(' [check for recalls]','')
+            stock_info = vehicle_details['Stock #']
 
-#             img_stack = driver.find_element(By.XPATH, '//img[@src="/public/img/icn/img-stack.png"]')
-#             img_stack_src = img_stack.get_attribute('src')
-#             print(f"Image stack src: {img_stack_src}")
-#             sibling_images = img_stack.find_elements(By.XPATH, '../../following-sibling::div//img')
-#             sibling_image_sources = [img.get_attribute('src') for img in sibling_images]
-#             image_sources_str = ",".join(sibling_image_sources)
+            img_stack = driver.find_element(By.XPATH, '//img[@src="/public/img/icn/img-stack.png"]')
+            img_stack_src = img_stack.get_attribute('src')
+            print(f"Image stack src: {img_stack_src}")
+            sibling_images = img_stack.find_elements(By.XPATH, '../../following-sibling::div//img')
+            sibling_image_sources = [img.get_attribute('src') for img in sibling_images]
+            image_sources_str = ",".join(sibling_image_sources)
 
-#             # Print all sibling image sources found
-#             downloaded_image_paths = []
-#             for idx, img_src in enumerate(sibling_image_sources[:5], 1):
-#                 print(f"Attempting to download image {idx} from {img_src}") 
-#                 location_url = main_url.split('/')[-1]
-#                 directory_location = 'uploads/'+location_url.replace('/','_').replace('-', '_')+'/'+vin_info
-#                 detail_local_image_path = f"{directory_location}/{replace_title_whitespace + '_' + vin_info + '_' + stock_info}_{idx}.jpg" 
-#                 download_image(img_src, directory_location, detail_local_image_path)
-#                 downloaded_image_paths.append(detail_local_image_path)
-#                 print(f"Sibling image {idx} src: {img_src}")
+            # Print all sibling image sources found
+            downloaded_image_paths = []
+            for idx, img_src in enumerate(sibling_image_sources[:5], 1):
+                print(f"Attempting to download image {idx} from {img_src}") 
+                location_url = main_url.split('/')[-1]
+                directory_location = 'uploads/'+location_url.replace('/','_').replace('-', '_')+'/'+vin_info
+                detail_local_image_path = f"{directory_location}/{replace_title_whitespace + '_' + vin_info + '_' + stock_info}_{idx}.jpg" 
+                download_image(img_src, directory_location, detail_local_image_path)
+                downloaded_image_paths.append(detail_local_image_path)
+                print(f"Sibling image {idx} src: {img_src}")
 
-#         except Exception as e:
-#             print(f"Error fetching images: {e}")
+        except Exception as e:
+            print(f"Error fetching images: {e}")
 
-#         # Print the extracted details
-#         for key, value in vehicle_details.items():
-#             print(f"{key}: {value}")
+        # Print the extracted details
+        for key, value in vehicle_details.items():
+            print(f"{key}: {value}")
 
-#         detail_vehicle_info = []
+        detail_vehicle_info = []
 
-#         detail_monthly_pay = 'N/A'
-#         detail_info = {
-#             'detail_title' : detail_title,
-#             'detail_price' : detail_price,
-#             'detail_status' : detail_status_span,
-#             # 'detail_engine' : detail_engine,
-#             'detail_monthly_pay' : detail_monthly_pay,
-#             'detail_monthly_pay' : detail_address_city_state,
-#             'detail_dealer_href' : detail_dealer_href,
-#             'detail_dealer_name' : detail_dealer_text,
-#             'detail_dealer_phone' : detail_dealer_phone,
-#             'detail_days_text' : detail_days_text,
-#             'detail_views_text' : detail_views_text,
-#             'detail_dealer_web_link' : detail_dealer_web_link,
-#             'detail_dealer_name_text' : detail_dealer_name_text,
+        detail_info = {
+            'detail_title' : detail_title,
+            'detail_price' : detail_price,
+            'detail_status' : detail_status,
+            'detail_engine' : detail_engine,
+            'detail_monthly_pay' : detail_monthly_pay,
+            'detail_dealer_href' : detail_dealer_href,
+            'detail_dealer_name' : detail_dealer_text,
+            'detail_dealer_phone' : detail_dealer_phone,
+            'detail_days_text' : detail_days_text,
+            'detail_views_text' : detail_views_text,
+            'detail_dealer_web_link' : detail_dealer_web_link,
+            'detail_dealer_name_text' : detail_dealer_name_text,
 
-#             'detail_dealer_comment' : detail_dealer_comment,
-#             'downloaded_image_paths' : downloaded_image_paths,
+            'detail_dealer_comment' : detail_dealer_comment,
+            'downloaded_image_paths' : downloaded_image_paths,
 
-#         }
-#         detail_vehicle_info.append(detail_info)
-#         detail_vehicle_info.append(vehicle_details)
-#         time.sleep(3)
+        }
+        detail_vehicle_info.append(detail_info)
+        detail_vehicle_info.append(vehicle_details)
+        time.sleep(3)
 
-#     except Exception as e:
-#         print(f"Error fetching details from the page: {e}")
+    except Exception as e:
+        print(f"Error fetching details from the page: {e}")
     
-#     # # Close the detail tab and switch back to the main window
-#     # driver.close()
-#     # driver.switch_to.window(driver.window_handles[0])
+    # # Close the detail tab and switch back to the main window
+    # driver.close()
+    # driver.switch_to.window(driver.window_handles[0])
 
-#     window_handles = driver.window_handles
+    window_handles = driver.window_handles
 
-#         # Close the last (third) tab
-#     driver.switch_to.window(window_handles[2])  # Switch to the last tab
-#     driver.close()  # Close the last tab
+        # Close the last (third) tab
+    driver.switch_to.window(window_handles[2])  # Switch to the last tab
+    driver.close()  # Close the last tab
 
-#     # Switch to the second tab
-#     driver.switch_to.window(window_handles[1])
-#     return detail_vehicle_info
+    # Switch to the second tab
+    driver.switch_to.window(window_handles[1])
+    return detail_vehicle_info
         
 def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
 # def extract_vehicle_info(URL, driver, all_data, header_data):
@@ -858,8 +652,6 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                     print("="*50)
                     # Scroll down the page
                     scroll_down_slowly(driver)
-                    detail_vehicle_data = []
-                    scrape_detail_page(driver, detail_vehicle_data, result,cus_inventory_link)
                     time.sleep(5)
                 except AttributeError:
                     # Skip the row if any field is missing
