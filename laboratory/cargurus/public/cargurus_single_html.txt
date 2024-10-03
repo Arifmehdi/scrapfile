@@ -1,0 +1,2396 @@
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549302/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="high" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2016 Toyota Avalon Hybrid Limited FWD">
+         2016 Toyota Avalon Hybrid Limited FWD
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         79,998 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         2.5L I4 Hybrid
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+       Sunroof/Moonroof
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549302" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2016 Toyota Avalon Hybrid Limited FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2016
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Toyota
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Avalon Hybrid
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      2.5L I4 Hybrid
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Hybrid
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      79,998
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1097
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      4T1BD1EB6GU048713
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549308/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2017 Kia Optima LX">
+         2017 Kia Optima LX
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         85,899 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         185 hp 2.4L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549308" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2017 Kia Optima LX
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2017
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Kia
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Optima
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      185 hp 2.4L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Silver
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      85,899
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1101
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      5XXGT4L39HG122966
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549300/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2013 Acura ILX 2.0L FWD with Premium Package">
+         2013 Acura ILX 2.0L FWD with Premium Package
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         85,598 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         150 hp 2L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+       Leather Seats · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549300" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2013 Acura ILX 2.0L FWD with Premium Package
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2013
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Acura
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      ILX
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      150 hp 2L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Silver
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      85,598
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1087
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      19VDE1F55DE009620
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549305/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2014 Acura ILX 2.0L FWD with Technology Package">
+         2014 Acura ILX 2.0L FWD with Technology Package
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         107,010 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         150 hp 2L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+       Leather Seats · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549305" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2014 Acura ILX 2.0L FWD with Technology Package
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2014
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Acura
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      ILX
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      150 hp 2L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Gray
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      107,010
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1076
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      19VDE1F71EE010685
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549306/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2015 Honda Civic EX-L">
+         2015 Honda Civic EX-L
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         60,730 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         143 hp 1.8L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+       Sunroof/Moonroof
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549306" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2015 Honda Civic EX-L
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2015
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Civic
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      143 hp 1.8L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      White
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      60,730
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      4
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1090
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      19XFB2F92FE058777
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549307/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2016 Honda Odyssey EX-L FWD with RES">
+         2016 Honda Odyssey EX-L FWD with RES
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         145,033 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         248 hp 3.5L V6
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+       Leather Seats · Sunroof/Moonroof · &amp; more
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549307" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2016 Honda Odyssey EX-L FWD with RES
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2016
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Odyssey
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Minivan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      248 hp 3.5L V6
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Red
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Brown (TAN)
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      145,033
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1100
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      5FNRL5H6XGB108299
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="ranxnv M0betF">
+ <div class="M6t4m5 leaderboard_inline leaderboard_inline-container" id="bannerAdLEADERBOARD_INLINE_1-container">
+  <div aria-hidden="true" class="leaderboard_inline" id="bannerAdLEADERBOARD_INLINE_1_1">
+   <div id="google_ads_iframe_/19485787/CarGurus.com/Search_Results_Page/desktop/inline_1/728x90_0__container__" style="border: 0pt none; display: inline-block;">
+   </div>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549297/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2015 Honda Civic SE">
+         2015 Honda Civic SE
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         78,756 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         143 hp 1.8L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549297" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2015 Honda Civic SE
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2015
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Civic
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      143 hp 1.8L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      White
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Brown (TAN)
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      78,756
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      4
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1093
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      2HGFB2F79FH541042
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549309/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2015 Nissan Altima 2.5">
+         2015 Nissan Altima 2.5
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         113,559 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         182 hp 2.5L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549309" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2015 Nissan Altima 2.5
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2015
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Nissan
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Altima
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      182 hp 2.5L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      White
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      113,559
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1091
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1N4AL3AP9FN865057
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549298/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2017 Honda Accord LX FWD">
+         2017 Honda Accord LX FWD
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         91,620 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         185 hp 2.4L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549298" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2017 Honda Accord LX FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2017
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Accord
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      185 hp 2.4L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Gray
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Silver
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      91,620
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1094
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1HGCR2F31HA009510
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549296/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2021 Nissan Versa SV FWD">
+         2021 Nissan Versa SV FWD
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         73,309 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         122 hp 1.6L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549296" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2021 Nissan Versa SV FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2021
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Nissan
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Versa
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      122 hp 1.6L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Blue
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      73,309
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1098
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      3N1CN8EV3ML830646
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549303/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2017 Honda Accord Sport FWD">
+         2017 Honda Accord Sport FWD
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         94,468 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         189 hp 2.4L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549303" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2017 Honda Accord Sport FWD
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2017
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Accord
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Sedan
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      4 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      189 hp 2.4L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      White
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      94,468
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1080
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1HGCR2F58HA106849
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549294/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2007 Honda Accord Coupe LX">
+         2007 Honda Accord Coupe LX
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         99,656 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         166 hp 2.4L I4
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+       Alloy Wheels
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549294" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2007 Honda Accord Coupe LX
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2007
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Honda
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Accord Coupe
+     </dd>
+     <dt>
+      Body type:
+     </dt>
+     <dd>
+      Coupe
+     </dd>
+     <dt>
+      Doors:
+     </dt>
+     <dd>
+      2 doors
+     </dd>
+     <dt>
+      Drivetrain:
+     </dt>
+     <dd>
+      Front-Wheel Drive
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      166 hp 2.4L I4
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Silver
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Gasoline
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Silver
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Automatic
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      99,656
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      Not Rated
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1099
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      1HGCM72357A018730
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="ranxnv M0betF">
+ <div class="M6t4m5 leaderboard_inline leaderboard_inline-container" id="bannerAdLEADERBOARD_INLINE_2-container">
+  <div aria-hidden="true" class="leaderboard_inline" id="bannerAdLEADERBOARD_INLINE_2_1">
+   <div id="google_ads_iframe_/19485787/CarGurus.com/Search_Results_Page/desktop/inline_2/728x90_0__container__" style="border: 0pt none; display: inline-block;">
+   </div>
+  </div>
+ </div>
+</div>
+<div class="pazLTN">
+ <div data-cg-ft="car-blade" data-testid="srp-tile-listing-standard">
+  <div class="GvMf- _card_12sey_12" data-testid="srp-listing-tile">
+   <a class="_vdpLink_12sey_1 _noBottomMargin_12sey_17 _desktop_12sey_9" data-testid="car-blade-link" href="#listing=396549304/NONE/DEFAULT">
+    <div class="_tileMediaWrapper_14rhm_1" data-testid="srp-tile-meda">
+     <div class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63" data-testid="srp-tile-image-observer">
+      <img alt="Vehicle photo unavailable" class="n271I _imgZIndex_z4912_56 _imgAspectRatio_z4912_63 _imgPosition_z4912_45 _imgBorder_z4912_51 _imgSize_z4912_59 _imgFit_z4912_66" data-cg-ft="srp-listing-blade-image" fetchpriority="auto" src="https://static-assets.cargurus.com/images/site-cars/no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg_09568b15a17955ae746cd5eecca394230418525f04876ca54ce21146bea353e9.svg"/>
+      <div class="_noImagePlaceholder_z4912_94" data-testid="srp-tile-image-unavailable">
+       <p class="_topText_z4912_105">
+        Preparing for a close up...
+       </p>
+       <p class="_bottomText_z4912_109">
+        Photos coming soon
+       </p>
+      </div>
+     </div>
+     <button class="JRPjD ZQ6OH KrITS _favoriteIcon_14rhm_4" data-testid="listing-save-button">
+      <span data-cg-ft="save-listing-button-span" style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;">
+       Save this listing
+      </span>
+      <svg aria-hidden="true" class="svg-inline--fa fa-heart fa-w-16 fa-lg _icon_1r928_1" data-icon="heart" data-prefix="fal" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+    <div class="ehKyF _cardContent_noan4_241">
+     <div class="_tileBody_noan4_1" data-cg-ft="srp-listing-blade" data-testid="srp-tile-body">
+      <div>
+       <div class="_eyebrow_15clc_1 _eyebrow_noan4_8" data-testid="srp-tile-eyebrow">
+       </div>
+       <div class="z59jB" data-testid="srp-tile-listing-title">
+        <h4 class="us1dS Sbb-Y _titleText_noan4_15" data-cg-ft="srp-listing-blade-title" title="2015 Toyota Camry Hybrid">
+         2015 Toyota Camry Hybrid
+        </h4>
+       </div>
+      </div>
+      <div class="_columns_noan4_133">
+       <div class="_leftColumn_noan4_137">
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="srp-tile-mileage">
+         129,302 mi
+        </p>
+        <p class="us1dS iK3Zj _leftColumnContent_noan4_245" data-testid="seo-srp-tile-engine-display-name">
+         200 hp 2.5L I4 Hybrid
+        </p>
+       </div>
+       <div class="_rightColumn_noan4_154">
+        <h4 class="us1dS i5dPf _priceText_noan4_113" data-cg-ft="srp-listing-blade-price" data-testid="srp-tile-price">
+         No Price Listed
+        </h4>
+        <div class="_paymentSpacer_noan4_250">
+        </div>
+       </div>
+      </div>
+      <div class="_dealRatingContainer_vwu5d_1" data-testid="srp-tile-deal-rating">
+       <section class="orkm6 _dealRating_vwu5d_1">
+        <span aria-hidden="true" class="OBJGA CKkFf" role="img">
+        </span>
+        <section role="contentinfo">
+         <span class="QOdmp CKkFf">
+          No Rating
+         </span>
+        </section>
+       </section>
+      </div>
+      <div class="_text_1ncld_1" data-testid="srp-tile-horizontal-truncated-list">
+      </div>
+      <div class="_border_ob0mx_1" data-testid="srp-tile-section-border">
+      </div>
+      <div class="_contactSellerContainer_noan4_63" data-testid="srp-tile-contact-seller-ctas">
+       <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">
+        Request info
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="_bucket_n1pu6_1 _roundBorder_n1pu6_10" data-testid="srp-tile-bucket">
+     <div class="_text_n1pu6_14" data-testid="srp-tile-bucket-text">
+      Austin, TX
+     </div>
+     <button aria-haspopup="true" class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" data-testid="srp-tile-info-ellipsis" id="info-toggle-396549304" type="button">
+      <svg aria-hidden="true" class="svg-inline--fa fa-ellipsis-v fa-w-6" data-icon="ellipsis-v" data-prefix="fas" focusable="false" role="img" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" fill="currentColor">
+       </path>
+      </svg>
+      <span class="_label_14eot_1">
+       Learn more about this 2015 Toyota Camry Hybrid
+      </span>
+     </button>
+    </div>
+    <dl class="_propertiesList_7inth_1">
+     <dt>
+      Year:
+     </dt>
+     <dd>
+      2015
+     </dd>
+     <dt>
+      Make:
+     </dt>
+     <dd>
+      Toyota
+     </dd>
+     <dt>
+      Model:
+     </dt>
+     <dd>
+      Camry Hybrid
+     </dd>
+     <dt>
+      Engine:
+     </dt>
+     <dd>
+      200 hp 2.5L I4 Hybrid
+     </dd>
+     <dt>
+      Exterior color:
+     </dt>
+     <dd>
+      Silver
+     </dd>
+     <dt>
+      Fuel type:
+     </dt>
+     <dd>
+      Hybrid
+     </dd>
+     <dt>
+      Interior color:
+     </dt>
+     <dd>
+      Black
+     </dd>
+     <dt>
+      Transmission:
+     </dt>
+     <dd>
+      Continuously Variable Transmission
+     </dd>
+     <dt>
+      Mileage:
+     </dt>
+     <dd>
+      129,302
+     </dd>
+     <dt>
+      NHTSA overall safety rating:
+     </dt>
+     <dd>
+      5
+     </dd>
+     <dt>
+      Stock #:
+     </dt>
+     <dd>
+      1096
+     </dd>
+     <dt>
+      VIN:
+     </dt>
+     <dd>
+      4T1BD1FK1FU150529
+     </dd>
+    </dl>
+   </a>
+  </div>
+ </div>
+</div>
+<div class="PDDIrg">
+</div>
+<div class="PDDIrg">
+</div>
