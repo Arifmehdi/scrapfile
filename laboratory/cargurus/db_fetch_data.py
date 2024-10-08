@@ -2,26 +2,26 @@ import sqlite3
 
 def fetch_all_data():
     # Connect to the SQLite database
-    conn = sqlite3.connect('upload/carguru_data.db')
+    conn = sqlite3.connect('public/db/carguru_data.db')
     cursor = conn.cursor()
 
-    # Fetch all dealers
-    cursor.execute('SELECT * FROM dealers')
-    dealers = cursor.fetchall()
+    # # Fetch all dealers
+    # cursor.execute('SELECT * FROM dealers')
+    # dealers = cursor.fetchall()
     
-    print("Dealers:")
-    for dealer in dealers:
-        # print(f"ID: {dealer[0]}, Dealer ID:{dealer[1]}, Dealer Title: {dealer[2]}, Radius: {dealer[3]}, Phone: {dealer[4]},  Address: {dealer[5]}, Listing Info: {dealer[6]}, Status Details: {dealer[7]}, Dealer Custom URL: {dealer[8]}, Website Link: {dealer[9]}")
-        print(f"{dealer}")
-        print('')
+    # print("Dealers:")
+    # for dealer in dealers:
+    #     # print(f"ID: {dealer[0]}, Dealer ID:{dealer[1]}, Dealer Title: {dealer[2]}, Radius: {dealer[3]}, Phone: {dealer[4]},  Address: {dealer[5]}, Listing Info: {dealer[6]}, Status Details: {dealer[7]}, Dealer Custom URL: {dealer[8]}, Website Link: {dealer[9]}")
+    #     print(f"{dealer}")
+    #     print('')
     # print("\nInventories:")
     # # Fetch all inventories
-    # cursor.execute('SELECT * FROM vehicles')
-    # inventories = cursor.fetchall()
+    cursor.execute('SELECT * FROM vehicles')
+    inventories = cursor.fetchall()
     
-    # for inventory in inventories:
-    #     # print(f"ID: {inventory[0]}, Dealer ID: {inventory[1]}, Inventory Link: {inventory[2]}")
-    #     print(inventory)
+    for inventory in inventories:
+        # print(f"ID: {inventory[0]}, Dealer ID: {inventory[1]}, Inventory Link: {inventory[2]}")
+        print(inventory)
     
     # print("\nInventory Details:")
     # # Fetch all inventory details
