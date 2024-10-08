@@ -6,3 +6,6 @@ mysql-connector-python
 selenium
 pillow
 pytesseract
+pyautogui
+opencv-python
+pywinauto

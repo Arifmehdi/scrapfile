@@ -24,75 +24,6 @@ import re
 # from mysql_connector import get_mysql_connection
 
 
-# def setup_db_and_csv():
-#     # Prepare SQLite3 connection and create tables if they don't exist
-#     conn = sqlite3.connect('driverbase.db')
-#     cursor = conn.cursor()
-
-#     # Create vehicles table
-#     cursor.execute('''
-#     CREATE TABLE IF NOT EXISTS vehicles (
-#         vehicle_name TEXT,
-#         status TEXT,
-#         price TEXT,
-#         vin TEXT,
-#         stock TEXT,
-#         mpg_city TEXT,
-#         mpg_highway TEXT,
-#         engine TEXT,
-#         transmission TEXT,
-#         dealer_id INTEGER,
-#         days_on_driverbase TEXT,
-#         views TEXT,
-#         image_url TEXT,
-#         custom_link TEXT,
-#         detail_price TEXT,
-#         detail_status TEXT,
-#         detail_engine TEXT,
-#         local_image_path TEXT,
-#         downloaded_image_paths TEXT,
-#         FOREIGN KEY (dealer_id) REFERENCES dealers(dealer_id)
-#     )
-#     ''')
-
-#     # Create dealers table
-#     cursor.execute('''
-#     CREATE TABLE IF NOT EXISTS dealers (
-#         dealer_id INTEGER PRIMARY KEY AUTOINCREMENT,
-#         dealer_href TEXT,
-#         dealer_text TEXT,
-#         detail_dealer_phone TEXT
-#     )
-#     ''')
-
-#     # Prepare CSV files only if they don't already exist
-#     vehicle_csv_file = 'vehicle_data.csv'
-#     dealer_csv_file = 'dealer_data.csv'
-
-#     vehicle_csv_headers = ['Vehicle', 'Status', 'Price', 'VIN', 'Stock', 'MPG City', 'MPG Highway', 'Engine', 
-#                            'Transmission', 'Dealer ID', 'Days on Driverbase', 'Views', 'Image URL', 'Custom Link', 
-#                            'Detail Price', 'Detail Status', 'Detail Engine', 'Single Local Image', 'Detail 5 Local Images']
-
-#     dealer_csv_headers = ['Dealer ID', 'Dealer Link', 'Dealer Text', 'Detail Dealer Phone']
-
-#     if not os.path.exists(vehicle_csv_file):
-#         with open(vehicle_csv_file, mode='w', newline='', encoding='utf-8') as file:
-#             writer = csv.writer(file)
-#             writer.writerow(vehicle_csv_headers)  # Write headers once
-#             logging.info(f"CSV file '{vehicle_csv_file}' created and headers written.")
-#     else:
-#         logging.info(f"CSV file '{vehicle_csv_file}' already exists. Skipping CSV creation.")
-
-#     if not os.path.exists(dealer_csv_file):
-#         with open(dealer_csv_file, mode='w', newline='', encoding='utf-8') as file:
-#             writer = csv.writer(file)
-#             writer.writerow(dealer_csv_headers)  # Write headers once
-#             logging.info(f"CSV file '{dealer_csv_file}' created and headers written.")
-#     else:
-#         logging.info(f"CSV file '{dealer_csv_file}' already exists. Skipping CSV creation.")
-
-#     return conn, cursor, vehicle_csv_file, dealer_csv_file
-
 def setup_db_and_csv():
     # Connect to SQLite database (creates a new database if it doesn't exist)
     file_path = "public/db/"
@@ -151,16 +82,58 @@ def setup_db_and_csv():
             location TEXT
         )
     ''')
-
-    # cursor.execute('''
-    #     CREATE TABLE IF NOT EXISTS inventory_details (
-    #         id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #         inventory_id INTEGER,
-    #         detail_key TEXT,
-    #         detail_value TEXT,
-    #         FOREIGN KEY(inventory_id) REFERENCES inventories(id)
-    #     )
-    # ''')
+# id`, `dealer_id`, `deal_id`, `dealer_name`, `dealer_number`, `dealer_comment`, `dealer_address`, `dealer_city`, `dealer_state`, `dealer_iframe_map`, `zip_code`, 
+# `latitude`, `longitude`, `detail_url`, `img_from_url`, `local_img_url`, `vehicle_make_id`, `title`, `year`, `make`, `model`, `vin`, `price`, `miles`, `type`, 
+# `modelNo`, `trim`, `stock`, `engine_details`, `transmission`, `body_description`, `fuel`, `drive_info`, `mpg_city`, `mpg_highway`, `exterior_color`, `star`, `created_date`, 
+# `stock_date_formated`, `user_id`, `payment_price`, `body_formated`, `is_feature`, `is_lead_feature`, `status`, `created_at`, `updated_at`, `deleted_at`, `package`, 
+# `payment_date`, `active_till`, `featured_till`, `is_visibility`
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS inventory_details (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            dealer_id INTEGER NULL,
+            deal_id INTEGER NULL,
+            dealer_name VARCHAR(255) NULL,
+            dealer_number VARCHAR(255) NULL,
+            dealer_comment TEXT,
+            dealer_additional_description TEXT,
+            dealer_address TEXT,
+            dealer_city VARCHAR(255) NULL,
+            dealer_state VARCHAR(255) NULL,
+            dealer_iframe_map TEXT,
+            zip_code VARCHAR(255) NULL,
+            latitude VARCHAR(255) NULL,
+            longitude VARCHAR(255) NULL,
+            detail_url VARCHAR(255) NULL,
+            img_from_url TEXT,
+            local_img_url TEXT,
+            vehicle_make_id INTEGER NULL,
+            title VARCHAR(255),
+            year VARCHAR(255),
+            make VARCHAR(255),
+            model VARCHAR(255),
+            vin VARCHAR(255),
+            price INTEGER,
+            miles VARCHAR(255),
+            type VARCHAR(255) NULL,
+            modelNo VARCHAR(255) NULL,
+            trim VARCHAR(255) NULL,
+            stock VARCHAR(255) NULL,
+            engine_details TEXT NULL,
+            transmission VARCHAR(255) NULL,
+            body_description TEXT NULL,
+            fuel VARCHAR(255) NULL,
+            drive_info TEXT NULL,
+            mpg_city VARCHAR(255) NULL,
+            mpg_highway VARCHAR(255) NULL,
+            exterior_color VARCHAR(255) NULL,
+            star VARCHAR(255) NULL,
+            created_date VARCHAR(255) NULL,
+            stock_date_formated VARCHAR(255) NULL,
+            payment_price VARCHAR(255) NULL,
+            body_formated VARCHAR(255) NULL,
+            FOREIGN KEY (deal_id) REFERENCES users(id)
+        )
+    ''')
 
     conn.commit()
 
@@ -364,7 +337,7 @@ def download_image(remote_url, directory_location, local_image_path):           
 
 
 
-def scrape_detail_page(driver, vehicle_data, single_vehicle_data, link):
+def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_vehicle_data, link):
     # Open a new tab with the link
     driver.execute_script("window.open(arguments[0], '_blank');", link)
     time.sleep(2)  # Wait for the tab to open
@@ -477,10 +450,174 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data, link):
                     extracted_data.append(section_data)
 
                 detail_dealer_images_elements = driver.find_element(By.XPATH, "//section[@class='TRQLFd']")
-                # 
 
+                detail_dealer_additional_infos = driver.find_element(By.XPATH, "//section[@class='dcHBnX']")
+                dealer_html_content = detail_dealer_additional_infos.get_attribute('innerHTML')
+                dealer_soup = BeautifulSoup(dealer_html_content, 'html.parser')
+
+                # Save the HTML to a file
+                dealer_file_path = 'public/cargurus_vehicle_detail_dealer_html.txt'
+                if not os.path.exists(dealer_file_path):
+                    os.makedirs(os.path.dirname(dealer_file_path), exist_ok=True)
+                    with open(dealer_file_path, 'w', encoding='utf-8') as file:
+                        file.write(dealer_soup.prettify())
+                    logging.info(f"HTML content saved to {dealer_file_path}")
+                else:
+                    logging.info(f"{dealer_file_path} already exists. No file created.")
+                
+                # Extract the data
+                dealer_img_link = dealer_soup.find("img", {"class": "QrJyuT"})['src'] if dealer_soup.find("img", {"class": "QrJyuT"}) else None
+                dealer_name = dealer_soup.find("a", {"class": "us1dS i5dPf"}).text.strip() if dealer_soup.find("a", {"class": "us1dS i5dPf"}) else None
+                dealer_phone = dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-phone-link"}).text.strip() if dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-phone-link"}) else None
+                dealer_address = dealer_soup.find("span", {"data-track-ui": "dealer-address"}).text.strip() if dealer_soup.find("span", {"data-track-ui": "dealer-address"}) else None
+                address_parts = dealer_address.split(',')
+
+                if len(address_parts) >= 3:
+                    zip_code = address_parts[-1].strip()
+                    state = address_parts[-2].strip().split(' ')[0]
+                    city = address_parts[-3].strip()
+                    full_address = ', '.join(part.strip() for part in address_parts[:-3])  # Join remaining parts as the full address
+                else:
+                    # Handle case where address doesn't have expected format
+                    full_address = None
+                    city = None
+                    state = None
+                    zip_code = None
+
+                dealer_inventory_link = dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-inventory-link"})['href'] if dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-inventory-link"}) else None
+                dealer_website_link = dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-website-link"})['href'] if dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-website-link"}) else None
+                fb_link = dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-facebook-link"})['href'] if dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-facebook-link"}) else None
+                insta_link = dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-instagram-link"})['href'] if dealer_soup.find("a", {"data-cg-ft": "vdp-dealer-instagram-link"}) else None
+                
+                # Extract reviews
+                review_rate = dealer_soup.find("span", {"class": "us1dS CrxtQ"}).text.strip() if dealer_soup.find("span", {"class": "us1dS CrxtQ"}) else None
+                review_number = dealer_soup.find("span", {"class": "us1dS iK3Zj"}).text.strip() if dealer_soup.find("span", {"class": "us1dS iK3Zj"}) else None
+
+                # Extract dealer description and additional information
+                dealer_description = dealer_soup.find("p", {"class": "us1dS iK3Zj"}).text.strip() if dealer_soup.find("p", {"class": "us1dS iK3Zj"}) else None
+                dealer_additional_description = dealer_soup.find_all("p", {"class": "us1dS iK3Zj"})[1].text.strip() if len(dealer_soup.find_all("p", {"class": "us1dS iK3Zj"})) > 1 else None
+
+                # Create output in JSON format
+                dealer_data = {
+                    "dealer_img_link": dealer_img_link,
+                    "dealer_name": dealer_name,
+                    "dealer_phone": dealer_phone,
+                    "dealer_address": dealer_address,
+                    "dealer_inventory_link": dealer_inventory_link,
+                    "dealer_website_link": dealer_website_link,
+                    "fb_link": fb_link,
+                    "insta_link": insta_link,
+                    "review_rate": review_rate,
+                    "review_number": review_number,
+                    "dealer_description": dealer_description,
+                    "dealer_additional_information": dealer_additional_description
+                }
+
+                # Output the data
+                print(dealer_data)
+#  - Make:: Toyota
+#  - Model:: Tundra
+#  - Year:: 2014
+#  - Trim:: SR5
+#  - Body type:: Pickup Truck
+#  - Exterior color:: Black
+#  - Interior color:: Gray (Graphite)
+#  - Mileage:: 153,677 mi
+#  - Condition:: Used
+#  - VIN:: 5TFEM5F10EX082317
+            section_mileage = None
+            section_drivetrain = None
+            section_exterior_color = None
+            section_interiror_color = None
+            section_mpg = None
+            section_engine = None
+            section_fuel = None
+            section_transmission = None
+            section_make = None
+            section_model = None
+            section_year = None
+            section_trim = None
+            section_body_type = None
+            section_condition = None
+            section_vin = None
+            section_stock = None
+            section_fuel_tank_size = None
+            section_combined_gas_mileage = None
+            section_city_gas_mileage = None
+            section_highway_gas_mileage = None
+            section_fuel_type = None
+            section_fuel_horsepower = None
+            section_safety_rating = None
+            section_safety_crash_rating = None
+            section_safety_side_crash_rating = None
+            section_safety_rollover_rating = None
             # Display the extracted data
             for data in extracted_data:
+                if data['heading'] == 'Mileage':
+                    section_mileage  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Drivetrain':
+                    section_drivetrain  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Exterior color':
+                    section_exterior_color = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Interior color':
+                    section_interiror_color  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'MPG':
+                    section_mpg  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Engine':
+                    section_engine  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Fuel type':
+                    section_fuel = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Transmission':
+                    section_transmission   = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Make':
+                    section_make  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Model':
+                    section_model = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Year':
+                    section_year  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Trim':
+                    section_trim = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Body type':
+                    section_body_type = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Condition':
+                    section_condition = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'VIN':
+                    section_vin   = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Stock number':
+                    section_stock = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Fuel tank size':
+                    section_fuel_tank_size = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Combined gas mileage':
+                    section_combined_gas_mileage = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'City gas mileage':
+                    section_city_gas_mileage  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Highway gas mileage':
+                    section_highway_gas_mileage = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Fuel type':
+                    section_fuel_type = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Horsepower':
+                    section_fuel_horsepower = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+
+
+                elif data['heading'] == 'NHTSA overall safety rating':
+                    section_safety_rating  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'NHTSA frontal crash rating':
+                    section_safety_crash_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'NHTSA side crash rating':
+                    section_safety_side_crash_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'NHTSA rollover rating':
+                    section_safety_rollover_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+
+
+                elif data['heading'] == 'Doors':
+                    section_safety_rating  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Front legroom':
+                    section_safety_crash_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Back legroom':
+                    section_safety_side_crash_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'] == 'Cargo volume':
+                    section_safety_rollover_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+
                 print(f"Section: {data['heading']}")
                 if 'items' in data:
                     if isinstance(data['items'], list):
@@ -491,44 +628,40 @@ def scrape_detail_page(driver, vehicle_data, single_vehicle_data, link):
                         print(f" - {data['items']}")
                 print()
 
-            # for section in sections:
-            #     section_data = {}
-                
-            #     # Get the h2 heading, or set as 'N/A' if missing
-            #     h2 = section.find('h2')
-            #     section_data['heading'] = h2.text.strip() if h2 else 'N/A'
 
-            #     # Get all list items (li) within the section
-            #     ul = section.find('ul')
-            #     if ul:
-            #         list_items = ul.find_all('li')
-            #         section_data['items'] = []
+
+            # id INTEGER PRIMARY KEY AUTOINCREMENT, dealer_id INTEGER NULL, deal_id INTEGER NULL, dealer_name VARCHAR(255) NULL, dealer_number VARCHAR(255) NULL, 
+            # dealer_comment TEXT, dealer_address TEXT, dealer_city VARCHAR(255) NULL, dealer_state VARCHAR(255) NULL, dealer_iframe_map TEXT, zip_code VARCHAR(255) NULL, 
+            # latitude VARCHAR(255) NULL, detail_url VARCHAR(255) NULL, img_from_url TEXT, local_img_url TEXT, vehicle_make_id INTEGER NULL, title VARCHAR(255), 
+            # year VARCHAR(255), make VARCHAR(255), model VARCHAR(255), vin VARCHAR(255), price INTEGER, miles VARCHAR(255), type VARCHAR(255) NULL, modelNo VARCHAR(255) NULL, 
+            # trim VARCHAR(255) NULL, stock VARCHAR(255) NULL, engine_details TEXT NULL, transmission VARCHAR(255) NULL, body_description TEXT NULL, fuel VARCHAR(255) NULL, 
+            # drive_info TEXT NULL, mpg_city VARCHAR(255) NULL, mpg_highway VARCHAR(255) NULL, exterior_color VARCHAR(255) NULL, star VARCHAR(255) NULL, 
+            # created_date VARCHAR(255) NULL, stock_date_formated VARCHAR(255) NULL, payment_price VARCHAR(255) NULL, body_formated VARCHAR(255) NULL, FOREIGN KEY
+
+
+
+
+
+            # (deal_id) REFERENCES users(id)
+                dealer_id = 'DRI241000'
+                deal_id = 'DEAL241000'
+                vehicle_id = 'Vehicle241000'
+                dealer_iframe_map = 'N/A'
+                latitude = "N/A"
+                longitude = "N/A"
+                local_img_url = 'N/A'
+                vehicle_make_id = "N/A"
+                # # Insert into SQLite
+                cursor.execute('''
+                    INSERT INTO vehicles (dealer_id, deal_id, vehicle_id, dealer_name, dealer_number, dealer_comment, dealer_additional_description, dealer_address, dealer_city, dealer_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, detail_url, img_from_url, local_img_url, vehicle_make_id, title,year, make, model, vin, dealer_address, status_text,  mileage, engine, price, payment, deal_rating, description, phone, location)
+                               
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     
-            #         for item in list_items:
-            #             key_value = {}
-                        
-            #             # Find the key, often in a <h5> or <span> (use 'N/A' if missing)
-            #             key = item.find('h5') or item.find('span', class_='gUBXY5')
-            #             key_value['key'] = key.text.strip() if key else 'N/A'
-                        
-            #             # Find the value, often in a <p> or <span> (use 'N/A' if missing)
-            #             value = item.find('p') or item.find('span', class_='eqBXWZ')
-            #             key_value['value'] = value.text.strip() if value else 'N/A'
-                        
-            #             # Append to the section data
-            #             section_data['items'].append(key_value)
-                
-            #     # Append the section data to the main list if it contains data
-            #     if section_data:
-            #         extracted_data.append(section_data)
+                ''', (dealer_id, deal_id, vehicle_id, dealer_name, dealer_phone, dealer_description, dealer_additional_description, dealer_address, city, state, dealer_iframe_map, zip_code, latitude, longitude, full_address, link, detail_dealer_images, local_img_url, vehicle_make_id, detail_title, year, make, model,vin, mileage, engine, price, payment, deal_rating, description, phone, location, deal_rating, description, phone, location))
+                conn.commit()
 
-            # # Display the extracted data
-            # for data in extracted_data:
-            #     print(f"Section: {data['heading']}")
-            #     if 'items' in data:
-            #         for item in data['items']:
-            #             print(f" - {item['key']}: {item['value']}")
-            #     print()
+                csv_writers[3].writerow([dealer_id, deal_id, vehicle_id, dealer_name, dealer_phone, dealer_description, dealer_additional_description, dealer_address, city, state, dealer_iframe_map, zip_code, latitude, longitude, full_address, link, detail_dealer_images, local_img_url, vehicle_make_id, detail_title, year, make,model, vin, engine, price, payment, deal_rating, description, phone, location])
+
 
             # Print the scraped data
             print("Title:", detail_title)
@@ -862,7 +995,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                     # Scroll down the page
                     scroll_down_slowly(driver)
                     detail_vehicle_data = []
-                    scrape_detail_page(driver, detail_vehicle_data, result,cus_inventory_link)
+                    scrape_detail_page(driver, conn, cursor, csv_writers, detail_vehicle_data, result,cus_inventory_link)
                     time.sleep(5)
                 except AttributeError:
                     # Skip the row if any field is missing
