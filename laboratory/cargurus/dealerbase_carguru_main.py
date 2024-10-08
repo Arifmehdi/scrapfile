@@ -551,6 +551,14 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
             section_safety_crash_rating = None
             section_safety_side_crash_rating = None
             section_safety_rollover_rating = None
+            section_doors = None
+            section_front_leg_room = None
+            section_back_legroom = None
+            section_cargo_volume = None
+            section_options = []
+            section_history = []
+            section_pricing = []
+
             # Display the extracted data
             for data in extracted_data:
                 if data['heading'] == 'Mileage':
@@ -610,13 +618,19 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
 
 
                 elif data['heading'] == 'Doors':
-                    section_safety_rating  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                    section_doors  = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
                 elif data['heading'] == 'Front legroom':
-                    section_safety_crash_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                    section_front_leg_room = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
                 elif data['heading'] == 'Back legroom':
-                    section_safety_side_crash_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                    section_back_legroom = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
                 elif data['heading'] == 'Cargo volume':
-                    section_safety_rollover_rating = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                    section_cargo_volume = data['items'][0] if isinstance(data['items'], list) and data['items'] else None
+                elif data['heading'].lower() == 'options':
+                    section_options = data['items']  # Assign the options
+                elif data['heading'].lower().startswith('history'):
+                    section_history.extend(data['items'])  # Add to history list
+                elif data['heading'].lower() == 'pricing':
+                    section_pricing = data['items']  # Assign the pricing
 
                 print(f"Section: {data['heading']}")
                 if 'items' in data:
