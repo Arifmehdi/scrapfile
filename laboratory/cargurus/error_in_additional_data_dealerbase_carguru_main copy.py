@@ -367,7 +367,7 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
             detail_dealer_images = [img.get_attribute('src') for img in detail_dealer_images_elements] if detail_dealer_images_elements else ['No Images']
 
             detail_section_element = driver.find_element(By.XPATH, "//div[@class='Cois5O']")
-            detail_section_main_element = detail_section_element.find_elements(By.XPATH, "//div[@class='Cois5O']//section[@data-cg-ft='vdp-stats']")
+            detail_section_main_element = detail_section_element.find_elements(By.XPATH, "//div[@class='Cois5O']//section[@data-cg-ft='vdp-stats']//ul//li")
 
             main_mileage = None
             main_drivetrain = None
@@ -405,11 +405,11 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
             for addition_data in detail_section_additional_element:
                 try:
                     # Try to find the key (first span element)
-                    addition_data_key_element = addition_data.find_element(By.XPATH, './div/ul/li/div/div/span[1]')
+                    addition_data_key_element = addition_data.find_element(By.XPATH, '//div/div/span[1]')
                     addition_data_key = addition_data_key_element.text if addition_data_key_element else "No addition Key"
 
                     # Try to find the value (second span element)
-                    addition_data_value_element = addition_data.find_element(By.XPATH, './div/ul/li/div/div/span[1]')
+                    addition_data_value_element = addition_data.find_element(By.XPATH, '//div/div/span[2]')
                     addition_data_value = addition_data_value_element.text if addition_data_value_element else "No addition Value"
                 
                 except Exception as e:
@@ -466,8 +466,7 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
             print('Section data submitted')
             # Initialize storage for the extracted data
             extracted_data = []
-            
-            
+
             for section in sections:
                 section_data = {}
                 
@@ -624,9 +623,9 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
                 # Output the data
                 print(dealer_data)
 
-            # section_mileage = None
-            # section_drivetrain = None
-            # section_exterior_color = None
+            section_mileage = None
+            section_drivetrain = None
+            section_exterior_color = None
             section_interiror_color = None
             section_mpg = None
             section_engine = None
@@ -763,14 +762,14 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
                 # # Insert into SQLitedealer_inventory_link
 
                 cursor.execute('''
-                    INSERT INTO vehicles (dealer_id, deal_id, dealer_name, dealer_number, dealer_comment, dealer_additional_description, dealer_img_link, dealer_local_img_link, dealer_address, dealer_website_link, dealer_inventory_link, fb_link, insta_link, dealer_city, dealer_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, detail_url, img_from_url, local_img_url, vehicle_make_id, title, year, make, model, vin, price, miles, type, modelNo, trim, stock, engine_details, transmission, body_description, fuel, drive_info, mpg, mpg_city, mpg_highway, exterior_color, interior_color, star, created_date, deal_review_number)
+                    INSERT INTO vehicles (dealer_id, deal_id, dealer_name, dealer_number, dealer_comment, dealer_additional_description, dealer_img_link, dealer_local_img_link, dealer_address, dealer_website_link, dealer_inventory_link, fb_link, insta_link, dealer_city, dealer_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, detail_url, img_from_url, local_img_url, vehicle_make_id, title, year, make, model, vin, price, miles, type, modelNo, trim, stock, engine_details, transmission, body_description, fuel, drive_info, mpg_city, mpg_highway, exterior_color, interior_color, star, created_date, deal_review_number)
                                
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     
-                ''', (dealer_id, deal_id, dealer_name, dealer_phone, dealer_description, dealer_additional_description, dealer_img_link, dealer_local_img_link , dealer_address, dealer_website_link, dealer_inventory_link, fb_link, insta_link, detail_city, detail_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, link, detail_dealer_images, local_image_path, vehicle_make_id, detail_title, section_year, section_make, section_model, section_vin, detail_price, main_mileage, section_condition, modelNo, section_trim, section_stock, section_engine, section_transmission, section_body_type, section_fuel_type, main_drivetrain, section_city_gas_mileage, main_mpg, section_highway_gas_mileage, main_exterior_color, section_interiror_color, review_rate, formatted_time, review_number))
+                ''', (dealer_id, deal_id, dealer_name, dealer_phone, dealer_description, dealer_additional_description, dealer_img_link, dealer_local_img_link , dealer_address, dealer_website_link, dealer_inventory_link, fb_link, insta_link, detail_city, detail_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, link, detail_dealer_images, local_image_path, vehicle_make_id, detail_title, section_year, section_make, section_model, section_vin, detail_price, section_mileage, section_condition, modelNo, section_trim, section_stock, section_engine, section_transmission, section_body_type, section_fuel_type, section_drivetrain, section_city_gas_mileage, section_highway_gas_mileage, section_exterior_color, section_interiror_color, review_rate, formatted_time, review_number))
                 conn.commit()
 
-                csv_writers[5].writerow([dealer_id, deal_id, dealer_name, dealer_phone, dealer_description, dealer_additional_description, dealer_img_link, dealer_local_img_link ,detail_dealer_address, dealer_website_link, dealer_inventory_link, fb_link, insta_link, detail_city, detail_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, link, detail_dealer_images, local_image_path, vehicle_make_id, detail_title, section_year, section_make, section_model, section_vin, detail_price, main_mileage, section_condition, modelNo, section_trim, section_stock, section_engine, section_transmission, section_body_type, section_fuel_type, main_drivetrain, section_city_gas_mileage, main_mpg, section_highway_gas_mileage, main_exterior_color, section_interiror_color, review_rate, formatted_time, review_number])
+                csv_writers[5].writerow([dealer_id, deal_id, dealer_name, dealer_phone, dealer_description, dealer_additional_description, dealer_img_link, dealer_local_img_link ,detail_dealer_address, dealer_website_link, dealer_inventory_link, fb_link, insta_link, detail_city, detail_state, dealer_iframe_map, zip_code, latitude, longitude, full_address, link, detail_dealer_images, local_image_path, vehicle_make_id, detail_title, section_year, section_make, section_model, section_vin, detail_price, section_mileage, section_condition, modelNo, section_trim, section_stock, section_engine, section_transmission, section_body_type, section_fuel_type, section_drivetrain, section_city_gas_mileage, section_highway_gas_mileage, section_exterior_color, section_interiror_color, review_rate, formatted_time, review_number])
 
 
             # Print the scraped data
