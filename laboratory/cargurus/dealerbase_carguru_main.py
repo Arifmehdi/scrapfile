@@ -1038,49 +1038,72 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         for vehicle_row in single_vehicle_rows:
             a_elem = vehicle_row.find_element(By.XPATH, './/a[@data-testid="car-blade-link"]')
             a_href = a_elem.get_attribute('href') if a_elem else "N/A"
-            print(f"Anchor tag: {a_href}")
-
-            img_elem = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
-            single_img_src = img_elem.get_attribute('src') if img_elem else "N/A"
-            print(f"Image src: {single_img_src}")
 
             status = vehicle_row.find_element(By.XPATH, './/section[@role="contentinfo"]//span')
             status_text = status.text if status else "N/A"
-            print(f"Status: {status_text}")
 
             title_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
             title = title_elem.text if title_elem else "N/A"
-            print(f"Title: {title}")
 
             mileage_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
             mileage = mileage_elem.text if mileage_elem else "N/A"
-            print(f"Mileage: {mileage}")
 
             engine_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
             engine = engine_elem.text if engine_elem else "N/A"
-            print(f"Engine: {engine}")
 
             price_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
             price = price_elem.text if price_elem else "N/A"
-            print(f"Price: {price}")
+
 
             payment_elem = vehicle_row.find_element(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
             payment = payment_elem.text if payment_elem else "N/A"
-            print(f"Payment: {payment}")
 
             description_elem = vehicle_row.find_element(By.XPATH, './/div[@class="_text_1ncld_1"]')
             description = description_elem.text if description_elem else "N/A"
-            print(f"Description: {description}")
 
             phone_elem = vehicle_row.find_element(By.XPATH, './/button[@data-testid="button-phone-number"]')
             phone = phone_elem.text if phone_elem else "N/A"
-            print(f"Phone: {phone}")
 
             location_elem = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
             location = location_elem.text if location_elem else "N/A"
+
+            print(f"Anchor tag: {a_href}")
+            print(f"Status: {status_text}")
+            print(f"Title: {title}")
+            print(f"Mileage: {mileage}")
+            print(f"Engine: {engine}")
+            print(f"Price: {price}")
+            print(f"Payment: {payment}")
+            print(f"Description: {description}")
+            print(f"Phone: {phone}")
             print(f"Location: {location}")
 
             cus_inventory_link = target_url + a_href
+
+            # IMAGE DOWNLOAD START HEER 
+            directory_location = 'uploads/single_image'
+            vin_info = 'vin'
+            stock_info = 'stock'
+
+            replace_title_whitespace = title.replace(' ', '_').replace('/', '_').replace('-', '_')
+            local_image_path = f"{directory_location}/{replace_title_whitespace + '_'+ vin_info + '_' +stock_info}.jpg"
+            # --- Wait for the image to load ---
+            try:
+                # img_elem = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
+                # single_img_src = img_elem.get_attribute('src') if img_elem else "N/A"
+
+
+                img_elem = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]'))
+                ) 
+                single_img_src = img_elem.get_attribute('src') if img_elem else "N/A"
+                print(f"Image src: {single_img_src}")
+
+                if single_img_src != 'N/A':
+                    download_image(single_img_src, directory_location, local_image_path)
+            except:
+                    single_img_src = "Image not found"
+                    print(f"Exception encountered: {e}")
 
             # Store the vehicle data
             result = {
@@ -1127,7 +1150,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
 
             feature_additional_model_element = modal_data.find_elements(By.XPATH, "//div[@class='_statsList_9o1ka_13']//div")
             for additional_modal_row in feature_additional_model_element:
-                print(additional_modal_row)
+                # print(additional_modal_row)
                 additional_modal_key = additional_modal_row.find_element(By.XPATH, ".//h4").text
                 additional_modal_value = additional_modal_row.find_element(By.XPATH, ".//span").text
                 modal_row_all[additional_modal_key] = additional_modal_value
