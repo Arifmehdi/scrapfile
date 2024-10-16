@@ -43,40 +43,131 @@ def setup_db_and_csv():
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS dealers (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            dealer_id TEXT, name TEXT, phone TEXT, address TEXT, city TEXT, 
-            state TEXT, dealer_full_address TEXT, dealer_iframe_map TEXT, zip TEXT, about_me TEXT,
-            img TEXT, radius TEXT, rating TEXT, review_count_only TEXT, inventory_link TEXT
+            dealer_id TEXT,
+            name TEXT,
+            phone TEXT,
+            address TEXT,
+            city TEXT,
+            state TEXT,
+            dealer_full_address TEXT,
+            dealer_iframe_map TEXT,
+            zip TEXT,
+            about_me TEXT,
+            img TEXT,
+            radius TEXT,
+            rating TEXT,
+            review_count_only TEXT,
+            inventory_link TEXT
         )
     ''')
+
     # ### *** step 01             FOREIGN KEY(dealer_id) REFERENCES dealers(id),  inventory_link, single_img, 
-    # this make as like our old csv 
+
+    # dealer_id, dealer_name, phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+    #                             single_img_src, local_image_path, title, year, make, model, vin, price, mileage, vehicle_type, 
+    #                             model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+    #                             exterior_color, star, created_date, batch_no, cus_inventory_link, payment, in_market, mpg, interior_color, drivetrain, 
+    #                             status_text, dealer_inventory_count
+
+
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS vehicles (
-            id INTEGER PRIMARY KEY AUTOINCREMENT, dealer_id INTEGER NULL, dealer_name VARCHAR(255) NULL, phone VARCHAR(255) NULL,description TEXT, 
-            dealer_address TEXT, city TEXT, state TEXT, dealer_iframe_map TEXT, zip_code INTEGER NULL,
-            a_href TEXT, single_img_src TEXT, local_image_path TEXT, title TEXT, year VARCHAR(255) NULL, 
-            make VARCHAR(255) NULL, model VARCHAR(255) NULL, vin VARCHAR(255) NULL, price VARCHAR(255) NULL, mileage VARCHAR(255) NULL,
-            vehicle_type VARCHAR(255) NULL, model_no VARCHAR(255) NULL, trim TEXT, stock_number TEXT, engine VARCHAR(255) NULL,
-            transmission VARCHAR(255) NULL, body_type VARCHAR(255) NULL, fuel_type VARCHAR(255) NULL, driveInfo VARCHAR(255) NULL, mpg_city VARCHAR(255) NULL,
-            mpg_highway VARCHAR(255) NULL, exterior_color VARCHAR(255) NULL, star VARCHAR(255) NULL, created_date TEXT, batch_no TEXT,
-            cus_inventory_link VARCHAR(255) NULL, payment VARCHAR(255) NULL, in_market VARCHAR(255) NULL, mpg VARCHAR(255) NULL, interior_color VARCHAR(255) NULL,
-            drivetrain VARCHAR(255) NULL, status_text VARCHAR(255) NULL, dealer_inventory_count VARCHAR(255) NULL
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            dealer_id INTEGER NULL,
+            dealer_name VARCHAR(255) NULL,
+            phone VARCHAR(255) NULL,
+            description TEXT,
+            dealer_address TEXT,
+            city TEXT,
+            state TEXT,
+            dealer_iframe_map TEXT,
+            zip_code INTEGER NULL,
+            a_href TEXT,
+            single_img_src TEXT,
+            local_image_path TEXT,
+            title TEXT,
+            year VARCHAR(255) NULL,
+            make VARCHAR(255) NULL,
+            model VARCHAR(255) NULL,
+            vin VARCHAR(255) NULL,
+            price VARCHAR(255) NULL,
+            mileage VARCHAR(255) NULL,
+            vehicle_type VARCHAR(255) NULL,
+            model_no VARCHAR(255) NULL,
+            trim TEXT,
+            stock_number TEXT,
+            engine VARCHAR(255) NULL,
+            transmission VARCHAR(255) NULL,
+            body_type VARCHAR(255) NULL,
+            fuel_type VARCHAR(255) NULL,
+            driveInfo VARCHAR(255) NULL,
+            mpg_city VARCHAR(255) NULL,
+            mpg_highway VARCHAR(255) NULL,
+            exterior_color VARCHAR(255) NULL,
+            star VARCHAR(255) NULL,
+            created_date TEXT,
+            batch_no TEXT,
+            cus_inventory_link VARCHAR(255) NULL,
+            payment VARCHAR(255) NULL,
+            in_market VARCHAR(255) NULL,
+            mpg VARCHAR(255) NULL,
+            interior_color VARCHAR(255) NULL,
+            drivetrain VARCHAR(255) NULL,
+            status_text VARCHAR(255) NULL,
+            dealer_inventory_count VARCHAR(255) NULL
         )
     ''')
-    # this make as like our old db 
+
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS inventory_details (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            dealer_id INTEGER NULL, deal_id INTEGER NULL, dealer_name VARCHAR(255) NULL, dealer_number VARCHAR(255) NULL, dealer_comment TEXT,
-            dealer_additional_description TEXT, dealer_img_link TEXT, dealer_local_img_link TEXT, dealer_address TEXT, dealer_website_link TEXT,
-            dealer_inventory_link TEXT, fb_link TEXT, insta_link TEXT, dealer_city VARCHAR(255) NULL, dealer_state VARCHAR(255) NULL,
-            dealer_iframe_map TEXT, zip_code VARCHAR(255) NULL, latitude VARCHAR(255) NULL, longitude VARCHAR(255) NULL, full_address VARCHAR(255) NULL,
-            detail_url VARCHAR(255) NULL, img_from_url TEXT, local_img_url TEXT, vehicle_make_id INTEGER NULL, title VARCHAR(255),
-            year VARCHAR(255), make VARCHAR(255), model VARCHAR(255), vin VARCHAR(255), price INTEGER,
-            miles VARCHAR(255) NULL, type VARCHAR(255) NULL, modelNo VARCHAR(255) NULL, trim VARCHAR(255) NULL, stock VARCHAR(255) NULL,
-            engine_details TEXT NULL, transmission VARCHAR(255) NULL, body_description TEXT NULL, fuel VARCHAR(255) NULL, drive_info TEXT NULL,
-            mpg_city VARCHAR(255) NULL, mpg_highway VARCHAR(255) NULL, exterior_color VARCHAR(255) NULL, interior_color VARCHAR(255) NULL, star VARCHAR(255) NULL,
-            created_date VARCHAR(255) NULL, deal_review_number VARCHAR(255) NULL,
+            dealer_id INTEGER NULL,
+            deal_id INTEGER NULL,
+            dealer_name VARCHAR(255) NULL,
+            dealer_number VARCHAR(255) NULL,
+            dealer_comment TEXT,
+            dealer_additional_description TEXT,
+            dealer_img_link TEXT,
+            dealer_local_img_link TEXT,
+            dealer_address TEXT,
+            dealer_website_link TEXT,
+            dealer_inventory_link TEXT,
+            fb_link TEXT,
+            insta_link TEXT,
+            dealer_city VARCHAR(255) NULL,
+            dealer_state VARCHAR(255) NULL,
+            dealer_iframe_map TEXT,
+            zip_code VARCHAR(255) NULL,
+            latitude VARCHAR(255) NULL,
+            longitude VARCHAR(255) NULL,
+            full_address VARCHAR(255) NULL,
+            detail_url VARCHAR(255) NULL,
+            img_from_url TEXT,
+            local_img_url TEXT,
+            vehicle_make_id INTEGER NULL,
+            title VARCHAR(255),
+            year VARCHAR(255),
+            make VARCHAR(255),
+            model VARCHAR(255),
+            vin VARCHAR(255),
+            price INTEGER,
+            miles VARCHAR(255) NULL,
+            type VARCHAR(255) NULL,
+            modelNo VARCHAR(255) NULL,
+            trim VARCHAR(255) NULL,
+            stock VARCHAR(255) NULL,
+            engine_details TEXT NULL,
+            transmission VARCHAR(255) NULL,
+            body_description TEXT NULL,
+            fuel VARCHAR(255) NULL,
+            drive_info TEXT NULL,
+            mpg_city VARCHAR(255) NULL,
+            mpg_highway VARCHAR(255) NULL,
+            exterior_color VARCHAR(255) NULL,
+            interior_color VARCHAR(255) NULL,
+            star VARCHAR(255) NULL,
+            created_date VARCHAR(255) NULL,
+            deal_review_number VARCHAR(255) NULL,
             FOREIGN KEY (deal_id) REFERENCES users(id)
         )
     ''')
@@ -97,7 +188,9 @@ def setup_db_and_csv():
         dealer_csv_writer.writerow(['Dealer ID', 'Dealer Name', 'Phone', 'Address', 'City', 'State', 'Custom Address' , 
                                     'Dealer Iframe Map', 'Zip Code','About Dealer', 'Dealer Image','Radius', 'Rating','Review Count', 'Invnetory Link'])
 
-    # this make as like our old csv 
+    # if os.stat('public/db/inventory_info.csv').st_size == 0:
+    #     inventory_csv_writer.writerow(['Inventory Link', 'Single Image Link', 'Vehicle ID', 'Dealer Name', 'Dealer Address', 'Status', 'Title', 'Mileage', 'Engine', 'Price', 'Payment', 
+    #                                     'Rating', 'Dealer Description', 'Phone', 'Location'])
     if os.stat('public/db/inventory_info.csv').st_size == 0:
         inventory_csv_writer.writerow(['Dealer ID', 'Dealer Name', 'Dealer Number', 'Dealer Comment', 'Dealer Address', 'Dealer City', 'Dealer State', 'dealer Iframe Map', 'Zip Code', 'Detail URL', 
                                         'Image From URL','Local Image URL', 'Title', 'Year', 'Make', 'Model', 'Vin', 'Price', 'Miles', 'Type', 
@@ -105,7 +198,7 @@ def setup_db_and_csv():
                                         'Exterior Color', 'Star', 'Created Date', 'Batch No', 'Dealer Link', 'Monthly Pay', 'In Market', 'MPG', 'Interior Color', 'Drivetrain', 
                                         'Status','Dealer Inventory Count'])
 
-    # this make as like our old db 
+    ### *** step 04
     if os.stat('public/db/inventory_details.csv').st_size == 0:
         inventory_details_csv_writer.writerow(['Dealer ID', 'Deal ID', 'Dealer Name', 'Dealer Phone', "Dealer Description", ' Dealer Additional Description', 'Dealer Image Link', 'Dealer Local Image Link', 'Detail Dealer Address', 
         'Dealer Website Link', 'Dealer Inventory Link', 'FB Link', 'Insta Link', 'City' , 'State', 'Dealer Iframe Map', 'Zip Code', 'Latitude', 'Longitude', 'Full Address', 'Main Link', 'Detail dealer Image', 'Local Image Link', 
@@ -139,45 +232,45 @@ def get_new_dealer_id(cursor):
     else:
         return "D-24770071"  # Start from this ID if no dealers exist
 
-# def store_data_in_csv_and_sqlite(vehicle_data, dealer_data, cursor, conn, vehicle_csv_file, dealer_csv_file):
-#     # Unpack vehicle and dealer data
-#     (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
-#      days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, detail_engine, 
-#      local_image_path, downloaded_image_paths) = vehicle_data
+def store_data_in_csv_and_sqlite(vehicle_data, dealer_data, cursor, conn, vehicle_csv_file, dealer_csv_file):
+    # Unpack vehicle and dealer data
+    (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
+     days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, detail_engine, 
+     local_image_path, downloaded_image_paths) = vehicle_data
 
-#     (dealer_href, dealer_text, detail_dealer_phone) = dealer_data
+    (dealer_href, dealer_text, detail_dealer_phone) = dealer_data
 
-#     # Store dealer data in SQLite3 (first check if the dealer exists)
-#     cursor.execute('''
-#         INSERT INTO dealers (dealer_href, dealer_text, detail_dealer_phone)
-#         VALUES (?, ?, ?)
-#     ''', (dealer_href, dealer_text, detail_dealer_phone))
-#     dealer_id = cursor.lastrowid  # Get the auto-incremented dealer ID
-#     conn.commit()
+    # Store dealer data in SQLite3 (first check if the dealer exists)
+    cursor.execute('''
+        INSERT INTO dealers (dealer_href, dealer_text, detail_dealer_phone)
+        VALUES (?, ?, ?)
+    ''', (dealer_href, dealer_text, detail_dealer_phone))
+    dealer_id = cursor.lastrowid  # Get the auto-incremented dealer ID
+    conn.commit()
 
-#     # Store vehicle data in SQLite3
-#     cursor.execute('''
-#         INSERT INTO vehicles (
-#             vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission,
-#             dealer_id, days_on_driverbase, views, image_url, custom_link, detail_price, detail_status, 
-#             detail_engine, local_image_path, downloaded_image_paths
-#         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-#     ''', (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
-#           days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, detail_engine, 
-#           local_image_path, downloaded_image_paths))
-#     conn.commit()
+    # Store vehicle data in SQLite3
+    cursor.execute('''
+        INSERT INTO vehicles (
+            vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission,
+            dealer_id, days_on_driverbase, views, image_url, custom_link, detail_price, detail_status, 
+            detail_engine, local_image_path, downloaded_image_paths
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
+          days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, detail_engine, 
+          local_image_path, downloaded_image_paths))
+    conn.commit()
 
-#     # Store dealer data in CSV
-#     with open(dealer_csv_file, mode='a', newline='', encoding='utf-8') as file:
-#         writer = csv.writer(file)
-#         writer.writerow([dealer_id, dealer_href, dealer_text, detail_dealer_phone])  # Append dealer data
+    # Store dealer data in CSV
+    with open(dealer_csv_file, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow([dealer_id, dealer_href, dealer_text, detail_dealer_phone])  # Append dealer data
 
-#     # Store vehicle data in CSV
-#     with open(vehicle_csv_file, mode='a', newline='', encoding='utf-8') as file:
-#         writer = csv.writer(file)
-#         writer.writerow([vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, 
-#                          dealer_id, days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, 
-#                          detail_engine, local_image_path, downloaded_image_paths])  # Append vehicle data
+    # Store vehicle data in CSV
+    with open(vehicle_csv_file, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow([vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, 
+                         dealer_id, days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, 
+                         detail_engine, local_image_path, downloaded_image_paths])  # Append vehicle data
         
 
 def initialize_webdriver():
@@ -201,37 +294,16 @@ def custom_url():
     return base_url
 
 
-# def get_page_content_hash(driver):
-#     """Generate a hash of the current page's content to detect duplicates."""
-#     page_content = driver.page_source
-#     return hashlib.md5(page_content.encode('utf-8')).hexdigest()
+def get_page_content_hash(driver):
+    """Generate a hash of the current page's content to detect duplicates."""
+    page_content = driver.page_source
+    return hashlib.md5(page_content.encode('utf-8')).hexdigest()
 
 
 def navigate_to_next_page(driver, page_number):
     try:
         next_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, '//button[@data-testid="srp-desktop-page-navigation-next-page"]'))
-        )
-        next_button.click()
-        logging.info(f"Navigating to page {page_number + 2}")
-        
-        # Wait for the new page to load
-        WebDriverWait(driver, 10).until(
-            EC.staleness_of(next_button)
-        )
-
-
-        time.sleep(5)  # Additional sleep to ensure the new content is fully loaded
-    except Exception as e:
-        logging.error(f"Error navigating to the next page: {e}")
-        return False
-    return True
-
-
-def navigate_to_next_dealer_page(driver, page_number):
-    try:
-        next_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, '//div[@class="next"]'))
         )
         next_button.click()
         logging.info(f"Navigating to page {page_number + 2}")
@@ -278,9 +350,9 @@ def scroll_down_slowly(driver, scroll_pause_time=0.5, step=300):
 
 
 
-# def count_svg_stars(item):
-#     svgs = item.find_all('svg', {'data-testid': 'star-full'})
-#     return len(svgs)
+def count_svg_stars(item):
+    svgs = item.find_all('svg', {'data-testid': 'star-full'})
+    return len(svgs)
 
 
 
@@ -796,6 +868,192 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
             driver.close()
             driver.switch_to.window(driver.window_handles[1])  # Switch back to the first tab
 
+# def scrape_detail_page(driver, vehicle_data, single_vehicle_data,link):
+#     """
+#     Scrapes detailed page for a single vehicle entry.
+#     """
+        
+#     # main_url = single_vehicle_data['Main Url']
+#     # base_url = single_vehicle_data['Base Url']
+
+#      # Click the link to open the details page
+#     driver.execute_script("window.open(arguments[0], '_blank');", link)
+#     driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+
+
+#     # return driver,main_url,base_url, replace_title_whitespace, vin_info, stock_info 
+#     # Wait for the detail page to load and scrape data (add your detailed page scraping logic here)
+#     try:
+#         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//div[@id='detail_vehicle_data']")))
+#         # Add your scraping logic here for the detailed page
+
+#         # Example: Scrape more data from the detailed page
+#         detail_title = driver.find_element(By.XPATH, "//h1[@data-cg-ft='vdp-listing-title']").text  if detail_title else 'No title'
+#         detail_price = driver.find_element(By.XPATH, "//h2[@class='us1dS CrxtQ']").text  if detail_price else 'No price'
+#         detail_address_city_state = driver.find_element(By.XPATH, "//p[@class='us1dS iK3Zj']").text  if detail_address_city_state else 'No address'
+#         # detail_monthly_pay = driver.find_element(By.XPATH, "//span[@id='pmt']").text  
+
+#         detail_status_span = driver.find_elements(By.XPATH, "//span[@class='QOdmp OjhRM']").text if detail_status_span else 'No status'
+#         # detail_possible_statuses = ["New", "Preowned", "Certified Preowned"]
+#         # detail_status = "Not Found"
+#         # detail_engine = "Not Found"
+#         # for detail_span in detail_status_span:
+#         #     detail_span_text = detail_span.text.strip()
+#         #     if detail_span_text in detail_possible_statuses:
+#         #         detail_status = detail_span_text
+
+#         #         parent_element = detail_span.find_element(By.XPATH, '..')
+#         #         parent_text = parent_element.text.strip()
+#         #         detail_engine = parent_text.replace(detail_status, '').strip()
+#         #         break
+            
+
+#         detail_dealer_review = driver.find_element(By.XPATH, "//button[@class='JRPjD _8KIJA QXloi LCpwg7']").text if detail_dealer_review else 'No review'
+#         detail_dealer_telephone = driver.find_element(By.XPATH, "//span[@class='RTKKej']").text if detail_dealer_telephone else 'No telephone'
+#         detail_dealer_images = driver.find_elements(By.XPATH, "//div[@class='RENFam']//button//img").get_attribute('src') if detail_dealer_images else 'No Images'
+
+#         print(detail_title)
+#         print(detail_price)
+#         print(detail_address_city_state)
+#         print(detail_status_span)
+#         print(detail_dealer_review)
+#         print(detail_dealer_telephone)
+#         print(detail_dealer_images)
+#         time.sleep(5)
+#         return
+#         sys.exit()
+
+#         detail_dealer_link_tag = driver.find_element(By.XPATH, "//a[contains(@href, '/dealers/id/')]")
+
+#         detail_dealer_href =  detail_dealer_link_tag.get_attribute('href') if detail_dealer_link_tag else "Dealer link not found"
+#         detail_dealer_text = detail_dealer_link_tag.text.strip() if detail_dealer_link_tag else "Dealer text not found"
+#         detail_dealer_phone = driver.find_element(By.XPATH, "//header//div//div[2]//div[2]//div[3]//div//a[1]//button//span[2]").text  
+
+#         # --- Scraping for "Number of days on driverbase" ---
+#         detail_days_text = driver.find_element(By.XPATH, "//span[starts-with(@id,'dayslisted')]").text
+
+#         # --- Scraping for "glyphicon-eye-open" views ---
+#         detail_views_span = driver.find_element(By.XPATH, "//span[contains(@class, 'glyphicon-eye-open')]")
+#         detail_views_text = detail_views_span.find_element(By.XPATH, "following-sibling::small").text.strip() if detail_views_span else "Views not found"
+
+#         detail_rows = driver.find_elements(By.XPATH,'//table[@id="sort"]//tbody//tr')
+
+#         vehicle_details = {}
+#         for row in detail_rows:
+#             key_element = row.find_element(By.XPATH, './td[1]')  # First <td> is the key
+#             value_element = row.find_element(By.XPATH, './td[2]')  # Second <td> is the value
+#             # Extract the text from the elements
+#             key = key_element.text.strip().replace(":", "")  # Remove the colon from the key
+#             value = value_element.text.strip()
+#             # Add the key-value pair to the dictionary
+#             vehicle_details[key] = value
+        
+        
+#         try:
+#             detail_dealer_web_link = driver.find_element(By.XPATH, '//span[@class="col-xs-6 meta"]//a').get_attribute('href')
+#         except Exception as e:
+#             print(f"Error fetching dealer web link: {e}")
+        
+#         # --- Scraping for "glyphicon-map-marker" (dealer name) ---
+#         try:
+#             # Locate the element by class name
+#             detail_dealer_name = driver.find_element(By.CLASS_NAME, 'glyphicon-map-marker')
+#             dealer_button = detail_dealer_name.find_element(By.XPATH, 'following-sibling::button')
+#             detail_dealer_name_text = dealer_button.text.strip()
+#         except Exception as e:
+#             detail_dealer_name_text = "Dealer Name not found"
+#         # --- Scraping for "glyphicon-map-marker" (dealer name) ---
+
+#         try:
+#             # Locate the element by class name
+#             detail_dealer_comment = driver.find_element(By.XPATH, '//header//div//div[2]/div[5]/span').text.strip()
+#         except Exception as e:
+#             detail_dealer_comment = "Dealer Comment not found"
+        
+#         replace_title_whitespace = detail_title.replace(' ', '_').replace('/', '_').replace('-', '_')
+#         # vin_info = single_vehicle_data['VIN']
+#         # stock_info = single_vehicle_data['Stock']
+#         vin_info = vehicle_details['VIN #']
+#         stock_info = vehicle_details['Stock #']
+#         print(replace_title_whitespace)
+#         print(vin_info)
+#         print(stock_info)
+#         try:
+#             replace_title_whitespace = detail_title.replace(' ', '_').replace('/', '_').replace('-', '_')
+#             # vin_info = single_vehicle_data['VIN']
+#             # stock_info = single_vehicle_data['Stock']
+#             vin_info = vehicle_details['VIN #'].replace(' [check for recalls]','')
+#             stock_info = vehicle_details['Stock #']
+
+#             img_stack = driver.find_element(By.XPATH, '//img[@src="/public/img/icn/img-stack.png"]')
+#             img_stack_src = img_stack.get_attribute('src')
+#             print(f"Image stack src: {img_stack_src}")
+#             sibling_images = img_stack.find_elements(By.XPATH, '../../following-sibling::div//img')
+#             sibling_image_sources = [img.get_attribute('src') for img in sibling_images]
+#             image_sources_str = ",".join(sibling_image_sources)
+
+#             # Print all sibling image sources found
+#             downloaded_image_paths = []
+#             for idx, img_src in enumerate(sibling_image_sources[:5], 1):
+#                 print(f"Attempting to download image {idx} from {img_src}") 
+#                 location_url = main_url.split('/')[-1]
+#                 directory_location = 'uploads/'+location_url.replace('/','_').replace('-', '_')+'/'+vin_info
+#                 detail_local_image_path = f"{directory_location}/{replace_title_whitespace + '_' + vin_info + '_' + stock_info}_{idx}.jpg" 
+#                 download_image(img_src, directory_location, detail_local_image_path)
+#                 downloaded_image_paths.append(detail_local_image_path)
+#                 print(f"Sibling image {idx} src: {img_src}")
+
+#         except Exception as e:
+#             print(f"Error fetching images: {e}")
+
+#         # Print the extracted details
+#         for key, value in vehicle_details.items():
+#             print(f"{key}: {value}")
+
+#         detail_vehicle_info = []
+
+#         detail_monthly_pay = 'N/A'
+#         detail_info = {
+#             'detail_title' : detail_title,
+#             'detail_price' : detail_price,
+#             'detail_status' : detail_status_span,
+#             # 'detail_engine' : detail_engine,
+#             'detail_monthly_pay' : detail_monthly_pay,
+#             'detail_monthly_pay' : detail_address_city_state,
+#             'detail_dealer_href' : detail_dealer_href,
+#             'detail_dealer_name' : detail_dealer_text,
+#             'detail_dealer_phone' : detail_dealer_phone,
+#             'detail_days_text' : detail_days_text,
+#             'detail_views_text' : detail_views_text,
+#             'detail_dealer_web_link' : detail_dealer_web_link,
+#             'detail_dealer_name_text' : detail_dealer_name_text,
+
+#             'detail_dealer_comment' : detail_dealer_comment,
+#             'downloaded_image_paths' : downloaded_image_paths,
+
+#         }
+#         detail_vehicle_info.append(detail_info)
+#         detail_vehicle_info.append(vehicle_details)
+#         time.sleep(3)
+
+#     except Exception as e:
+#         print(f"Error fetching details from the page: {e}")
+    
+#     # # Close the detail tab and switch back to the main window
+#     # driver.close()
+#     # driver.switch_to.window(driver.window_handles[0])
+
+#     window_handles = driver.window_handles
+
+#         # Close the last (third) tab
+#     driver.switch_to.window(window_handles[2])  # Switch to the last tab
+#     driver.close()  # Close the last tab
+
+#     # Switch to the second tab
+#     driver.switch_to.window(window_handles[1])
+#     return detail_vehicle_info
+
+
 
 def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
     inventories_count = 0
@@ -863,9 +1121,12 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
 
             button = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket"]//button')
-
+            # button_id = button_element.get_attribute('id')
+            # # Handle modal data
+            # # button = vehicle_row.find_element(By.XPATH, "//button")
+            # button = vehicle_row.find_element(By.XPATH, f"//button[(@id='{button_id}')]")
             button.click()
-
+            # print(button_id)
 
             WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']"))
@@ -987,6 +1248,8 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
 
             time.sleep(5)
 
+
+
             # Insert into SQLite
             created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             dealer_id = 'Dri-241000'
@@ -1041,10 +1304,186 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         driver.switch_to.window(driver.window_handles[0])
 
     return dealer_name, dealer_address
+     
+# def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
+# # def extract_vehicle_info(URL, driver, all_data, header_data):
+#     inventories_count = 0 
+#     if URL:
+#         base_url = "https://www.cargurus.com"
+#         target_url = base_url + URL
+#         driver.execute_script("window.open(arguments[0], '_blank');", target_url)
+#         driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+
+#     try:
+#         # while True:  # Loop through pages
+#             data = WebDriverWait(driver, 10).until(
+#                 EC.presence_of_element_located((By.XPATH, '//main[@id="main"]'))
+#             )
+#             dealer_name = data.find_element(By.XPATH,'//div[@class="dealerDetailsHeader"]//h1').text
+#             dealer_address = data.find_element(By.XPATH,'//div[@class="dealerDetailsInfo"]').text
+
+#             inventory_obj = data.find_element(By.XPATH,'//div[@class="fzhq3E"]')
+#             single_vehicle_rows = data.find_elements(By.XPATH,'//div[@class="pazLTN"]')
+
+#             for idx, vehicle_row in enumerate(single_vehicle_rows):
+#                 a_elem = vehicle_row.find_element(By.XPATH,'//a[@data-testid="car-blade-link"]')
+#                 a_href = a_elem.get_attribute('href') if a_elem else "N/A"
+#                 print(f"Anchor tag : {a_href}")
+
+#                 img_elem = vehicle_row.find_element(By.XPATH,'//img[@data-cg-ft="srp-listing-blade-image"]')
+#                 single_img_src = img_elem.get_attribute('src') if img_elem else "N/A"
+#                 print(f"Image src : {single_img_src}")
+
+#                 status = vehicle_row.find_element(By.XPATH,'//section[@role="contentinfo"]//span')
+#                 status_text = status.text if status else "N/A"
+#                 print(f"Status : {status_text}")
+
+#                 title_elem = vehicle_row.find_element(By.XPATH,'//h4[@data-cg-ft="srp-listing-blade-title"]')
+#                 title = title_elem.text if title_elem else "N/A"
+#                 print(f"Title : {title}")
+
+#                 mileage_elem = vehicle_row.find_element(By.XPATH,'//p[@data-testid="srp-tile-mileage"]')
+#                 mileage = mileage_elem.text if mileage_elem else "N/A"
+#                 print(f"Mileage : {mileage}")
+
+#                 engine_elem = vehicle_row.find_element(By.XPATH,'//p[@data-testid="seo-srp-tile-engine-display-name"]')
+#                 engine = engine_elem.text if engine_elem else "N/A"
+#                 print(f"Engine : {engine}")
+
+#                 price_elem = vehicle_row.find_element(By.XPATH,'//h4[@data-testid="srp-tile-price"]')
+#                 price = price_elem.text if price_elem else "N/A"
+#                 print(f"Price : {price}")
+
+#                 payment_elem = vehicle_row.find_element(By.XPATH,'//span[@class="_monthlyPaymentText_noan4_230"]')
+#                 payment = payment_elem.text if payment_elem else "N/A"
+#                 print(f"Payment : {payment}")
+
+#                 # deal_rating_elem = vehicle_row.find_element(By.XPATH,'//span[@class="_monthlyPaymentText_noan4_230"]')
+#                 # deal_rating = deal_rating_elem.text if deal_rating_elem else "N/A"
+#                 # print(f"Dealer rating : {deal_rating}")
+
+#                 description_elem = vehicle_row.find_element(By.XPATH,'//div[@class="_text_1ncld_1"]')
+#                 description = description_elem.text if description_elem else "N/A"
+#                 print(f"Description : {description}")
+
+#                 phone_elem = vehicle_row.find_element(By.XPATH,'//button[@data-testid="button-phone-number"]')
+#                 phone = phone_elem.text if phone_elem else "N/A"
+#                 print(f"Phone : {phone}")
+
+#                 location_elem = vehicle_row.find_element(By.XPATH,'//div[@data-testid="srp-tile-bucket-text"]')
+#                 location = location_elem.text if location_elem else "N/A"
+#                 print(f"Location : {location}")
+
+#                 cus_inventory_link = target_url + a_href
+                
+#                 result = {
+#                     'Inventory Link ' : cus_inventory_link,
+#                     'Single Image' : single_img_src,
+#                     'Dealer Name' : dealer_name,
+#                     'Dealer Addres' : dealer_address,
+#                     'Status' : status_text,
+#                     'Title' : title,
+#                     'Mileage' : mileage,
+#                     'Engine' : engine,
+#                     'Price' : price,
+#                     'Payment' : payment,
+#                     # 'Deal Rating' : deal_rating,
+#                     'Description' : description,
+#                     'Phone' : phone,
+#                     'Location' : location
+#                 }
+
+#                 all_data.append(result)
+#                 button = vehicle_row.find_element(By.XPATH, "//button[starts-with(@id, 'info-toggle')]")
+#                 button.click()
+
+#                 WebDriverWait(driver, 10).until(
+#                     EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']"))
+#                 )
+
+#                 modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']")
+#                 feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']")
+#                 feature_model_elements = feature_model_element.find_elements(By.XPATH, "//ul//li")
+
+#                 modal_row_all = {}
+#                 for modal_row in feature_model_elements:
+#                     modal_key = modal_row.find_element(By.XPATH, "//div[2]//h5").text
+#                     modal_value = modal_row.find_element(By.XPATH, "//div[2]//p").text
+                    
+#                     # modal_result = {f"{modal_key} : {modal_value}" }
+#                     modal_row_all[modal_key] = modal_value
+#                     # print(modal_row)
+#                 # feature_model_data = //div[2]
+#                 print(modal_data)
+#                 print(modal_row_all)
+
+#                 close_button = vehicle_row.find_element(By.XPATH, "//button[@aria-label='Close dialog']")
+#                 close_button.click()
+
+#                 # Scroll down the page
+#                 scroll_down_slowly(driver)
+
+#                 # return all_data
+
+#                 # detail_vehicle_data = []
+#                 # scrape_detail_page(driver, conn, cursor, csv_writers, detail_vehicle_data, result, cus_inventory_link)
+#                 # detail_vehicle_data.append(result)
+#                 time.sleep(5)
+#     except AttributeError:
+#         # Skip the row if any field is missing
+#         # continue
+#         print("Not to mind now !")
+
+#     vehicle_id = 'C-241000'
+#     deal_rating = '5'
+#     # Insert into SQLite
+#     cursor.execute('''
+#         INSERT INTO vehicles (inventory_link, single_img, vehicle_id, dealer_name, dealer_address, status_text, title, mileage, engine, price, payment, 
+#                                 deal_rating, description, phone, location
+#                             )
+#         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?, ?, ?, ?)
+#     ''', (a_href, single_img_src, vehicle_id, dealer_name, dealer_address, status_text, title, mileage, engine, price, payment, 
+#             deal_rating, description, phone, location
+#         ))
+#     conn.commit()
+
+#     # dealer_id = cursor.lastrowid 
+
+# #                 # Write to dealers CSV
+#     csv_writers[3].writerow([a_href, single_img_src, vehicle_id, dealer_name, dealer_address, status_text, title, mileage,
+#                             engine, price, payment, deal_rating, description, phone, location])
+
+#     print('Vehicle single data saved in DB and CSV!')
+# #                 # Append the single vehicle's data to all_data
+# #                 # single_all_data.append(single_vehicle_data)
+
+# #                 detail_vehicle_data =[]
+# #                 # infor = scrape_detail_page(driver, detail_vehicle_data, single_vehicle_data, link)
+    
+#     # print(infor)
+#     # print('*'*40)
+    
+# number_of_pages = 3
+# print(number_of_pages)
+# for page in range(number_of_pages - 1):
+#     print(page)
+#     if not navigate_to_next_page(driver, page):
+#         break
+#     extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)
 
 
+#     except Exception as e:
+#         logging.error(f"Error occurred while extracting vehicle information: {e}")
+
+#     finally:
+#         driver.close()
+#         driver.switch_to.window(driver.window_handles[0])
+
+#     return result
+#     return detail_vehicle_data
 
 
+# def extract_dealer_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
 def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data, HEADER):
     try:
         single_driver = WebDriverWait(driver, 10).until(
@@ -1242,9 +1681,9 @@ def main():
     extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
 
         # Loop through pages
-    number_of_pages = 10
+    number_of_pages = 3
     for page in range(1, number_of_pages):
-        if not navigate_to_next_dealer_page(main_driver, page):
+        if not navigate_to_next_page(main_driver, page):
             break
         extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file,inventory_details_csv_writer ), single_all_data, HEADER)
 
