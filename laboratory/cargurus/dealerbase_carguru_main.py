@@ -24,6 +24,12 @@ import re
 # from mysql_connector import get_mysql_connection
 
 
+log_file_path = 'error_log.log'
+logging.basicConfig(filename=log_file_path, level=logging.ERROR,
+                    format='%(asctime)s:%(levelname)s:%(message)s')
+
+
+
 def setup_db_and_csv():
     # Connect to SQLite database (creates a new database if it doesn't exist)
     file_path = "public/db/"
@@ -137,7 +143,7 @@ def get_new_dealer_id(cursor):
         last_id_number = int(last_id[0].split('-')[1])
         return f"D-{last_id_number + 1}"
     else:
-        return "D-24770071"  # Start from this ID if no dealers exist
+        return "D-24787021"  # Start from this ID if no dealers exist
 
 # def store_data_in_csv_and_sqlite(vehicle_data, dealer_data, cursor, conn, vehicle_csv_file, dealer_csv_file):
 #     # Unpack vehicle and dealer data
@@ -571,7 +577,7 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
                     full_address = None
                     city = None
                     state = None
-                    zip_code = 77007
+                    zip_code = 78702
                 
                 if zip_code:
                     country_code = 'us'
@@ -831,39 +837,82 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         # Loop through each vehicle
         # for vehicle_row in single_vehicle_rows:
         for idx, vehicle_row in enumerate(single_vehicle_rows):
-            a_elem = vehicle_row.find_element(By.XPATH, './/a[@data-testid="car-blade-link"]')
-            a_href = a_elem.get_attribute('href') if a_elem else "N/A"
+            # a_elem = vehicle_row.find_element(By.XPATH, './/a[@data-testid="car-blade-link"]')
+            # a_href = a_elem.get_attribute('href') if a_elem else "N/A"
 
-            status = vehicle_row.find_element(By.XPATH, './/section[@role="contentinfo"]//span')
-            status_text = status.text if status else "N/A"
+            # status = vehicle_row.find_element(By.XPATH, './/section[@role="contentinfo"]//span')
+            # status_text = status.text if status else "N/A"
 
-            title_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
-            title = title_elem.text if title_elem else "N/A"
+            # title_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
+            # title = title_elem.text if title_elem else "N/A"
 
-            mileage_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
-            mileage = mileage_elem.text if mileage_elem else "N/A"
+            # mileage_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
+            # mileage = mileage_elem.text if mileage_elem else "N/A"
 
-            engine_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
-            engine = engine_elem.text if engine_elem else "N/A"
+            # engine_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
+            # engine = engine_elem.text if engine_elem else "N/A"
 
-            price_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
-            price = price_elem.text if price_elem else "N/A"
+            # price_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
+            # price = price_elem.text if price_elem else "N/A"
 
-            payment_elem = vehicle_row.find_element(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
-            payment = payment_elem.text if payment_elem else "N/A"
+            # payment_elem = vehicle_row.find_element(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
+            # payment = payment_elem.text if payment_elem else "N/A"
 
-            description_elem = vehicle_row.find_element(By.XPATH, './/div[@class="_text_1ncld_1"]')
-            description = description_elem.text if description_elem else "N/A"
+            # description_elem = vehicle_row.find_element(By.XPATH, './/div[@class="_text_1ncld_1"]')
+            # description = description_elem.text if description_elem else "N/A"
 
-            phone_elem = vehicle_row.find_element(By.XPATH, './/button[@data-testid="button-phone-number"]')
-            phone = phone_elem.text if phone_elem else "N/A"
+            # phone_elem = vehicle_row.find_element(By.XPATH, './/button[@data-testid="button-phone-number"]')
+            # phone = phone_elem.text if phone_elem else "N/A"
 
-            location_elem = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
-            location = location_elem.text if location_elem else "N/A"
-            city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+            # location_elem = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
+            # location = location_elem.text if location_elem else "N/A"
+            # city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+
+            # Safe extraction for href
+            a_elems = vehicle_row.find_elements(By.XPATH, './/a[@data-testid="car-blade-link"]')
+            a_href = a_elems[0].get_attribute('href') if a_elems else "N/A"
+
+            # Safe extraction for status
+            status_elems = vehicle_row.find_elements(By.XPATH, './/section[@role="contentinfo"]//span')
+            status_text = status_elems[0].text if status_elems else "N/A"
+
+            # Safe extraction for title
+            title_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
+            title = title_elems[0].text if title_elems else "N/A"
+
+            # Safe extraction for mileage
+            mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
+            mileage = mileage_elems[0].text if mileage_elems else "N/A"
+
+            # Safe extraction for engine
+            engine_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
+            engine = engine_elems[0].text if engine_elems else "N/A"
+
+            # Safe extraction for price
+            price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
+            price = price_elems[0].text if price_elems else "N/A"
+
+            # Safe extraction for payment
+            payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
+            payment = payment_elems[0].text if payment_elems else "N/A"
+
+            # Safe extraction for description
+            description_elems = vehicle_row.find_elements(By.XPATH, './/div[@class="_text_1ncld_1"]')
+            description = description_elems[0].text if description_elems else "N/A"
+
+            # Safe extraction for phone
+            phone_elems = vehicle_row.find_elements(By.XPATH, './/button[@data-testid="button-phone-number"]')
+            phone = phone_elems[0].text if phone_elems else "N/A"
+
+            # Safe extraction for location
+            location_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
+            if location_elems:
+                location = location_elems[0].text
+                city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+            else:
+                location, city, state = "N/A", "N/A", "N/A"
 
             button = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket"]//button')
-
             button.click()
 
 
@@ -936,7 +985,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
 
                 if single_img_src != 'N/A':
                     download_image(image_name, directory_location, local_image_path)
-            except:
+            except Exception as e:
                     single_img_src = "Image not found"
                     print(f"Exception encountered: {e}")
 
@@ -1216,7 +1265,7 @@ def main():
 
     input_element = driver.find_element(By.XPATH, '//input[@id="addressTyped"]')
     input_element.clear()
-    input_element.send_keys("77007") 
+    input_element.send_keys("78702") 
     # input_element.send_keys("78205") 
     # input_element.send_keys("78702") 
 
