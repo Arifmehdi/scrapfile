@@ -1,0 +1,667 @@
+2024-10-16 15:43:00,645:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class="_monthlyPaymentText_noan4_230"]"}   // solved
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 15:44:33,704:ERROR:Error occurred while extracting vehicle information: Message: element click intercepted: Element <button class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" aria-haspopup="true" data-testid="srp-tile-info-ellipsis" id="info-toggle-385481205" type="button">...</button> is not clickable at point (893, 406). Other element would receive the click: <li class="_listItem_1tanl_14">...</li>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002ECE37]
+	(No symbol) [0x002EB239]
+	(No symbol) [0x002E911B]
+	(No symbol) [0x002E8724]
+	(No symbol) [0x002DD4FD]
+	(No symbol) [0x0030AB3C]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 15:45:44,740:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 15:50:47,291:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 15:55:55,335:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 15:56:27,463:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"} // solved
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 15:57:05,948:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//p[@data-testid="seo-srp-tile-engine-display-name"]"}  //solved
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 15:57:51,439:ERROR:Error occurred while extracting vehicle information: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x003276F2]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 16:00:11,111:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:00:38,720:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"}  // solved
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 16:06:00,417:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:10:57,470:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:16:05,905:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:21:04,992:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:21:52,911:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'e' where it is not associated with a value  //solved
+2024-10-16 16:26:54,758:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:27:25,177:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 16:28:29,300:ERROR:Error occurred while extracting vehicle information: Message: element click intercepted: Element <button class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" aria-haspopup="true" data-testid="srp-tile-info-ellipsis" id="info-toggle-396169389" type="button">...</button> is not clickable at point (893, 16). Other element would receive the click: <button class="JRPjD lG5Pp QXloi" data-testid="button-request-info">...</button>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002ECE37]
+	(No symbol) [0x002EB239]
+	(No symbol) [0x002E911B]
+	(No symbol) [0x002E8724]
+	(No symbol) [0x002DD4FD]
+	(No symbol) [0x0030AB3C]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 16:33:43,956:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:38:57,982:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:44:18,997:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:49:33,951:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:54:40,633:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 16:59:37,667:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:02:31,417:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:07:52,421:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:09:02,547:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'e' where it is not associated with a value
+2024-10-16 17:11:01,762:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//p[@data-testid="seo-srp-tile-engine-display-name"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:14:41,238:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//p[@data-testid="seo-srp-tile-engine-display-name"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:15:14,616:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:15:56,492:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:18:47,602:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'e' where it is not associated with a value
+2024-10-16 17:23:56,336:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:27:46,956:ERROR:Error occurred while extracting vehicle information: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x003276F2]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:29:00,545:ERROR:Error occurred while extracting vehicle information: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x003276F2]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:29:27,673:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"}  //solved
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:34:25,664:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:34:29,900:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="fzhq3E"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:39:37,429:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:43:05,875:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'e' where it is not associated with a value
+2024-10-16 17:43:18,700:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="fzhq3E"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:45:46,871:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'e' where it is not associated with a value
+2024-10-16 17:48:26,195:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'e' where it is not associated with a value
+2024-10-16 17:50:51,200:ERROR:Error occurred while extracting vehicle information: Message: element click intercepted: Element <button class="JRPjD _8KIJA QXloi KrITS _button_1b7vx_1 _circular_1b7vx_10" aria-haspopup="true" data-testid="srp-tile-info-ellipsis" id="info-toggle-393840853" type="button">...</button> is not clickable at point (1626, 45). Other element would receive the click: <div data-testid="srp-tile-image-observer" class="_imageGradientWrapper_z4912_34 _imgAspectRatio_z4912_63">...</div>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002ECE37]
+	(No symbol) [0x002EB239]
+	(No symbol) [0x002E911B]
+	(No symbol) [0x002E8724]
+	(No symbol) [0x002DD4FD]
+	(No symbol) [0x0030AB3C]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:51:19,814:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//button[@data-testid="button-phone-number"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:56:14,508:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:56:45,063:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//p[@data-testid="seo-srp-tile-engine-display-name"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 17:58:38,377:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 17:59:09,585:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class="_monthlyPaymentText_noan4_230"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 18:04:08,145:ERROR:Error navigating to the next page: Message: 
+
+2024-10-16 18:05:18,672:ERROR:Error occurred while extracting vehicle information: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//p[@data-testid="seo-srp-tile-engine-display-name"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00415523+24195]
+	(No symbol) [0x003AAA04]
+	(No symbol) [0x002A2093]
+	(No symbol) [0x002E6ED2]
+	(No symbol) [0x002E711B]
+	(No symbol) [0x002DD091]
+	(No symbol) [0x0030AB84]
+	(No symbol) [0x002DCFB4]
+	(No symbol) [0x0030ADD4]
+	(No symbol) [0x00325280]
+	(No symbol) [0x0030A8D6]
+	(No symbol) [0x002DBA27]
+	(No symbol) [0x002DC43D]
+	GetHandleVerifier [0x006DCE13+2938739]
+	GetHandleVerifier [0x0072EC69+3274185]
+	GetHandleVerifier [0x004A09C2+594722]
+	GetHandleVerifier [0x004A7EDC+624700]
+	(No symbol) [0x003B37CD]
+	(No symbol) [0x003B0528]
+	(No symbol) [0x003B06C5]
+	(No symbol) [0x003A2CA6]
+	BaseThreadInitThunk [0x7546FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7751809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7751806E+238]
+
+2024-10-16 18:06:08,622:ERROR:Error navigating to the next page: Message: 
+
