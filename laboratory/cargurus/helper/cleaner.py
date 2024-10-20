@@ -2,7 +2,8 @@ import csv
 import re
 
 # Input and output CSV file paths
-zip_code  = 77007 
+# zip_code  = 77007 
+zip_code  = 75241 
 input_csv = f"../public/db/{zip_code}/inventory_info.csv"
 output_csv = f"../public/db/{zip_code}/{zip_code}_output_file.csv"
 
