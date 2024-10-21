@@ -28,8 +28,6 @@ log_file_path = 'error_log.log'
 logging.basicConfig(filename=log_file_path, level=logging.ERROR,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
-
-
 def setup_db_and_csv(zip_code_input):
     # Connect to SQLite database (creates a new database if it doesn't exist)
     file_path = f"public/db/{zip_code_input}/"
@@ -145,46 +143,7 @@ def get_new_dealer_id(cursor):
     else:
         return "D-24787021"  # Start from this ID if no dealers exist
 
-# def store_data_in_csv_and_sqlite(vehicle_data, dealer_data, cursor, conn, vehicle_csv_file, dealer_csv_file):
-#     # Unpack vehicle and dealer data
-#     (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
-#      days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, detail_engine, 
-#      local_image_path, downloaded_image_paths) = vehicle_data
-
-#     (dealer_href, dealer_text, detail_dealer_phone) = dealer_data
-
-#     # Store dealer data in SQLite3 (first check if the dealer exists)
-#     cursor.execute('''
-#         INSERT INTO dealers (dealer_href, dealer_text, detail_dealer_phone)
-#         VALUES (?, ?, ?)
-#     ''', (dealer_href, dealer_text, detail_dealer_phone))
-#     dealer_id = cursor.lastrowid  # Get the auto-incremented dealer ID
-#     conn.commit()
-
-#     # Store vehicle data in SQLite3
-#     cursor.execute('''
-#         INSERT INTO vehicles (
-#             vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission,
-#             dealer_id, days_on_driverbase, views, image_url, custom_link, detail_price, detail_status, 
-#             detail_engine, local_image_path, downloaded_image_paths
-#         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-#     ''', (vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, dealer_id,
-#           days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, detail_engine, 
-#           local_image_path, downloaded_image_paths))
-#     conn.commit()
-
-#     # Store dealer data in CSV
-#     with open(dealer_csv_file, mode='a', newline='', encoding='utf-8') as file:
-#         writer = csv.writer(file)
-#         writer.writerow([dealer_id, dealer_href, dealer_text, detail_dealer_phone])  # Append dealer data
-
-#     # Store vehicle data in CSV
-#     with open(vehicle_csv_file, mode='a', newline='', encoding='utf-8') as file:
-#         writer = csv.writer(file)
-#         writer.writerow([vehicle_name, status, price, vin, stock, mpg_city, mpg_highway, engine, transmission, 
-#                          dealer_id, days_on_driverbase, views, image_src, cus_link, detail_price, detail_status, 
-#                          detail_engine, local_image_path, downloaded_image_paths])  # Append vehicle data
-        
+# 
 
 def initialize_webdriver():
     logging.info("Initializing WebDriver")
@@ -206,11 +165,38 @@ def custom_url():
 
     return base_url
 
+def initial_zip_code_seter():
+        # Display the ZIP code options
+    print("[1] 78702 - Austin")
+    print("[2] 75241 - Dallas")
+    print("[3] 77007 - Houston")
+    print("[4] 78205 - San Antonio")
 
-# def get_page_content_hash(driver):
-#     """Generate a hash of the current page's content to detect duplicates."""
-#     page_content = driver.page_source
-#     return hashlib.md5(page_content.encode('utf-8')).hexdigest()
+    # Loop until a valid input is received
+    while True:
+        try:
+            zip_code_input = int(input('Choose Your Number (1-4): '))
+            
+            if zip_code_input == 1:
+                zip_code_input_data = 78702
+                break
+            elif zip_code_input == 2:
+                zip_code_input_data = 75241
+                break
+            elif zip_code_input == 3:
+                zip_code_input_data = 77007
+                break
+            elif zip_code_input == 4:
+                zip_code_input_data = 78205
+                break
+            else:
+                print("Invalid input. Please enter a number between 1 and 4.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    # Print the selected ZIP code
+    print(f"Selected ZIP code: {zip_code_input_data}")
+    return zip_code_input_data
 
 
 def navigate_to_next_page(driver, page_number):
@@ -865,39 +851,8 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         inventory_obj = data.find_element(By.XPATH, '//div[@class="fzhq3E"]')
         single_vehicle_rows = inventory_obj.find_elements(By.XPATH, '//div[@class="pazLTN"]')
 
-        # Loop through each vehicle
-        # for vehicle_row in single_vehicle_rows:
+
         for idx, vehicle_row in enumerate(single_vehicle_rows):
-            # a_elem = vehicle_row.find_element(By.XPATH, './/a[@data-testid="car-blade-link"]')
-            # a_href = a_elem.get_attribute('href') if a_elem else "N/A"
-
-            # status = vehicle_row.find_element(By.XPATH, './/section[@role="contentinfo"]//span')
-            # status_text = status.text if status else "N/A"
-
-            # title_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
-            # title = title_elem.text if title_elem else "N/A"
-
-            # mileage_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
-            # mileage = mileage_elem.text if mileage_elem else "N/A"
-
-            # engine_elem = vehicle_row.find_element(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
-            # engine = engine_elem.text if engine_elem else "N/A"
-
-            # price_elem = vehicle_row.find_element(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
-            # price = price_elem.text if price_elem else "N/A"
-
-            # payment_elem = vehicle_row.find_element(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
-            # payment = payment_elem.text if payment_elem else "N/A"
-
-            # description_elem = vehicle_row.find_element(By.XPATH, './/div[@class="_text_1ncld_1"]')
-            # description = description_elem.text if description_elem else "N/A"
-
-            # phone_elem = vehicle_row.find_element(By.XPATH, './/button[@data-testid="button-phone-number"]')
-            # phone = phone_elem.text if phone_elem else "N/A"
-
-            # location_elem = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
-            # location = location_elem.text if location_elem else "N/A"
-            # city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
 
             # Safe extraction for href
             vehicle_type_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-eyebrow"]//span')
@@ -935,8 +890,8 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
             mileage = mileage_elems[0].text if mileage_elems else "N/A"
 
-            cus_mileage = "N/A"
-            if mileage != "N/A":
+            cus_mileage = 0
+            if mileage != 0:
                 cus_mileage = re.sub(r'[\$,]', '', mileage)
 
             # Safe extraction for engine
@@ -945,18 +900,18 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
 
             # Safe extraction for price
             price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
-            price = price_elems[0].text if price_elems else "N/A"
+            price = price_elems[0].text if price_elems else 0
 
-            cus_price = "N/A"
-            if price != "N/A":
+            cus_price = 0
+            if price != 0:
                 cus_price = re.sub(r'[\$,]', '', price)
 
             # Safe extraction for payment
             payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
-            payment = payment_elems[0].text if payment_elems else "N/A"
+            payment = payment_elems[0].text if payment_elems else 0
 
-            cus_payment = "N/A"
-            if payment != "N/A":
+            cus_payment = 0
+            if payment != 0:
                 cus_payment = re.sub(r'\D', '', payment)
 
             # Safe extraction for description
@@ -1042,17 +997,18 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                 image_element = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
                 single_img_src = image_element.get_attribute('src') if image_element else "N/A"
 
-                image_name = "N/A"  
-                if '?' in single_img_src:
-                    image_name = single_img_src.split('?')[0]
-                else:
-                    image_name = single_img_src
+                if single_img_src !="N/A":
+                    image_name = "N/A"  
+                    if '?' in single_img_src:
+                        image_name = single_img_src.split('?')[0]
+                    else:
+                        image_name = single_img_src
 
-                print(f"Image src: {single_img_src}")
-                print(f"Image src: {image_name}")
+                    print(f"Image src: {single_img_src}")
+                    print(f"Image src: {image_name}")
 
-                if single_img_src != 'N/A':
-                    download_image(image_name, directory_location, local_image_path)
+                    if single_img_src != 'N/A':
+                        download_image(image_name, directory_location, local_image_path)
             except Exception as e:
                     single_img_src = "Image not found"
                     print(f"Exception encountered: {e}")
@@ -1099,14 +1055,21 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             print('*'*30 )
             print('*'*30 )
 
-            # Scroll down the page
+
+            # existing_dealer_id = get_existing_dealer_id(cursor, dealer_name, full_address, zip_code)
+            # if existing_dealer_id:
+            #     dealer_id = existing_dealer_id  # Use existing dealer ID
+            # else:
+            #     dealer_id = get_new_dealer_id(cursor) 
+            ## Scroll down the page
             scroll_down_slowly(driver)
+
 
             time.sleep(5)
 
             # Insert into SQLite
             created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            dealer_id = 'Dri-241000'
+            dealer_id = 'CG-241000'
             vehicle_id = 'C-241000'
             dealer_iframe_map = None
             deal_rating = None
@@ -1314,9 +1277,10 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
 def main():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
-    zip_code_input = input('Enter Your Zip Code : ') or 78702
-    
-    conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input)
+
+    zip_code_input_data = initial_zip_code_seter()
+
+    conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input_data)
     # conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
 
     main_driver = initialize_webdriver()
@@ -1334,18 +1298,14 @@ def main():
 
     input_element = driver.find_element(By.XPATH, '//input[@id="addressTyped"]')
     input_element.clear()
-    input_element.send_keys(zip_code_input) 
-    # input_element.send_keys("78205") 
-    # input_element.send_keys("78702") 
-
+    input_element.send_keys(zip_code_input_data) 
+ 
     select_element = driver.find_element(By.XPATH, '//select[@id="refine-search-distance"]')
     select = Select(select_element)
     # select.select_by_value("50")
     select.select_by_value("10")
 
-
     logging.info("Filled out the form fields")
-
 
     submit_button = WebDriverWait(main_driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//button[@type="submit"]'))
@@ -1354,13 +1314,11 @@ def main():
 
     logging.info("Clicked the submit button")
 
-    # single_driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//section[@class="results"]')))
-    # URL, driver, conn, cursor, csv_writers, all_data, header_data
     single_all_data = []
     extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
 
-        # Loop through pages
-    number_of_pages = 10
+    # Loop through pages
+    number_of_pages = 5
     for page in range(1, number_of_pages):
         if not navigate_to_next_dealer_page(main_driver, page):
             break

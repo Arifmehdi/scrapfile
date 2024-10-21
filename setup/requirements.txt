@@ -9,3 +9,4 @@ pytesseract
 pyautogui
 opencv-python
 pywinauto
+openpyxl
