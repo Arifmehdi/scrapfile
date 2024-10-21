@@ -1,7 +1,85 @@
+2024-10-20 17:25:42,177:ERROR:Error navigating to the next page: Message: 
 
-2024-10-20 16:45:45,126:ERROR:Error occurred while extracting vehicle information: table vehicles has no column named cus_phone
-2024-10-20 16:46:29,791:ERROR:Error occurred while extracting vehicle information: table vehicles has no column named cus_phone
-2024-10-20 16:55:41,426:ERROR:Error occurred while extracting vehicle information: table vehicles has no column named cus_payment
-2024-10-20 16:56:08,777:ERROR:Error occurred while extracting vehicle information: Message: 
+2024-10-20 17:30:30,087:ERROR:Error navigating to the next page: Message: 
 
-2024-10-20 17:08:12,081:ERROR:Error occurred while extracting vehicle information: table vehicles has no column named cus_payment
+2024-10-20 17:35:10,527:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 17:39:55,403:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 17:42:26,083:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 17:43:06,237:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'image_name' where it is not associated with a value
+2024-10-20 17:48:28,218:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 17:53:56,634:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 17:59:34,780:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:04:53,963:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:10:29,440:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:15:58,874:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:21:20,740:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:26:40,813:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:29:43,281:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:35:09,808:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:35:44,963:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'image_name' where it is not associated with a value
+2024-10-20 18:40:55,716:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:46:31,976:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:51:54,815:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 18:57:39,073:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:03:08,741:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:08:33,317:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:13:29,385:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:19:01,956:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:22:21,603:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:24:52,114:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:30:10,599:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:31:37,411:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:37:06,930:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:42:41,648:ERROR:Error navigating to the next page: Message: 
+
+2024-10-20 19:42:57,623:ERROR:Error navigating to the next page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00F15523+24195]
+	(No symbol) [0x00EAAA04]
+	(No symbol) [0x00DA2093]
+	(No symbol) [0x00DE6ED2]
+	(No symbol) [0x00DE711B]
+	(No symbol) [0x00E276F2]
+	(No symbol) [0x00E0AB84]
+	(No symbol) [0x00E25280]
+	(No symbol) [0x00E0A8D6]
+	(No symbol) [0x00DDBA27]
+	(No symbol) [0x00DDC43D]
+	GetHandleVerifier [0x011DCE13+2938739]
+	GetHandleVerifier [0x0122EC69+3274185]
+	GetHandleVerifier [0x00FA09C2+594722]
+	GetHandleVerifier [0x00FA7EDC+624700]
+	(No symbol) [0x00EB37CD]
+	(No symbol) [0x00EB0528]
+	(No symbol) [0x00EB06C5]
+	(No symbol) [0x00EA2CA6]
+	BaseThreadInitThunk [0x75C7FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x7755809E+286]
+	RtlGetAppContainerNamedObjectPath [0x7755806E+238]
+
