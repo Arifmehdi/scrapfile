@@ -64,7 +64,7 @@ def setup_db_and_csv(zip_code_input):
             transmission VARCHAR(255) NULL, body_type VARCHAR(255) NULL, fuel_type VARCHAR(255) NULL, driveInfo VARCHAR(255) NULL, mpg_city VARCHAR(255) NULL,
             mpg_highway VARCHAR(255) NULL, exterior_color VARCHAR(255) NULL, star VARCHAR(255) NULL, created_date TEXT, batch_no TEXT,
             cus_inventory_link VARCHAR(255) NULL, payment VARCHAR(255) NULL, in_market VARCHAR(255) NULL, mpg VARCHAR(255) NULL, interior_color VARCHAR(255) NULL,
-            drivetrain VARCHAR(255) NULL, status_text VARCHAR(255) NULL, dealer_inventory_count VARCHAR(255) NULL
+            drivetrain VARCHAR(255) NULL, status_text VARCHAR(255) NULL, dealer_inventory_count VARCHAR(255) NULL, vehicle_type_info TEXT 
         )
     ''')
     # this make as like our old db 
@@ -1020,6 +1020,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                 'Dealer Name': dealer_name,
                 'Dealer Address': dealer_address,
                 'Inventory Link': cus_inventory_link,
+                'Vehicle Type Short Info': vehicle_type_text,
                 'Status': status_text,
                 'Title': title,
                 'Mileage': cus_mileage,
@@ -1086,13 +1087,13 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                                     single_img_src, local_image_path, title, year, make, model, vin, price, mileage, vehicle_type, 
                                     model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
                                     exterior_color, star, created_date, batch_no, cus_inventory_link, payment, in_market, mpg, interior_color, drivetrain, 
-                                    status_text, dealer_inventory_count)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                    status_text, dealer_inventory_count, vehicle_type_info)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
-                status_text, dealer_inventory_count))
+                status_text, dealer_inventory_count, vehicle_type_text))
             conn.commit()
 
             # Write to dealers CSV
@@ -1100,11 +1101,11 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
-                status_text, dealer_inventory_count ])
+                status_text, dealer_inventory_count, vehicle_type_text ])
 
         print('Vehicle single data saved in DB and CSV!')
 
-        # Paginate through multiple pages
+        ## Paginate through multiple pages
         number_of_pages = 3
         for page in range(number_of_pages - 1):
             logging.info(f"Currently on page {page + 1}")
@@ -1189,8 +1190,6 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         radius = address_parts[1].strip() if len(address_parts) > 1 else None
         radius = radius.replace("(", "").replace(")", "") if radius else None
 
-        dealer_data = []
-        single_name, single_address = extract_vehicle_info(inventory_link, driver, conn, cursor, dealer_csv_writer, dealer_data, HEADER)
 
 
         rating_element = dealer.find('div', class_='dealerRating')
@@ -1267,8 +1266,17 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
         dealer_csv_writer[1].writerow([dealer_id, name, phone, full_address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, radius, rating, review_count_only, inventory_link_cus ])
 
         print("*"*50)
+        print(information)
         print('Dealer data saved in data sqlite and csv')
         print("*"*50)
+
+        dealer_data = []
+        single_name, single_address = extract_vehicle_info(inventory_link, driver, conn, cursor, dealer_csv_writer, dealer_data, HEADER)
+
+        single_all_data.append(dealer_data)
+
+    driver.close()
+    driver.switch_to.window(driver.window_handles[0])
     return single_all_data
 
 
