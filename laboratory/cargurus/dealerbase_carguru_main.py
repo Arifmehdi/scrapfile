@@ -197,9 +197,10 @@ def initial_zip_code_seter():
     # Print the selected ZIP code
     print(f"Selected ZIP code: {zip_code_input_data}")
     return zip_code_input_data
+            # if not navigate_to_next_page(driver, page, conn, cursor, csv_writers, all_data, header_data):
+            
 
-
-def navigate_to_next_page(driver, page_number):
+def navigate_to_next_page(driver, page_number, conn, cursor, csv_writers, all_data, header_data):
     time.sleep(5)
     try:
         next_button = WebDriverWait(driver, 10).until(
@@ -212,7 +213,11 @@ def navigate_to_next_page(driver, page_number):
         WebDriverWait(driver, 10).until(
             EC.staleness_of(next_button)
         )
+        base_url =  'https://www.cargurus.com'
+        current_url = driver.current_url
+        custom_url = current_url.replace(base_url,'')
 
+        extract_vehicle_info(custom_url, driver, conn, cursor, csv_writers, all_data, header_data)
 
         time.sleep(5)  # Additional sleep to ensure the new content is fully loaded
     except Exception as e:
@@ -939,10 +944,14 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
 
 
             WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']"))
+                EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']"))
             )
+            # WebDriverWait(driver, 10).until(
+            #     EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']"))
+            # )
+            # modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']")
 
-            modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']")
+            modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']")
             feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']//ul[@class='_statsList_rlq8o_1']")
             feature_model_elements = feature_model_element.find_elements(By.XPATH, "//li[@class='_listItem_1tanl_14']")
 
@@ -955,11 +964,12 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
 
 
             feature_additional_model_element = modal_data.find_elements(By.XPATH, "//div[@class='_statsList_9o1ka_13']//div")
-            for additional_modal_row in feature_additional_model_element:
-                # print(additional_modal_row)
-                additional_modal_key = additional_modal_row.find_element(By.XPATH, ".//h4").text
-                additional_modal_value = additional_modal_row.find_element(By.XPATH, ".//span").text
-                modal_row_all[additional_modal_key] = additional_modal_value
+            if feature_additional_model_element:
+                for additional_modal_row in feature_additional_model_element:
+                    # print(additional_modal_row)
+                    additional_modal_key = additional_modal_row.find_element(By.XPATH, ".//h4").text
+                    additional_modal_value = additional_modal_row.find_element(By.XPATH, ".//span").text
+                    modal_row_all[additional_modal_key] = additional_modal_value
 
             mileage = modal_row_all.get('Mileage', 'N/A')
             drivetrain = modal_row_all.get('Drivetrain', 'N/A')
@@ -974,7 +984,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             year = modal_row_all.get('Year:', 'N/A')
             trim = modal_row_all.get('Trim:', 'N/A')
             body_type = modal_row_all.get('Body type:', 'N/A')
-            stock_number = modal_row_all.get('Stock #:', 'N/A')
+            stock_number = modal_row_all.get('Stock #:', 'no_stock')
             vin = modal_row_all.get('VIN:', 'N/A')
             cus_inventory_link = a_href if a_href else 'N/A'
             
@@ -1109,7 +1119,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
         number_of_pages = 3
         for page in range(number_of_pages - 1):
             logging.info(f"Currently on page {page + 1}")
-            if not navigate_to_next_page(driver, page):
+            if not navigate_to_next_page(driver, page, conn, cursor, csv_writers, all_data, header_data):
                 logging.info("No more pages to navigate or encountered an error.")
                 break
             extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)

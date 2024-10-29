@@ -1,140 +1,72 @@
-2024-10-20 17:25:42,177:ERROR:Error navigating to the next page: Message: 
+2024-10-29 17:37:29,186:ERROR:Error navigating to the next page: Message: 
 
-2024-10-20 17:30:30,087:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 17:35:10,527:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 17:39:55,403:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 17:42:26,083:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 17:43:06,237:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'image_name' where it is not associated with a value
-2024-10-20 17:48:28,218:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 17:53:56,634:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 17:59:34,780:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:04:53,963:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:10:29,440:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:15:58,874:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:21:20,740:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:26:40,813:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:29:43,281:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:35:09,808:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:35:44,963:ERROR:Error occurred while extracting vehicle information: cannot access local variable 'image_name' where it is not associated with a value
-2024-10-20 18:40:55,716:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:46:31,976:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:51:54,815:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 18:57:39,073:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:03:08,741:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:08:33,317:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:13:29,385:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:19:01,956:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:22:21,603:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:24:52,114:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:30:10,599:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:31:37,411:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:37:06,930:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:42:41,648:ERROR:Error navigating to the next page: Message: 
-
-2024-10-20 19:42:57,623:ERROR:Error navigating to the next page: Message: 
+2024-10-29 17:37:40,550:ERROR:Error occurred while extracting vehicle information: Message: 
 Stacktrace:
-	GetHandleVerifier [0x00F15523+24195]
-	(No symbol) [0x00EAAA04]
-	(No symbol) [0x00DA2093]
-	(No symbol) [0x00DE6ED2]
-	(No symbol) [0x00DE711B]
-	(No symbol) [0x00E276F2]
-	(No symbol) [0x00E0AB84]
-	(No symbol) [0x00E25280]
-	(No symbol) [0x00E0A8D6]
-	(No symbol) [0x00DDBA27]
-	(No symbol) [0x00DDC43D]
-	GetHandleVerifier [0x011DCE13+2938739]
-	GetHandleVerifier [0x0122EC69+3274185]
-	GetHandleVerifier [0x00FA09C2+594722]
-	GetHandleVerifier [0x00FA7EDC+624700]
-	(No symbol) [0x00EB37CD]
-	(No symbol) [0x00EB0528]
-	(No symbol) [0x00EB06C5]
-	(No symbol) [0x00EA2CA6]
-	BaseThreadInitThunk [0x75C7FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x7755809E+286]
-	RtlGetAppContainerNamedObjectPath [0x7755806E+238]
+	GetHandleVerifier [0x004B3853+24035]
+	(No symbol) [0x0043BBE4]
+	(No symbol) [0x0031C2D3]
+	(No symbol) [0x0035DC86]
+	(No symbol) [0x0035DECB]
+	(No symbol) [0x0039B9D2]
+	(No symbol) [0x0037FED4]
+	(No symbol) [0x0039953F]
+	(No symbol) [0x0037FC26]
+	(No symbol) [0x0035218C]
+	(No symbol) [0x0035310D]
+	GetHandleVerifier [0x00759683+2800659]
+	GetHandleVerifier [0x007B423E+3172302]
+	GetHandleVerifier [0x007ACE52+3142626]
+	GetHandleVerifier [0x00556C00+692624]
+	(No symbol) [0x00444BFD]
+	(No symbol) [0x00441908]
+	(No symbol) [0x00441AA0]
+	(No symbol) [0x00433F50]
+	BaseThreadInitThunk [0x75D3FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B809E+286]
+	RtlGetAppContainerNamedObjectPath [0x773B806E+238]
 
-2024-10-22 13:16:31,956:ERROR:Error occurred while extracting vehicle information: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.101)
+2024-10-29 17:46:04,974:ERROR:Error navigating to the next page: Message: 
+
+2024-10-29 17:51:21,977:ERROR:Error navigating to the next page: Message: 
+
+2024-10-29 17:55:57,084:ERROR:Error navigating to the next page: Message: 
+
+2024-10-29 18:00:49,523:ERROR:Error navigating to the next page: Message: 
+
+unable to locate elements .//img[@data-cg-ft="srp-listing-blade-image"
+
+2024-10-29 18:04:37,410:ERROR:Error navigating to the next page: Message: 
+
+2024-10-29 18:09:14,341:ERROR:Error navigating to the next page: Message: 
+
+2024-10-29 18:13:48,807:ERROR:Error navigating to the next page: Message: 
+
+2024-10-29 18:18:08,630:ERROR:Error occurred while extracting vehicle information: Message: 
 Stacktrace:
-	GetHandleVerifier [0x00775523+24195]
-	(No symbol) [0x0070AA04]
-	(No symbol) [0x00602093]
-	(No symbol) [0x005DE22B]
-	(No symbol) [0x0067173F]
-	(No symbol) [0x00684BB9]
-	(No symbol) [0x0066A8D6]
-	(No symbol) [0x0063BA27]
-	(No symbol) [0x0063C43D]
-	GetHandleVerifier [0x00A3CE13+2938739]
-	GetHandleVerifier [0x00A8EC69+3274185]
-	GetHandleVerifier [0x008009C2+594722]
-	GetHandleVerifier [0x00807EDC+624700]
-	(No symbol) [0x007137CD]
-	(No symbol) [0x00710528]
-	(No symbol) [0x007106C5]
-	(No symbol) [0x00702CA6]
-	BaseThreadInitThunk [0x75B5FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x7795809E+286]
-	RtlGetAppContainerNamedObjectPath [0x7795806E+238]
+	GetHandleVerifier [0x004B3853+24035]
+	(No symbol) [0x0043BBE4]
+	(No symbol) [0x0031C2D3]
+	(No symbol) [0x0035DC86]
+	(No symbol) [0x0035DECB]
+	(No symbol) [0x0039B9D2]
+	(No symbol) [0x0037FED4]
+	(No symbol) [0x0039953F]
+	(No symbol) [0x0037FC26]
+	(No symbol) [0x0035218C]
+	(No symbol) [0x0035310D]
+	GetHandleVerifier [0x00759683+2800659]
+	GetHandleVerifier [0x007B423E+3172302]
+	GetHandleVerifier [0x007ACE52+3142626]
+	GetHandleVerifier [0x00556C00+692624]
+	(No symbol) [0x00444BFD]
+	(No symbol) [0x00441908]
+	(No symbol) [0x00441AA0]
+	(No symbol) [0x00433F50]
+	BaseThreadInitThunk [0x75D3FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x773B809E+286]
+	RtlGetAppContainerNamedObjectPath [0x773B806E+238]
 
-2024-10-22 19:17:27,620:ERROR:Error navigating to the next page: Message: 
+2024-10-29 18:23:35,847:ERROR:Error navigating to the next page: Message: 
 
-2024-10-22 19:22:53,612:ERROR:Error navigating to the next page: Message: 
+2024-10-29 18:28:23,844:ERROR:Error navigating to the next page: Message: 
 
-2024-10-22 19:23:38,361:ERROR:Error occurred while extracting vehicle information: Message: 
-Stacktrace:
-	GetHandleVerifier [0x00C85523+24195]
-	(No symbol) [0x00C1AA04]
-	(No symbol) [0x00B12093]
-	(No symbol) [0x00B56ED2]
-	(No symbol) [0x00B5711B]
-	(No symbol) [0x00B976F2]
-	(No symbol) [0x00B7AB84]
-	(No symbol) [0x00B95280]
-	(No symbol) [0x00B7A8D6]
-	(No symbol) [0x00B4BA27]
-	(No symbol) [0x00B4C43D]
-	GetHandleVerifier [0x00F4CE13+2938739]
-	GetHandleVerifier [0x00F9EC69+3274185]
-	GetHandleVerifier [0x00D109C2+594722]
-	GetHandleVerifier [0x00D17EDC+624700]
-	(No symbol) [0x00C237CD]
-	(No symbol) [0x00C20528]
-	(No symbol) [0x00C206C5]
-	(No symbol) [0x00C12CA6]
-	BaseThreadInitThunk [0x75B1FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x778A809E+286]
-	RtlGetAppContainerNamedObjectPath [0x778A806E+238]
-
-2024-10-22 19:23:49,023:ERROR:Error navigating to the next page: 'NoneType' object has no attribute 'is_displayed'
