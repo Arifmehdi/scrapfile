@@ -2,25 +2,47 @@ import csv
 import re
 import os
 from datetime import datetime
+import requests
+
+
+def get_lat_long(zip_code=77007, api_key="4b84ff4ad9a74c79ad4a1a945a4e5be1", country_code="us"):
+    url = f"https://api.opencagedata.com/geocode/v1/json?q={zip_code},{country_code}&key={api_key}"
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        data = response.json()
+        if 'results' in data and len(data['results']) > 0:
+            geometry = data['results'][0]['geometry']
+            latitude = geometry['lat']
+            longitude = geometry['lng']
+            city_name = data['results'][0]['components'].get('city', '')
+            return latitude, longitude, city_name
+        else:
+            print("No results found for this ZIP code.")
+    else:
+        print(f"Error: {response.status_code}")
+    return None, None, None
 
 # Example zip_code
-zip_code = 77007
+# zip_code = 77007
+batch_no = 1
 
 # Get the current date dynamically in 'YYYY-MM-DD' format
 date = datetime.now().strftime('%m%d%Y')
+creadet_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # File paths
 # input_csv = f"../public/db/{zip_code}/{date}/inventory_info.csv"
-input_csv = f"../public/db/77007-houseton/inventory_info.csv"
-output_csv = f"../public/db/{zip_code}_{date}/{zip_code}_{date}_output_file2.csv"
-duplicates_file = f"../public/db/{zip_code}_{date}/{zip_code}_{date}_duplicates2.txt"
+input_csv = f"../public/db/data_1930_10222024_output_file.csv"
+output_csv = f"../public/db/{date}/{date}_output_file.csv"
+duplicates_file = f"../public/db/{date}/{date}_duplicates.txt"
 
 # Check if output files already exist; if so, skip processing
 if os.path.exists(output_csv) and os.path.exists(duplicates_file):
     print(f"Output files already exist. Skipping processing.")
 else:
     # Check if the directory exists; if not, create it
-    output_dir = f"../public/db/{zip_code}_{date}"
+    output_dir = f"../public/db/{date}"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         print(f"Directory created: {output_dir}")
@@ -59,11 +81,24 @@ else:
 
                     # Get unique dealer ID based on dealer_name (row[0] assumed as dealer_name)
                     dealer_id = get_dealer_id(row[1])
-                    row[0] = f"CG-{zip_code}{dealer_id}"
+                    row[0] = f"CG-{row[8]}{dealer_id}"
 
                     # Format the phone number, price, miles, and monthly payment
                     formatted_number = re.sub(r'\D', '', row[2])
                     row[2] = formatted_number
+
+                    latitude, longitude, city_name = get_lat_long(row[8])
+                    if latitude is not None and longitude is not None:
+                        # Ensure row has enough columns for latitude, longitude, and city name
+                        if len(row) < 45:
+                            row += [''] * (45 - len(row))  # Add empty columns if necessary
+
+                        # Assign latitude, longitude, and city name to columns 42, 43, and 44
+                        row[42] = latitude
+                        row[43] = longitude
+                        row[44] = city_name
+                        
+                        print(f"Latitude: {latitude}, Longitude: {longitude}, City: {city_name}")
 
                     if row[13] == 'N/A':
                         row[13] = 0
@@ -74,6 +109,18 @@ else:
                     cleaned_miles = re.sub(r'[\,mi]', '', row[18])
                     row[18] = cleaned_miles
 
+                    try:
+                        # Parse the date string in 'MM/DD/YYYY HH:MM' format
+                        original_date = datetime.strptime(row[32], '%m/%d/%Y %H:%M')
+                        
+                        # Convert it to 'YYYY-MM-DD HH:MM:SS' format for MySQL
+                        row[32] = original_date.strftime('%Y-%m-%d %H:%M:%S')
+
+                    except ValueError:
+                        print(f"Invalid date format in row {reader.line_num}: {row[32]}")
+                        row[32] = '0000-00-00 00:00:00'
+
+                    row[33] = batch_no   
                     cleaned_monthly_pay = re.sub(r'\D', '', row[35])
                     row[35] = cleaned_monthly_pay
 
@@ -86,7 +133,7 @@ else:
                     elif row[39] == 'Four-Wheel Drive':
                         row[39] = '4WD'
 
-
+# 32
                     # Convert row to a tuple for easy comparison and duplication check
                     row_tuple = tuple(row)
 
