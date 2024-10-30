@@ -5,7 +5,8 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementClickInterceptedException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementClickInterceptedException, InvalidSessionIdException, WebDriverException
+from selenium.common.exceptions import InvalidSessionIdException, WebDriverException
 
 from bs4 import BeautifulSoup
 import mysql.connector
@@ -120,6 +121,14 @@ def setup_db_and_csv(zip_code_input):
 
 
 
+def is_session_valid(driver):
+    try:
+        driver.current_url  # Attempt to access the current URL
+        return True
+    except (InvalidSessionIdException, WebDriverException):
+        return False
+    
+
 
 # Function to check if a dealer exists in the SQLite database
 def get_existing_dealer_id(cursor, name, full_address, zip_code):
@@ -210,14 +219,20 @@ def navigate_to_next_page(driver, page_number, conn, cursor, csv_writers, all_da
         logging.info(f"Navigating to page {page_number + 2}")
         
         # Wait for the new page to load
-        WebDriverWait(driver, 10).until(
-            EC.staleness_of(next_button)
+        data = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, '//main[@id="main"]'))
         )
         base_url =  'https://www.cargurus.com'
         current_url = driver.current_url
-        custom_url = current_url.replace(base_url,'')
+        fragment = driver.execute_script("return window.location.hash")
+        custom_url = current_url.replace(base_url, '') + fragment
 
-        extract_vehicle_info(custom_url, driver, conn, cursor, csv_writers, all_data, header_data)
+        status = 'next'
+        extract_vehicle_info(custom_url, driver, conn, cursor, csv_writers, all_data, header_data,status)
+
+        print(f"fragment:{fragment}")
+        print(f"current_url:{current_url}")
+        print(f"custom_url:{custom_url}")
 
         time.sleep(5)  # Additional sleep to ensure the new content is fully loaded
     except Exception as e:
@@ -823,13 +838,14 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
             driver.switch_to.window(driver.window_handles[1])  # Switch back to the first tab
 
 
-def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data):
+def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data, status=None):
     inventories_count = 0
     if URL:
         base_url = "https://www.cargurus.com"
         target_url = base_url + URL
         driver.execute_script("window.open(arguments[0], '_blank');", target_url)
-        driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+        if status !='next':
+            driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
 
     try:
         # Wait for the main element to load
@@ -1122,14 +1138,15 @@ def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, heade
             if not navigate_to_next_page(driver, page, conn, cursor, csv_writers, all_data, header_data):
                 logging.info("No more pages to navigate or encountered an error.")
                 break
-            extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)
+            # extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)
 
     except Exception as e:
         logging.error(f"Error occurred while extracting vehicle information: {e}")
 
     finally:
         driver.close()
-        driver.switch_to.window(driver.window_handles[0])
+        # driver.switch_to.window(driver.window_handles[0])
+        driver.switch_to.window(driver.window_handles[0]) if len(driver.window_handles) > 1 else driver.quit()
 
     return dealer_name, dealer_address
 
