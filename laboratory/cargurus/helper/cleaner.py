@@ -33,8 +33,10 @@ creadet_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # File paths
 # input_csv = f"../public/db/{zip_code}/{date}/inventory_info.csv"
-input_csv = f"../public/db/data_1930_10222024_output_file.csv"
-output_csv = f"../public/db/{date}/{date}_output_file.csv"
+input_csv = f"custom_all02.csv"
+output_csv = f"custom_output_file.csv"
+# input_csv = f"../public/db/data_1930_10222024_output_file.csv"
+# output_csv = f"../public/db/{date}/{date}_output_file.csv"
 duplicates_file = f"../public/db/{date}/{date}_duplicates.txt"
 
 # Check if output files already exist; if so, skip processing
@@ -42,7 +44,8 @@ if os.path.exists(output_csv) and os.path.exists(duplicates_file):
     print(f"Output files already exist. Skipping processing.")
 else:
     # Check if the directory exists; if not, create it
-    output_dir = f"../public/db/{date}"
+    # output_dir = f"../public/db/{date}"
+    output_dir = f"{date}/"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         print(f"Directory created: {output_dir}")
