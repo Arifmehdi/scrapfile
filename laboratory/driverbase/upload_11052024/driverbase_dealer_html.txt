@@ -124,11 +124,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      99 cars for sale
+      109 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      98 new, 1 used, 0 certified pre-owned
+      108 new, 1 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33951">
@@ -196,11 +196,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      530 cars for sale
+      571 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      450 new, 80 used, 0 certified pre-owned
+      492 new, 79 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34002">
@@ -268,11 +268,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      40 cars for sale
+      66 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 40 used, 0 certified pre-owned
+      0 new, 66 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31981">
@@ -340,11 +340,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      50 cars for sale
+      59 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 50 used, 0 certified pre-owned
+      0 new, 59 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34734">
@@ -356,6 +356,78 @@
      </span>
      <span class="col-xs-6">
       <a href="http://www.vistacars.com/" target="_blank">
+       <button class="btn-link btn-block" type="submit">
+        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer website
+       </button>
+      </a>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="dealer_row">
+  <td class="valign-middle" data-label="dealers">
+   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
+    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
+    <a href="/dealers/id/51474">
+     Davis Chevrolet
+    </a>
+   </h3>
+   <span class="col-xs-6 meta">
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     6.93 miles away
+    </div>
+    <span class="glyphicon glyphicon-map-marker">
+    </span>
+    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Davis%20Chevrolet,2277%20S%20Loop%20W%2c%20Houston%2c%20TX%2077054%2c%20USA">
+     2277 S Loop W, Houston, TX 77054, USA
+    </a>
+    <br/>
+   </span>
+   <br/>
+   <br/>
+   <div align="center" class="col-xs-6">
+    <span class="col-xs-6">
+     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:7134892010" title="">
+      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
+       <span class="glyphicon glyphicon-earphone">
+       </span>
+       7134892010
+      </button>
+     </a>
+    </span>
+   </div>
+   <br/>
+   <div class="row">
+    <div align="center" class="col-xs-12">
+     <h3>
+      1 cars for sale
+      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
+     </h3>
+     <span class="col-xs-12 meta" style="padding-bottom:20px;">
+      0 new, 1 used, 0 certified pre-owned
+     </span>
+     <span class="col-xs-6">
+      <a href="/inventory/dealer?dealershipId=51474">
+       <button class="btn-link btn-block">
+        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer inventory
+       </button>
+      </a>
+     </span>
+     <span class="col-xs-6">
+      <a href="https://www.davischevrolet.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -410,11 +482,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      752 cars for sale
+      591 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      318 new, 299 used, 135 certified pre-owned
+      219 new, 238 used, 134 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31250">
@@ -482,11 +554,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      391 cars for sale
+      380 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      303 new, 88 used, 0 certified pre-owned
+      320 new, 60 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51521">
@@ -498,76 +570,6 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.teamgillmanchevrolet.com/" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/837">
-     Mac Haik Ford
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     7.96 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Mac%20Haik%20Ford,10333%20Katy%20Fwy%2c%20Houston%2c%20TX%2077024%2c%20USA">
-     10333 Katy Fwy, Houston, TX 77024, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:7139325000" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       7139325000
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      176 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 176 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=837">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="http://www.machaikford.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -624,11 +626,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      162 cars for sale
+      154 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 162 used, 0 certified pre-owned
+      0 new, 154 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=40788">
@@ -640,6 +642,76 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.mackhaikford.com" target="_blank">
+       <button class="btn-link btn-block" type="submit">
+        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer website
+       </button>
+      </a>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="dealer_row">
+  <td class="valign-middle" data-label="dealers">
+   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
+    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
+    <a href="/dealers/id/837">
+     Mac Haik Ford
+    </a>
+   </h3>
+   <span class="col-xs-6 meta">
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     7.96 miles away
+    </div>
+    <span class="glyphicon glyphicon-map-marker">
+    </span>
+    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Mac%20Haik%20Ford,10333%20Katy%20Fwy%2c%20Houston%2c%20TX%2077024%2c%20USA">
+     10333 Katy Fwy, Houston, TX 77024, USA
+    </a>
+    <br/>
+   </span>
+   <br/>
+   <br/>
+   <div align="center" class="col-xs-6">
+    <span class="col-xs-6">
+     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:7139325000" title="">
+      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
+       <span class="glyphicon glyphicon-earphone">
+       </span>
+       7139325000
+      </button>
+     </a>
+    </span>
+   </div>
+   <br/>
+   <div class="row">
+    <div align="center" class="col-xs-12">
+     <h3>
+      152 cars for sale
+      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
+     </h3>
+     <span class="col-xs-12 meta" style="padding-bottom:20px;">
+      0 new, 151 used, 1 certified pre-owned
+     </span>
+     <span class="col-xs-6">
+      <a href="/inventory/dealer?dealershipId=837">
+       <button class="btn-link btn-block">
+        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer inventory
+       </button>
+      </a>
+     </span>
+     <span class="col-xs-6">
+      <a href="http://www.machaikford.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -696,11 +768,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      83 cars for sale
+      79 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 83 used, 0 certified pre-owned
+      0 new, 79 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41776">
@@ -768,11 +840,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      576 cars for sale
+      538 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      455 new, 75 used, 0 certified pre-owned
+      417 new, 73 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33338">
@@ -840,11 +912,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      568 cars for sale
+      561 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      497 new, 44 used, 0 certified pre-owned
+      492 new, 43 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34314">
@@ -912,11 +984,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      469 cars for sale
+      387 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      272 new, 197 used, 0 certified pre-owned
+      224 new, 163 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=55223">
@@ -984,11 +1056,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      383 cars for sale
+      406 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      297 new, 86 used, 0 certified pre-owned
+      318 new, 88 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31931">
@@ -1056,11 +1128,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      438 cars for sale
+      436 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      362 new, 54 used, 0 certified pre-owned
+      345 new, 71 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33185">
@@ -1072,6 +1144,78 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.joemyersmazda.com" target="_blank">
+       <button class="btn-link btn-block" type="submit">
+        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer website
+       </button>
+      </a>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="dealer_row">
+  <td class="valign-middle" data-label="dealers">
+   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
+    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
+    <a href="/dealers/id/40408">
+     Joe Myers Ford
+    </a>
+   </h3>
+   <span class="col-xs-6 meta">
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     11.65 miles away
+    </div>
+    <span class="glyphicon glyphicon-map-marker">
+    </span>
+    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Joe%20Myers%20Ford,16634%20Northwest%20Fwy%2c%20Houston%2c%20TX%2077040%2c%20USA">
+     16634 Northwest Fwy, Houston, TX 77040, USA
+    </a>
+    <br/>
+   </span>
+   <br/>
+   <br/>
+   <div align="center" class="col-xs-6">
+    <span class="col-xs-6">
+     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:7137663600" title="">
+      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
+       <span class="glyphicon glyphicon-earphone">
+       </span>
+       7137663600
+      </button>
+     </a>
+    </span>
+   </div>
+   <br/>
+   <div class="row">
+    <div align="center" class="col-xs-12">
+     <h3>
+      98 cars for sale
+      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
+     </h3>
+     <span class="col-xs-12 meta" style="padding-bottom:20px;">
+      0 new, 98 used, 0 certified pre-owned
+     </span>
+     <span class="col-xs-6">
+      <a href="/inventory/dealer?dealershipId=40408">
+       <button class="btn-link btn-block">
+        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer inventory
+       </button>
+      </a>
+     </span>
+     <span class="col-xs-6">
+      <a href="https://www.joemyersford.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -1200,11 +1344,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      361 cars for sale
+      333 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      271 new, 87 used, 0 certified pre-owned
+      259 new, 70 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33373">
@@ -1272,11 +1416,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      72 cars for sale
+      79 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 72 used, 0 certified pre-owned
+      0 new, 79 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33954">
@@ -1344,11 +1488,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      194 cars for sale
+      127 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 193 used, 0 certified pre-owned
+      0 new, 119 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34540">
@@ -1416,11 +1560,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      63 cars for sale
+      39 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 63 used, 0 certified pre-owned
+      0 new, 39 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51499">
@@ -1488,11 +1632,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      548 cars for sale
+      641 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      525 new, 19 used, 0 certified pre-owned
+      630 new, 4 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=48491">
@@ -1560,11 +1704,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      196 cars for sale
+      188 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      150 new, 16 used, 30 certified pre-owned
+      137 new, 18 used, 33 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31410">
@@ -1632,11 +1776,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      24 cars for sale
+      6 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 24 used, 0 certified pre-owned
+      0 new, 6 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33974">
@@ -1704,11 +1848,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      20 cars for sale
+      14 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 20 used, 0 certified pre-owned
+      0 new, 14 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51954">
@@ -1776,11 +1920,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      1168 cars for sale
+      876 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      736 new, 309 used, 0 certified pre-owned
+      703 new, 127 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33561">
@@ -1848,11 +1992,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      552 cars for sale
+      597 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      471 new, 55 used, 0 certified pre-owned
+      513 new, 53 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34137">
@@ -1920,11 +2064,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      2 cars for sale
+      3 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 2 used, 0 certified pre-owned
+      0 new, 3 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51621">
@@ -1990,11 +2134,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      489 cars for sale
+      517 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      223 new, 265 used, 0 certified pre-owned
+      205 new, 311 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33467">
@@ -2062,11 +2206,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      865 cars for sale
+      1055 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      791 new, 64 used, 0 certified pre-owned
+      969 new, 82 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=48558">
@@ -2134,11 +2278,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      111 cars for sale
+      116 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 111 used, 0 certified pre-owned
+      0 new, 116 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=53672">
@@ -2206,11 +2350,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      679 cars for sale
+      739 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      585 new, 59 used, 0 certified pre-owned
+      651 new, 71 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=39449">
@@ -2222,6 +2366,78 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.baywaylincoln.com" target="_blank">
+       <button class="btn-link btn-block" type="submit">
+        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer website
+       </button>
+      </a>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="dealer_row">
+  <td class="valign-middle" data-label="dealers">
+   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
+    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
+    <a href="/dealers/id/39482">
+     Bayway Volvo Cars
+    </a>
+   </h3>
+   <span class="col-xs-6 meta">
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     16.30 miles away
+    </div>
+    <span class="glyphicon glyphicon-map-marker">
+    </span>
+    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Bayway%20Volvo%20Cars,12353%20Gulf%20Fwy%2c%20Houston%2c%20TX%2077034%2c%20USA">
+     12353 Gulf Fwy, Houston, TX 77034, USA
+    </a>
+    <br/>
+   </span>
+   <br/>
+   <br/>
+   <div align="center" class="col-xs-6">
+    <span class="col-xs-6">
+     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:2819296530" title="">
+      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
+       <span class="glyphicon glyphicon-earphone">
+       </span>
+       2819296530
+      </button>
+     </a>
+    </span>
+   </div>
+   <br/>
+   <div class="row">
+    <div align="center" class="col-xs-12">
+     <h3>
+      84 cars for sale
+      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
+     </h3>
+     <span class="col-xs-12 meta" style="padding-bottom:20px;">
+      74 new, 10 used, 0 certified pre-owned
+     </span>
+     <span class="col-xs-6">
+      <a href="/inventory/dealer?dealershipId=39482">
+       <button class="btn-link btn-block">
+        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer inventory
+       </button>
+      </a>
+     </span>
+     <span class="col-xs-6">
+      <a href="https://www.baywayvolvocars.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -2278,11 +2494,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      536 cars for sale
+      560 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      352 new, 179 used, 0 certified pre-owned
+      380 new, 174 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=39152">
@@ -2350,11 +2566,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      104 cars for sale
+      80 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 104 used, 0 certified pre-owned
+      0 new, 80 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=42391">
@@ -2420,11 +2636,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      560 cars for sale
+      518 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      466 new, 67 used, 0 certified pre-owned
+      431 new, 73 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33821">
@@ -2492,11 +2708,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      376 cars for sale
+      436 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      289 new, 87 used, 0 certified pre-owned
+      358 new, 78 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=40241">
@@ -2564,11 +2780,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      495 cars for sale
+      412 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      387 new, 102 used, 6 certified pre-owned
+      313 new, 97 used, 2 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31369">
@@ -2636,11 +2852,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      380 cars for sale
+      392 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      380 new, 0 used, 0 certified pre-owned
+      391 new, 1 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30608">
@@ -2708,11 +2924,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      456 cars for sale
+      436 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      286 new, 170 used, 0 certified pre-owned
+      304 new, 132 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=63011">
@@ -2780,11 +2996,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      395 cars for sale
+      412 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      312 new, 37 used, 46 certified pre-owned
+      345 new, 27 used, 40 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31307">
@@ -2852,11 +3068,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      398 cars for sale
+      304 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      238 new, 156 used, 0 certified pre-owned
+      172 new, 126 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51340">
@@ -2924,11 +3140,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      6 cars for sale
+      1 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 6 used, 0 certified pre-owned
+      0 new, 1 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51637">
@@ -3066,11 +3282,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      90 cars for sale
+      70 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 90 used, 0 certified pre-owned
+      0 new, 70 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=42320">
@@ -3082,74 +3298,6 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.planetford59.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/63638">
-     Team Gillman Auto Group
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     17.62 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Team%20Gillman%20Auto%20Group,18202%20North%20Fwy%2c%20Houston%2c%20TX%2077090%2c%20USA">
-     18202 North Fwy, Houston, TX 77090, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:8326264378" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       8326264378
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      136 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      92 new, 43 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=63638">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.teamgillman.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -3204,11 +3352,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      135 cars for sale
+      115 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 135 used, 0 certified pre-owned
+      0 new, 115 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34178">
@@ -3220,78 +3368,6 @@
      </span>
      <span class="col-xs-6">
       <a href="http://www.machaikfordpasadena.net/" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/64348">
-     Clear Lake INFINITI
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     18.83 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Clear%20Lake%20INFINITI,14705%20Gulf%20Fwy%2c%20Houston%2c%20TX%2077034%2c%20USA">
-     14705 Gulf Fwy, Houston, TX 77034, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:8325531723" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       8325531723
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      131 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      131 new, 0 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=64348">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.clearlakeinfiniti.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -3348,11 +3424,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      482 cars for sale
+      347 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      362 new, 64 used, 0 certified pre-owned
+      252 new, 57 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=52946">
@@ -3418,11 +3494,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      1634 cars for sale
+      1673 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      1427 new, 207 used, 0 certified pre-owned
+      1478 new, 194 used, 1 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30796">
@@ -3490,11 +3566,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      779 cars for sale
+      593 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      497 new, 256 used, 26 certified pre-owned
+      337 new, 251 used, 5 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31485">
@@ -3562,11 +3638,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      660 cars for sale
+      673 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      482 new, 130 used, 48 certified pre-owned
+      515 new, 112 used, 46 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30795">
@@ -3634,11 +3710,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      1042 cars for sale
+      1023 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      1002 new, 29 used, 11 certified pre-owned
+      974 new, 23 used, 26 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31587">
@@ -3706,11 +3782,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      228 cars for sale
+      229 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 228 used, 0 certified pre-owned
+      0 new, 229 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=42455">
@@ -3776,11 +3852,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      634 cars for sale
+      710 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      499 new, 135 used, 0 certified pre-owned
+      586 new, 124 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31467">
@@ -3792,148 +3868,6 @@
      </span>
      <span class="col-xs-6">
       <a href="http://www.tomballdodge.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/40568">
-     Big Star Hyundai
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     21.68 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Big%20Star%20Hyundai,17990%20Gulf%20Fwy%2c%20Friendswood%2c%20TX%2077546%2c%20USA">
-     17990 Gulf Fwy, Friendswood, TX 77546, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:2818194851" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       2818194851
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      685 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      497 new, 188 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=40568">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.bigstarhyundai.com/" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/41684">
-     Big Star Cadillac
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     21.80 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Big%20Star%20Cadillac,18100%20Gulf%20Fwy%2c%20Friendswood%2c%20TX%2077546%2c%20USA">
-     18100 Gulf Fwy, Friendswood, TX 77546, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:2818194641" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       2818194641
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      519 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      519 new, 0 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=41684">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.bigstarcadillac.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -3990,11 +3924,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      272 cars for sale
+      287 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      220 new, 39 used, 0 certified pre-owned
+      248 new, 35 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31164">
@@ -4062,11 +3996,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      21 cars for sale
+      2 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 21 used, 0 certified pre-owned
+      0 new, 2 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51487">
@@ -4078,78 +4012,6 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.parkwaychevrolet.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/64662">
-     Maserati at Northside
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     22.27 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Maserati%20at%20Northside,23110%20Interstate%2045%20N%2c%20Spring%2c%20TX%2077373%2c%20USA">
-     23110 Interstate 45 N, Spring, TX 77373, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:2819418077" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       2819418077
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      57 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      57 new, 0 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=64662">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.northsidemaserati.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -4206,11 +4068,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      263 cars for sale
+      243 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      145 new, 118 used, 0 certified pre-owned
+      147 new, 96 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30469">
@@ -4278,11 +4140,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      53 cars for sale
+      30 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 53 used, 0 certified pre-owned
+      0 new, 30 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=42287">
@@ -4422,11 +4284,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      43 cars for sale
+      40 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 43 used, 0 certified pre-owned
+      0 new, 40 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=32651">
@@ -4494,11 +4356,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      339 cars for sale
+      344 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      164 new, 163 used, 12 certified pre-owned
+      113 new, 215 used, 16 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30825">
@@ -4510,78 +4372,6 @@
      </span>
      <span class="col-xs-6">
       <a href="http://www.toyotaofalvin.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/63671">
-     Otto's Auto World
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     24.89 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Otto%27s%20Auto%20World,2955%20W%20State%20Hwy%206%2c%20Alvin%2c%20TX%2077511%2c%20USA">
-     2955 W State Hwy 6, Alvin, TX 77511, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:2819687315" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       2819687315
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      97 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 97 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=63671">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="http://www.ottosautoworld.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -4638,11 +4428,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      214 cars for sale
+      200 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      131 new, 83 used, 0 certified pre-owned
+      112 new, 88 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34403">
@@ -4654,78 +4444,6 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.reliancenissan.com/" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/55058">
-     Ron Carter Chevrolet GMC in Alvin
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     25.01 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Ron%20Carter%20Chevrolet%20GMC%20in%20Alvin,3205%20FM%20528%20Rd%2c%20Alvin%2c%20TX%2077511%2c%20USA">
-     3205 FM 528 Rd, Alvin, TX 77511, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:3465529604" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       3465529604
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      7 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 7 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=55058">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.roncarter-gm.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -4782,11 +4500,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      560 cars for sale
+      445 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      9 new, 551 used, 0 certified pre-owned
+      0 new, 445 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41275">
@@ -4852,11 +4570,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      51 cars for sale
+      45 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 51 used, 0 certified pre-owned
+      0 new, 45 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41127">
@@ -4924,11 +4642,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      12 cars for sale
+      6 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 12 used, 0 certified pre-owned
+      0 new, 6 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51771">
@@ -4996,11 +4714,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      385 cars for sale
+      420 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      292 new, 93 used, 0 certified pre-owned
+      322 new, 98 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33146">
@@ -5068,11 +4786,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      306 cars for sale
+      209 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      180 new, 104 used, 0 certified pre-owned
+      130 new, 57 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31363">
@@ -5140,11 +4858,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      15 cars for sale
+      9 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 15 used, 0 certified pre-owned
+      0 new, 9 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=51361">
@@ -5212,11 +4930,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      405 cars for sale
+      326 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      279 new, 106 used, 0 certified pre-owned
+      263 new, 53 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30591">
@@ -5284,11 +5002,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      483 cars for sale
+      402 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      349 new, 133 used, 0 certified pre-owned
+      266 new, 135 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33229">
@@ -5300,78 +5018,6 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.legacyfordtx.com/" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/31976">
-     Texan Hyundai
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     28.20 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Texan%20Hyundai,27309%20Southwest%20Fwy%2c%20Rosenberg%2c%20TX%2077471%2c%20USA">
-     27309 Southwest Fwy, Rosenberg, TX 77471, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:8325868600" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       8325868600
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      669 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      555 new, 114 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=31976">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.texanhyundai.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -5428,11 +5074,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      356 cars for sale
+      341 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      286 new, 70 used, 0 certified pre-owned
+      288 new, 53 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33480">
@@ -5572,11 +5218,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      229 cars for sale
+      216 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      229 new, 0 used, 0 certified pre-owned
+      216 new, 0 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33365">
@@ -5644,11 +5290,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      406 cars for sale
+      415 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      272 new, 102 used, 0 certified pre-owned
+      306 new, 76 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=34572">
@@ -5716,11 +5362,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      350 cars for sale
+      294 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      235 new, 85 used, 0 certified pre-owned
+      199 new, 71 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33408">
@@ -5788,11 +5434,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      364 cars for sale
+      347 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      301 new, 63 used, 0 certified pre-owned
+      306 new, 41 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41546">
@@ -5804,6 +5450,78 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.brookshirehyundai.com" target="_blank">
+       <button class="btn-link btn-block" type="submit">
+        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer website
+       </button>
+      </a>
+     </span>
+    </div>
+   </div>
+  </td>
+ </tr>
+ <tr class="dealer_row">
+  <td class="valign-middle" data-label="dealers">
+   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
+    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
+    <a href="/dealers/id/32025">
+     DeMontrond Chevrolet
+    </a>
+   </h3>
+   <span class="col-xs-6 meta">
+    <div>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     <span class="glyphicon glyphicon-star" style="color:gold">
+     </span>
+     33.91 miles away
+    </div>
+    <span class="glyphicon glyphicon-map-marker">
+    </span>
+    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=DeMontrond%20Chevrolet,3220%20Gulf%20Fwy%2c%20Texas%20City%2c%20TX%2077591%2c%20USA">
+     3220 Gulf Fwy, Texas City, TX 77591, USA
+    </a>
+    <br/>
+   </span>
+   <br/>
+   <br/>
+   <div align="center" class="col-xs-6">
+    <span class="col-xs-6">
+     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:8323719790" title="">
+      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
+       <span class="glyphicon glyphicon-earphone">
+       </span>
+       8323719790
+      </button>
+     </a>
+    </span>
+   </div>
+   <br/>
+   <div class="row">
+    <div align="center" class="col-xs-12">
+     <h3>
+      1 cars for sale
+      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
+     </h3>
+     <span class="col-xs-12 meta" style="padding-bottom:20px;">
+      0 new, 1 used, 0 certified pre-owned
+     </span>
+     <span class="col-xs-6">
+      <a href="/inventory/dealer?dealershipId=32025">
+       <button class="btn-link btn-block">
+        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
+        View dealer inventory
+       </button>
+      </a>
+     </span>
+     <span class="col-xs-6">
+      <a href="https://www.demontrondchevy.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -5860,11 +5578,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      600 cars for sale
+      630 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      500 new, 88 used, 0 certified pre-owned
+      547 new, 78 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33320">
@@ -5932,11 +5650,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      202 cars for sale
+      184 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 202 used, 0 certified pre-owned
+      0 new, 184 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41697">
@@ -6004,11 +5722,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      20 cars for sale
+      6 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      3 new, 12 used, 0 certified pre-owned
+      6 new, 0 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=31450">
@@ -6076,11 +5794,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      11 cars for sale
+      13 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      4 new, 7 used, 0 certified pre-owned
+      8 new, 5 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=30613">
@@ -6148,11 +5866,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      298 cars for sale
+      281 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      255 new, 36 used, 7 certified pre-owned
+      223 new, 39 used, 19 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=32060">
@@ -6164,150 +5882,6 @@
      </span>
      <span class="col-xs-6">
       <a href="http://www.cowboykia.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/42137">
-     Wiesner Hyundai
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     37.94 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Wiesner%20Hyundai,1645%20Interstate%2045%20N%2c%20Conroe%2c%20TX%2077304%2c%20USA">
-     1645 Interstate 45 N, Conroe, TX 77304, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:9365236300" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       9365236300
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      580 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      557 new, 23 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=42137">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.wiesnerhyundai.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/51805">
-     Wiesner Buick GMC
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     37.97 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Wiesner%20Buick%20GMC,1645%20Interstate%2045%20N%2c%20Conroe%2c%20TX%2077304%2c%20USA">
-     1645 Interstate 45 N, Conroe, TX 77304, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:9367764242" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       9367764242
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      8 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 8 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=51805">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.wiesnerbuickgmc.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -6364,11 +5938,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      59 cars for sale
+      64 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 59 used, 0 certified pre-owned
+      0 new, 64 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41765">
@@ -6436,11 +6010,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      67 cars for sale
+      64 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 67 used, 0 certified pre-owned
+      0 new, 64 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41483">
@@ -6508,11 +6082,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      22 cars for sale
+      19 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 22 used, 0 certified pre-owned
+      0 new, 19 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=40727">
@@ -6524,78 +6098,6 @@
      </span>
      <span class="col-xs-6">
       <a href="https://www.ryanford.com/" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/36518">
-     Traditions Chevrolet
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     42.53 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Traditions%20Chevrolet,843%20US-90%20ALT%2c%20East%20Bernard%2c%20TX%2077435%2c%20USA">
-     843 US-90 ALT, East Bernard, TX 77435, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:9793357000" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       9793357000
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      12 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 12 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=36518">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.traditionschevrolet.com" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -6652,11 +6154,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      194 cars for sale
+      127 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      93 new, 101 used, 0 certified pre-owned
+      75 new, 52 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=62582">
@@ -6724,11 +6226,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      280 cars for sale
+      287 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      243 new, 37 used, 0 certified pre-owned
+      240 new, 47 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=33184">
@@ -6740,78 +6242,6 @@
      </span>
      <span class="col-xs-6">
       <a href="http://www.martinchevroletbuickgmc.com" target="_blank">
-       <button class="btn-link btn-block" type="submit">
-        <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer website
-       </button>
-      </a>
-     </span>
-    </div>
-   </div>
-  </td>
- </tr>
- <tr class="dealer_row">
-  <td class="valign-middle" data-label="dealers">
-   <h3 class="col-xs-12" style="padding-top:5px;padding-bottom:5px;">
-    <img alt="Driver Profile" src="/public/img/icn/office.png" width="25px"/>
-    <a href="/dealers/id/51496">
-     CLASSIC CHEVROLET BUICK GMC
-    </a>
-   </h3>
-   <span class="col-xs-6 meta">
-    <div>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     <span class="glyphicon glyphicon-star" style="color:gold">
-     </span>
-     47.70 miles away
-    </div>
-    <span class="glyphicon glyphicon-map-marker">
-    </span>
-    <a class="text-primary" href="https://www.google.com/maps/search/?api=1&amp;query=CLASSIC%20CHEVROLET%20BUICK%20GMC,8020%20Broadway%20St%2c%20Galveston%2c%20TX%2077554%2c%20USA">
-     8020 Broadway St, Galveston, TX 77554, USA
-    </a>
-    <br/>
-   </span>
-   <br/>
-   <br/>
-   <div align="center" class="col-xs-6">
-    <span class="col-xs-6">
-     <a data-original-title="Call Seller." data-placement="top" data-toggle="tooltip" href="tel:4097445711" title="">
-      <button class="btn btn-link btn-block" style="color:#337ab7;" type="submit">
-       <span class="glyphicon glyphicon-earphone">
-       </span>
-       4097445711
-      </button>
-     </a>
-    </span>
-   </div>
-   <br/>
-   <div class="row">
-    <div align="center" class="col-xs-12">
-     <h3>
-      12 cars for sale
-      <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
-     </h3>
-     <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 12 used, 0 certified pre-owned
-     </span>
-     <span class="col-xs-6">
-      <a href="/inventory/dealer?dealershipId=51496">
-       <button class="btn-link btn-block">
-        <img height="21px" src="/public/img/icn/car-2.png" style="padding-top:0px;padding-bottom:0px;"/>
-        View dealer inventory
-       </button>
-      </a>
-     </span>
-     <span class="col-xs-6">
-      <a href="https://www.classicautogroupgalveston.com/" target="_blank">
        <button class="btn-link btn-block" type="submit">
         <img height="21px" src="/public/img/icn/a-tag.png" style="padding-top:0px;padding-bottom:0px;"/>
         View dealer website
@@ -6868,11 +6298,11 @@
    <div class="row">
     <div align="center" class="col-xs-12">
      <h3>
-      35 cars for sale
+      40 cars for sale
       <img height="21px" src="/public/img/icn/label.png" style="padding-top:0px;padding-bottom:0px;"/>
      </h3>
      <span class="col-xs-12 meta" style="padding-bottom:20px;">
-      0 new, 35 used, 0 certified pre-owned
+      0 new, 40 used, 0 certified pre-owned
      </span>
      <span class="col-xs-6">
       <a href="/inventory/dealer?dealershipId=41030">
