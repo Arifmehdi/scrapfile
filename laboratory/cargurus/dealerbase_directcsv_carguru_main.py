@@ -1330,69 +1330,76 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
     return single_all_data
 
 
+def csv_reader():
+    dealers_data = []
+    csv_file_path = 'public/dealerProcess/houston_dealers_info.csv'
+    # Open the CSV file and read its contents
+    with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csvfile:
+        csv_reader = csv.DictReader(csvfile)
+        for row in csv_reader:
+            # Append each row as a dictionary to the list
+            dealers_data.append(row)
+    
+    # for dealer in dealers_data:
+    #     print("Invnetory Link:", dealer['Invnetory Link'])
+
+    return dealers_data
 
 
-def main():
+def main2():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
 
-    zip_code_input_data = initial_zip_code_seter()
+    # zip_code_input_data = initial_zip_code_seter()
 
-    conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input_data)
+    # conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input_data)
     # conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
 
     main_driver = initialize_webdriver()
-    targated_url = custom_url()
+    # targated_url = custom_url()
 
-    URL = targated_url
+    # URL = targated_url
     HEADER = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.5'
     }
-    logging.info(URL)
-    main_driver.get(URL)
+    # logging.info(URL)
+    # main_driver.get(URL)
 
-    driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="addressTyped"]')))
+    # driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="addressTyped"]')))
 
-    input_element = driver.find_element(By.XPATH, '//input[@id="addressTyped"]')
-    input_element.clear()
-    input_element.send_keys(zip_code_input_data) 
- 
-    select_element = driver.find_element(By.XPATH, '//select[@id="refine-search-distance"]')
-    select = Select(select_element)
-    # select.select_by_value("50")
-    select.select_by_value("100")
 
-    logging.info("Filled out the form fields")
-
-    submit_button = WebDriverWait(main_driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, '//button[@type="submit"]'))
-    )
-    submit_button.click()
 
     logging.info("Clicked the submit button")
 
-    single_all_data = []
-    extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
+    # single_all_data = []
+    # extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
 
-    # Loop through pages
-    number_of_pages = 15
-    for page in range(1, number_of_pages):
-        if not navigate_to_next_dealer_page(main_driver, page):
-            break
-        extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file,inventory_details_csv_writer ), single_all_data, HEADER)
+    # # Loop through pages
+    # number_of_pages = 15
+    # for page in range(1, number_of_pages):
+    #     if not navigate_to_next_dealer_page(main_driver, page):
+    #         break
+    #     extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file,inventory_details_csv_writer ), single_all_data, HEADER)
 
-    print(single_all_data)
+    # print(single_all_data)
     print('*'*40)
     time.sleep(10)
     main_driver.quit()
 
-    dealer_csv_file.close()   
-    inventory_csv_file.close()
-    inventory_details_csv_file.close()
+    # dealer_csv_file.close()   
+    # inventory_csv_file.close()
+    # inventory_details_csv_file.close()
 
     # Clean up: Close the database connection
-    conn.close()
+    # conn.close()
+    
+def main():
+    csv_link = csv_reader()
+    print(csv_link)
+    for dealer in csv_link:
+        print("Invnetory Link:", dealer['Invnetory Link'])
+
 
 if __name__ == "__main__":
     main()
