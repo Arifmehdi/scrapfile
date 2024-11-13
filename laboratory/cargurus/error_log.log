@@ -259,3 +259,33 @@ Stacktrace:
 
 2024-11-03 18:12:37,061:ERROR:Error navigating to the next page: Message: 
 
+2024-11-13 17:26:32,467:ERROR:Error navigating to the next page: Message: element click intercepted: Element <div class="next">...</div> is not clickable at point (783, 404). Other element would receive the click: <div class="imgWrapper">...</div>
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x0058EBD3+24307]
+	(No symbol) [0x00518D74]
+	(No symbol) [0x003FC323]
+	(No symbol) [0x00443B07]
+	(No symbol) [0x00441F79]
+	(No symbol) [0x0043FE64]
+	(No symbol) [0x0043F45E]
+	(No symbol) [0x0043415D]
+	(No symbol) [0x0045FE8C]
+	(No symbol) [0x00433C14]
+	(No symbol) [0x00460124]
+	(No symbol) [0x00479579]
+	(No symbol) [0x0045FC26]
+	(No symbol) [0x0043219C]
+	(No symbol) [0x0043311D]
+	GetHandleVerifier [0x00838D93+2818227]
+	GetHandleVerifier [0x0089542E+3196750]
+	GetHandleVerifier [0x0088D9D2+3165426]
+	GetHandleVerifier [0x0062DA70+675216]
+	(No symbol) [0x00521B3D]
+	(No symbol) [0x0051EA18]
+	(No symbol) [0x0051EBB5]
+	(No symbol) [0x00511640]
+	BaseThreadInitThunk [0x7769FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x778F809E+286]
+	RtlGetAppContainerNamedObjectPath [0x778F806E+238]
+
