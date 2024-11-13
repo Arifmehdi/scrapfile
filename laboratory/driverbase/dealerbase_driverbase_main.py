@@ -1032,19 +1032,15 @@ def main():
     logging.info("Waiting for the page to load")
 
     dealer_data = []
-    ### *** step 001
+
     # extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer, inventory_details_csv_writer), dealer_data, HEADER)
     extract_dealer_info(URL, driver, conn, cursor, (dealer_csv_writer, inventory_csv_writer,), dealer_data, HEADER)
-    # dealer_info = extract_dealer_info(URL,driver,conn, cursor, csv_writer, dealer_data, HEADER)
 
-    driver.quit()
     # Close all files and connections
+    driver.quit()
     dealer_csv_file.close()
-
-    ### *** step 002
     inventory_csv_file.close()
     # inventory_details_csv_file.close()
-
     # Clean up: Close the database connection
     conn.close()
 
