@@ -289,3 +289,132 @@ Stacktrace:
 	RtlGetAppContainerNamedObjectPath [0x778F809E+286]
 	RtlGetAppContainerNamedObjectPath [0x778F806E+238]
 
+2024-11-14 15:40:28,523:ERROR:Error occurred while extracting vehicle information: Message: 
+Stacktrace:
+	GetHandleVerifier [0x008FEBD3+24307]
+	(No symbol) [0x00888D74]
+	(No symbol) [0x0076C323]
+	(No symbol) [0x007ADC86]
+	(No symbol) [0x007ADECB]
+	(No symbol) [0x007EB9F2]
+	(No symbol) [0x007CFED4]
+	(No symbol) [0x007E9579]
+	(No symbol) [0x007CFC26]
+	(No symbol) [0x007A219C]
+	(No symbol) [0x007A311D]
+	GetHandleVerifier [0x00BA8D93+2818227]
+	GetHandleVerifier [0x00C0542E+3196750]
+	GetHandleVerifier [0x00BFD9D2+3165426]
+	GetHandleVerifier [0x0099DA70+675216]
+	(No symbol) [0x00891B3D]
+	(No symbol) [0x0088EA18]
+	(No symbol) [0x0088EBB5]
+	(No symbol) [0x00881640]
+	BaseThreadInitThunk [0x7652FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x771F809E+286]
+	RtlGetAppContainerNamedObjectPath [0x771F806E+238]
+
+2024-11-14 15:55:08,751:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:00:11,860:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:03:33,027:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:03:38,202:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:04:48,813:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:04:54,183:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:21:13,086:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:22:29,507:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:22:34,969:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:23:54,557:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:23:59,778:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:24:43,776:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 16:24:48,957:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:24:52,732:ERROR:Error occurred while extracting vehicle information: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00FFEBD3+24307]
+	(No symbol) [0x00F88D74]
+	(No symbol) [0x00E6C323]
+	(No symbol) [0x00E4E00B]
+	(No symbol) [0x00ED5F6F]
+	(No symbol) [0x00EE8EC9]
+	(No symbol) [0x00ECFC26]
+	(No symbol) [0x00EA219C]
+	(No symbol) [0x00EA311D]
+	GetHandleVerifier [0x012A8D93+2818227]
+	GetHandleVerifier [0x0130542E+3196750]
+	GetHandleVerifier [0x012FD9D2+3165426]
+	GetHandleVerifier [0x0109DA70+675216]
+	(No symbol) [0x00F91B3D]
+	(No symbol) [0x00F8EA18]
+	(No symbol) [0x00F8EBB5]
+	(No symbol) [0x00F81640]
+	BaseThreadInitThunk [0x7652FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x771F809E+286]
+	RtlGetAppContainerNamedObjectPath [0x771F806E+238]
+
+2024-11-14 16:43:09,274:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:44:30,818:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:46:20,875:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 16:47:19,483:ERROR:Error navigating to the next page: extract_vehicle_info() takes from 6 to 7 positional arguments but 8 were given
+2024-11-14 17:00:45,938:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 17:17:48,248:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 17:49:50,473:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 17:57:01,228:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 17:59:59,347:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 18:01:09,061:ERROR:Error occurred while extracting vehicle information: '_csv.writer' object is not subscriptable
+2024-11-14 18:10:43,130:ERROR:Error occurred while extracting vehicle information: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=130.0.6723.117); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x011BEBD3+24307]
+	(No symbol) [0x01148D74]
+	(No symbol) [0x0102C323]
+	(No symbol) [0x01031DA0]
+	(No symbol) [0x01033628]
+	(No symbol) [0x010336A0]
+	(No symbol) [0x0106D899]
+	(No symbol) [0x0106DECB]
+	(No symbol) [0x01063FF1]
+	(No symbol) [0x0108FED4]
+	(No symbol) [0x01063C14]
+	(No symbol) [0x01090124]
+	(No symbol) [0x010A9579]
+	(No symbol) [0x0108FC26]
+	(No symbol) [0x0106219C]
+	(No symbol) [0x0106311D]
+	GetHandleVerifier [0x01468D93+2818227]
+	GetHandleVerifier [0x014C542E+3196750]
+	GetHandleVerifier [0x014BD9D2+3165426]
+	GetHandleVerifier [0x0125DA70+675216]
+	(No symbol) [0x01151B3D]
+	(No symbol) [0x0114EA18]
+	(No symbol) [0x0114EBB5]
+	(No symbol) [0x01141640]
+	BaseThreadInitThunk [0x7652FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x771F809E+286]
+	RtlGetAppContainerNamedObjectPath [0x771F806E+238]
+
+2024-11-14 18:11:03,799:ERROR:Error navigating to the next page: Message: 
+Stacktrace:
+	GetHandleVerifier [0x011BEBD3+24307]
+	(No symbol) [0x01148D74]
+	(No symbol) [0x0102C323]
+	(No symbol) [0x0106DC86]
+	(No symbol) [0x0106DECB]
+	(No symbol) [0x010AB9F2]
+	(No symbol) [0x0108FED4]
+	(No symbol) [0x010A9579]
+	(No symbol) [0x0108FC26]
+	(No symbol) [0x0106219C]
+	(No symbol) [0x0106311D]
+	GetHandleVerifier [0x01468D93+2818227]
+	GetHandleVerifier [0x014C542E+3196750]
+	GetHandleVerifier [0x014BD9D2+3165426]
+	GetHandleVerifier [0x0125DA70+675216]
+	(No symbol) [0x01151B3D]
+	(No symbol) [0x0114EA18]
+	(No symbol) [0x0114EBB5]
+	(No symbol) [0x01141640]
+	BaseThreadInitThunk [0x7652FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x771F809E+286]
+	RtlGetAppContainerNamedObjectPath [0x771F806E+238]
+
