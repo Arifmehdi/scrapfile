@@ -274,6 +274,26 @@ def navigate_to_next_page(driver, page_number, conn, cursor, csv_writers, all_da
     return True
 
 
+# def navigate_to_next_dealer_page(driver, page_number):
+#     try:
+#         next_button = WebDriverWait(driver, 10).until(
+#             EC.element_to_be_clickable((By.XPATH, '//div[@class="next"]'))
+#         )
+#         next_button.click()
+#         logging.info(f"Navigating to page {page_number + 2}")
+        
+#         # Wait for the new page to load
+#         WebDriverWait(driver, 10).until(
+#             EC.staleness_of(next_button)
+#         )
+
+
+#         time.sleep(5)  # Additional sleep to ensure the new content is fully loaded
+#     except Exception as e:
+#         logging.error(f"Error navigating to the next page: {e}")
+#         return False
+#     return True
+
 def navigate_to_next_dealer_page(driver, page_number):
     try:
         # Wait for the next button to be clickable (increased timeout to ensure page load)
@@ -329,6 +349,13 @@ def scroll_down_slowly(driver, scroll_pause_time=0.5, step=300):
             break
 
         last_height = new_height
+
+
+
+# def count_svg_stars(item):
+#     svgs = item.find_all('svg', {'data-testid': 'star-full'})
+#     return len(svgs)
+
 
 
 def download_image(remote_url, directory_location, local_image_path):                                   # remote_image_url,local_directory,local_image_path
@@ -851,6 +878,333 @@ def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_v
 
 
 
+# # new vehicle info 
+# def extract_vehicle_info(URL, driver, conn, cursor, csv_writers, all_data, header_data, status=None):
+#     inventories_count = 0
+#     if URL:
+#         # base_url = "https://www.cargurus.com"
+#         # target_url = base_url + URL
+#         # driver.execute_script("window.open(arguments[0], '_blank');", target_url)
+#         # if status !='next':
+#         #     driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+#         target_url = URL
+#         driver.get(URL)
+
+#     try:
+#         # Wait for the main element to load
+#         data = WebDriverWait(driver, 10).until(
+#             EC.presence_of_element_located((By.XPATH, '//main[@id="main"]'))
+#         )
+        
+#         # Extract dealer information
+#         dealer_info = data.find_element(By.XPATH, '//div[@class="dealerDetailsHeader"]//h1').text
+#         parts = dealer_info.split('-')
+#         dealer_name = parts[0].strip() if parts[0].strip() else 'N/A'
+
+        
+#         dealer_inventory_count = parts[1].strip() if len(parts) > 1 else '0'
+#         dealer_inventory_count = dealer_inventory_count.replace(' Cars for Sale', '')
+
+#         dealer_address = data.find_element(By.XPATH, '//div[@class="dealerDetailsInfo"]').text
+
+#         address_cleaned = dealer_address.split('Map & directions')[0].strip()
+#         zip_code_match = re.search(r'\b\d{5}\b', address_cleaned)
+#         zip_code = zip_code_match.group(0) if zip_code_match else None
+        
+#         # Locate the inventory section
+#         inventory_obj = data.find_element(By.XPATH, '//div[@class="fzhq3E"]')
+#         single_vehicle_rows = inventory_obj.find_elements(By.XPATH, '//div[@class="pazLTN"]')
+
+
+#         for idx, vehicle_row in enumerate(single_vehicle_rows):
+
+#             # Safe extraction for href
+#             vehicle_type_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-eyebrow"]//span')
+#             vehicle_type_text = " ".join([elem.text for elem in vehicle_type_elems]) if vehicle_type_elems else "N/A"
+
+#             vehicle_type_result = None
+#             if vehicle_type_elems:
+#                 vehicle_type_vallidation = vehicle_type_text.lower()
+
+#                 if vehicle_type_vallidation == 'new car':
+#                     vehicle_type_result = 'New'
+
+#                 elif 'certified' in vehicle_type_vallidation:
+#                     vehicle_type_result = 'preowned certified'
+
+#                 else:
+#                     vehicle_type_result = 'Used'
+#             else:
+#                     vehicle_type_result = 'Used'
+
+
+
+#             a_elems = vehicle_row.find_elements(By.XPATH, './/a[@data-testid="car-blade-link"]')
+#             a_href = a_elems[0].get_attribute('href') if a_elems else "N/A"
+
+#             # Safe extraction for status
+#             status_elems = vehicle_row.find_elements(By.XPATH, './/section[@role="contentinfo"]//span')
+#             status_text = status_elems[0].text if status_elems else "N/A"
+
+#             # Safe extraction for title
+#             title_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
+#             title = title_elems[0].text if title_elems else "N/A"
+
+#             # Safe extraction for mileage
+#             mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
+#             mileage = mileage_elems[0].text if mileage_elems else "N/A"
+
+#             cus_mileage = 0
+#             if mileage != 0:
+#                 cus_mileage = re.sub(r'[\$,]', '', mileage)
+
+#             # Safe extraction for engine
+#             engine_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
+#             engine = engine_elems[0].text if engine_elems else "N/A"
+
+#             # Safe extraction for price
+#             price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
+#             price = price_elems[0].text if price_elems else 0
+
+#             cus_price = 0
+#             if price != 0:
+#                 cus_price = re.sub(r'[\$,]', '', price)
+
+#             # Safe extraction for payment
+#             payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
+#             payment = payment_elems[0].text if payment_elems else 0
+
+#             cus_payment = 0
+#             if payment != 0:
+#                 cus_payment = re.sub(r'\D', '', payment)
+
+#             # Safe extraction for description
+#             description_elems = vehicle_row.find_elements(By.XPATH, './/div[@class="_text_1ncld_1"]')
+#             description = description_elems[0].text if description_elems else "N/A"
+
+#             # Safe extraction for phone
+#             phone_elems = vehicle_row.find_elements(By.XPATH, './/button[@data-testid="button-phone-number"]')
+#             phone = phone_elems[0].text if phone_elems else "N/A"
+
+#             cus_phone = "N/A"
+#             if phone != "N/A":
+#                 cus_phone = re.sub(r'\D', '', phone)
+
+#             # Safe extraction for location
+#             location_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
+#             if location_elems:
+#                 location = location_elems[0].text
+#                 city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+#             else:
+#                 location, city, state = "N/A", "N/A", "N/A"
+
+#             button = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket"]//button')
+#             button.click()
+
+
+#             WebDriverWait(driver, 10).until(
+#                 EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']"))
+#             )
+#             # WebDriverWait(driver, 10).until(
+#             #     EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']"))
+#             # )
+#             # modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']")
+
+#             modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']")
+#             feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']//ul[@class='_statsList_rlq8o_1']")
+#             feature_model_elements = feature_model_element.find_elements(By.XPATH, "//li[@class='_listItem_1tanl_14']")
+
+#             modal_row_all = {}
+#             for modal_row in feature_model_elements:
+#                 # print(modal_row)
+#                 modal_key = modal_row.find_element(By.XPATH, ".//h5").text
+#                 modal_value = modal_row.find_element(By.XPATH, ".//p").text
+#                 modal_row_all[modal_key] = modal_value
+
+
+#             feature_additional_model_element = modal_data.find_elements(By.XPATH, "//div[@class='_statsList_9o1ka_13']//div")
+#             if feature_additional_model_element:
+#                 for additional_modal_row in feature_additional_model_element:
+#                     # print(additional_modal_row)
+#                     additional_modal_key = additional_modal_row.find_element(By.XPATH, ".//h4").text
+#                     additional_modal_value = additional_modal_row.find_element(By.XPATH, ".//span").text
+#                     modal_row_all[additional_modal_key] = additional_modal_value
+
+#             mileage = modal_row_all.get('Mileage', 'N/A')
+#             drivetrain = modal_row_all.get('Drivetrain', 'N/A')
+#             exterior_color = modal_row_all.get('Exterior color', 'N/A')
+#             interior_color = modal_row_all.get('Interior color', 'N/A')
+#             mpg = modal_row_all.get('MPG', 'N/A')
+#             engine = modal_row_all.get('Engine', 'N/A')
+#             fuel_type = modal_row_all.get('Fuel type', 'N/A')
+#             transmission = modal_row_all.get('Transmission', 'N/A')
+#             make = modal_row_all.get('Make:', 'N/A')
+#             model = modal_row_all.get('Model:', 'N/A')
+#             year = modal_row_all.get('Year:', 'N/A')
+#             trim = modal_row_all.get('Trim:', 'N/A')
+#             body_type = modal_row_all.get('Body type:', 'N/A')
+#             stock_number = modal_row_all.get('Stock #:', 'no_stock')
+#             vin = modal_row_all.get('VIN:', 'N/A')
+#             cus_inventory_link = a_href if a_href else 'N/A'
+            
+#             # IMAGE DOWNLOAD START HEER 
+#             directory_location = 'uploads/single_image'
+#             vin_info = vin
+#             stock_info = stock_number
+
+#             replace_title_whitespace = title.replace(' ', '_').replace('/', '_').replace('-', '_')
+#             local_image_path = f"{directory_location}/{replace_title_whitespace + '_'+ vin_info + '_' +stock_info}.jpg"
+#             # --- Wait for the image to load ---
+#             try:
+#                 # img_elem = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
+#                 # single_img_src = img_elem.get_attribute('src') if img_elem else "N/A"
+
+
+#                 img_elem = WebDriverWait(driver, 10).until(
+#                     EC.presence_of_element_located((By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]'))
+#                 ) 
+#                 image_element = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
+#                 single_img_src = image_element.get_attribute('src') if image_element else "N/A"
+
+#                 if single_img_src !="N/A":
+#                     image_name = "N/A"  
+#                     if '?' in single_img_src:
+#                         image_name = single_img_src.split('?')[0]
+#                     else:
+#                         image_name = single_img_src
+
+#                     print(f"Image src: {single_img_src}")
+#                     print(f"Image src: {image_name}")
+
+#                     if single_img_src != 'N/A':
+#                         download_image(image_name, directory_location, local_image_path)
+#             except Exception as e:
+#                     single_img_src = "Image not found"
+#                     print(f"Exception encountered: {e}")
+
+#             # Store the vehicle data
+#             result = {
+#                 'Single Image': single_img_src,
+#                 'Single Trim Image': image_name,
+#                 'Dealer Name': dealer_name,
+#                 'Dealer Address': dealer_address,
+#                 'Inventory Link': cus_inventory_link,
+#                 'Vehicle Type Short Info': vehicle_type_text,
+#                 'Status': status_text,
+#                 'Title': title,
+#                 'Mileage': cus_mileage,
+#                 'Drivetrain': drivetrain,
+#                 'Exterior Color': exterior_color,
+#                 'Interior Color': interior_color,
+#                 'MPG': mpg,
+#                 'Engine': engine,
+#                 'Fuel Type': fuel_type,
+#                 'Transmission': transmission,
+#                 'Make': make,
+#                 'Model': model,
+#                 'Year': year,
+#                 'Trim': trim,
+#                 'Body Type': body_type,
+#                 'Stock Number': stock_number,
+#                 'Vin': vin,
+#                 'Price': cus_price,
+#                 'Payment': cus_payment,
+#                 'Description': description,
+#                 'Phone': cus_phone,
+#                 'Location': location
+#             }
+
+#             all_data.append(result)
+
+#             close_button = vehicle_row.find_element(By.XPATH, "//button[@aria-label='Close dialog']")
+#             close_button.click()
+
+#             print(modal_row_all)
+#             print(result)
+#             print('*'*30 )
+#             print('*'*30 )
+#             print('*'*30 )
+
+
+#             # existing_dealer_id = get_existing_dealer_id(cursor, dealer_name, full_address, zip_code)
+#             # if existing_dealer_id:
+#             #     dealer_id = existing_dealer_id  # Use existing dealer ID
+#             # else:
+#             #     dealer_id = get_new_dealer_id(cursor) 
+#             ## Scroll down the page
+#             scroll_down_slowly(driver)
+
+
+#             time.sleep(5)
+
+#             # Insert into SQLite
+#             created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#             dealer_id = 'CG-241000'
+#             vehicle_id = 'C-241000'
+#             dealer_iframe_map = None
+#             deal_rating = None
+#             model_no = None
+#             driveInfo = None
+#             mpg_city =None
+#             mpg_highway =None
+#             star = None
+#             batch_no  = 1
+#             in_market= None
+            
+#             cursor.execute('''
+#                 INSERT INTO vehicles (dealer_id, dealer_name, phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+#                                     single_img_src, local_image_path, title, year, make, model, vin, price, mileage, vehicle_type, 
+#                                     model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+#                                     exterior_color, star, created_date, batch_no, cus_inventory_link, payment, in_market, mpg, interior_color, drivetrain, 
+#                                     status_text, dealer_inventory_count, vehicle_type_info)
+#                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+#             ''', (dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+#                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+#                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+#                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
+#                 status_text, dealer_inventory_count, vehicle_type_text))
+#             conn.commit()
+
+#             # Write to dealers CSV
+#             csv_writers[3].writerow([dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+#                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+#                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+#                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
+#                 status_text, dealer_inventory_count, vehicle_type_text ])
+
+#         print('Vehicle single data saved in DB and CSV!')
+
+#         ## Paginate through multiple pages
+#         number_of_pages = 3
+#         for page in range(number_of_pages - 1):
+#             logging.info(f"Currently on page {page + 1}")
+#             if not navigate_to_next_page(driver, page, conn, cursor, csv_writers, all_data, header_data):
+#                 logging.info("No more pages to navigate or encountered an error.")
+#                 break
+#             # extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)
+
+#     except Exception as e:
+#         logging.error(f"Error occurred while extracting vehicle information: {e}")
+
+#     finally:
+#         driver.close()
+#         # driver.switch_to.window(driver.window_handles[0])
+#         driver.switch_to.window(driver.window_handles[0]) if len(driver.window_handles) > 1 else driver.quit()
+
+#     return dealer_name, dealer_address
+
+
+
+
+
+
+
+#         # current_url_with_js, driver = extract_vehicle_info(targeted_url, main_driver, conn, cursor, dealer_csv_writer, dealer_data, HEADER)
+
+
+
+
+
 def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventory_csv_writer, all_data, header_data, status=None):
     if not URL:
         print("No URL provided.")
@@ -1034,6 +1388,34 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                             print(f"Error extracting additional feature data: {e}")
 
 
+                # for modal_row in feature_model_elements:
+                #     try:
+                #         modal_key = modal_row.find_element(By.XPATH, ".//h5").text
+                #     except NoSuchElementException:
+                #         modal_key = "Unknown Key"
+
+                #     try:
+                #         modal_value = modal_row.find_element(By.XPATH, ".//p").text
+                #     except NoSuchElementException:
+                #         modal_value = "Unknown Value"
+
+                #     modal_row_all[modal_key] = modal_value
+                #     # if modal_key in modal_row_all:
+                #     #     if isinstance(modal_row_all[modal_key], list):
+                #     #         modal_row_all[modal_key].append(modal_value)
+                #     #     else:
+                #     #         modal_row_all[modal_key] = [modal_row_all[modal_key], modal_value]
+                #     # else:
+                #     #     modal_row_all[modal_key] = modal_value
+                    
+                    # feature_additional_model_element = modal_data.find_elements(By.XPATH, "//div[@class='_statsList_9o1ka_13']//div")
+                    # if feature_additional_model_element:
+                    #     for additional_modal_row in feature_additional_model_element:
+                    #         # print(additional_modal_row)
+                    #         additional_modal_key = additional_modal_row.find_element(By.XPATH, ".//h4").text
+                    #         additional_modal_value = additional_modal_row.find_element(By.XPATH, ".//span").text
+                    #         modal_row_all[additional_modal_key] = additional_modal_value
+
                     mileage = modal_row_all.get('Mileage', 'N/A')
                     drivetrain = modal_row_all.get('Drivetrain', 'N/A')
                     exterior_color = modal_row_all.get('Exterior color', 'N/A')
@@ -1175,13 +1557,19 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
 
                 # Write to dealers CSV
                 
-                # Write to the inventory CSV file using the specific writer
+                    # Write to the inventory CSV file using the specific writer
                 inventory_csv_writer.writerow([dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
                                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
                                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
                                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
                                 status_text, dealer_inventory_count, vehicle_type_text])
 
+    
+                    # csv_writers[3].writerow([dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+                    #     single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+                    #     model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+                    #     exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
+                    #     status_text, dealer_inventory_count, vehicle_type_text ])
 
                 print('Vehicle single data saved in DB and CSV!')
 
@@ -1227,6 +1615,827 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
         print(f"An error occurred while processing the page: {e}")
 
 
+# def extract_vehicle_info3(URL, driver, conn, cursor, csv_writers, all_data, header_data, status=None):
+#     inventories_count = 0
+#     if URL:
+#         target_url = URL
+#         driver.get(URL)
+
+#     # try:
+    
+#     # except:
+    
+#            # Wait for the main element to load
+#         data = WebDriverWait(driver, 10).until(
+#             EC.presence_of_element_located((By.XPATH, '//main[@id="main"]'))
+#         )
+        
+#         # Extract dealer information
+#         dealer_info = data.find_element(By.XPATH, '//div[@class="dealerDetailsHeader"]//h1').text
+#         parts = dealer_info.split('-')
+#         dealer_name = parts[0].strip() if parts[0].strip() else 'N/A'
+
+        
+#         dealer_inventory_count = parts[1].strip() if len(parts) > 1 else '0'
+#         dealer_inventory_count = dealer_inventory_count.replace(' Cars for Sale', '')
+
+#         dealer_address = data.find_element(By.XPATH, '//div[@class="dealerDetailsInfo"]').text
+
+#         address_cleaned = dealer_address.split('Map & directions')[0].strip()
+#         zip_code_match = re.search(r'\b\d{5}\b', address_cleaned)
+#         zip_code = zip_code_match.group(0) if zip_code_match else None
+        
+#         # Locate the inventory section
+#         inventory_obj = data.find_element(By.XPATH, '//div[@class="fzhq3E"]')
+#         single_vehicle_rows = inventory_obj.find_elements(By.XPATH, '//div[@class="pazLTN"]')
+
+#         print(dealer_info)
+#         print(dealer_inventory_count)
+#         print(dealer_address)
+#         print(zip_code)
+#         print(single_vehicle_rows)
+#         for idx, vehicle_row in enumerate(single_vehicle_rows):
+#                         # Safe extraction for href
+#             vehicle_type_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-eyebrow"]//span')
+#             vehicle_type_text = " ".join([elem.text for elem in vehicle_type_elems]) if vehicle_type_elems else "N/A"
+
+#             vehicle_type_result = None
+#             if vehicle_type_elems:
+#                 vehicle_type_vallidation = vehicle_type_text.lower()
+
+#                 if vehicle_type_vallidation == 'new car':
+#                     vehicle_type_result = 'New'
+
+#                 elif 'certified' in vehicle_type_vallidation:
+#                     vehicle_type_result = 'preowned certified'
+
+#                 else:
+#                     vehicle_type_result = 'Used'
+#             else:
+#                     vehicle_type_result = 'Used'
+
+#             a_elems = vehicle_row.find_elements(By.XPATH, './/a[@data-testid="car-blade-link"]')
+#             a_href = a_elems[0].get_attribute('href') if a_elems else "N/A"
+
+#             single_vehicle_data = []
+#             # scrape_detail_page(driver, conn, cursor, csv_writers, all_data, single_vehicle_data, a_href)
+            
+#             # details_target_url = a_href
+#             # driver.execute_script("window.open(arguments[0], '_blank');", details_target_url)
+#             # if status !='next':
+#             #     driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+            
+#             # Safe extraction for status
+#             status_elems = vehicle_row.find_elements(By.XPATH, './/section[@role="contentinfo"]//span')
+#             status_text = status_elems[0].text if status_elems else "N/A"
+
+#             # Safe extraction for title
+#             title_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
+#             title = title_elems[0].text if title_elems else "N/A"
+
+#             # Safe extraction for mileage
+#             mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
+#             mileage = mileage_elems[0].text if mileage_elems else "N/A"
+
+#             cus_mileage = 0
+#             if mileage != 0:
+#                 cus_mileage = re.sub(r'[\$,]', '', mileage)
+
+#             # Safe extraction for engine
+#             engine_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
+#             engine = engine_elems[0].text if engine_elems else "N/A"
+
+#             # Safe extraction for price
+#             price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
+#             price = price_elems[0].text if price_elems else 0
+
+#             cus_price = 0
+#             if price != 0:
+#                 cus_price = re.sub(r'[\$,]', '', price)
+
+#             # Safe extraction for payment
+#             payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
+#             payment = payment_elems[0].text if payment_elems else 0
+
+#             cus_payment = 0
+#             if payment != 0:
+#                 cus_payment = re.sub(r'\D', '', payment)
+
+#             # Safe extraction for description
+#             description_elems = vehicle_row.find_elements(By.XPATH, './/div[@class="_text_1ncld_1"]')
+#             description = description_elems[0].text if description_elems else "N/A"
+
+#             # Safe extraction for phone
+#             phone_elems = vehicle_row.find_elements(By.XPATH, './/button[@data-testid="button-phone-number"]')
+#             phone = phone_elems[0].text if phone_elems else "N/A"
+
+#             cus_phone = "N/A"
+#             if phone != "N/A":
+#                 cus_phone = re.sub(r'\D', '', phone)
+
+#             # Safe extraction for location
+#             location_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
+#             if location_elems:
+#                 location = location_elems[0].text
+#                 city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+#             else:
+#                 location, city, state = "N/A", "N/A", "N/A"
+                
+#             button = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket"]//button')
+#             button.click()
+            
+#             try:
+#                 # Wait for the modal dialog to appear
+#                 WebDriverWait(vehicle_row, 20).until(
+#                     EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']"))
+#                 )
+#                 modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']")
+#                 feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']//ul[@class='_statsList_rlq8o_1']")
+#                 feature_model_elements = feature_model_element.find_elements(By.XPATH, "//li[@class='_listItem_1tanl_14']")
+                
+#                 modal_row_all = {}
+#                 for modal_row in feature_model_elements:
+#                     print(f"modal row : {modal_row}")
+#             except TimeoutException:
+#                 print("Timeout while waiting for the modal dialog.")
+#             except Exception as e:
+#                 print(f"An error occurred: {e}")
+
+
+#             # WebDriverWait(driver, 10).until(
+#             #     EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']"))
+#             # )
+#             # modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']")
+#             # feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']//ul[@class='_statsList_rlq8o_1']")
+#             # feature_model_elements = feature_model_element.find_elements(By.XPATH, "//li[@class='_listItem_1tanl_14']")
+
+#             # modal_row_all = {}
+#             # for modal_row in feature_model_elements:
+#             #     print(f"modal row : {modal_row}")
+                
+#             print(vehicle_row)
+#             print(vehicle_type_text)
+#             print(vehicle_type_result)
+#             print(a_href)
+#             print(status_text)
+#             print(title)
+#             print(mileage)
+#             print(cus_mileage)
+#             print(engine)
+#             print(price)
+#             print(payment)
+#             print(description)
+#             print(phone)
+#             print(cus_phone)
+#             print(location)
+#             print(city)
+#             print(state)
+#             print("modal" *10)
+#             # print(button)
+#             print(modal_data)
+#             print(feature_model_element)
+#             print(feature_model_elements)
+#             time.sleep(5)
+#             # sys.exit()
+        
+#         time.sleep(10)
+#         sys.exit()
+    
+
+# def extract_vehicle_info2(URL, driver, conn, cursor, csv_writers, all_data, header_data, status=None):
+#     inventories_count = 0
+#     if URL:
+#         # base_url = "https://www.cargurus.com"
+#         # target_url = URL
+#         # driver.execute_script("window.open(arguments[0], '_blank');", target_url)
+#         # if status !='next':
+#         #     driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+#         target_url = URL
+#         driver.get(URL)
+
+#     try:
+#         # Wait for the main element to load
+#         data = WebDriverWait(driver, 10).until(
+#             EC.presence_of_element_located((By.XPATH, '//main[@id="main"]'))
+#         )
+        
+#         # Extract dealer information
+#         dealer_info = data.find_element(By.XPATH, '//div[@class="dealerDetailsHeader"]//h1').text
+#         parts = dealer_info.split('-')
+#         dealer_name = parts[0].strip() if parts[0].strip() else 'N/A'
+
+        
+#         dealer_inventory_count = parts[1].strip() if len(parts) > 1 else '0'
+#         dealer_inventory_count = dealer_inventory_count.replace(' Cars for Sale', '')
+
+#         dealer_address = data.find_element(By.XPATH, '//div[@class="dealerDetailsInfo"]').text
+
+#         address_cleaned = dealer_address.split('Map & directions')[0].strip()
+#         zip_code_match = re.search(r'\b\d{5}\b', address_cleaned)
+#         zip_code = zip_code_match.group(0) if zip_code_match else None
+        
+#         # Locate the inventory section
+#         inventory_obj = data.find_element(By.XPATH, '//div[@class="fzhq3E"]')
+#         single_vehicle_rows = inventory_obj.find_elements(By.XPATH, '//div[@class="pazLTN"]')
+
+#         print(dealer_info)
+#         print(dealer_inventory_count)
+#         print(dealer_address)
+#         print(zip_code)
+#         print(single_vehicle_rows)
+#         for idx, vehicle_row in enumerate(single_vehicle_rows):
+#                         # Safe extraction for href
+#             vehicle_type_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-eyebrow"]//span')
+#             vehicle_type_text = " ".join([elem.text for elem in vehicle_type_elems]) if vehicle_type_elems else "N/A"
+
+#             vehicle_type_result = None
+#             if vehicle_type_elems:
+#                 vehicle_type_vallidation = vehicle_type_text.lower()
+
+#                 if vehicle_type_vallidation == 'new car':
+#                     vehicle_type_result = 'New'
+
+#                 elif 'certified' in vehicle_type_vallidation:
+#                     vehicle_type_result = 'preowned certified'
+
+#                 else:
+#                     vehicle_type_result = 'Used'
+#             else:
+#                     vehicle_type_result = 'Used'
+
+#             a_elems = vehicle_row.find_elements(By.XPATH, './/a[@data-testid="car-blade-link"]')
+#             a_href = a_elems[0].get_attribute('href') if a_elems else "N/A"
+
+#             single_vehicle_data = []
+#             # scrape_detail_page(driver, conn, cursor, csv_writers, all_data, single_vehicle_data, a_href)
+            
+#             # details_target_url = a_href
+#             # driver.execute_script("window.open(arguments[0], '_blank');", details_target_url)
+#             # if status !='next':
+#             #     driver.switch_to.window(driver.window_handles[-1])  # Switch to the new tab
+            
+#             # Safe extraction for status
+#             status_elems = vehicle_row.find_elements(By.XPATH, './/section[@role="contentinfo"]//span')
+#             status_text = status_elems[0].text if status_elems else "N/A"
+
+#             # Safe extraction for title
+#             title_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
+#             title = title_elems[0].text if title_elems else "N/A"
+
+#             # Safe extraction for mileage
+#             mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
+#             mileage = mileage_elems[0].text if mileage_elems else "N/A"
+
+#             cus_mileage = 0
+#             if mileage != 0:
+#                 cus_mileage = re.sub(r'[\$,]', '', mileage)
+
+#             # Safe extraction for engine
+#             engine_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
+#             engine = engine_elems[0].text if engine_elems else "N/A"
+
+#             # Safe extraction for price
+#             price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
+#             price = price_elems[0].text if price_elems else 0
+
+#             cus_price = 0
+#             if price != 0:
+#                 cus_price = re.sub(r'[\$,]', '', price)
+
+#             # Safe extraction for payment
+#             payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
+#             payment = payment_elems[0].text if payment_elems else 0
+
+#             cus_payment = 0
+#             if payment != 0:
+#                 cus_payment = re.sub(r'\D', '', payment)
+
+#             # Safe extraction for description
+#             description_elems = vehicle_row.find_elements(By.XPATH, './/div[@class="_text_1ncld_1"]')
+#             description = description_elems[0].text if description_elems else "N/A"
+
+#             # Safe extraction for phone
+#             phone_elems = vehicle_row.find_elements(By.XPATH, './/button[@data-testid="button-phone-number"]')
+#             phone = phone_elems[0].text if phone_elems else "N/A"
+
+#             cus_phone = "N/A"
+#             if phone != "N/A":
+#                 cus_phone = re.sub(r'\D', '', phone)
+
+#             # Safe extraction for location
+#             location_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
+#             if location_elems:
+#                 location = location_elems[0].text
+#                 city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+#             else:
+#                 location, city, state = "N/A", "N/A", "N/A"
+                
+#             # button = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket"]//button')
+#             # button.click()
+
+
+#             WebDriverWait(driver, 10).until(
+#                 EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']"))
+#             )
+#             modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']")
+#             feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']//ul[@class='_statsList_rlq8o_1']")
+#             feature_model_elements = feature_model_element.find_elements(By.XPATH, "//li[@class='_listItem_1tanl_14']")
+
+#             # modal_row_all = {}
+#             # for modal_row in feature_model_elements:
+#             #     print(f"modal row : {modal_row}")
+                
+#             print(vehicle_row)
+#             print(vehicle_type_text)
+#             print(vehicle_type_result)
+#             print(a_href)
+#             print(status_text)
+#             print(title)
+#             print(mileage)
+#             print(cus_mileage)
+#             print(engine)
+#             print(price)
+#             print(payment)
+#             print(description)
+#             print(phone)
+#             print(cus_phone)
+#             print(location)
+#             print(city)
+#             print(state)
+#             print("modal" *10)
+#             print(button)
+#             print(modal_data)
+#             print(feature_model_element)
+#             print(feature_model_elements)
+#             time.sleep(5)
+#             # sys.exit()
+        
+#         time.sleep(10)
+#         sys.exit()
+#         for idx, vehicle_row in enumerate(single_vehicle_rows):
+
+
+#             # Safe extraction for href
+#             vehicle_type_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-eyebrow"]//span')
+#             vehicle_type_text = " ".join([elem.text for elem in vehicle_type_elems]) if vehicle_type_elems else "N/A"
+
+#             vehicle_type_result = None
+#             if vehicle_type_elems:
+#                 vehicle_type_vallidation = vehicle_type_text.lower()
+
+#                 if vehicle_type_vallidation == 'new car':
+#                     vehicle_type_result = 'New'
+
+#                 elif 'certified' in vehicle_type_vallidation:
+#                     vehicle_type_result = 'preowned certified'
+
+#                 else:
+#                     vehicle_type_result = 'Used'
+#             else:
+#                     vehicle_type_result = 'Used'
+
+
+#             print(idx)
+#             print(vehicle_row)
+#             print(vehicle_type_text)
+
+#             a_elems = vehicle_row.find_elements(By.XPATH, './/a[@data-testid="car-blade-link"]')
+#             a_href = a_elems[0].get_attribute('href') if a_elems else "N/A"
+
+#             # Safe extraction for status
+#             status_elems = vehicle_row.find_elements(By.XPATH, './/section[@role="contentinfo"]//span')
+#             status_text = status_elems[0].text if status_elems else "N/A"
+
+#             # Safe extraction for title
+#             title_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
+#             title = title_elems[0].text if title_elems else "N/A"
+
+#             # Safe extraction for mileage
+#             mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
+#             mileage = mileage_elems[0].text if mileage_elems else "N/A"
+
+#             cus_mileage = 0
+#             if mileage != 0:
+#                 cus_mileage = re.sub(r'[\$,]', '', mileage)
+
+#             # Safe extraction for engine
+#             engine_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
+#             engine = engine_elems[0].text if engine_elems else "N/A"
+
+#             # Safe extraction for price
+#             price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
+#             price = price_elems[0].text if price_elems else 0
+
+#             cus_price = 0
+#             if price != 0:
+#                 cus_price = re.sub(r'[\$,]', '', price)
+
+#             # Safe extraction for payment
+#             payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
+#             payment = payment_elems[0].text if payment_elems else 0
+
+#             cus_payment = 0
+#             if payment != 0:
+#                 cus_payment = re.sub(r'\D', '', payment)
+
+#             # Safe extraction for description
+#             description_elems = vehicle_row.find_elements(By.XPATH, './/div[@class="_text_1ncld_1"]')
+#             description = description_elems[0].text if description_elems else "N/A"
+
+#             # Safe extraction for phone
+#             phone_elems = vehicle_row.find_elements(By.XPATH, './/button[@data-testid="button-phone-number"]')
+#             phone = phone_elems[0].text if phone_elems else "N/A"
+
+#             cus_phone = "N/A"
+#             if phone != "N/A":
+#                 cus_phone = re.sub(r'\D', '', phone)
+
+#             # Safe extraction for location
+#             location_elems = vehicle_row.find_elements(By.XPATH, './/div[@data-testid="srp-tile-bucket-text"]')
+#             if location_elems:
+#                 location = location_elems[0].text
+#                 city, state = location.split(',')[0].strip(), location.split(',')[1].strip()
+#             else:
+#                 location, city, state = "N/A", "N/A", "N/A"
+
+#             button = vehicle_row.find_element(By.XPATH, './/div[@data-testid="srp-tile-bucket"]//button')
+#             button.click()
+
+
+#             WebDriverWait(driver, 10).until(
+#                 EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']"))
+#             )
+#             # WebDriverWait(driver, 10).until(
+#             #     EC.presence_of_element_located((By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']"))
+#             # )
+#             # modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']//div[@class='RQOhm']")
+
+#             modal_data = vehicle_row.find_element(By.XPATH, "//div[@role='dialog']")
+#             feature_model_element = modal_data.find_element(By.XPATH, "//div[@class='_modalWrapper_1bypy_1']//ul[@class='_statsList_rlq8o_1']")
+#             feature_model_elements = feature_model_element.find_elements(By.XPATH, "//li[@class='_listItem_1tanl_14']")
+
+#             modal_row_all = {}
+#             for modal_row in feature_model_elements:
+#                 # print(modal_row)
+#                 modal_key = modal_row.find_element(By.XPATH, ".//h5").text
+#                 modal_value = modal_row.find_element(By.XPATH, ".//p").text
+#                 modal_row_all[modal_key] = modal_value
+
+
+#             feature_additional_model_element = modal_data.find_elements(By.XPATH, "//div[@class='_statsList_9o1ka_13']//div")
+#             if feature_additional_model_element:
+#                 for additional_modal_row in feature_additional_model_element:
+#                     # print(additional_modal_row)
+#                     additional_modal_key = additional_modal_row.find_element(By.XPATH, ".//h4").text
+#                     additional_modal_value = additional_modal_row.find_element(By.XPATH, ".//span").text
+#                     modal_row_all[additional_modal_key] = additional_modal_value
+
+#             mileage = modal_row_all.get('Mileage', 'N/A')
+#             drivetrain = modal_row_all.get('Drivetrain', 'N/A')
+#             exterior_color = modal_row_all.get('Exterior color', 'N/A')
+#             interior_color = modal_row_all.get('Interior color', 'N/A')
+#             mpg = modal_row_all.get('MPG', 'N/A')
+#             engine = modal_row_all.get('Engine', 'N/A')
+#             fuel_type = modal_row_all.get('Fuel type', 'N/A')
+#             transmission = modal_row_all.get('Transmission', 'N/A')
+#             make = modal_row_all.get('Make:', 'N/A')
+#             model = modal_row_all.get('Model:', 'N/A')
+#             year = modal_row_all.get('Year:', 'N/A')
+#             trim = modal_row_all.get('Trim:', 'N/A')
+#             body_type = modal_row_all.get('Body type:', 'N/A')
+#             stock_number = modal_row_all.get('Stock #:', 'no_stock')
+#             vin = modal_row_all.get('VIN:', 'N/A')
+#             cus_inventory_link = a_href if a_href else 'N/A'
+            
+#             # IMAGE DOWNLOAD START HEER 
+#             directory_location = 'uploads/single_image'
+#             vin_info = vin
+#             stock_info = stock_number
+
+#             replace_title_whitespace = title.replace(' ', '_').replace('/', '_').replace('-', '_')
+#             local_image_path = f"{directory_location}/{replace_title_whitespace + '_'+ vin_info + '_' +stock_info}.jpg"
+#             # --- Wait for the image to load ---
+#             try:
+#                 # img_elem = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
+#                 # single_img_src = img_elem.get_attribute('src') if img_elem else "N/A"
+
+
+#                 img_elem = WebDriverWait(driver, 10).until(
+#                     EC.presence_of_element_located((By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]'))
+#                 ) 
+#                 image_element = vehicle_row.find_element(By.XPATH, './/img[@data-cg-ft="srp-listing-blade-image"]')
+#                 single_img_src = image_element.get_attribute('src') if image_element else "N/A"
+
+#                 if single_img_src !="N/A":
+#                     image_name = "N/A"  
+#                     if '?' in single_img_src:
+#                         image_name = single_img_src.split('?')[0]
+#                     else:
+#                         image_name = single_img_src
+
+#                     print(f"Image src: {single_img_src}")
+#                     print(f"Image src: {image_name}")
+
+#                     if single_img_src != 'N/A':
+#                         download_image(image_name, directory_location, local_image_path)
+#             except Exception as e:
+#                     single_img_src = "Image not found"
+#                     print(f"Exception encountered: {e}")
+
+#             # Store the vehicle data
+#             result = {
+#                 'Single Image': single_img_src,
+#                 'Single Trim Image': image_name,
+#                 'Dealer Name': dealer_name,
+#                 'Dealer Address': dealer_address,
+#                 'Inventory Link': cus_inventory_link,
+#                 'Vehicle Type Short Info': vehicle_type_text,
+#                 'Status': status_text,
+#                 'Title': title,
+#                 'Mileage': cus_mileage,
+#                 'Drivetrain': drivetrain,
+#                 'Exterior Color': exterior_color,
+#                 'Interior Color': interior_color,
+#                 'MPG': mpg,
+#                 'Engine': engine,
+#                 'Fuel Type': fuel_type,
+#                 'Transmission': transmission,
+#                 'Make': make,
+#                 'Model': model,
+#                 'Year': year,
+#                 'Trim': trim,
+#                 'Body Type': body_type,
+#                 'Stock Number': stock_number,
+#                 'Vin': vin,
+#                 'Price': cus_price,
+#                 'Payment': cus_payment,
+#                 'Description': description,
+#                 'Phone': cus_phone,
+#                 'Location': location
+#             }
+
+#             all_data.append(result)
+
+#             close_button = vehicle_row.find_element(By.XPATH, "//button[@aria-label='Close dialog']")
+#             close_button.click()
+
+#             print(modal_row_all)
+#             print(result)
+#             print('*'*30 )
+#             print('*'*30 )
+#             print('*'*30 )
+
+
+#             # existing_dealer_id = get_existing_dealer_id(cursor, dealer_name, full_address, zip_code)
+#             # if existing_dealer_id:
+#             #     dealer_id = existing_dealer_id  # Use existing dealer ID
+#             # else:
+#             #     dealer_id = get_new_dealer_id(cursor) 
+#             ## Scroll down the page
+#             scroll_down_slowly(driver)
+
+
+#             time.sleep(5)
+
+#             # Insert into SQLite
+#             created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#             dealer_id = 'CG-241000'
+#             vehicle_id = 'C-241000'
+#             dealer_iframe_map = None
+#             deal_rating = None
+#             model_no = None
+#             driveInfo = None
+#             mpg_city =None
+#             mpg_highway =None
+#             star = None
+#             batch_no  = 1
+#             in_market= None
+            
+#             cursor.execute('''
+#                 INSERT INTO vehicles (dealer_id, dealer_name, phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+#                                     single_img_src, local_image_path, title, year, make, model, vin, price, mileage, vehicle_type, 
+#                                     model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+#                                     exterior_color, star, created_date, batch_no, cus_inventory_link, payment, in_market, mpg, interior_color, drivetrain, 
+#                                     status_text, dealer_inventory_count, vehicle_type_info)
+#                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+#             ''', (dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+#                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+#                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+#                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
+#                 status_text, dealer_inventory_count, vehicle_type_text))
+#             conn.commit()
+
+#             # Write to dealers CSV
+#             csv_writers[3].writerow([dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
+#                 single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+#                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
+#                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
+#                 status_text, dealer_inventory_count, vehicle_type_text ])
+
+#         print('Vehicle single data saved in DB and CSV!')
+
+#         ## Paginate through multiple pages
+#         # number_of_pages = 3
+#         # for page in range(number_of_pages - 1):
+#         #     logging.info(f"Currently on page {page + 1}")
+#         #     if not navigate_to_next_page(driver, page, conn, cursor, csv_writers, all_data, header_data):
+#         #         logging.info("No more pages to navigate or encountered an error.")
+#         #         break
+#             # extract_vehicle_info(None, driver, conn, cursor, csv_writers, all_data, header_data)
+#         # current_url_with_js = driver.execute_script("return window.location.href;")
+#         # print("Current URL with JavaScript:", current_url_with_js)
+#         # return current_url_with_js, driver
+#         return dealer_name, dealer_address
+#     except Exception as e:
+#         logging.error(f"Error occurred while extracting vehicle information: {e}")
+#         # return 
+
+#     # finally:
+#     #     driver.close()
+#         # driver.switch_to.window(driver.window_handles[0])
+#         # driver.switch_to.window(driver.window_handles[0]) if len(driver.window_handles) > 1 else driver.quit()
+
+
+
+# old vehicle info 
+
+
+# def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data, HEADER):
+#     try:
+#         single_driver = WebDriverWait(driver, 10).until(
+#             EC.presence_of_element_located((By.XPATH, '//section[@class="results"]'))
+#         )
+#     except AttributeError as e :
+#         logging.error("Timeout waiting for page to load: %s", e)
+#         single_driver.quit()
+#         sys.exit(1)
+
+#     inventories_count = 0 
+
+#     single_header = single_driver.find_element(By.XPATH,'//div[@class="headerSort"]//h1').text
+#     single_dealer_num = single_driver.find_element(By.XPATH,'//span[@class="searchDescription"]').text
+
+#     html_content = single_driver.get_attribute('innerHTML')
+#     soup = BeautifulSoup(html_content, 'html.parser')
+#     file_path = 'public/cargurus_html.txt'
+
+#     if not os.path.exists(file_path):
+#         os.makedirs(os.path.dirname(file_path), exist_ok=True)
+#         with open(file_path, 'w', encoding='utf-8') as file:
+#             file.write(soup.prettify())
+
+#         logging.info(f"HTML content saved to {file_path}")
+#     else:
+#         logging.info(f"{file_path} already exists. No file created.")
+
+#     # single_all_data = []
+#     # dealer_datas  = single_driver.find_elements(By.XPATH,'//div[@class="blade"]')
+#     base_url = 'https://www.cargurus.com'
+#     dealerships = soup.find_all('div', class_='blade')
+#     for dealer in dealerships:
+#         name = dealer.find('strong').text.strip()
+#         inventory_link = dealer.find('a', class_='viewInventory')['href']
+#         inventory_link_cus = base_url+inventory_link
+
+#         address = dealer.find('div', class_='address').text.strip()          # Split the address into parts based on newline and commas
+#         address_parts = address.split('\n')
+#         actual_address = address_parts[0].strip()               # Get the full address without the radius part
+#         address_details = actual_address.split(',')             # Split the actual address by commas
+#         city = address_details[-2].strip()                  # Extract the city, state, and zip from the last two parts # Always the second to last part
+#         state_zip = address_details[-1].strip().split()  # The last part contains state and zip
+#         state = state_zip[0]  # State (e.g., 'TX')
+#         zip_code = state_zip[1]  # Zip code (e.g., '78237')
+#         full_address = ', '.join(address_details[:-2]).strip()  # The address before city
+
+#         # Check if dealer already exists
+#         existing_dealer_id = get_existing_dealer_id(cursor, name, full_address, zip_code)
+#         if existing_dealer_id:
+#             dealer_id = existing_dealer_id  # Use existing dealer ID
+#         else:
+#             dealer_id = get_new_dealer_id(cursor)  # Generate a new unique dealer ID
+#         # Combine everything before the city as the full address (including any suite numbers if present)
+
+
+#         # Extract the radius, if it exists
+#         radius = address_parts[1].strip() if len(address_parts) > 1 else None
+#         radius = radius.replace("(", "").replace(")", "") if radius else None
+
+#         # If there is a distance, extract it
+#         radius = address_parts[1].strip() if len(address_parts) > 1 else None
+#         radius = radius.replace("(", "").replace(")", "") if radius else None
+
+
+
+#         rating_element = dealer.find('div', class_='dealerRating')
+#         if rating_element:
+#             rating = rating_element.find('strong', class_='averageOverallRating').text.strip()
+#         else:
+#             rating = "N/A"
+
+
+#         if rating_element:
+#             reviews_count = rating_element.text.strip().replace(' ','').replace(' Shopper reviews','')
+
+#             cleaned_reviews_count = reviews_count.strip()
+#             match = re.search(r'\((\d+)\)', cleaned_reviews_count)
+#             if match:
+#                 review_count_only = match.group(1)  # Get the first captured group (the number)
+
+#         else:
+#             review_count_only = "N/A"
+
+        
+#         review_element = dealer.find('blockquote')
+#         if review_element:
+#             review_text = review_element.text.strip()
+#         else:
+#             review_text = "No reviews available"
+
+#         img_wrapper = dealer.find('div', class_='imgWrapper')
+#         if img_wrapper:
+#             img_element = img_wrapper.find('img')
+#             img_src = img_element['src'] if img_element else "No image"
+#         else:
+#             img_src = "No image"
+        
+        
+#         local_image_path = ''
+#         if img_src != 'No image':
+            
+#             directory_location = 'public/uploads/dealer'
+
+#             # Check if the directory exists, and create it only if it doesn't
+#             if not os.path.exists(directory_location):
+#                 os.makedirs(directory_location)
+#                 print(f"Directory created: {directory_location}")
+#             else:
+#                 print(f"Directory already exists: {directory_location}")
+
+#             location_url = f"{city} _ {state}" if zip_code else 'default_location'
+#             cus_dealer_name = re.sub(r'\s+', '-', name)
+#             detail_local_image_path = f"{directory_location}/{cus_dealer_name}_{city}_{state}.jpg"
+#             local_image_path =  detail_local_image_path
+#             download_image(img_src, directory_location, local_image_path)
+
+#         address_cus = f"{city +', '+ state}" 
+
+
+
+#         dealer_iframe_map = 'N/A'
+#         phone = 'N/A'
+#         information = {
+#             'Single header' : single_header,
+#             'Single Dealer Num' : single_dealer_num,
+#             'Dealer Name' : name,
+#             'Phone' : phone,
+#             'Address' : address_cus,
+#             'City' : city,
+#             'State' : state,
+#             'Dealer Full Address' : full_address,
+#             'Zip' : zip_code,
+#             'About Dealer' : review_text,
+#             'Image' : img_src,
+#             'local_img' : local_image_path,
+#             'Radius' : radius,
+#             'Rating' : rating,
+#             'Review Count' : review_count_only,
+#             'View inventory' : inventory_link_cus,
+#         }
+
+#         single_all_data.append(information)
+        
+#         # Scroll down the page
+#         scroll_down_slowly(driver)
+        
+#         # time.sleep
+#         # dealer_id = "D-24770071"
+#         batch = 1
+#         status = 1
+#         # Insert into SQLite
+
+#         cursor.execute('''
+#             INSERT INTO dealers (dealer_id,name, phone, address, city, state, dealer_full_address, dealer_iframe_map, zip, about_me, img, local_img, radius, rating, review_count_only, inventory_link, batch, status)
+#             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+#         ''', (dealer_id, name, phone, address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, local_image_path, radius, rating, review_count_only, inventory_link_cus, batch, status))
+#         conn.commit()
+
+#         # Write to dealers CSV
+#         dealer_csv_writer[1].writerow([dealer_id, name, phone, full_address, city, state, address_cus, dealer_iframe_map, zip_code, review_text, img_src, local_image_path, radius, rating, review_count_only, inventory_link_cus, batch, status ])
+
+#         print("*"*50)
+#         print(information)
+#         print('Dealer data saved in data sqlite and csv')
+#         print("*"*50)
+
+#         # dealer_data = []
+#         # single_name, single_address = extract_vehicle_info(inventory_link, driver, conn, cursor, dealer_csv_writer, dealer_data, HEADER)
+
+#         # single_all_data.append(dealer_data)
+
+#     # driver.close()
+#     # driver.switch_to.window(driver.window_handles[0])
+#     return single_all_data
+
 
 def csv_reader():
     dealers_data = []
@@ -1244,6 +2453,54 @@ def csv_reader():
     return dealers_data, csv_file_path
 
 
+# def main2():
+#     # Set up logging (optional)
+#     logging.basicConfig(level=logging.INFO)
+
+#     # zip_code_input_data = initial_zip_code_seter()
+
+#     # conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input_data)
+#     # conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
+
+#     main_driver = initialize_webdriver()
+#     # targated_url = custom_url()
+
+#     # URL = targated_url
+#     HEADER = {
+#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+#         'Accept-Language': 'en-US,en;q=0.5'
+#     }
+#     # logging.info(URL)
+#     # main_driver.get(URL)
+
+#     # driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//input[@id="addressTyped"]')))
+
+
+
+#     logging.info("Clicked the submit button")
+
+#     # single_all_data = []
+#     # extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
+
+#     # # Loop through pages
+#     # number_of_pages = 15
+#     # for page in range(1, number_of_pages):
+#     #     if not navigate_to_next_dealer_page(main_driver, page):
+#     #         break
+#     #     extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file,inventory_details_csv_writer ), single_all_data, HEADER)
+
+#     # print(single_all_data)
+#     print('*'*40)
+#     time.sleep(10)
+#     main_driver.quit()
+
+#     # dealer_csv_file.close()   
+#     # inventory_csv_file.close()
+#     # inventory_details_csv_file.close()
+
+#     # Clean up: Close the database connection
+#     # conn.close()
+    
 def main():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
@@ -1276,6 +2533,10 @@ def main():
         extract_vehicle_info(targeted_url, main_driver, conn, cursor, inventory_csv_file, inventory_csv_writer, dealer_data, HEADER)
         print('main ' *30 )
         print(dealer_data )
+
+
+
+
 
         # number_of_pages = 15
         # for page in range(number_of_pages - 1):
