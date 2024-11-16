@@ -22,9 +22,12 @@ def get_lat_long(zip_code=77007, api_key="4b84ff4ad9a74c79ad4a1a945a4e5be1", cou
         print(f"Error: {response.status_code}")
     return None, None, None
 
+# Example zip_code
 batch_no = 10
 
 # Get the current date dynamically in 'YYYY-MM-DD' format
+# date = datetime.now().strftime('%m%d%Y')
+# creadet_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 date = datetime.now().strftime('%m%d%Y')
 created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -50,13 +53,15 @@ else:
         print(f"Input file does not exist: {input_csv}")
     else:
         # Global dictionary to store dealer names and assign unique dealer IDs
-        dealer_id_map = {"counter": 1}  # Initialize with a counter
+        dealer_id_map = {}
+        dealer_id_counter = 1
 
         # Function to generate/get dealer ID
         def get_dealer_id(dealer_name):
+            global dealer_id_counter  # Correct usage: use `global` for global variables
             if dealer_name not in dealer_id_map:
-                dealer_id_map[dealer_name] = dealer_id_map["counter"]
-                dealer_id_map["counter"] += 1
+                dealer_id_map[dealer_name] = dealer_id_counter
+                dealer_id_counter += 1
             return dealer_id_map[dealer_name]
 
         # To store the rows we've already seen (for duplicate checking)
@@ -72,7 +77,7 @@ else:
                 header = next(reader)
                 writer.writerow(header)
                 for row in reader:
-                    # Get unique dealer ID based on dealer_name (row[1] assumed as dealer_name)
+                    # Get unique dealer ID based on dealer_name (row[0] assumed as dealer_name)
                     dealer_id = get_dealer_id(row[1])
                     row[0] = f"CG-{row[8]}{dealer_id}"
 
@@ -81,8 +86,8 @@ else:
                     row[2] = formatted_number
 
                     latitude, longitude, city_name = get_lat_long(row[8])
-                    print(f"Latitude: {latitude}, Longitude: {longitude}, City: {city_name}")
                     if latitude is not None and longitude is not None:
+                        # Ensure row has enough columns for latitude, longitude, and city name
                         if len(row) < 45:
                             row += [''] * (45 - len(row))  # Add empty columns if necessary
 
@@ -90,6 +95,8 @@ else:
                         row[42] = latitude
                         row[43] = longitude
                         row[44] = city_name
+                        
+                        print(f"Latitude: {latitude}, Longitude: {longitude}, City: {city_name}")
 
                     if row[13] == 'N/A':
                         row[13] = 0
@@ -100,19 +107,16 @@ else:
                     cleaned_miles = re.sub(r'[\,mi]', '', row[18])
                     row[18] = cleaned_miles
 
-                    # Handle multiple date formats for row[32]
                     try:
+                        # Parse the date string in 'MM/DD/YYYY HH:MM' format
                         original_date = datetime.strptime(row[32], '%m/%d/%Y %H:%M')
-                    except ValueError:
-                        try:
-                            original_date = datetime.strptime(row[32], '%Y-%m-%d %H:%M:%S')
-                        except ValueError:
-                            print(f"Invalid date format in row {reader.line_num}: {row[32]}")
-                            row[32] = '0000-00-00 00:00:00'
-                        else:
-                            row[32] = original_date.strftime('%Y-%m-%d %H:%M:%S')
-                    else:
+                        
+                        # Convert it to 'YYYY-MM-DD HH:MM:SS' format for MySQL
                         row[32] = original_date.strftime('%Y-%m-%d %H:%M:%S')
+
+                    except ValueError:
+                        print(f"Invalid date format in row {reader.line_num}: {row[32]}")
+                        row[32] = '0000-00-00 00:00:00'
 
                     row[33] = batch_no   
                     cleaned_monthly_pay = re.sub(r'\D', '', row[35])
@@ -127,12 +131,14 @@ else:
                     elif row[39] == 'Four-Wheel Drive':
                         row[39] = '4WD'
 
+                    # Convert row to a tuple for easy comparison and duplication check
                     row_tuple = tuple(row)
 
                     if row_tuple not in seen_rows:
                         seen_rows.add(row_tuple)
-                        writer.writerow(row)
+                        writer.writerow(row)  # Write non-duplicate rows to the output CSV
                     else:
+                        # Write duplicate row to the duplicate log file
                         dup_file.write(','.join(row) + '\n')
 
         print(f"Prices have been cleaned, duplicates removed, and written to {output_csv}")

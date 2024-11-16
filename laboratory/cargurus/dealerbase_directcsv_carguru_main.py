@@ -162,11 +162,18 @@ def get_new_dealer_id(cursor):
 
 
 
+# def save_row_to_text_file(row):
+#     # This function saves the whole row to a text file
+#     with open("processed_rows.txt", "a") as file:
+#         # Convert the row dictionary to a string representation and write it to the file
+#         file.write(str(row) + "\n")
+        
+        
 def save_row_to_text_file(row):
-    # This function saves the whole row to a text file
+    """Save the entire row to a text file."""
     with open("processed_rows.txt", "a") as file:
-        # Convert the row dictionary to a string representation and write it to the file
-        file.write(str(row) + "\n")
+        file.write(str(row) + "\n")  # Save the row as a string representation
+
 
 def delete_row_from_csv(csv_file, row_to_delete):
     # This function deletes a row from the CSV file
