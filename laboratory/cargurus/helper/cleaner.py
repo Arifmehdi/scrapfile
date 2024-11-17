@@ -4,6 +4,33 @@ import os
 from datetime import datetime
 import requests
 
+
+import math
+
+def calculate_monthly_payment(row):
+    monthly_payment = 0
+    try:
+        payment_price = float(row)
+        interest_rate = 5.82 / 100
+        down_payment_percentage = 10 / 100
+
+        down_payment = payment_price * down_payment_percentage
+        loan_amount = payment_price - down_payment
+        calculate_month_value = 72
+        monthly_interest_rate = interest_rate / 12
+
+        monthly_payment = math.ceil(
+            (loan_amount * monthly_interest_rate) / 
+            (1 - math.pow(1 + monthly_interest_rate, -calculate_month_value))
+        )
+    except Exception as e:
+        monthly_payment = 0
+
+    return monthly_payment
+
+
+
+
 def get_lat_long(zip_code=77007, api_key="4b84ff4ad9a74c79ad4a1a945a4e5be1", country_code="us"):
     url = f"https://api.opencagedata.com/geocode/v1/json?q={zip_code},{country_code}&key={api_key}"
     response = requests.get(url)
@@ -29,7 +56,8 @@ date = datetime.now().strftime('%m%d%Y')
 created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # File paths
-input_csv = f"../public/db/housetom_265_inventory_info.csv"
+# input_csv = f"../public/db/housetom_265_inventory_info.csv"
+input_csv = f"../public/marifZone/inventories/austin_560_inventory_info.csv"
 output_csv = f"../public/db/{date}/{date}_output_file.csv"
 duplicates_file = f"../public/db/{date}/{date}_duplicates.txt"
 
@@ -93,6 +121,7 @@ else:
 
                     if row[13] == 'N/A':
                         row[13] = 0
+
                         
                     cleaned_price = re.sub(r'[\$,]', '', row[17])
                     row[17] = cleaned_price
@@ -115,7 +144,13 @@ else:
                         row[32] = original_date.strftime('%Y-%m-%d %H:%M:%S')
 
                     row[33] = batch_no   
-                    cleaned_monthly_pay = re.sub(r'\D', '', row[35])
+                    
+                    cleaned_monthly_pay = 0
+                    if row[35] != 'Contact for Price':
+                        if row[35] == 0:
+                            cleaned_monthly_pay = calculate_monthly_payment(row[35])
+                        else:
+                            cleaned_monthly_pay = re.sub(r'\D', '', row[35])
                     row[35] = cleaned_monthly_pay
 
                     if row[39] == 'All-Wheel Drive':

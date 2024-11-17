@@ -1252,7 +1252,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
 
 def csv_reader():
     dealers_data = []
-    csv_file_path = 'public/marifZone/austin_151dealers_info.csv'
+    csv_file_path = 'public/marifZone/dallas_150_dealers_info.csv'
     # Open the CSV file and read its contents
     with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
