@@ -343,6 +343,26 @@ def download_image(remote_url, directory_location, local_image_path):           
     else:
         print(f"Failed to download image from {remote_url}. Status code: {response.status_code}")
 
+def download_dealer_image(img_src, directory_location, local_image_path):
+    """
+    Downloads the image from img_src and saves it to local_image_path.
+    """
+    try:
+        # Ensure the directory for the image exists
+        os.makedirs(os.path.dirname(local_image_path), exist_ok=True)
+        
+        # Download and save the image
+        response = requests.get(img_src, stream=True)
+        if response.status_code == 200:
+            with open(local_image_path, 'wb') as file:
+                for chunk in response.iter_content(1024):
+                    file.write(chunk)
+            print(f"Image downloaded and saved to {local_image_path}")
+        else:
+            print(f"Failed to download image from {img_src}, status code: {response.status_code}")
+    except Exception as e:
+        print(f"Error downloading image {img_src}: {e}")
+
 
 # scrape_detail_page(driver, conn, cursor, csv_writers, detail_vehicle_data, result,cus_inventory_link)
 def scrape_detail_page(driver, conn, cursor, csv_writers, vehicle_data, single_vehicle_data, link):
@@ -1265,10 +1285,15 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer,single_all_data,
                 print(f"Directory already exists: {directory_location}")
 
             location_url = f"{city} _ {state}" if zip_code else 'default_location'
-            cus_dealer_name = re.sub(r'\s+', '-', name)
-            detail_local_image_path = f"{directory_location}/{cus_dealer_name}_{city}_{state}.jpg"
-            local_image_path =  detail_local_image_path
-            download_image(img_src, directory_location, local_image_path)
+
+            cus_dealer_name = re.sub(r'\s+', '-', name)  # Replace spaces with dashes for a valid file name
+            local_image_path = os.path.join(directory_location, f"{cus_dealer_name}_{city}_{state}.jpg")
+            download_dealer_image(img_src, directory_location, local_image_path)
+
+            # cus_dealer_name = re.sub(r'\s+', '-', name)
+            # detail_local_image_path = f"{directory_location}/{cus_dealer_name}_{city}_{state}.jpg"
+            # local_image_path =  detail_local_image_path
+            # download_dealer_image(img_src, directory_location, local_image_path)
 
         address_cus = f"{city +', '+ state}" 
 
