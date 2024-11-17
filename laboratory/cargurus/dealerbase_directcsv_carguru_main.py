@@ -175,23 +175,38 @@ def save_row_to_text_file(row):
         file.write(str(row) + "\n")  # Save the row as a string representation
 
 
-def delete_row_from_csv(csv_file, row_to_delete):
-    # This function deletes a row from the CSV file
-    rows = []
-    with open(csv_file, 'r') as file:
-        reader = csv.DictReader(file)
+# def delete_row_from_csv(csv_file, row_to_delete):
+#     # This function deletes a row from the CSV file
+#     rows = []
+#     with open(csv_file, 'r') as file:
+#         reader = csv.DictReader(file)
+#         rows = list(reader)
+
+#     # Find and remove the row that matches the data
+#     rows = [row for row in rows if row != row_to_delete]
+
+#     # Write the updated rows back to the CSV
+#     with open(csv_file, 'w', newline='') as file:
+#         fieldnames = rows[0].keys() if rows else []
+#         writer = csv.DictWriter(file, fieldnames=fieldnames)
+#         writer.writeheader()
+#         writer.writerows(rows)
+
+
+def delete_row_from_csv(csv_file_path, dealer_link):
+    # Open the file with the correct encoding
+    with open(csv_file_path, mode='r', encoding='utf-8', newline='') as file:
+        reader = csv.reader(file)
         rows = list(reader)
 
-    # Find and remove the row that matches the data
-    rows = [row for row in rows if row != row_to_delete]
+    # Your existing logic for deleting rows
+    # For example, deleting the row with dealer_link
+    rows = [row for row in rows if row != dealer_link]
 
-    # Write the updated rows back to the CSV
-    with open(csv_file, 'w', newline='') as file:
-        fieldnames = rows[0].keys() if rows else []
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-        writer.writeheader()
+    # Write the modified rows back to the CSV
+    with open(csv_file_path, mode='w', encoding='utf-8', newline='') as file:
+        writer = csv.writer(file)
         writer.writerows(rows)
-
 
 
 def initialize_webdriver():
@@ -1237,7 +1252,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
 
 def csv_reader():
     dealers_data = []
-    csv_file_path = 'public/dealerProcess/houston_dealers_info.csv'
+    csv_file_path = 'public/marifZone/austin_151dealers_info.csv'
     # Open the CSV file and read its contents
     with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
