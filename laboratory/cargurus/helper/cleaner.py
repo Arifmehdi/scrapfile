@@ -57,7 +57,7 @@ created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # File paths
 # input_csv = f"../public/db/housetom_265_inventory_info.csv"
-input_csv = f"../public/marifZone/inventories/austin_560_inventory_info.csv"
+input_csv = f"../public/marifZone/inventories/dallas_700_inventory_info.csv"
 output_csv = f"../public/db/{date}/{date}_output_file.csv"
 duplicates_file = f"../public/db/{date}/{date}_duplicates.txt"
 
@@ -148,8 +148,10 @@ else:
                     cleaned_monthly_pay = 0
                     # if row[17] != 'Contact for Price':
                     if row[17] not in ['Contact for Price', 'No Price Listed']:
-                        cleaned_monthly_pay = calculate_monthly_payment(row[17])
-
+                        if row[35] == 0:
+                            cleaned_monthly_pay = calculate_monthly_payment(row[35])
+                        else:
+                            cleaned_monthly_pay = re.sub(r'\D', '', row[35])
                     row[35] = cleaned_monthly_pay
 
                     if row[39] == 'All-Wheel Drive':
