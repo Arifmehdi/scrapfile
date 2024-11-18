@@ -146,11 +146,10 @@ else:
                     row[33] = batch_no   
                     
                     cleaned_monthly_pay = 0
-                    if row[35] != 'Contact for Price':
-                        if row[35] == 0:
-                            cleaned_monthly_pay = calculate_monthly_payment(row[35])
-                        else:
-                            cleaned_monthly_pay = re.sub(r'\D', '', row[35])
+                    # if row[17] != 'Contact for Price':
+                    if row[17] not in ['Contact for Price', 'No Price Listed']:
+                        cleaned_monthly_pay = calculate_monthly_payment(row[17])
+
                     row[35] = cleaned_monthly_pay
 
                     if row[39] == 'All-Wheel Drive':
