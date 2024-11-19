@@ -1713,90 +1713,294 @@ def extract_dealer_info(driver, conn, cursor, dealer_csv_writer, single_all_data
     return single_all_data
 
 
+def initial_profession_seter():
+        # Display the ZIP code options
+    print("[1] web designer")
+    print("[2] web developer")
+    print("[3] graphic design")
+    print("[4] accountant")
+    print("[5] marketing manager")
+    print("[6] data entry")
+    print("[7] network engineer")
+    print("[8] supply chain")
+    print("[9] store manager")
+    print("[10] seo specialist")
+
+    # Loop until a valid input is received
+    while True:
+        try:
+            professional_input = int(input('Choose Your Professional (1-10): '))
+            
+            if professional_input == 1:
+                professional_input_data = 'web designer'
+                break
+            elif professional_input == 2:
+                professional_input_data = 'web developer'
+                break
+            elif professional_input == 3:
+                professional_input_data = 'graphic design'
+                break
+            elif professional_input == 4:
+                professional_input_data = 'accountant'
+                break
+            elif professional_input == 5:
+                professional_input_data = 'marketing manager'
+                break
+            elif professional_input == 6:
+                professional_input_data = 'data entry'
+                break
+            elif professional_input == 7:
+                professional_input_data = 'network engineer'
+                break
+            elif professional_input == 8:
+                professional_input_data = 'supply chain'
+                break
+            elif professional_input == 9:
+                professional_input_data = 'store manager'
+                break
+            elif professional_input == 10:
+                professional_input_data = 'seo specialist'
+                break
+            else:
+                print("Invalid input. Please enter a number between 1 and 10.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")
+
+    # Print the selected ZIP code
+    print(f"Selected profession is: {professional_input_data}")
+    return professional_input_data
+    
+
+def initial_location_seter():
+    # Display the location options
+    print("[1] United States")
+    print("[2] Russia, NJ")
+    print("[3] Houston, TX")
+    print("[4] Canada, KY")
+    print("[5] Toronto, OH")
+    print("[6] Paris, TX")
+    print("[7] Singapur, PR")
+    print("[8] China, TX")
+    print("[9] Chinatown, NY")
+    print("[10] Spain Park, AL")
+
+    while True:
+        location_input = input('Choose Your location (1-10) or press Enter to skip: ').strip()
+        
+        if location_input == "":
+            # If the user presses Enter without input, set to empty string
+            location_input_data = ''
+            break
+        
+        try:
+            # Convert input to integer if not empty
+            location_input = int(location_input)
+            
+            # Map the number to the corresponding location
+            location_map = {
+                1: 'United States',
+                2: 'Russia, NJ',
+                3: 'Houston, TX',
+                4: 'Canada, KY',
+                5: 'Toronto, OH',
+                6: 'Paris, TX',
+                7: 'Singapur, PR',
+                8: 'China, TX',
+                9: 'Chinatown, NY',
+                10: 'Spain Park, AL'
+            }
+            
+            if location_input in location_map:
+                location_input_data = location_map[location_input]
+                break
+            else:
+                print("Invalid input. Please enter a number between 1 and 10.")
+        except ValueError:
+            print("Invalid input. Please enter a valid number or press Enter.")
+
+    # Print the selected location
+    print(f"Selected location is: '{location_input_data}'")
+    return location_input_data
+
 
 
 def main():
     # Set up logging (optional)
     logging.basicConfig(level=logging.INFO)
 
-
-    # ratio, zip_code_input_data = initial_zip_code_seter()
-    # conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input_data)
-    # # conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
-
+        # Input designation and location
+    designation_value = initial_profession_seter()
+    location_value = initial_location_seter()
+    # Initialize WebDriver
     main_driver = initialize_webdriver()
-    # targated_url = custom_url(ratio, zip_code_input_data)
-    targated_url = custom_url()
 
-    URL = targated_url
+    URL = custom_url()
     HEADER = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
         'Accept-Language': 'en-US,en;q=0.5'
     }
-    logging.info(URL)
+    logging.info(f"Navigating to URL: {URL}")
     main_driver.get(URL)
 
-    driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[starts-with(text(), 'Search')]")))
+    # Wait for and interact with the Search button
+    WebDriverWait(main_driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "//button[starts-with(text(), 'Search')]"))
+    ).click()
 
-    search_element = driver.find_element(By.XPATH, "//button[starts-with(text(), 'Search')]")
 
-    search_area = driver.find_element(By.XPATH,'//div[@id="jobsearch-Main"]')
 
-    ##if need than use for select multiple radious and input zip code
-    designation_value="graphics designer"
-    designation_input_element = driver.find_element(By.XPATH, '//input[@id="text-input-what"]')
+    # Wait for the input fields to be present
+    designation_input_element = WebDriverWait(main_driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, '//input[@id="text-input-what"]'))
+    )
     designation_input_element.clear()
-    designation_input_element.send_keys(designation_value) 
- 
-    location_value="Houston, TX"
-    location_input_element = driver.find_element(By.XPATH, '//input[@id="text-input-where"]')
-    location_input_element.clear()
-    location_input_element.send_keys(location_value) 
+    designation_input_element.send_keys(designation_value)
 
-    serach_button_element = driver.find_element(By.XPATH, '//button[starts-with(text(), 'Search')]')
-    main_element = WebDriverWait(driver, 10).until(
+    location_input_element = WebDriverWait(main_driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, '//input[@id="text-input-where"]'))
+    )
+    location_input_element.clear()
+    location_input_element.send_keys(location_value)
+
+    search_button_element = main_driver.find_element(By.XPATH, "//button[starts-with(text(), 'Search')]")
+    search_button_element.click()
+
+    # Wait for the search results to load
+    main_element = WebDriverWait(main_driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '//div[@id="mosaic-jobResults"]'))
     )
 
-    # //div[@id="mosaic-provider-jobcards"]
-    # //h2[@class="jobTitle css-1psdjh5 eu4oa1w0"]
+    # Define the upload folder and file path
+    upload_folder = "upload"
+    output_file_path = os.path.join(upload_folder, "job_cards.txt")
 
+    # Ensure the upload folder exists
+    if not os.path.exists(upload_folder):
+        os.makedirs(upload_folder)
 
+    # Ensure the file exists by creating it if not already present
+    if not os.path.exists(output_file_path):
+        with open(output_file_path, "w", encoding="utf-8") as file:
+            file.write("")  # Create an empty file
 
-    # select_element = driver.find_element(By.XPATH, '//select[@id="location-distance"]')
-    # select = Select(select_element)
-    # select.select_by_value("10")
+    # Find job cards
+    professional_obj = WebDriverWait(main_driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, "//div[@id='mosaic-provider-jobcards']"))
+    )
+    professional_obj_li = professional_obj.find_elements(By.XPATH, ".//ul//li")  # Use relative XPath
 
-    # logging.info("Filled out the form fields")
+    # Write job card details to the file
+    with open(output_file_path, "w", encoding="utf-8") as file:
+        for job in professional_obj_li:
+            file.write(job.text + "\n")  # Write each job card's text into the file
 
-    ##if need than use for select multiple radious and input zip code
-    # select_pagination_element = driver.find_element(By.XPATH, '//select[@id="pagination-dropdown"]')
-    # select_pagination = Select(select_pagination_element)
-    # select_pagination.select_by_value("100")
+    print(f"Job card details saved to {output_file_path}")
 
-    single_all_data = []
-    extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
+        # # Find job cards
+    # professional_obj = WebDriverWait(main_driver, 10).until(
+    #     EC.presence_of_element_located((By.XPATH, "//div[@id='mosaic-provider-jobcards']"))
+    # )
+    # professional_obj_li = professional_obj.find_elements(By.XPATH, ".//ul//li")  # Use relative XPath
 
-    ##if need than use if need pagination 
-    # # Loop through pages
-    # number_of_pages = 5
-    # for page in range(1, number_of_pages):
-    #     if not navigate_to_next_dealer_page(main_driver, page):
-    #         break
+    # # Print job card details
+    # for job in professional_obj_li:
+    #     print(job.text)
 
-        # extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file,inventory_details_csv_writer ), single_all_data, HEADER)
-
-    print(single_all_data)
-    print('*'*40)
-    time.sleep(10)
+    time.sleep(5)
     main_driver.quit()
-
-    dealer_csv_file.close()   
-    inventory_csv_file.close()
-    inventory_details_csv_file.close()
-
-    # Clean up: Close the database connection
-    conn.close()
 
 if __name__ == "__main__":
     main()
+
+
+# def main():
+#     # Set up logging (optional)
+#     logging.basicConfig(level=logging.INFO)
+
+
+#     # ratio, zip_code_input_data = initial_zip_code_seter()
+#     # conn, cursor, dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer  = setup_db_and_csv(zip_code_input_data)
+#     # # conn, cursor, dealer_csv_file, dealer_csv_writer  = setup_db_and_csv()
+
+#     main_driver = initialize_webdriver()
+#     # targated_url = custom_url(ratio, zip_code_input_data)
+#     targated_url = custom_url()
+
+#     URL = targated_url
+#     HEADER = {
+#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+#         'Accept-Language': 'en-US,en;q=0.5'
+#     }
+#     logging.info(URL)
+#     main_driver.get(URL)
+
+#     driver = WebDriverWait(main_driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[starts-with(text(), 'Search')]")))
+
+#     search_element = driver.find_element(By.XPATH, "//button[starts-with(text(), 'Search')]")
+
+#     search_area = driver.find_element(By.XPATH,'//div[@id="jobsearch-Main"]')
+
+#     ##if need than use for select multiple radious and input zip code
+#     designation_value="graphics designer"
+#     designation_input_element = driver.find_element(By.XPATH, '//input[@id="text-input-what"]')
+#     designation_input_element.clear()
+#     designation_input_element.send_keys(designation_value) 
+ 
+#     location_value="Houston, TX"
+#     location_input_element = driver.find_element(By.XPATH, '//input[@id="text-input-where"]')
+#     location_input_element.clear()
+#     location_input_element.send_keys(location_value) 
+
+#     search_button_element = driver.find_element(By.XPATH, "//button[starts-with(text(), 'Search')]")
+#     search_button_element.click()
+#     main_element = WebDriverWait(driver, 10).until(
+#         EC.presence_of_element_located((By.XPATH, '//div[@id="mosaic-jobResults"]'))
+#     )
+
+#     profesiional_obj = driver.find_element(By.XPATH, "//div[@id='mosaic-provider-jobcards']")
+#     profesiional_obj_li  = profesiional_obj.find_elements(By.XPATH, "//ul//li]")
+#     print('i love you ')
+#     print(profesiional_obj_li)
+
+#     # //div[@id="mosaic-provider-jobcards"]
+#     # //h2[@class="jobTitle css-1psdjh5 eu4oa1w0"]
+
+
+
+#     # select_element = driver.find_element(By.XPATH, '//select[@id="location-distance"]')
+#     # select = Select(select_element)
+#     # select.select_by_value("10")
+
+#     # logging.info("Filled out the form fields")
+
+#     ##if need than use for select multiple radious and input zip code
+#     # select_pagination_element = driver.find_element(By.XPATH, '//select[@id="pagination-dropdown"]')
+#     # select_pagination = Select(select_pagination_element)
+#     # select_pagination.select_by_value("100")
+
+#     # single_all_data = []
+#     # extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file, inventory_details_csv_writer), single_all_data, HEADER)
+
+#     ##if need than use if need pagination 
+#     # # Loop through pages
+#     # number_of_pages = 5
+#     # for page in range(1, number_of_pages):
+#     #     if not navigate_to_next_dealer_page(main_driver, page):
+#     #         break
+
+#         # extract_dealer_info(main_driver, conn, cursor, (dealer_csv_file, dealer_csv_writer, inventory_csv_file, inventory_csv_writer, inventory_details_csv_file,inventory_details_csv_writer ), single_all_data, HEADER)
+
+#     # print(single_all_data)
+#     print('*'*40)
+#     time.sleep(10)
+#     driver.quit()
+
+#     # dealer_csv_file.close()   
+#     # inventory_csv_file.close()
+#     # inventory_details_csv_file.close()
+
+#     # Clean up: Close the database connection
+#     # conn.close()
+
+# if __name__ == "__main__":
+#     main()
