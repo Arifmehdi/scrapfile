@@ -43,6 +43,8 @@
 ****************************************************** START Windows exe file ****************************************************************
 01. Install PyInstaller: Make sure you have PyInstaller installed. You can install it via pip:
 
+## use just two line code 
+
 --> pip install pyinstaller
 
 02. Create the Executable: Open a terminal or command prompt in the directory where your script is located and run the following command:
