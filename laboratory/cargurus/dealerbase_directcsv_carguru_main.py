@@ -1046,14 +1046,29 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                     if modal_payment:
                         try:
                             modal_price = modal_row.find_element(By.XPATH,"//span[@class='_monthlyPayment_1agta_60']//parent::span/b").text
-                            cus_price = 0
-                            if modal_price != 0:
+                            if modal_price:
                                 modal_cus_price = re.sub(r'[\$,]', '', modal_price)
                         except NoSuchElementException:
                             modal_cus_price = "Unknown price"
                             print("Missing modal_key for:", modal_row)
                     else:
                         modal_cus_price = -1
+                        
+
+                    float_modal_price = float(modal_cus_price)
+                    float_cus_price = float(cus_price)
+                    if float_cus_price != float_modal_price:
+                        print(f"Discrepancy found: cus_price={cus_price}, modal_cus_price={modal_cus_price}")
+                        inp_price = input('Press Enter to continue with current prices or set manually (provide numeric value): ').strip()
+                        if inp_price:
+                            try:
+                                # Convert user input to float and update the variables
+                                modal_cus_price = float(inp_price)
+                                cus_price = float(inp_price)
+                                print(f"Prices updated to: {cus_price}")
+                            except ValueError:
+                                # Handle invalid input gracefully
+                                print("Invalid input. Prices remain unchanged.")
 
                     try:
                         modal_key = modal_row.find_element(By.XPATH, ".//h5").text
