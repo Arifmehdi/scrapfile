@@ -1054,6 +1054,12 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                     else:
                         modal_cus_price = -1
                         
+                    ## No Price Listed occured than skipped it 
+                    if modal_cus_price == "No Price Listed":
+                        print("Skipping car with 'No Price Listed' price.")
+                        continue
+
+
 
                     float_modal_price = float(modal_cus_price)
                     float_cus_price = float(cus_price)
@@ -1069,6 +1075,28 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                             except ValueError:
                                 # Handle invalid input gracefully
                                 print("Invalid input. Prices remain unchanged.")
+
+                    modal_mileage = modal_row_all.get('Mileage', 'N/A')
+                    cus_comma_modal_mileage = modal_mileage.replace(',','')
+
+
+                    # if cus_mileage != cus_comma_modal_mileage:
+                    #     print(f"Discrepancy found: cus_mileage={cus_mileage}, modal_mileage={cus_comma_modal_mileage}")
+                    #     inp_mileage = input('Press Enter to continue with current mileage or set manually (provide numeric value): ').strip()
+                        
+                    #     if inp_mileage:
+                    #         try:
+                    #             # Remove commas and other formatting characters from the input
+                    #             cleaned_mileage = inp_mileage.replace(',', '').strip()
+                                
+                    #             # Convert cleaned input to a float or int as needed
+                    #             modal_cus_mileage = cleaned_mileage
+                    #             cus_mileage = cleaned_mileage
+                                
+                    #             print(f"Mileage updated to: {cus_mileage}")
+                    #         except ValueError:
+                    #             # Handle invalid input gracefully
+                    #             print("Invalid input. Mileage remains unchanged.")
 
                     try:
                         modal_key = modal_row.find_element(By.XPATH, ".//h5").text
@@ -1098,7 +1126,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                             print(f"Error extracting additional feature data: {e}")
 
 
-                    modal_mileage = modal_row_all.get('Mileage', 'N/A')
+
                     drivetrain = modal_row_all.get('Drivetrain', 'N/A')
                     exterior_color = modal_row_all.get('Exterior color', 'N/A')
                     interior_color = modal_row_all.get('Interior color', 'N/A')
@@ -1162,7 +1190,8 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                         # 'Title': title if title is not None else nonModalTitle,
                         # 'Mileage': mileage if mileage is not None else cus_mileage,
                         'Title': modal_title,
-                        'Mileage': modal_mileage,
+                        # 'Mileage': modal_mileage,
+                        'Mileage': cus_mileage,
                                                 
                         'Drivetrain': drivetrain,
                         'Exterior Color': exterior_color,
