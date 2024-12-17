@@ -9,8 +9,11 @@
 03. virtual env (venv) install
 --> py -m venv venv
 
+
 04. activate env
 --> .\venv\Scripts\Activate
+   **-->  if arise any issue than run  ----- 
+            Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 05. if need purge 
 --> pip cache purge
