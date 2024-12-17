@@ -58,7 +58,7 @@ created_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 # File paths
 # input_csv = f"../public/db/housetom_265_inventory_info.csv"
-input_csv = f"../public/marifZone/inventories/austin_560_inventory_info.csv"
+input_csv = f"../public/marifZone/inventories/dallas_700_inventory_info.csv"
 output_csv = f"../public/db/{date}/{date}_output_file.csv"
 duplicates_file = f"../public/db/{date}/{date}_duplicates.txt"
 

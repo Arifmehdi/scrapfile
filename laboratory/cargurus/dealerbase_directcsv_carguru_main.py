@@ -944,35 +944,35 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
 
             # Safe extraction for title
             title_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-cg-ft="srp-listing-blade-title"]')
-            title = title_elems[0].text if title_elems else "N/A"
+            nonModalTitle = title_elems[0].text if title_elems else "N/A"
 
             # Safe extraction for mileage
             mileage_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="srp-tile-mileage"]')
-            mileage = mileage_elems[0].text if mileage_elems else "N/A"
+            mileage_data = mileage_elems[0].text if mileage_elems else "N/A"
 
             cus_mileage = 0
-            if mileage != 0:
-                cus_mileage = re.sub(r'[\$,]', '', mileage)
+            if mileage_data != 0:
+                cus_mileage = re.sub(r'[\$,]', '', mileage_data)
 
             # Safe extraction for engine
             engine_elems = vehicle_row.find_elements(By.XPATH, './/p[@data-testid="seo-srp-tile-engine-display-name"]')
             engine = engine_elems[0].text if engine_elems else "N/A"
 
-            # Safe extraction for price
+            # # Safe extraction for price
             price_elems = vehicle_row.find_elements(By.XPATH, './/h4[@data-testid="srp-tile-price"]')
-            price = price_elems[0].text if price_elems else 0
+            price_data = price_elems[0].text if price_elems else 0
 
             cus_price = 0
-            if price != 0:
-                cus_price = re.sub(r'[\$,]', '', price)
+            if price_data != 0:
+                cus_price = re.sub(r'[\$,]', '', price_data)
 
-            # Safe extraction for payment
+            # # Safe extraction for payment
             payment_elems = vehicle_row.find_elements(By.XPATH, './/span[@class="_monthlyPaymentText_noan4_230"]')
-            payment = payment_elems[0].text if payment_elems else 0
+            payment_data = payment_elems[0].text if payment_elems else 0
 
             cus_payment = 0
-            if payment != 0:
-                cus_payment = re.sub(r'\D', '', payment)
+            if payment_data != 0:
+                cus_payment = re.sub(r'\D', '', payment_data)
 
             # Safe extraction for description
             description_elems = vehicle_row.find_elements(By.XPATH, './/div[@class="_text_1ncld_1"]')
@@ -1029,6 +1029,76 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
 
                 for modal_row in feature_model_elements:
                     try:
+                        modal_title = modal_row.find_element(By.XPATH, "//b[@data-cg-ft='listing-result-info-modal-title']").text
+                    except NoSuchElementException:
+                        modal_title = "Unknown Main Title"
+                        # print("Missing modal_key for:", modal_row)
+                    try:
+                        modal_payment = modal_row.find_element(By.XPATH, "//span[@class='_monthlyPayment_1agta_60']").text
+                        modal_cus_payment = 0
+                        if modal_payment != 0:
+                            modal_cus_payment = re.sub(r'\D', '', modal_payment)
+
+                    except NoSuchElementException:
+                        modal_cus_payment = "Unknown Monthly Pay"
+                        print("Missing modal_key for:", modal_row)
+
+                    if modal_payment:
+                        try:
+                            modal_price = modal_row.find_element(By.XPATH,"//span[@class='_monthlyPayment_1agta_60']//parent::span/b").text
+                            if modal_price:
+                                modal_cus_price = re.sub(r'[\$,]', '', modal_price)
+                        except NoSuchElementException:
+                            modal_cus_price = "Unknown price"
+                            print("Missing modal_key for:", modal_row)
+                    else:
+                        modal_cus_price = -1
+                        
+                    ## No Price Listed occured than skipped it 
+                    if modal_cus_price == "No Price Listed":
+                        print("Skipping car with 'No Price Listed' price.")
+                        continue
+
+
+
+                    float_modal_price = float(modal_cus_price)
+                    float_cus_price = float(cus_price)
+                    if float_cus_price != float_modal_price:
+                        print(f"Discrepancy found: cus_price={cus_price}, modal_cus_price={modal_cus_price}")
+                        inp_price = input('Press Enter to continue with current prices or set manually (provide numeric value): ').strip()
+                        if inp_price:
+                            try:
+                                # Convert user input to float and update the variables
+                                modal_cus_price = float(inp_price)
+                                cus_price = float(inp_price)
+                                print(f"Prices updated to: {cus_price}")
+                            except ValueError:
+                                # Handle invalid input gracefully
+                                print("Invalid input. Prices remain unchanged.")
+
+                    modal_mileage = modal_row_all.get('Mileage', 'N/A')
+                    cus_comma_modal_mileage = modal_mileage.replace(',','')
+
+
+                    # if cus_mileage != cus_comma_modal_mileage:
+                    #     print(f"Discrepancy found: cus_mileage={cus_mileage}, modal_mileage={cus_comma_modal_mileage}")
+                    #     inp_mileage = input('Press Enter to continue with current mileage or set manually (provide numeric value): ').strip()
+                        
+                    #     if inp_mileage:
+                    #         try:
+                    #             # Remove commas and other formatting characters from the input
+                    #             cleaned_mileage = inp_mileage.replace(',', '').strip()
+                                
+                    #             # Convert cleaned input to a float or int as needed
+                    #             modal_cus_mileage = cleaned_mileage
+                    #             cus_mileage = cleaned_mileage
+                                
+                    #             print(f"Mileage updated to: {cus_mileage}")
+                    #         except ValueError:
+                    #             # Handle invalid input gracefully
+                    #             print("Invalid input. Mileage remains unchanged.")
+
+                    try:
                         modal_key = modal_row.find_element(By.XPATH, ".//h5").text
                     except NoSuchElementException:
                         modal_key = "Unknown Key"
@@ -1056,7 +1126,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                             print(f"Error extracting additional feature data: {e}")
 
 
-                    mileage = modal_row_all.get('Mileage', 'N/A')
+
                     drivetrain = modal_row_all.get('Drivetrain', 'N/A')
                     exterior_color = modal_row_all.get('Exterior color', 'N/A')
                     interior_color = modal_row_all.get('Interior color', 'N/A')
@@ -1078,7 +1148,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                     vin_info = vin
                     stock_info = stock_number
 
-                    replace_title_whitespace = title.replace(' ', '_').replace('/', '_').replace('-', '_')
+                    replace_title_whitespace = modal_title.replace(' ', '_').replace('/', '_').replace('-', '_')
                     local_image_path = f"{directory_location}/{replace_title_whitespace + '_'+ vin_info + '_' +stock_info}.jpg"
                     # --- Wait for the image to load ---
                     try:
@@ -1117,10 +1187,12 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                         'Inventory Link': cus_inventory_link,
                         'Vehicle Type Short Info': vehicle_type_text,
                         'Status': status_text,
-                        'Title': title,
+                        # 'Title': title if title is not None else nonModalTitle,
+                        # 'Mileage': mileage if mileage is not None else cus_mileage,
+                        'Title': modal_title,
+                        # 'Mileage': modal_mileage,
                         'Mileage': cus_mileage,
-                        
-                        
+                                                
                         'Drivetrain': drivetrain,
                         'Exterior Color': exterior_color,
                         'Interior Color': interior_color,
@@ -1135,8 +1207,10 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                         'Body Type': body_type,
                         'Stock Number': stock_number,
                         'Vin': vin,
-                        'Price': cus_price,
-                        'Payment': cus_payment,
+                        # 'Price': price if price is not None else cus_price,
+                        # 'Payment': payment if payment is not None else cus_payment,
+                        'Price': modal_cus_price,
+                        'Payment': modal_cus_payment,
                         'Description': description,
                         'Phone': cus_phone,
                         'Location': location,
@@ -1189,7 +1263,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                                         status_text, dealer_inventory_count, vehicle_type_info)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
-                    single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+                    single_img_src, local_image_path, modal_title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
                     model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
                     exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
                     status_text, dealer_inventory_count, vehicle_type_text))
@@ -1199,7 +1273,7 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
                 
                 # Write to the inventory CSV file using the specific writer
                 inventory_csv_writer.writerow([dealer_id, dealer_name, cus_phone, description, dealer_address, city, state, dealer_iframe_map, zip_code, a_href, 
-                                single_img_src, local_image_path, title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
+                                single_img_src, local_image_path, modal_title, year, make, model, vin, cus_price, cus_mileage, vehicle_type_result, 
                                 model_no, trim, stock_number, engine, transmission, body_type, fuel_type, driveInfo, mpg_city, mpg_highway, 
                                 exterior_color, star, created_date, batch_no, cus_inventory_link, cus_payment, in_market, mpg, interior_color, drivetrain, 
                                 status_text, dealer_inventory_count, vehicle_type_text])
@@ -1252,7 +1326,8 @@ def extract_vehicle_info(URL, driver, conn, cursor, inventory_csv_file, inventor
 
 def csv_reader():
     dealers_data = []
-    csv_file_path = 'public/marifZone/dallas_150_dealers_info.csv'
+    # csv_file_path = 'public/marifZone/dallas_150_dealers_info.csv'
+    csv_file_path = 'public/marifZone/san_antonio_dealers_info.csv'
     # Open the CSV file and read its contents
     with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csvfile:
         csv_reader = csv.DictReader(csvfile)
