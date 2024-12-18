@@ -1,0 +1,6 @@
+web : https://estcolathai.com/daretobeawesome
+flare solver : https://github.com/FlareSolverr/FlareSolverr
+https://github.com/FlareSolverr/FlareSolverr/releases
+
+i want to pass cloudflare bot detection and realted all in this web but i dont know why every time i use proxy it still not pass
+so i try to pass it and i give code and proxy for you to try 
