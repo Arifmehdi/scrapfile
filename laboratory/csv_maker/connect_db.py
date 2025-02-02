@@ -2,13 +2,13 @@ import mysql.connector
 
 # Database connection details
 config = {
-    # "host": "phplaravel-1194462-4226380.cloudwaysapps.com",  # Your Cloudways server host
+    # "host": localhost",  # Your Cloudways server host
     # "port": 8082,  # Use the port specified in your URL
-    "host": "137.184.15.16",  # Public IP of your server
+    "host": "host",  # Public IP of your server
     "port": 3306,  # Change if your database uses a different port
-    "user": "senpvmzmtj",  # Your database username
-    "password": "v5FmVJrAnx",  # Your database password
-    "database": "senpvmzmtj"  # Your database name
+    "user": "user",  # Your database username
+    "password": "your_pass",  # Your database password
+    "database": "your-db"  # Your database name
 }
 
 try:
