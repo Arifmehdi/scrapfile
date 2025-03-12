@@ -16,19 +16,18 @@ cursor = connection.cursor()
 
 # Read CSV file
 # csv_file = "detail_20000.csv"
-# csv_file = "detail_20000_backup_raw.csv"
 # csv_file = "detail_40000.csv"
 # csv_file = "detail_60000.csv"
 # csv_file = "detail_80000.csv"
 # csv_file = "detail_100000.csv"
 # csv_file = "detail_120000.csv"
-# csv_file = "detail_140000.csv"
+csv_file = "detail_140000.csv"
 
 # csv_file = "detail_150000.csv"
 # csv_file = "detail_170000.csv"
 # csv_file = "detail_180000.csv"
 # csv_file = "detail_190000.csv"
-csv_file = "detail_200000.csv"
+# csv_file = "detail_200000.csv"
 df = pd.read_csv(csv_file)
 
 # Column mapping (CSV header -> MySQL column)
@@ -84,7 +83,7 @@ cursor.execute("SELECT MAX(batch_no) FROM tmp_dealers")
 max_batch_no = cursor.fetchone()[0]
 
 # If no batch exists, start from 100, else increment by 1
-batch_no = max_batch_no + 1 if max_batch_no else 108
+batch_no = max_batch_no + 1 if max_batch_no else 106
 
 # Add batch_no and status columns
 columns = ", ".join(list(column_mapping.values()) + ["batch_no", "status"])
