@@ -1,0 +1,51 @@
+
+2024-12-17 01:19:28,219:ERROR:An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.140)
+Stacktrace:
+	GetHandleVerifier [0x011F34A3+25059]
+	(No symbol) [0x0117CEA4]
+	(No symbol) [0x0105BEC3]
+	(No symbol) [0x0103D93B]
+	(No symbol) [0x010C800F]
+	(No symbol) [0x010DAE49]
+	(No symbol) [0x010C1C96]
+	(No symbol) [0x01093FAC]
+	(No symbol) [0x01094F3D]
+	GetHandleVerifier [0x014E5613+3113811]
+	GetHandleVerifier [0x014FA2DA+3199002]
+	GetHandleVerifier [0x014F2AB2+3168242]
+	GetHandleVerifier [0x01293310+680016]
+	(No symbol) [0x011857ED]
+	(No symbol) [0x01182A98]
+	(No symbol) [0x01182C35]
+	(No symbol) [0x01175890]
+	BaseThreadInitThunk [0x770CFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774E809E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E806E+238]
+
+2024-12-17 01:38:47,107:ERROR:An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.140)
+Stacktrace:
+	GetHandleVerifier [0x011F34A3+25059]
+	(No symbol) [0x0117CEA4]
+	(No symbol) [0x0105BEC3]
+	(No symbol) [0x0103D93B]
+	(No symbol) [0x010C800F]
+	(No symbol) [0x010CDB3A]
+	(No symbol) [0x010C1EC3]
+	(No symbol) [0x01093FAC]
+	(No symbol) [0x01094F3D]
+	GetHandleVerifier [0x014E5613+3113811]
+	GetHandleVerifier [0x014FA2DA+3199002]
+	GetHandleVerifier [0x014F2AB2+3168242]
+	GetHandleVerifier [0x01293310+680016]
+	(No symbol) [0x011857ED]
+	(No symbol) [0x01182A98]
+	(No symbol) [0x01182C35]
+	(No symbol) [0x01175890]
+	BaseThreadInitThunk [0x770CFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774E809E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E806E+238]
+

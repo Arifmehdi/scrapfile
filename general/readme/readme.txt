@@ -1,3 +1,4 @@
+****************************************************** START Install Package ****************************************************************
 01. check python 
 --> python --version
 
@@ -8,12 +9,20 @@
 03. virtual env (venv) install
 --> py -m venv venv
 
+
 04. activate env
 --> .\venv\Scripts\Activate
+   **-->  if arise any issue than run  ----- 
+            Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 05. if need purge 
 --> pip cache purge
 
+****************************************************** END Install Package ****************************************************************
+
+
+
+****************************************************** START Individual Package ****************************************************************
 06. install selenium
 --> pip install selenium
 
@@ -31,3 +40,17 @@
 
 11 install pytesseract
 --> pip install selenium pillow pytesseract
+
+****************************************************** END Individual Package ****************************************************************
+
+****************************************************** START Windows exe file ****************************************************************
+01. Install PyInstaller: Make sure you have PyInstaller installed. You can install it via pip:
+
+## use just two line code 
+
+--> pip install pyinstaller
+
+02. Create the Executable: Open a terminal or command prompt in the directory where your script is located and run the following command:
+
+--> pyinstaller --onefile --windowed your_script.py
+******************************************************  END Windows exe file  ****************************************************************

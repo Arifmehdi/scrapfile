@@ -1,0 +1,2453 @@
+<div class="headerSort">
+ <h1 class="header5">
+  Dealerships near me (Houston, TX 77007)
+ </h1>
+ <div class="sortDropdown">
+  <label for="sortDropdown">
+   Sort by:
+  </label>
+  <div class="cgds_select">
+   <div class="cgds_select_formSelectWrap">
+    <select class="cgds_select_elementSelectElement" id="sortDropdown" name="sortType">
+     <option selected="" value="PROXIMITY_ASC">
+      Distance
+     </option>
+     <option value="AVERAGE_SALES_RATING_ASC">
+      Dealer rating
+     </option>
+    </select>
+    <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 cgds_select_chevron" data-icon="chevron-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z" fill="currentColor">
+     </path>
+    </svg>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="searchDealers">
+ <input id="searchFormToggle" type="checkbox"/>
+ <span class="searchDescription">
+  753 dealerships within
+  <strong>
+   100 mi
+  </strong>
+ </span>
+ <label class="changeButton" for="searchFormToggle">
+  Change
+ </label>
+ <div class="searchFormWrapper">
+  <form action="/Cars/changeDealerGeoLocation.action" class="searchForm" onsubmit="CG.GeoCoder.findDealersByGeocode(this.addressTyped.value, this.address, this.latitude, this.longitude, CG.getCountryCode()); return false;">
+   <input id="address" name="address" type="hidden" value="Houston, TX 77007"/>
+   <input id="latitude" name="latitude" type="hidden" value=""/>
+   <input id="longitude" name="longitude" type="hidden" value=""/>
+   <div class="cgds_select" style="max-width: 190px">
+    <div class="cgds_select_formSelectWrap">
+     <select aria-label="Dealership type" class="cgds_select_elementSelectElement" id="refine-search-make" name="entityId">
+      <option value="">
+       All
+      </option>
+      <option value="m4">
+       Acura
+      </option>
+      <option value="m124">
+       Alfa Romeo
+      </option>
+      <option value="m212">
+       Allard
+      </option>
+      <option value="m79">
+       AM General
+      </option>
+      <option value="m133">
+       AMC
+      </option>
+      <option value="m110">
+       Aston Martin
+      </option>
+      <option value="m19">
+       Audi
+      </option>
+      <option value="m119">
+       Austin
+      </option>
+      <option value="m139">
+       Austin-Healey
+      </option>
+      <option value="m234">
+       Autobianchi
+      </option>
+      <option value="m20">
+       Bentley
+      </option>
+      <option value="m3">
+       BMW
+      </option>
+      <option value="m113">
+       Bugatti
+      </option>
+      <option value="m21">
+       Buick
+      </option>
+      <option value="m22">
+       Cadillac
+      </option>
+      <option value="m1">
+       Chevrolet
+      </option>
+      <option value="m23">
+       Chrysler
+      </option>
+      <option value="m117">
+       Citroen
+      </option>
+      <option value="m285">
+       Continental
+      </option>
+      <option value="m215">
+       Cord
+      </option>
+      <option value="m81">
+       Daewoo
+      </option>
+      <option value="m95">
+       Daihatsu
+      </option>
+      <option value="m96">
+       Datsun
+      </option>
+      <option value="m179">
+       De Tomaso
+      </option>
+      <option value="m97">
+       DeLorean
+      </option>
+      <option value="m208">
+       DeSoto
+      </option>
+      <option value="m24">
+       Dodge
+      </option>
+      <option value="m174">
+       Edsel
+      </option>
+      <option value="m198">
+       Excalibur
+      </option>
+      <option value="m25">
+       Ferrari
+      </option>
+      <option value="m98">
+       FIAT
+      </option>
+      <option value="m183">
+       Fisker
+      </option>
+      <option value="m2">
+       Ford
+      </option>
+      <option value="m99">
+       Freightliner
+      </option>
+      <option value="m203">
+       Genesis
+      </option>
+      <option value="m83">
+       Geo
+      </option>
+      <option value="m26">
+       GMC
+      </option>
+      <option value="m6">
+       Honda
+      </option>
+      <option value="m186">
+       Hudson
+      </option>
+      <option value="m27">
+       Hummer
+      </option>
+      <option value="m28">
+       Hyundai
+      </option>
+      <option value="m283">
+       Ineos
+      </option>
+      <option value="m84">
+       INFINITI
+      </option>
+      <option value="m241">
+       Intermeccanica
+      </option>
+      <option value="m158">
+       International Harvester
+      </option>
+      <option value="m30">
+       Isuzu
+      </option>
+      <option value="m31">
+       Jaguar
+      </option>
+      <option value="m32">
+       Jeep
+      </option>
+      <option value="m189">
+       Kaiser
+      </option>
+      <option value="m233">
+       Karma
+      </option>
+      <option value="m33">
+       Kia
+      </option>
+      <option value="m129">
+       Koenigsegg
+      </option>
+      <option value="m155">
+       Lada
+      </option>
+      <option value="m34">
+       Lamborghini
+      </option>
+      <option value="m100">
+       Lancia
+      </option>
+      <option value="m35">
+       Land Rover
+      </option>
+      <option value="m37">
+       Lexus
+      </option>
+      <option value="m38">
+       Lincoln
+      </option>
+      <option value="m39">
+       Lotus
+      </option>
+      <option value="m274">
+       Lucid
+      </option>
+      <option value="m286">
+       Mack
+      </option>
+      <option value="m40">
+       Maserati
+      </option>
+      <option value="m41">
+       Maybach
+      </option>
+      <option value="m42">
+       Mazda
+      </option>
+      <option value="m141">
+       McLaren
+      </option>
+      <option value="m43">
+       Mercedes-Benz
+      </option>
+      <option value="m44">
+       Mercury
+      </option>
+      <option value="m102">
+       MG
+      </option>
+      <option value="m45">
+       MINI
+      </option>
+      <option value="m46">
+       Mitsubishi
+      </option>
+      <option value="m255">
+       Mobility Ventures
+      </option>
+      <option value="m150">
+       Morgan
+      </option>
+      <option value="m151">
+       Morris
+      </option>
+      <option value="m199">
+       Nash
+      </option>
+      <option value="m12">
+       Nissan
+      </option>
+      <option value="m85">
+       Oldsmobile
+      </option>
+      <option value="m103">
+       Opel
+      </option>
+      <option value="m176">
+       Packard
+      </option>
+      <option value="m121">
+       Pagani
+      </option>
+      <option value="m105">
+       Pininfarina
+      </option>
+      <option value="m87">
+       Plymouth
+      </option>
+      <option value="m260">
+       Polestar
+      </option>
+      <option value="m47">
+       Pontiac
+      </option>
+      <option value="m48">
+       Porsche
+      </option>
+      <option value="m191">
+       RAM
+      </option>
+      <option value="m106">
+       Renault
+      </option>
+      <option value="m243">
+       Rivian
+      </option>
+      <option value="m49">
+       Rolls-Royce
+      </option>
+      <option value="m131">
+       Rover
+      </option>
+      <option value="m50">
+       Saab
+      </option>
+      <option value="m108">
+       Saleen
+      </option>
+      <option value="m51">
+       Saturn
+      </option>
+      <option value="m52">
+       Scion
+      </option>
+      <option value="m135">
+       Shelby
+      </option>
+      <option value="m227">
+       Siata
+      </option>
+      <option value="m111">
+       smart
+      </option>
+      <option value="m164">
+       Studebaker
+      </option>
+      <option value="m53">
+       Subaru
+      </option>
+      <option value="m132">
+       Sunbeam
+      </option>
+      <option value="m54">
+       Suzuki
+      </option>
+      <option value="m112">
+       Tesla
+      </option>
+      <option value="m7">
+       Toyota
+      </option>
+      <option value="m137">
+       Triumph
+      </option>
+      <option value="m279">
+       VinFast
+      </option>
+      <option value="m55">
+       Volkswagen
+      </option>
+      <option value="m56">
+       Volvo
+      </option>
+      <option value="m205">
+       VPG
+      </option>
+      <option value="m214">
+       Willys
+      </option>
+     </select>
+     <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 cgds_select_chevron" data-icon="chevron-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z" fill="currentColor">
+      </path>
+     </svg>
+    </div>
+   </div>
+   <strong>
+    dealers within
+   </strong>
+   <div class="cgds_select">
+    <div class="cgds_select_formSelectWrap">
+     <select aria-label="Distance" class="cgds_select_elementSelectElement" id="refine-search-distance" name="distance">
+      <option value="10">
+       10 mi
+      </option>
+      <option value="25">
+       25 mi
+      </option>
+      <option value="50">
+       50 mi
+      </option>
+      <option value="75">
+       75 mi
+      </option>
+      <option selected="selected" value="100">
+       100 mi
+      </option>
+     </select>
+     <svg aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 cgds_select_chevron" data-icon="chevron-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z" fill="currentColor">
+      </path>
+     </svg>
+    </div>
+   </div>
+   <span>
+    of
+   </span>
+   <div class="cgds_input_wrap" style="max-width: 190px">
+    <input aria-label="Location" class="cgds_input_text" id="addressTyped" type="text" value="Houston, TX 77007"/>
+   </div>
+   <button class="cgds_btn cgds_btn_primary cgds_btn_defaultSize" type="submit">
+    Search
+   </button>
+   <label class="cgds_btn cgds_btn_outline cgds_btn_defaultSize cancelButton" for="searchFormToggle">
+    Cancel
+   </label>
+  </form>
+ </div>
+</div>
+<section class="dealerBlades">
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Statewide Auto Sales
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Statewide-Auto-Sales-sp453340">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       5346 Darling St, Houston, TX 77007
+        (0 mi)
+      </span>
+     </div>
+     <div class="hours">
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="5">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       5.0
+      </strong>
+      (5)
+     </div>
+     <blockquote>
+      Great deal, great car. I have been driving the car for 60+ days and haven't had any issues. Everyone is super nice and very helpful!
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Statewide Auto Sales logo" src="https://static1.cargurus.com/gfx/dealersnearme/dealer_logo_placeholder.png"/>
+   </div>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   453340
+  </span>
+  <span class="js-lat">
+   29.779800415039062
+  </span>
+  <span class="js-lng">
+   -95.41780090332031
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Statewide-Auto-Sales-sp453340">
+     Statewide Auto Sales
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      5 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Statewide-Auto-Sales-sp453340">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Reliable Auto Sales
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Reliable-Auto-Sales-sp378127">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       4802 Larkin St, Suite A, Houston, TX 77007
+        (1 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 6:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="4.33">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <span class="halfStarWrap">
+        <svg class="empty cg-star" height="20" width="20">
+         <use xlink:href="#star-icon--full">
+         </use>
+        </svg>
+        <svg class="half cg-star" height="20" width="20">
+         <use xlink:href="#star-icon--half">
+         </use>
+        </svg>
+       </span>
+      </div>
+      <strong class="averageOverallRating">
+       4.3
+      </strong>
+      (3)
+     </div>
+     <blockquote>
+      Yes he made me aware of the price and the condition of the truck and that he would work with me to get me what I wanted
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Reliable Auto Sales logo" src="https://static1.cargurus.com/gfx/dealersnearme/dealer_logo_placeholder.png"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    9:00 AM - 1:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   378127
+  </span>
+  <span class="js-lat">
+   29.779199600219727
+  </span>
+  <span class="js-lng">
+   -95.41000366210938
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Reliable-Auto-Sales-sp378127">
+     Reliable Auto Sales
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star empty cg-star-half-container" title="4.3 out of 5 stars">
+      <i aria-hidden="true" class="fas fa-star-half cg-star half half-ftl">
+      </i>
+     </i>
+     <span class="totalRatings">
+      3 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Reliable-Auto-Sales-sp378127">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Grubbs Volvo Cars Central Houston
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Grubbs-Volvo-Cars-Central-Houston-sp445281">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       7620 Washington Ave, Houston, TX 77007
+        (1 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 8:00 PM
+       </span>
+      </div>
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-wrench fa-w-16" data-icon="wrench" data-prefix="far" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M507.48 117.18c-3-12.17-12.41-21.79-24.5-25.15-12.1-3.34-25.16.11-33.97 8.97l-58.66 58.63-32.44-5.4-5.38-32.41 58.67-58.64c8.84-8.89 12.28-21.92 8.91-33.99-3.38-12.11-13.06-21.5-25.29-24.53-53.09-13.19-107.91 2.07-146.54 40.69-37.63 37.62-52.6 91.37-40.72 143.27L24.04 372.06C8.53 387.53 0 408.12 0 430.02s8.53 42.49 24.04 57.97C39.51 503.47 60.1 512 82.01 512c21.88 0 42.47-8.53 57.98-24.01l183.34-183.26c51.79 11.87 105.64-3.14 143.49-40.93 38.09-38.1 53.69-94.27 40.66-146.62zm-74.61 112.69c-28.47 28.46-70.2 38.1-109.01 25.21l-14.06-4.69-203.75 203.67c-12.85 12.84-35.29 12.81-48.07 0-6.44-6.42-9.97-14.96-9.97-24.04 0-9.08 3.53-17.61 9.97-24.03l203.84-203.78-4.63-14.03c-12.81-38.9-3.22-80.62 25.04-108.9 20.35-20.32 47.19-31.24 75.04-31.24h1.12l-57.32 57.3 15.13 90.59 90.57 15.09 57.35-57.29c.32 28.26-10.62 55.52-31.25 76.14zM88.01 408.02c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16-7.16-16-16-16z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            7:00 AM - 7:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="4.20">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="empty cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       4.2
+      </strong>
+      (10)
+     </div>
+     <blockquote>
+      Excellent
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Grubbs Volvo Cars Central Houston logo" src="https://static.cargurus.com/images/site/2023/08/07/10/07/grubbs_volvo_cars_central_houston-pic-1790534206663456094-200x200.jpeg"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    Closed
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 8:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 8:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 8:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 8:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 8:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+   <div class="serviceHours">
+    <strong>
+     Service Hours
+    </strong>
+    <ul>
+     <li>
+      Sun:
+                    Closed
+     </li>
+     <li>
+     </li>
+     <li>
+      Mon:
+                    7:00 AM - 7:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Tue:
+                    7:00 AM - 7:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Wed:
+                    7:00 AM - 7:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Thu:
+                    7:00 AM - 7:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Fri:
+                    7:00 AM - 7:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Sat:
+                    7:00 AM - 5:00 PM
+     </li>
+     <li>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   445281
+  </span>
+  <span class="js-lat">
+   29.77989959716797
+  </span>
+  <span class="js-lng">
+   -95.43280029296875
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Grubbs-Volvo-Cars-Central-Houston-sp445281">
+     Grubbs Volvo Cars Central Houston
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.2 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.2 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.2 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.2 out of 5 stars">
+     </i>
+     <i class="fas fa-star cg-star empty" title="4.2 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      10 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Grubbs-Volvo-Cars-Central-Houston-sp445281">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Uptown Motor Cars
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Uptown-Motor-Cars-sp289602">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       1132 N Shepherd Dr, Houston, TX 77008
+        (1 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            10:00 AM - 6:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="4.85">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       4.9
+      </strong>
+      (7)
+     </div>
+     <blockquote>
+      Fantastic experience! Kam was very patient and honest throughout the entire process. We came down from College Station to look at a vehicle. He was very straightforward and honest with what they could offer from a price &amp; trade in value. It was a very fair offer, and he went above and beyond by replacing a torn piece of upholstery, doing a fresh oil change, and helping us with title issues with our previous car. We've had the car a few days, and we are very happy.
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Uptown Motor Cars logo" src="https://static.cargurus.com/images/site/2021/10/08/13/19/uptown_motor_cars-pic-15853898166512794058-200x200.jpeg"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    Closed
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    10:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    10:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    10:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    10:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    10:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    10:00 AM - 5:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   289602
+  </span>
+  <span class="js-lat">
+   29.79159927368164
+  </span>
+  <span class="js-lng">
+   -95.40989685058594
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Uptown-Motor-Cars-sp289602">
+     Uptown Motor Cars
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.9 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.9 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.9 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.9 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.9 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      7 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Uptown-Motor-Cars-sp289602">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Tommie Vaughn Ford
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Tommie-Vaughn-Ford-sp334047">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       1201 N Shepherd Dr, Houston, TX 77008
+        (1 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 7:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="5">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       5.0
+      </strong>
+      (2)
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    Closed
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   334047
+  </span>
+  <span class="js-lat">
+   29.792600631713867
+  </span>
+  <span class="js-lng">
+   -95.41020202636719
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Tommie-Vaughn-Ford-sp334047">
+     Tommie Vaughn Ford
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      2 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Tommie-Vaughn-Ford-sp334047">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Star Motor Cars
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Star-Motor-Cars-sp64552">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       7000 Katy Road, Houston, TX 77024
+        (1 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 6:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="5">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       5.0
+      </strong>
+      (7)
+     </div>
+     <blockquote>
+      Responded immediately
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Star Motor Cars logo" src="https://static.cargurus.com/images/site/2022/03/23/17/07/star_motor_cars-pic-1043178816096321543-200x200.jpeg"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    Closed
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   64552
+  </span>
+  <span class="js-lat">
+   29.78230094909668
+  </span>
+  <span class="js-lng">
+   -95.44200134277344
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Star-Motor-Cars-sp64552">
+     Star Motor Cars
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      7 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Star-Motor-Cars-sp64552">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Aston Martin Houston
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Aston-Martin-Houston-sp448491">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       7000 Katy Rd, Houston, TX 77024
+        (1 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 6:00 PM
+       </span>
+      </div>
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-wrench fa-w-16" data-icon="wrench" data-prefix="far" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M507.48 117.18c-3-12.17-12.41-21.79-24.5-25.15-12.1-3.34-25.16.11-33.97 8.97l-58.66 58.63-32.44-5.4-5.38-32.41 58.67-58.64c8.84-8.89 12.28-21.92 8.91-33.99-3.38-12.11-13.06-21.5-25.29-24.53-53.09-13.19-107.91 2.07-146.54 40.69-37.63 37.62-52.6 91.37-40.72 143.27L24.04 372.06C8.53 387.53 0 408.12 0 430.02s8.53 42.49 24.04 57.97C39.51 503.47 60.1 512 82.01 512c21.88 0 42.47-8.53 57.98-24.01l183.34-183.26c51.79 11.87 105.64-3.14 143.49-40.93 38.09-38.1 53.69-94.27 40.66-146.62zm-74.61 112.69c-28.47 28.46-70.2 38.1-109.01 25.21l-14.06-4.69-203.75 203.67c-12.85 12.84-35.29 12.81-48.07 0-6.44-6.42-9.97-14.96-9.97-24.04 0-9.08 3.53-17.61 9.97-24.03l203.84-203.78-4.63-14.03c-12.81-38.9-3.22-80.62 25.04-108.9 20.35-20.32 47.19-31.24 75.04-31.24h1.12l-57.32 57.3 15.13 90.59 90.57 15.09 57.35-57.29c.32 28.26-10.62 55.52-31.25 76.14zM88.01 408.02c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16-7.16-16-16-16z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            8:00 AM - 6:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="5">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       5.0
+      </strong>
+      (1)
+     </div>
+     <blockquote>
+      Tom Duer, Sales Manager, is an all star!
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Aston Martin Houston logo" src="https://static.cargurus.com/images/site/2022/09/23/11/03/aston_martin_houston-pic-10550176904900875523-200x200.jpeg"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    Closed
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 6:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    9:00 AM - 5:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+   <div class="serviceHours">
+    <strong>
+     Service Hours
+    </strong>
+    <ul>
+     <li>
+      Sun:
+                    Closed
+     </li>
+     <li>
+     </li>
+     <li>
+      Mon:
+                    8:00 AM - 6:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Tue:
+                    8:00 AM - 6:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Wed:
+                    8:00 AM - 6:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Thu:
+                    8:00 AM - 6:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Fri:
+                    8:00 AM - 6:00 PM
+     </li>
+     <li>
+     </li>
+     <li>
+      Sat:
+                    Closed
+     </li>
+     <li>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   448491
+  </span>
+  <span class="js-lat">
+   29.78380012512207
+  </span>
+  <span class="js-lng">
+   -95.44319915771484
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Aston-Martin-Houston-sp448491">
+     Aston Martin Houston
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      1 review
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Aston-Martin-Houston-sp448491">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Jaguar Land Rover Houston Central
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Jaguar-Land-Rover-Houston-Central-sp284661">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       7019 Old Katy Rd, Houston, TX 77024
+        (2 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 7:00 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="4.29">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <span class="halfStarWrap">
+        <svg class="empty cg-star" height="20" width="20">
+         <use xlink:href="#star-icon--full">
+         </use>
+        </svg>
+        <svg class="half cg-star" height="20" width="20">
+         <use xlink:href="#star-icon--half">
+         </use>
+        </svg>
+       </span>
+      </div>
+      <strong class="averageOverallRating">
+       4.3
+      </strong>
+      (10)
+     </div>
+     <blockquote>
+      They were very responsive and helpful
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Jaguar Land Rover Houston Central logo" src="https://static1.cargurus.com/gfx/dealersnearme/dealer_logo_placeholder.png"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    Closed
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    9:00 AM - 7:00 PM
+    </li>
+    <li>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   284661
+  </span>
+  <span class="js-lat">
+   29.78380012512207
+  </span>
+  <span class="js-lng">
+   -95.44439697265625
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Jaguar-Land-Rover-Houston-Central-sp284661">
+     Jaguar Land Rover Houston Central
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.3 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star empty cg-star-half-container" title="4.3 out of 5 stars">
+      <i aria-hidden="true" class="fas fa-star-half cg-star half half-ftl">
+      </i>
+     </i>
+     <span class="totalRatings">
+      10 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Jaguar-Land-Rover-Houston-Central-sp284661">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Fuentes Truck and Auto Sales
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Fuentes-Truck-and-Auto-Sales-sp397591">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       1501 W 15th St, Houston, TX 77008
+        (2 mi)
+      </span>
+     </div>
+     <div class="hours">
+      <div class="hours">
+       <span class="businessHours dealerDetail">
+        <svg aria-hidden="true" class="svg-inline--fa fa-tags fa-w-20" data-icon="tags" data-prefix="far" focusable="false" role="img" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+         <path d="M625.941 293.823L421.823 497.941c-18.746 18.746-49.138 18.745-67.882 0l-.36-.36L592 259.882 331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zm-128 0L293.823 497.941C284.451 507.314 272.166 512 259.882 512c-12.284 0-24.569-4.686-33.941-14.059L14.059 286.059A48 48 0 0 1 0 252.118V48C0 21.49 21.49 0 48 0h204.118a47.998 47.998 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882zM464 259.882L252.118 48H48v204.118l211.886 211.878L464 259.882zM144 96c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" fill="currentColor">
+         </path>
+        </svg>
+        Wed
+            9:00 AM - 7:30 PM
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="5">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       5.0
+      </strong>
+      (1)
+     </div>
+     <blockquote>
+      Appreciate the test ride.
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Fuentes Truck and Auto Sales logo" src="https://static.cargurus.com/images/site/2018/03/30/11/09/fuentes_truck_and_auto_sales-pic-5413599389629029070-200x200.jpeg"/>
+   </div>
+  </div>
+  <div class="toggleWrapper">
+   <button class="toggle" onclick="toggleBusinessHours(this)">
+    More
+    <svg aria-hidden="true" class="svg-inline--fa fa-angle-down fa-w-10" data-icon="angle-down" data-prefix="far" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" fill="currentColor">
+     </path>
+    </svg>
+   </button>
+  </div>
+  <div aria-expanded="false" class="dropdownContent">
+   <strong>
+    Sales hours
+   </strong>
+   <ul>
+    <li>
+     Sun:
+                    9:00 AM - 5:30 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Mon:
+                    9:00 AM - 7:30 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Tue:
+                    9:00 AM - 7:30 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Wed:
+                    9:00 AM - 7:30 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Thu:
+                    9:00 AM - 7:30 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Fri:
+                    9:00 AM - 7:30 PM
+    </li>
+    <li>
+    </li>
+    <li>
+     Sat:
+                    Closed
+    </li>
+    <li>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   397591
+  </span>
+  <span class="js-lat">
+   29.79789924621582
+  </span>
+  <span class="js-lng">
+   -95.41190338134766
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Fuentes-Truck-and-Auto-Sales-sp397591">
+     Fuentes Truck and Auto Sales
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="5 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      1 review
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Fuentes-Truck-and-Auto-Sales-sp397591">
+    More Info »
+   </a>
+  </div>
+ </div>
+ <div class="blade">
+  <div class="dealership">
+   <div class="dealerInfo">
+    <div class="details">
+     <strong>
+      Texas Izi Auto
+     </strong>
+     <span class="bracket">
+      |
+     </span>
+     <a class="viewInventory" href="/Cars/m-Texas-Izi-Auto-sp446378">
+      View Inventory
+      <svg aria-hidden="true" class="svg-inline--fa fa-arrow-right fa-w-14" data-icon="arrow-right" data-prefix="far" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+       <path d="M218.101 38.101L198.302 57.9c-4.686 4.686-4.686 12.284 0 16.971L353.432 230H12c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h341.432l-155.13 155.13c-4.686 4.686-4.686 12.284 0 16.971l19.799 19.799c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L235.071 38.101c-4.686-4.687-12.284-4.687-16.97 0z" fill="currentColor">
+       </path>
+      </svg>
+     </a>
+     <div class="address">
+      <span class="dealerDetail">
+       <svg aria-hidden="true" class="svg-inline--fa fa-map fa-w-18" data-icon="map" data-prefix="far" focusable="false" role="img" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 44.53V141.26l.64-.24L528 93.95v288.97z" fill="currentColor">
+        </path>
+       </svg>
+       3216 Washington Ave, Houston, TX 77007
+        (2 mi)
+      </span>
+     </div>
+     <div class="hours">
+     </div>
+    </div>
+    <div class="shopperReviews">
+     <div style="display:none">
+      <svg id="star-icon--full" viewbox="0 0 576 512">
+       <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" fill="currentColor">
+       </path>
+      </svg>
+      <svg id="star-icon--half" viewbox="0 0 576 512">
+       <path d="M288 0c-11.4 0-22.8 5.9-28.7 17.8L194 150.2 47.9 171.4c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.1 23 46 46.4 33.7L288 439.6V0z" fill="currentColor">
+       </path>
+      </svg>
+     </div>
+     <style>
+      .starRating {display: flex;}
+.starRating .svg-inline--fa {display: inline-block;font-size: inherit;height: 14px;overflow: visible;vertical-align: -0.125em;padding-left: .0625em;padding-right: .0625em;}
+.starRating .svg-inline--fa.fa-w-18 {width: 14px;}
+.cg-star {color: #ffb100;}
+.cg-star.disabled,.cg-star.empty {color: #c2ccd4;}
+.halfStarWrap {color: #c2ccd4;display: -webkit-inline-box;display: -ms-inline-flexbox;display: inline-flex;vertical-align: -0.125em;}
+.cg-star.half {position: absolute;}
+.starRating svg {vertical-align: text-bottom;}
+.starRating .starLink {cursor: pointer;}
+     </style>
+     <div class="dealerRating">
+      <strong>
+       Shopper reviews
+      </strong>
+      <div class="starRating" title="4.75">
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+       <svg class="full cg-star" height="20" width="20">
+        <use xlink:href="#star-icon--full">
+        </use>
+       </svg>
+      </div>
+      <strong class="averageOverallRating">
+       4.8
+      </strong>
+      (8)
+     </div>
+     <blockquote>
+      Returned call -very cordial
+     </blockquote>
+    </div>
+   </div>
+   <div class="imgWrapper">
+    <img alt="Texas Izi Auto logo" src="https://static1.cargurus.com/gfx/dealersnearme/dealer_logo_placeholder.png"/>
+   </div>
+  </div>
+ </div>
+ <div class="js-mapMeta" style="display: none;">
+  <span class="js-id">
+   446378
+  </span>
+  <span class="js-lat">
+   29.769100189208984
+  </span>
+  <span class="js-lng">
+   -95.39299774169922
+  </span>
+  <div class="js-mapInfoWindow">
+   <h3 class="js-windowTitle">
+    <a href="/Cars/m-Texas-Izi-Auto-sp446378">
+     Texas Izi Auto
+    </a>
+   </h3>
+   <div class="cg-rating-wrap clearfix">
+    <div class="ratingLabel">
+     Sales:
+    </div>
+    <div class="ratingValue">
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.8 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.8 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.8 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.8 out of 5 stars">
+     </i>
+     <i aria-hidden="true" class="fas fa-star cg-star" title="4.8 out of 5 stars">
+     </i>
+     <span class="totalRatings">
+      8 reviews
+     </span>
+    </div>
+   </div>
+   <a href="/Cars/m-Texas-Izi-Auto-sp446378">
+    More Info »
+   </a>
+  </div>
+ </div>
+</section>
+<div class="paginationWrapper">
+ <div class="info">
+  Displaying dealers
+  <strong>
+   1 - 10
+  </strong>
+  of
+  <strong>
+   753
+  </strong>
+ </div>
+ <div class="next">
+  <a href="/Cars/dl.action?entityId=&amp;dealerType=USED&amp;sortType=PROXIMITY_ASC&amp;distance=100&amp;address=Houston%2C%20TX%2077007&amp;latitude=29.777&amp;longitude=-95.42&amp;page=2" rel="next">
+   Next
+  </a>
+ </div>
+</div>

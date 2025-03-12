@@ -1,0 +1,124 @@
+<h2 class="us1dS CrxtQ pmVy4K">
+ Dealer
+</h2>
+<section class="TRQLFd" itemscope="" itemtype="http://schema.org/AutoDealer">
+ <div class="j9HLfw">
+  <img alt="DG Auto Sales, LLC" class="QrJyuT" itemprop="image" itemtype="http://schema.org/ImageObject" src="https://static.cargurus.com/images/site/2015/11/06/14/45/dg_auto_sales__llc-pic-4330039926878153560-1600x1200.jpeg"/>
+ </div>
+ <div class="sdi1Fu">
+  <a class="us1dS i5dPf" data-cg-ft="vdp-dealer-cg-homepage-link" href="/Cars/m-DG-Auto-Sales-LLC-sp338654" itemprop="url" rel="noreferrer noopener" target="_blank">
+   DG Auto Sales, LLC
+  </a>
+  <div class="ZHrpgV" data-orientation="vertical">
+   <div class="eu5f0" data-orientation="vertical" data-state="closed">
+    <button aria-controls="radix-9" aria-expanded="false" class="RXhAe J_XoLX" data-orientation="vertical" data-radix-collection-item="" data-state="closed" id="radix-10" type="button">
+     <p class="us1dS iK3Zj aprJJD">
+      <span class="us1dS iK3Zj r2POCI">
+       Closed
+      </span>
+      • Opens today at 9:00 AM
+     </p>
+     <svg aria-hidden="true" class="svg-inline--fa fa-caret-down fa-w-10 mToHX_" data-icon="caret-down" data-prefix="fas" focusable="false" role="img" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+      <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" fill="currentColor">
+      </path>
+     </svg>
+    </button>
+    <div aria-labelledby="radix-10" class="rw0iR _9RZQr" data-orientation="vertical" data-state="closed" hidden="" id="radix-9" role="region" style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); --radix-collapsible-content-width: 330.34375px;">
+    </div>
+   </div>
+  </div>
+  <a class="us1dS iCig5" data-cg-ft="vdp-dealer-phone-link" href="tel:+1 512-790-7968" itemprop="telephone">
+   (512) 790-7968
+  </a>
+  <div data-testid="dealerAddress">
+   <a class="us1dS iCig5 FGIQuX" href="https://www.google.com/maps/dir/?api=1&amp;destination=DG+Auto+Sales%2C+LLC+3710+Airport+blvd+ste+A%2CAustin+TX%2C+78722%2CUNITED_STATES" rel="noreferrer noopener" target="_blank">
+    <span>
+     <span data-track-ui="dealer-address">
+      3710 Airport blvd ste A, Austin, TX 78722
+     </span>
+    </span>
+    <svg aria-hidden="true" class="svg-inline--fa fa-external-link fa-w-16 fa-sm" data-icon="external-link" data-prefix="far" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M497.6,0,334.4.17A14.4,14.4,0,0,0,320,14.57V47.88a14.4,14.4,0,0,0,14.69,14.4l73.63-2.72,2.06,2.06L131.52,340.49a12,12,0,0,0,0,17l23,23a12,12,0,0,0,17,0L450.38,101.62l2.06,2.06-2.72,73.63A14.4,14.4,0,0,0,464.12,192h33.31a14.4,14.4,0,0,0,14.4-14.4L512,14.4A14.4,14.4,0,0,0,497.6,0ZM432,288H416a16,16,0,0,0-16,16V458a6,6,0,0,1-6,6H54a6,6,0,0,1-6-6V118a6,6,0,0,1,6-6H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V304A16,16,0,0,0,432,288Z" fill="currentColor">
+     </path>
+    </svg>
+   </a>
+   <span aria-hidden="true" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+    <meta content="3710 Airport blvd ste A" itemprop="streetAddress"/>
+    <meta content="Austin" itemprop="addressLocality"/>
+    <meta content="TX" itemprop="addressRegion"/>
+    <meta content="78722" itemprop="postalCode"/>
+   </span>
+  </div>
+  <a class="us1dS iCig5" data-cg-ft="vdp-dealer-inventory-link" href="/Cars/m-DG-Auto-Sales-LLC-sp338654" rel="noreferrer noopener" target="_blank">
+   View inventory
+  </a>
+  <a aria-label="Dealer website" class="us1dS iCig5 FGIQuX" data-cg-ft="vdp-dealer-website-link" href="/Cars/Link?url=http%3A%2F%2Fwww.dgautosales.net%2F%3Futm_source%3Dcargurus.com%26utm_medium%3Dreferral%26utm_campaign%3Dcargurus_listings&amp;hmac=3E0467C5F257263D06CDCAA4F80CD32C085AE94A" rel="noreferrer noopener" target="_blank">
+   <span>
+    Dealer website
+   </span>
+   <svg aria-hidden="true" class="svg-inline--fa fa-external-link fa-w-16 fa-sm" data-icon="external-link" data-prefix="far" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M497.6,0,334.4.17A14.4,14.4,0,0,0,320,14.57V47.88a14.4,14.4,0,0,0,14.69,14.4l73.63-2.72,2.06,2.06L131.52,340.49a12,12,0,0,0,0,17l23,23a12,12,0,0,0,17,0L450.38,101.62l2.06,2.06-2.72,73.63A14.4,14.4,0,0,0,464.12,192h33.31a14.4,14.4,0,0,0,14.4-14.4L512,14.4A14.4,14.4,0,0,0,497.6,0ZM432,288H416a16,16,0,0,0-16,16V458a6,6,0,0,1-6,6H54a6,6,0,0,1-6-6V118a6,6,0,0,1,6-6H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V304A16,16,0,0,0,432,288Z" fill="currentColor">
+    </path>
+   </svg>
+  </a>
+  <div class="QD7UQS">
+   <a aria-label="Facebook" class="fMuJU9" data-cg-ft="vdp-dealer-facebook-link" href="/Cars/Link?url=https%3A%2F%2Ffacebook.com%2Fdgautosales&amp;hmac=3FB18C68AB1C8BBF5E93376DBD2BCA4781CE9A58" rel="noreferrer noopener" target="_blank">
+    <svg aria-hidden="true" aria-label="facebook-icon" class="svg-inline--fa fa-facebook fa-w-16 fa-lg mToHX_" data-icon="facebook" data-prefix="fab" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" fill="currentColor">
+     </path>
+    </svg>
+   </a>
+   <a aria-label="Instagram" class="fMuJU9" data-cg-ft="vdp-dealer-instagram-link" href="/Cars/Link?url=https%3A%2F%2Fwww.instagram.com%2Fdgautosalesatx&amp;hmac=B8EEF247DFD717961B86E54779D490A7FE10F125" rel="noreferrer noopener" target="_blank">
+    <svg aria-hidden="true" aria-label="instagram-icon" class="svg-inline--fa fa-instagram fa-w-14 fa-lg mToHX_" data-icon="instagram" data-prefix="fab" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+     <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor">
+     </path>
+    </svg>
+   </a>
+  </div>
+ </div>
+</section>
+<section class="Z9noUW">
+ <h3 class="us1dS i5dPf">
+  Dealer reviews
+ </h3>
+ <div class="uKHDXx">
+  <svg aria-hidden="true" class="ydUEVf" focusable="false" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <path d="m10.605.408 2.646 6.36 6.865.55-5.23 4.48 1.597 6.7-5.878-3.59-5.877 3.59 1.598-6.7-5.231-4.48 6.865-.55 2.645-6.36Z">
+   </path>
+  </svg>
+  <div class="YuJfgx">
+   <span class="us1dS CrxtQ">
+    5.0
+   </span>
+   <span class="us1dS iK3Zj">
+    (1 review)
+   </span>
+  </div>
+ </div>
+ <div>
+  <button aria-controls="radix-11" aria-expanded="false" aria-haspopup="dialog" class="JRPjD lG5Pp QXloi" data-state="closed" type="button">
+   Show all reviews
+  </button>
+ </div>
+</section>
+<section class="LzKXme">
+ <h3 class="us1dS i5dPf">
+  Dealer's description
+ </h3>
+ <div class="ovqzTe UHMzxb">
+  <p class="us1dS iK3Zj">
+   This vehicle is very clean inside and out. It runs and drives great ...must see!  Ease approvals, get Approved &amp; Drive off Today!  Para espanol llama o envianos un texto a 512 815-6082     !!!!!!!!DG MAKES EZ !!!!!!!!!
+  </p>
+  <h6 class="us1dS Tqes1">
+   Additional Information
+  </h6>
+  <p class="us1dS iK3Zj">
+   ABS Brakes,Adjustable Foot Pedals,Air Conditioning,Alloy Wheels,AM/FM Radio,Automatic Headlights,Cargo Area Tiedowns,CD Player,Child Safety Door Locks,Cruise Control,Deep Tinted Glass,Driver Airbag,Driver Multi-Adjustable Power Seat,Electrochromic Exterior Rearview Mirror,Electrochromic Interior Rearview Mirror,Fog Lights,Front Air Dam,Front Heated Seat,Front Power Lumbar Support,Front Power Memory Seat,Front Side Airbag,Front Split Bench Seat,Full Size Spare Tire,Heated Exterior Mirror,Interval Wipers,Keyless Entry,Leather Seat,Leather Steering Wheel,Locking Pickup Truck Tailgate,Passenger Airbag,Passenger Multi-Adjustable Power Seat,Pickup Truck Cargo Box Light,Power Adjustable Exterior Mirror,Power Door Locks,Power Windows,Rear Window Defogger,Second Row Folding Seat,Separate Driver/Front Passenger Climate Controls,Side Head Curtain Airbag,Sliding Rear Pickup Truck Window,Steering Wheel Mounted Controls,Tachometer,Telematics System,Tilt Steering,Tilt Steering Column,Tire Pressure Monitor,Tow Hitch Receiver,Traction Control,Trip Computer,Vehicle Anti-Theft,Vehicle Stability Control System
+  </p>
+ </div>
+ <div>
+  <button aria-controls="radix-12" aria-expanded="false" aria-haspopup="dialog" class="JRPjD lG5Pp QXloi" data-state="closed" type="button">
+   Show full description
+  </button>
+ </div>
+</section>

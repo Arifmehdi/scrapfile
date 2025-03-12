@@ -285,16 +285,16 @@ def main():
     all_data = []
     data = extract_vehicle_info(URL,driver, all_data, HEADER)
     print(data )
-    sys.exit()
+    # sys.exit()
 
-    number_of_pages = 200
-    for page in range(number_of_pages - 1):
-        if not navigate_to_next_page(driver, page):
-            break
-        extract_vehicle_info(driver, all_data)
+    # number_of_pages = 200
+    # for page in range(number_of_pages - 1):
+    #     if not navigate_to_next_page(driver, page):
+    #         break
+    #     extract_vehicle_info(driver, all_data)
 
     
-    print(d)
+    # print(d)
     driver.quit()
 
 if __name__ == "__main__":
