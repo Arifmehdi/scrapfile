@@ -16,7 +16,7 @@ cursor = connection.cursor()
 
 # Read CSV file
 # csv_file = "detail_20000_backup_raw.csv"
-csv_file = "car_detail_2025_03_10_20000.csv"
+csv_file = "car_detail_2025_03_10_171715.csv"
 df = pd.read_csv(csv_file)
 
 # Column mapping (CSV header -> MySQL column)
